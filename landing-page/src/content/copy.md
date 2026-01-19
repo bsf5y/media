@@ -12,7 +12,8 @@ The startup industry has it backwards. Cutting corners on your MVP isn't saving 
 Go well to go fast.
 
 ### Subtext
-Whether you're building a software engineering team or deploying AI-driven development, the foundational principles are the same. We help you get it right the first time.
+
+Whether you build using a software engineering team or AI-driven development, the foundational principles are the same. We help you get it right the first time.
 
 The most expensive code you'll ever write is the code you write twice.
 
