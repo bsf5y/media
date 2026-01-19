@@ -5,6 +5,61 @@
 
 import content from './content/content.json'
 
+/**
+ * Sanitize HTML to prevent XSS attacks.
+ * Allows only safe tags and attributes commonly used in content.
+ * @param {string} html - Raw HTML string to sanitize
+ * @returns {string} - Sanitized HTML string
+ */
+function sanitizeHtml(html) {
+  const allowedTags = ['p', 'strong', 'em', 'br', 'ul', 'ol', 'li', 'span', 'a']
+  const allowedAttrs = ['class', 'href', 'target', 'rel']
+
+  const div = document.createElement('div')
+  div.innerHTML = html
+
+  function sanitizeNode(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      return
+    }
+
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      const tagName = node.tagName.toLowerCase()
+
+      // Remove disallowed tags but keep their text content
+      if (!allowedTags.includes(tagName)) {
+        const text = document.createTextNode(node.textContent)
+        node.parentNode.replaceChild(text, node)
+        return
+      }
+
+      // Remove disallowed attributes
+      const attrs = Array.from(node.attributes)
+      for (const attr of attrs) {
+        if (!allowedAttrs.includes(attr.name.toLowerCase())) {
+          node.removeAttribute(attr.name)
+        }
+        // Sanitize href to prevent javascript: URLs
+        if (attr.name === 'href' && attr.value.toLowerCase().startsWith('javascript:')) {
+          node.removeAttribute('href')
+        }
+      }
+
+      // Add security attributes to external links
+      if (tagName === 'a' && node.getAttribute('href')?.startsWith('http')) {
+        node.setAttribute('target', '_blank')
+        node.setAttribute('rel', 'noopener noreferrer')
+      }
+
+      // Recursively sanitize children
+      Array.from(node.childNodes).forEach(sanitizeNode)
+    }
+  }
+
+  Array.from(div.childNodes).forEach(sanitizeNode)
+  return div.innerHTML
+}
+
 // Inject content from JSON into template
 function injectContent() {
   // Hero section
@@ -75,12 +130,13 @@ function setContent(key, value) {
 function setHtml(key, value, className) {
   const el = document.querySelector(`[data-content="${key}"]`)
   if (el && value) {
+    // Sanitize HTML before injection to prevent XSS
+    let sanitized = sanitizeHtml(value)
     // Add class to paragraph tags if specified
     if (className) {
-      el.innerHTML = value.replace(/<p>/g, `<p class="${className}">`)
-    } else {
-      el.innerHTML = value
+      sanitized = sanitized.replace(/<p>/g, `<p class="${className}">`)
     }
+    el.innerHTML = sanitized
   }
 }
 

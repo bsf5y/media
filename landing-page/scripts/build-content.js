@@ -3,7 +3,7 @@
  * This runs before Vite build to prepare content for the HTML template.
  */
 
-import { readFileSync, writeFileSync } from 'fs'
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs'
 import { fileURLToPath } from 'url'
 import { dirname, join } from 'path'
 import MarkdownIt from 'markdown-it'
@@ -11,16 +11,75 @@ import MarkdownIt from 'markdown-it'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const rootDir = join(__dirname, '..')
 
+// Content schema for validation
+const REQUIRED_FIELDS = {
+  hero: ['tagline', 'lead', 'reframe', 'subtext'],
+  positioning: ['_content'],
+  methodology: ['headline', 'intro', 'phases'],
+  services: [], // Array, validated separately
+  cta: ['headline', 'subtext', 'button'],
+  footer: ['location', 'tagline', 'copyright']
+}
+
 const md = new MarkdownIt({
   html: true,
   typographer: true
 })
 
-// Read markdown content
-const markdownPath = join(rootDir, 'src/content/copy.md')
-const markdown = readFileSync(markdownPath, 'utf-8')
+/**
+ * Validate the parsed content against the schema
+ * @param {object} content - Parsed content object
+ * @returns {string[]} - Array of validation error messages
+ */
+function validateContent(content) {
+  const errors = []
 
-// Parse markdown into structured content
+  for (const [section, fields] of Object.entries(REQUIRED_FIELDS)) {
+    if (!content[section]) {
+      errors.push(`Missing required section: ${section}`)
+      continue
+    }
+
+    for (const field of fields) {
+      if (field === 'phases') {
+        if (!Array.isArray(content[section].phases) || content[section].phases.length === 0) {
+          errors.push(`Section "${section}" must have at least one phase`)
+        }
+      } else if (!content[section][field]) {
+        errors.push(`Missing required field: ${section}.${field}`)
+      }
+    }
+  }
+
+  // Validate services array
+  if (!Array.isArray(content.services) || content.services.length === 0) {
+    errors.push('Services section must have at least one service')
+  } else {
+    content.services.forEach((service, index) => {
+      if (!service.title) errors.push(`Service ${index + 1} missing title`)
+      if (!service.type) errors.push(`Service ${index + 1} missing type`)
+      if (!service.description) errors.push(`Service ${index + 1} missing description`)
+    })
+  }
+
+  // Validate methodology phases
+  if (content.methodology?.phases) {
+    content.methodology.phases.forEach((phase, index) => {
+      if (!phase.number) errors.push(`Phase ${index + 1} missing number`)
+      if (!phase.name) errors.push(`Phase ${index + 1} missing name`)
+      if (!phase.question) errors.push(`Phase ${index + 1} missing question`)
+      if (!phase.description) errors.push(`Phase ${index + 1} missing description`)
+    })
+  }
+
+  return errors
+}
+
+/**
+ * Parse markdown into structured content
+ * @param {string} markdown - Raw markdown content
+ * @returns {object} - Structured content object
+ */
 function parseContent(markdown) {
   const content = {
     hero: {},
@@ -123,6 +182,8 @@ function parseContent(markdown) {
                 question,
                 description
               })
+            } else {
+              console.warn(`Warning: Could not parse phase header: "${currentSubsection}"`)
             }
           }
         }
@@ -161,16 +222,72 @@ function parseContent(markdown) {
           content.footer[currentSubsection.toLowerCase()] = plainText
         }
         break
+
+      default:
+        console.warn(`Warning: Unknown section "${currentSection}" ignored`)
     }
   }
 
   return content
 }
 
-const content = parseContent(markdown)
+// Main execution
+function main() {
+  const markdownPath = join(rootDir, 'src/content/copy.md')
+  const outputDir = join(rootDir, 'src/content')
+  const outputPath = join(outputDir, 'content.json')
 
-// Write to JSON
-const outputPath = join(rootDir, 'src/content/content.json')
-writeFileSync(outputPath, JSON.stringify(content, null, 2))
+  // Check if markdown file exists
+  if (!existsSync(markdownPath)) {
+    console.error(`Error: Markdown file not found at ${markdownPath}`)
+    console.error('Please ensure src/content/copy.md exists.')
+    process.exit(1)
+  }
 
-console.log('Content built successfully.')
+  // Ensure output directory exists
+  if (!existsSync(outputDir)) {
+    mkdirSync(outputDir, { recursive: true })
+    console.log(`Created directory: ${outputDir}`)
+  }
+
+  try {
+    // Read markdown content
+    const markdown = readFileSync(markdownPath, 'utf-8')
+
+    if (!markdown.trim()) {
+      console.error('Error: Markdown file is empty')
+      process.exit(1)
+    }
+
+    // Parse content
+    const content = parseContent(markdown)
+
+    // Validate content
+    const validationErrors = validateContent(content)
+    if (validationErrors.length > 0) {
+      console.error('Content validation failed:')
+      validationErrors.forEach(error => console.error(`  - ${error}`))
+      process.exit(1)
+    }
+
+    // Write to JSON
+    writeFileSync(outputPath, JSON.stringify(content, null, 2))
+    console.log('Content built successfully.')
+    console.log(`  - Parsed ${content.methodology.phases.length} methodology phases`)
+    console.log(`  - Parsed ${content.services.length} services`)
+
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.error(`Error: File not found - ${error.path}`)
+    } else if (error.code === 'EACCES') {
+      console.error(`Error: Permission denied - ${error.path}`)
+    } else if (error instanceof SyntaxError) {
+      console.error(`Error: Invalid markdown syntax - ${error.message}`)
+    } else {
+      console.error(`Error: ${error.message}`)
+    }
+    process.exit(1)
+  }
+}
+
+main()

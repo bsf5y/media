@@ -1,0 +1,23 @@
+# Public Directory
+
+This directory contains static assets that are copied directly to the build output
+without processing by Vite.
+
+## Usage
+
+Place files here that should be:
+- Served from the root URL path (e.g., /robots.txt, /favicon.ico)
+- Copied as-is without bundling or optimization
+- Referenced with absolute paths in your HTML
+
+## Examples
+
+- robots.txt → /robots.txt
+- images/og-image.png → /images/og-image.png
+- _redirects (for Netlify) → /_redirects
+
+## Notes
+
+- Files are copied to dist/ during build
+- Reference files using absolute paths: `/filename.ext`
+- For assets that should be processed (optimized, hashed), place them in src/
