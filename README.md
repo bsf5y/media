@@ -34,4 +34,4 @@ Non-technical or semi-technical founders in Central Illinois launching technolog
 
 ## Messaging Strategy
 
-See [docs/plans/2026-01-19-messaging-strategy-design.md](docs/plans/2026-01-19-messaging-strategy-design.md) for the complete approved messaging framework.
+See [docs/messaging-strategy-design.md](docs/messaging-strategy-design.md) for the complete approved messaging framework.
