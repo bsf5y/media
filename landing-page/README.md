@@ -40,7 +40,7 @@ landing-page/
 # Install dependencies
 npm install
 
-# Start development server
+# Start development server (opens browser automatically)
 npm run dev
 
 # Build for production
@@ -49,6 +49,11 @@ npm run build
 # Preview production build
 npm run preview
 ```
+
+The development server includes:
+- **Hot Module Replacement (HMR)** — Instant updates without full page reload
+- **File watching** — Automatic detection of file changes
+- **Auto-open** — Browser opens automatically when server starts
 
 ## Content Editing
 
