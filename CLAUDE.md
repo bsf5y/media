@@ -12,8 +12,12 @@ To learn more about The Bootstrap Factory read @thought-bites/bsf5y.md
 
 - Local technology consultancy firm specializing in greenfield projects for Small to Medium Size local businesses.
 
-## Thought Bites 
+## Thought Bites
 
 - **thought-bites/**:  Contains both complete and in-complete thoughts and ideas
-  on what 'The Bootstrap Factory' is meant to be. 
+  on what 'The Bootstrap Factory' is meant to be.
+
+## Landing Page
+
+- **landing-page/**: A Vite-based landing page for The Bootstrap Factory with a refined industrial blueprint aesthetic. Built for static hosting (GitHub Pages, Cloudflare Pages, Netlify). See landing-page/README.md for development and deployment instructions. 
 
