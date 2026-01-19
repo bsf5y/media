@@ -16,7 +16,7 @@ This document captures the refined messaging strategy for The Bootstrap Factory 
 
 ### The Contrarian Insight (Lead)
 
-> "The startup industry has it backwards. 'Move fast and break things' creates prototypes, not products. Cheap offshore labor for your MVP isn't saving money—it's borrowing against a rewrite you'll pay for later, with interest."
+> "The startup industry has it backwards. Cutting corners on your MVP isn't saving money—it's borrowing against a rewrite you'll pay for later, with interest."
 
 ### The Reframe
 
@@ -35,6 +35,8 @@ This document captures the refined messaging strategy for The Bootstrap Factory 
 ## Positioning Statement
 
 The Bootstrap Factory is a Champaign-Urbana technology consultancy that helps early-stage founders build products, not prototypes. We provide fractional CTO leadership and turn-key infrastructure so you can focus your limited resources on what actually matters—your secret sauce.
+
+Whether you're building a software engineering team or deploying AI-driven development, the foundational principles are the same. We help you get it right the first time.
 
 ---
 
@@ -199,11 +201,11 @@ Lead with services, let buyers self-select:
 
 ## Suggested Next Steps
 
-1. Rewrite homepage copy using this framework
-2. Create a one-page "Secret Sauce Methodology" PDF for discovery calls
-3. Develop 2-3 content pieces around the contrarian themes (e.g., "Why Your MVP Isn't Actually a Product")
-4. Update LinkedIn profile and local networking bios to align
-
+1. Create landing page copy using this framework
+2. Build company branding (including a logo) and landing page design based on bsf5y goals and culture.
+3. Create a one-page "Secret Sauce Methodology" PDF for discovery calls
+4. Develop 2-3 content pieces around the contrarian themes (e.g., "Why Your MVP Probably Isn't Actually a Product")
+5. Create/Propose LinkedIn Buisiness profile for bsf5y
 ---
 
 ## Appendix: Source Materials Reviewed
