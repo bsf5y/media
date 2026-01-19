@@ -82,6 +82,15 @@ Feedback
 
 bsf5y specializes in identifying your products specific value add/IP, and building a foundation for development which protects the core from harm but also provide flexability...
 
+## Services
+
+- Fractional CTO
+- Product Development
+- Recruitment and Staffing
+- Facilitating Corporate Change
+- Executive and Engineering Staff Training
+- Generative AI Technology Consulting
+- Platform and Cloud Engineering
 
 ## References
 
