@@ -353,6 +353,10 @@ button {
   letter-spacing: var(--tracking-wide);
 }
 
+.hero-subtext + .hero-subtext {
+  margin-top: var(--space-md);
+}
+
 /* Hero visual - blueprint decoration */
 .hero-visual {
   position: relative;

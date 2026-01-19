@@ -102,7 +102,7 @@ Start a Conversation
 Champaign-Urbana, Illinois
 
 ### Tagline
-Deeply embedded in the Research Park ecosystem, University of Illinois entrepreneurship programs, and local startup community.
+Deeply committed to the Central Illinois economy.  With roots in the University of Illinois entrepreneurship programs, and local startup community.
 
 ### Copyright
 The Bootstrap Factory
