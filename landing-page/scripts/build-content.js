@@ -20,74 +20,156 @@ const md = new MarkdownIt({
 const markdownPath = join(rootDir, 'src/content/copy.md')
 const markdown = readFileSync(markdownPath, 'utf-8')
 
-// Parse markdown into sections
+// Parse markdown into structured content
 function parseContent(markdown) {
-  const sections = {}
+  const content = {
+    hero: {},
+    positioning: {},
+    methodology: {
+      phases: []
+    },
+    services: [],
+    cta: {},
+    footer: {}
+  }
+
+  const lines = markdown.split('\n')
   let currentSection = null
   let currentSubsection = null
   let buffer = []
 
-  const lines = markdown.split('\n')
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]
 
-  for (const line of lines) {
     // H2 = new section
     if (line.startsWith('## ')) {
-      if (currentSection && buffer.length) {
-        saveBuffer(sections, currentSection, currentSubsection, buffer)
-      }
-      currentSection = line.slice(3).trim().toLowerCase().replace(/\s+/g, '_')
+      flushBuffer()
+      currentSection = line.slice(3).trim().toLowerCase()
       currentSubsection = null
       buffer = []
-      sections[currentSection] = {}
     }
     // H3 = subsection
     else if (line.startsWith('### ')) {
-      if (currentSection && buffer.length) {
-        saveBuffer(sections, currentSection, currentSubsection, buffer)
-      }
-      currentSubsection = line.slice(4).trim().toLowerCase().replace(/\s+/g, '_')
+      flushBuffer()
+      currentSubsection = line.slice(4).trim()
       buffer = []
     }
-    // H4 = nested content (services)
-    else if (line.startsWith('#### ')) {
-      buffer.push(line)
-    }
-    // Horizontal rule = section break (ignore)
+    // Horizontal rule = section break
     else if (line.trim() === '---') {
-      if (currentSection && buffer.length) {
-        saveBuffer(sections, currentSection, currentSubsection, buffer)
-      }
+      flushBuffer()
       currentSubsection = null
       buffer = []
     }
-    // Content
+    // Content lines
     else {
       buffer.push(line)
     }
   }
 
-  // Save final buffer
-  if (currentSection && buffer.length) {
-    saveBuffer(sections, currentSection, currentSubsection, buffer)
+  // Flush any remaining content
+  flushBuffer()
+
+  function flushBuffer() {
+    const text = buffer.join('\n').trim()
+    if (!text || !currentSection) return
+
+    const html = md.render(text)
+    const plainText = text.replace(/\*\*/g, '').replace(/\*/g, '').replace(/\n/g, ' ').trim()
+
+    switch (currentSection) {
+      case 'hero':
+        if (currentSubsection) {
+          const key = currentSubsection.toLowerCase()
+          // For subtext, render as HTML (multiple paragraphs)
+          if (key === 'subtext') {
+            content.hero[key] = html
+          } else {
+            content.hero[key] = plainText
+          }
+        }
+        break
+
+      case 'positioning':
+        content.positioning._content = html
+        break
+
+      case 'methodology':
+        if (currentSubsection) {
+          const subsectionLower = currentSubsection.toLowerCase()
+          if (subsectionLower === 'headline' || subsectionLower === 'intro') {
+            content.methodology[subsectionLower] = plainText
+          } else if (currentSubsection.startsWith('Phase')) {
+            // Parse phase: "Phase N: Name"
+            const match = currentSubsection.match(/Phase (\d+): (.+)/)
+            if (match) {
+              const phaseNum = match[1]
+              const phaseName = match[2]
+              // Parse content: first bold line is question, rest is description
+              const contentLines = text.split('\n')
+              let question = ''
+              let description = ''
+
+              for (const contentLine of contentLines) {
+                if (contentLine.startsWith('**') && contentLine.endsWith('**')) {
+                  question = contentLine.slice(2, -2)
+                } else if (contentLine.trim()) {
+                  description += (description ? ' ' : '') + contentLine.trim()
+                }
+              }
+
+              content.methodology.phases.push({
+                number: phaseNum.padStart(2, '0'),
+                name: phaseName,
+                question,
+                description
+              })
+            }
+          }
+        }
+        break
+
+      case 'services':
+        if (currentSubsection && currentSubsection.startsWith('Service')) {
+          // Parse service content
+          const contentLines = text.split('\n')
+          let title = ''
+          let type = ''
+          let description = ''
+
+          for (const contentLine of contentLines) {
+            if (contentLine.startsWith('#### ')) {
+              title = contentLine.slice(5).trim()
+            } else if (contentLine.trim() && !type) {
+              type = contentLine.trim()
+            } else if (contentLine.trim()) {
+              description += (description ? ' ' : '') + contentLine.trim()
+            }
+          }
+
+          content.services.push({ type, title, description })
+        }
+        break
+
+      case 'cta':
+        if (currentSubsection) {
+          content.cta[currentSubsection.toLowerCase()] = plainText
+        }
+        break
+
+      case 'footer':
+        if (currentSubsection) {
+          content.footer[currentSubsection.toLowerCase()] = plainText
+        }
+        break
+    }
   }
 
-  return sections
-}
-
-function saveBuffer(sections, section, subsection, buffer) {
-  const content = buffer.join('\n').trim()
-  if (!content) return
-
-  if (subsection) {
-    sections[section][subsection] = md.render(content)
-  } else {
-    sections[section]._content = md.render(content)
-  }
+  return content
 }
 
 const content = parseContent(markdown)
 
-// Write to JSON for optional JS consumption
+// Write to JSON
 const outputPath = join(rootDir, 'src/content/content.json')
 writeFileSync(outputPath, JSON.stringify(content, null, 2))
 

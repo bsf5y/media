@@ -39,21 +39,18 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-tagline">
-            <span class="hero-tagline-main">Products,</span>
-            <span class="hero-tagline-accent">Not Prototypes.</span>
-          </h1>
+          <h1 class="hero-tagline" data-content="hero.tagline"></h1>
 
           <blockquote class="hero-lead">
-            <p>The startup industry has it backwards. Cutting corners on your MVP isn't saving money—it's borrowing against a rewrite you'll pay for later, with interest.</p>
+            <p data-content="hero.lead"></p>
           </blockquote>
 
           <div class="hero-reframe">
             <span class="reframe-label">The Reframe</span>
-            <p class="reframe-text">Go well to go fast.</p>
+            <p class="reframe-text" data-content="hero.reframe"></p>
           </div>
 
-          <p class="hero-subtext">The most expensive code you'll ever write is the code you write twice.</p>
+          <div data-content="hero.subtext"></div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
@@ -66,14 +63,7 @@
 
     <!-- Positioning Section -->
     <section class="positioning">
-      <div class="container">
-        <p class="positioning-text">
-          <strong>The Bootstrap Factory</strong> is a Champaign-Urbana technology consultancy that helps early-stage founders build products, not prototypes. We provide fractional CTO leadership and turn-key infrastructure so you can focus your limited resources on what actually matters—<em>your secret sauce</em>.
-        </p>
-        <p class="positioning-subtext">
-          Whether you're building a software engineering team or deploying AI-driven development, the foundational principles are the same. We help you get it right the first time.
-        </p>
-      </div>
+      <div class="container" data-content="positioning._content"></div>
     </section>
 
     <!-- Methodology Section -->
@@ -81,47 +71,11 @@
       <div class="container">
         <header class="section-header">
           <span class="section-label">Our Approach</span>
-          <h2 class="section-title">The Secret Sauce Framework</h2>
-          <p class="section-intro">Before any code is written, we work with founders to ruthlessly prioritize. Most early-stage products try to do too much. We cut the noise.</p>
+          <h2 class="section-title" data-content="methodology.headline"></h2>
+          <p class="section-intro" data-content="methodology.intro"></p>
         </header>
 
-        <div class="phases">
-          <article class="phase">
-            <div class="phase-number">01</div>
-            <div class="phase-content">
-              <h3 class="phase-name">Clarity</h3>
-              <p class="phase-question">What's the one thing that matters?</p>
-              <p class="phase-description">What problem are you actually solving? For whom, specifically? What's the minimum feature set that delivers that value?</p>
-            </div>
-          </article>
-
-          <article class="phase">
-            <div class="phase-number">02</div>
-            <div class="phase-content">
-              <h3 class="phase-name">Differentiation</h3>
-              <p class="phase-question">What can only you do?</p>
-              <p class="phase-description">Is it proprietary data? A novel algorithm? Domain expertise encoded in software? What's the 5-10% that competitors can't easily replicate? This is where your investment should concentrate.</p>
-            </div>
-          </article>
-
-          <article class="phase">
-            <div class="phase-number">03</div>
-            <div class="phase-content">
-              <h3 class="phase-name">Foundation</h3>
-              <p class="phase-question">Turn-key the rest.</p>
-              <p class="phase-description">Everything that isn't secret sauce is scaffolding. Auth, payments, admin dashboards, CI/CD, cloud infrastructure—these are solved problems. We bring production-ready patterns.</p>
-            </div>
-          </article>
-
-          <article class="phase">
-            <div class="phase-number">04</div>
-            <div class="phase-content">
-              <h3 class="phase-name">Execution</h3>
-              <p class="phase-question">Products, not prototypes.</p>
-              <p class="phase-description">Test-driven development, clean architecture, documentation. Code you can hand to another team without apology.</p>
-            </div>
-          </article>
-        </div>
+        <div class="phases" data-content="methodology.phases"></div>
       </div>
     </section>
 
@@ -133,41 +87,17 @@
           <h2 class="section-title">Solutions, Not Capabilities</h2>
         </header>
 
-        <div class="services-grid">
-          <article class="service">
-            <span class="service-type">Fractional CTO</span>
-            <h3 class="service-title">Technical Leadership Without the Full-Time Cost</h3>
-            <p class="service-description">Senior engineering leadership for founders who need a technical co-founder's judgment without the equity or salary. Architecture decisions, vendor evaluation, team building, investor-ready technical narratives.</p>
-          </article>
-
-          <article class="service">
-            <span class="service-type">Product Development</span>
-            <h3 class="service-title">From Secret Sauce to Shipped Product</h3>
-            <p class="service-description">We don't just advise—we build. Turn-key infrastructure plus custom development of your core IP. You get a product, not a prototype.</p>
-          </article>
-
-          <article class="service">
-            <span class="service-type">Recruitment & Staffing</span>
-            <h3 class="service-title">Build Your First Engineering Team</h3>
-            <p class="service-description">When you're ready to hire, we help you find, evaluate, and onboard engineers who fit your culture and codebase. No recruiting agency markup.</p>
-          </article>
-
-          <article class="service">
-            <span class="service-type">Training & Coaching</span>
-            <h3 class="service-title">Level Up Your Team</h3>
-            <p class="service-description">Paired programming, test-driven development, CI/CD, Agile practices. We transfer our methods so your team can sustain velocity without us.</p>
-          </article>
-        </div>
+        <div class="services-grid" data-content="services"></div>
       </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta" id="contact">
       <div class="container">
-        <h2 class="cta-headline">Ready to build something that lasts?</h2>
-        <p class="cta-subtext">Let's find your secret sauce.</p>
+        <h2 class="cta-headline" data-content="cta.headline"></h2>
+        <p class="cta-subtext" data-content="cta.subtext"></p>
         <a href="mailto:hello@bootstrapfactory.io" class="cta-button">
-          <span>Start a Conversation</span>
+          <span data-content="cta.button"></span>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -181,8 +111,8 @@
       <div class="footer-content">
         <div class="footer-brand">
           <span class="footer-logo">BSF5Y</span>
-          <p class="footer-location">Champaign-Urbana, Illinois</p>
-          <p class="footer-tagline">Deeply embedded in the Research Park ecosystem, University of Illinois entrepreneurship programs, and local startup community.</p>
+          <p class="footer-location" data-content="footer.location"></p>
+          <p class="footer-tagline" data-content="footer.tagline"></p>
         </div>
         <div class="footer-links">
           <a href="#methodology">Methodology</a>
@@ -191,7 +121,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> The Bootstrap Factory. Products, not prototypes.</p>
+        <p>&copy; <span id="year"></span> <span data-content="footer.copyright"></span>. Products, not prototypes.</p>
       </div>
     </div>
   </footer>

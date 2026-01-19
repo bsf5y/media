@@ -12,6 +12,8 @@ The startup industry has it backwards. Cutting corners on your MVP isn't saving 
 Go well to go fast.
 
 ### Subtext
+Whether you're building a software engineering team or deploying AI-driven development, the foundational principles are the same. We help you get it right the first time.
+
 The most expensive code you'll ever write is the code you write twice.
 
 ---
@@ -19,8 +21,6 @@ The most expensive code you'll ever write is the code you write twice.
 ## Positioning
 
 The Bootstrap Factory is a Champaign-Urbana technology consultancy that helps early-stage founders build products, not prototypes. We provide fractional CTO leadership and turn-key infrastructure so you can focus your limited resources on what actually matters—your secret sauce.
-
-Whether you're building a software engineering team or deploying AI-driven development, the foundational principles are the same. We help you get it right the first time.
 
 ---
 
