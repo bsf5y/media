@@ -1,0 +1,5 @@
+[book]
+authors = ["Wes Cravens"]
+language = "en"
+src = "."
+title = "The Bootstrap Factory"
