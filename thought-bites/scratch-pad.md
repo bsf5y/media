@@ -1,5 +1,7 @@
+The Bootstrap Factory helps founders identify what actually matters — your secret sauce—and build it right the first time. Everything else, we turn-key.
+
 From discovery to delivery, we have the expertise, tooling and methodologies to ensure your project
-achieves maximum value-add with a minimal investment in cash or stress.
+t achieves maximum value-add with a minimal investment in cash or stress.
 
 Leveraging lean development methodologies and our turn-key infrastructure, The Bootstrap Factory
 will ensure your project delivers maximum value for minimal cost.
