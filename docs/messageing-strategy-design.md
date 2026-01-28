@@ -34,7 +34,7 @@ This document captures the refined messaging strategy for The Bootstrap Factory 
 
 ## Positioning Statement
 
-The Bootstrap Factory is a Champaign-Urbana technology consultancy that helps early-stage founders build products, not prototypes. We provide fractional CTO leadership and turn-key infrastructure so you can focus your limited resources on what actually matters—your secret sauce.
+The Bootstrap Factory is a Champaign-Urbana technology consultancy that helps early-stage projects build products, not prototypes. We provide fractional CTO leadership and turn-key infrastructure so you can focus your limited resources on what actually matters—your secret sauce.
 
 Whether you're building a software engineering team or deploying AI-driven development, the foundational principles are the same. We help you get it right the first time.
 
