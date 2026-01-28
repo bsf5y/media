@@ -22,8 +22,8 @@ Once the scope is clear, we identify what's actually unique — the defensible a
 ## Phase 2: Foundation / Infrastructure Requirements
 *"Turn-key the rest."*
 
-Identify what is required to deliver your product across all user channels with the appropriate
-level of reliability and redundancy to meet your quality assurance needs.
+Identify what is required to deliver the product across all user channels with the appropriate
+level of reliability and redundancy to meet all quality assurance needs.
 
 Everything that isn't secret sauce is scaffolding. Web UI, apps, authentication, payments, admin
 dashboards, CI/CD, cloud infrastructure, etc — these are solved problems with turn-key solutions. We
@@ -36,15 +36,20 @@ systems custom-tailored to the continued development of your product.**
 ## Phase 3: Execution
 *"Products, not prototypes."*
 
-With clarity, differentiation, and foundation in place, we build a robust core solution for your
+With clarity, differentiation, and foundation in place, we build a robust core solution for the 
 product; with exhaustive test coverage, clean software architecture, comprehensive documentation,
-engineering artifacts and processes you can hand to future teams without apology. 
+engineering artifacts and processes that we can hand to future teams without apology. 
 
 ## Phase 4: Future Proofing
 *"Building for tomorrow, not just for today."*
 
-It doesn't matter if your intention is to build product management teams skilled in managing
-AI-Driven Development systems, an engineering team of new or cross-trained staff, or if you would
-like bsf5y to build and maintain a support team for you... Future Proofing will be designed to
-ensure that your product remains resilient, flexible and adaptable to any change that market forces
-may demand.
+The goal for the furture may be to:
+
+- cross-train an existing engineering team
+- hire completely new development staff
+- create product management teams skilled in managing AI-Driven Development systems
+- engage bsf5y to build, retain, mangage and support a team of staff
+- or any hybrid of the above.
+
+We work with you to ensure that your product remains secure, resilient, flexible and adaptable to any change
+that market forces may demand.
