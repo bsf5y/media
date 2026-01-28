@@ -48,20 +48,3 @@ The important thing is to truely identify your secret sauce.  Focus investment
 on the core, turn-key the supporting technologies, and plan roadmaps for
 replacing support technologies that are in the 'gray area'.
 
-
-Legacy Code
-
-
-
-# Products vs Prototypes
-
-## Product Class Engineering
-
-Legacy Code: "...legacy code is simply code without tests.", `Citation: Feathers, Michael. Working Effectively with Legacy Code. United Kingdom: Pearson Education, 2004.`
-
-
-
-Tinker - Phase 0
-
-
-
