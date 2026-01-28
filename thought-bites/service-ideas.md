@@ -1,4 +1,4 @@
-# Services
+# Ideas for Services we can provide
 
 - Fractional CTO
 - Product Development
