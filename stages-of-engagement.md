@@ -1,12 +1,12 @@
 # Stages of Engagement with clients 
 
-## Phase 0: Discovery and Clairty
+## Phase 0: Discovery and Clarity
 *"Let's hear your pitch"*
 
-Share your idea with use like we could be your first/next biggest customer.
+Share your idea with us like we could be your first/next biggest customer.
 
 - What does v. 1.0 (or perhaps 2.0) of your product do?  What does it look/feel like to its users?
-- Why should we trust that you're product will deliver on its promises?
+- Why should we trust that your product will deliver on its promises?
 - How can we be certain that you have the right team in place to succeed?
 - What is your mission objective?  Why are you doing this? 
 
@@ -30,21 +30,21 @@ dashboards, CI/CD, cloud infrastructure, etc — these are solved problems with 
 provide prior art and battle tested solutions to all infrastructure requirements at a fraction of
 the cost of building them from scratch.
 
-**This includes the scaffolding required to support resiliant and proven AI-Driven Development
-systems custom tailored to the continued development of your product..
+**This includes the scaffolding required to support resilient and proven AI-Driven Development
+systems custom-tailored to the continued development of your product.**
 
 ## Phase 3: Execution
 *"Products, not prototypes."*
 
-With clarity, differentiatiod, and foundation in place, we build a robust core solution for your
-product; With exhaustive test coverage, clean software architecture, comprehensive documentation,
-engineering articacts and processes you can hand to future teams without apology. 
+With clarity, differentiation, and foundation in place, we build a robust core solution for your
+product; with exhaustive test coverage, clean software architecture, comprehensive documentation,
+engineering artifacts and processes you can hand to future teams without apology. 
 
 ## Phase 4: Future Proofing
 *"Building for tomorrow, not just for today."*
 
-It doesn't matter if your intention is to build a product management teams skilled in managing
+It doesn't matter if your intention is to build product management teams skilled in managing
 AI-Driven Development systems, an engineering team of new or cross-trained staff, or if you would
 like bsf5y to build and maintain a support team for you... Future Proofing will be designed to
-ensure that your product remains resiliant, flexible and adaptable to any change that market forces
+ensure that your product remains resilient, flexible and adaptable to any change that market forces
 may demand.
