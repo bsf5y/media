@@ -2,7 +2,7 @@
 
 ## One-Liner
 
-Products, not prototypes.
+Build Products, not prototypes.
 
 ## Core Position
 

@@ -1,5 +1,7 @@
 # bsf5y - The Bootstrap Factory
 
+Build Products, not Prototypes.
+
 ## Elevator Pitch
 
 We help both established companies and startups build solid software and electronic products instead
