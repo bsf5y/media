@@ -1,12 +1,11 @@
 # Services
 
+- Fractional CTO
 
-Fractional CTO
+- Product Development
 
-Product Development
+- Recruitment and Staffing
 
-Recruitment and Staffing
+- Facilitating Corporate Change
 
-Facilitating Corporate Change
-
-Executive and Engineering Staff Training
+- Executive and Engineering Staff Training
