@@ -917,14 +917,33 @@ button {
   font-weight: 500;
   letter-spacing: var(--tracking-wider);
   color: var(--color-accent);
-  display: block;
-  margin-bottom: var(--space-md);
+  display: inline;
+}
+
+.footer-company {
+  font-size: var(--text-base);
+  font-weight: 600;
+  margin-left: var(--space-sm);
 }
 
 .footer-location {
-  font-size: var(--text-base);
-  font-weight: 600;
-  margin-bottom: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+}
+
+.footer-email {
+  font-size: var(--text-sm);
+}
+
+.footer-email a {
+  color: var(--color-accent);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.footer-email a:hover {
+  color: var(--color-accent-light);
 }
 
 .footer-tagline {
