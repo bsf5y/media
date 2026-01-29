@@ -127,7 +127,7 @@ Track progress through each stage. Each stage ends with a commit to ensure incre
 - [ ] Blog post pages render correctly
 - [ ] All fonts load correctly (Outfit, JetBrains Mono, Source Serif 4)
 - [ ] CSS custom properties work in both themes
-- [ ] `npm run build` produces static files in `dist/`
+- [x] `npm run build` produces static files in `dist/`
 - [ ] No console errors
 - [ ] Navigation links work (including /blog/)
 - [ ] **Commit:** "docs: Complete 11ty migration" (update README if needed)
