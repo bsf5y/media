@@ -100,17 +100,17 @@ Track progress through each stage. Each stage ends with a commit to ensure incre
 
 ## Stage 8: Cleanup
 
-- [ ] Delete `scripts/build-content.js`
-- [ ] Delete `scripts/` directory (if empty)
-- [ ] Delete `src/content/copy.md`
-- [ ] Delete `src/content/content.json` (if exists)
-- [ ] Delete `src/content/` directory
-- [ ] Delete `src/styles/` directory (moved to assets)
-- [ ] Delete `src/main.js` (moved to assets)
-- [ ] Delete `src/index.html` (replaced by index.njk)
-- [ ] Delete `vite.config.js`
-- [ ] Run `npm run build` and verify `dist/` output
-- [ ] **Commit:** "chore: Remove legacy Vite build system"
+- [x] Delete `scripts/build-content.js`
+- [x] Delete `scripts/` directory (if empty)
+- [x] Delete `src/content/copy.md`
+- [x] Delete `src/content/content.json` (if exists)
+- [x] Delete `src/content/` directory
+- [x] Delete `src/styles/` directory (moved to assets)
+- [x] Delete `src/main.js` (moved to assets)
+- [x] Delete `src/index.html` (replaced by index.njk)
+- [x] Delete `vite.config.js`
+- [x] Run `npm run build` and verify `dist/` output
+- [x] **Commit:** "chore: Remove legacy Vite build system"
 
 ---
 
