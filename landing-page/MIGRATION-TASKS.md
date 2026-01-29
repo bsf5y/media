@@ -57,16 +57,16 @@ Track progress through each stage. Each stage ends with a commit to ensure incre
 
 ## Stage 5: Simplify JavaScript
 
-- [ ] Remove `content.json` import from main.js
-- [ ] Remove `injectContent()` function
-- [ ] Remove `sanitizeHtml()` function
-- [ ] Remove `setContent()` and `setHtml()` helpers
-- [ ] Replace `import.meta.env.DEV` with URL-based dev detection
-- [ ] Keep: theme system, accent picker, scroll animations, header scroll, smooth scroll
+- [x] Remove `content.json` import from main.js
+- [x] Remove `injectContent()` function
+- [x] Remove `sanitizeHtml()` function
+- [x] Remove `setContent()` and `setHtml()` helpers
+- [x] Replace `import.meta.env.DEV` with URL-based dev detection
+- [x] Keep: theme system, accent picker, scroll animations, header scroll, smooth scroll
 - [ ] Test theme toggle works
 - [ ] Test scroll animations trigger
 - [ ] Test accent picker appears only on localhost
-- [ ] **Commit:** "refactor: Remove runtime content injection from JS"
+- [x] **Commit:** "refactor: Remove runtime content injection from JS"
 
 ---
 
