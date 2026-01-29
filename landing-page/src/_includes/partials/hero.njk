@@ -1,0 +1,24 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-tagline">{{ home.hero.tagline }}</h1>
+
+      <blockquote class="hero-lead">
+        <p>{{ home.hero.lead }}</p>
+      </blockquote>
+
+      <div class="hero-reframe">
+        <span class="reframe-label">The Reframe</span>
+        <p class="reframe-text">{{ home.hero.reframe }}</p>
+      </div>
+
+      <div>{{ home.hero.subtext | safe }}</div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="blueprint-element blueprint-circle"></div>
+      <div class="blueprint-element blueprint-lines"></div>
+      <div class="blueprint-element blueprint-box"></div>
+    </div>
+  </div>
+</section>

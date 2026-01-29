@@ -1,0 +1,18 @@
+<section class="services" id="services">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title">Solutions, Not Capabilities</h2>
+    </header>
+
+    <div class="services-grid">
+      {% for service in home.services %}
+      <article class="service">
+        <span class="service-type">{{ service.type }}</span>
+        <h3 class="service-title">{{ service.title }}</h3>
+        <p class="service-description">{{ service.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

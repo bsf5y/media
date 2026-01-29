@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "tagline": "Lorem Ipsum Dolor.",
+    "lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "reframe": "Ut enim ad minim.",
+    "subtext": "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+  },
+  "positioning": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+  "methodology": {
+    "headline": "Lorem Ipsum Framework",
+    "intro": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.",
+    "phases": [
+      {
+        "number": "01",
+        "name": "Lorem",
+        "question": "Ipsum dolor sit amet?",
+        "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "number": "02",
+        "name": "Consectetur",
+        "question": "Adipiscing elit sed?",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        "number": "03",
+        "name": "Adipiscing",
+        "question": "Eiusmod tempor incididunt?",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        "number": "04",
+        "name": "Elit",
+        "question": "Labore et dolore?",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      }
+    ]
+  },
+  "services": [
+    {
+      "type": "Lorem Ipsum Dolor Sit Amet",
+      "title": "Consectetur Adipiscing",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+    },
+    {
+      "type": "Ut Enim Ad Minim Veniam",
+      "title": "Quis Nostrud",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "type": "Excepteur Sint Occaecat",
+      "title": "Cupidatat Non",
+      "description": "Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error."
+    },
+    {
+      "type": "Nemo Enim Ipsam Voluptatem",
+      "title": "Quia Voluptas",
+      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit."
+    }
+  ],
+  "cta": {
+    "headline": "Lorem ipsum dolor sit amet?",
+    "subtext": "Consectetur adipiscing elit.",
+    "button": "Lorem Ipsum"
+  }
+}

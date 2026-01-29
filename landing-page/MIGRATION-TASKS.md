@@ -6,25 +6,25 @@ Track progress through each stage. Each stage ends with a commit to ensure incre
 
 ## Stage 1: Project Setup
 
-- [ ] Uninstall Vite: `npm uninstall vite`
-- [ ] Install Eleventy: `npm install @11ty/eleventy --save-dev`
-- [ ] Create `.eleventy.js` configuration file
-- [ ] Update `package.json` scripts (dev, build, clean)
-- [ ] Update `.gitignore` (add `.cache`, keep `dist`, remove `src/content/content.json`)
-- [ ] Verify `npm run dev` starts 11ty server (will error until templates exist)
-- [ ] **Commit:** "chore: Replace Vite with Eleventy"
+- [x] Uninstall Vite: `npm uninstall vite`
+- [x] Install Eleventy: `npm install @11ty/eleventy --save-dev`
+- [x] Create `.eleventy.js` configuration file
+- [x] Update `package.json` scripts (dev, build, clean)
+- [x] Update `.gitignore` (add `.cache`, keep `dist`, remove `src/content/content.json`)
+- [x] Verify `npm run dev` starts 11ty server (will error until templates exist)
+- [x] **Commit:** "chore: Replace Vite with Eleventy"
 
 ---
 
 ## Stage 2: Base Templates & Layouts
 
-- [ ] Create directory structure: `src/_includes/layouts/`, `src/_includes/partials/`
-- [ ] Create `src/_includes/layouts/base.njk` (HTML shell from index.html)
-- [ ] Create `src/_includes/layouts/page.njk` (extends base, adds page wrapper)
-- [ ] Create `src/_includes/partials/header.njk` (nav, mode toggle)
-- [ ] Create `src/_includes/partials/footer.njk` (location, tagline, copyright)
-- [ ] Create `src/_data/site.json` (title, description, nav links)
-- [ ] **Commit:** "feat: Add Nunjucks base layouts and partials"
+- [x] Create directory structure: `src/_includes/layouts/`, `src/_includes/partials/`
+- [x] Create `src/_includes/layouts/base.njk` (HTML shell from index.html)
+- [x] Create `src/_includes/layouts/page.njk` (extends base, adds page wrapper)
+- [x] Create `src/_includes/partials/header.njk` (nav, mode toggle)
+- [x] Create `src/_includes/partials/footer.njk` (location, tagline, copyright)
+- [x] Create `src/_data/site.json` (title, description, nav links)
+- [x] **Commit:** "feat: Add Nunjucks base layouts and partials"
 
 ---
 
