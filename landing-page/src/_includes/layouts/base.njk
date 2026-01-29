@@ -6,6 +6,17 @@
   <title>{{ title or site.title }} — {{ site.tagline }}</title>
   <meta name="description" content="{{ description or site.description }}">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ title or site.title }} — {{ site.tagline }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ title or site.title }} — {{ site.tagline }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+
   <!-- Fonts: Outfit (display), JetBrains Mono (technical), Source Serif 4 (body quotes) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

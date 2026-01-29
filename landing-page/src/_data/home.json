@@ -1,66 +1,66 @@
 {
   "hero": {
-    "tagline": "Lorem Ipsum Dolor.",
-    "lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "reframe": "Ut enim ad minim.",
-    "subtext": "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+    "tagline": "Products, Not Prototypes.",
+    "lead": "We build products, not prototypes. Most dev shops build your first version fast and cheap — then you pay to rebuild it when you scale.",
+    "reframe": "Software that survives success.",
+    "subtext": "<p>We identify the 10% that makes your business unique, capture it in solid architecture, and turnkey the rest.</p><p>When investors ask about your tech, you pass due diligence. When you hire engineers, they can read the code. When you pivot, you don't start over.</p>"
   },
-  "positioning": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+  "positioning": "<p>The difference between a product and a prototype isn't polish or features — it's where the value lives. Prototypes trap business logic in the UI. Products capture it in portable software any interface can use.</p>",
   "methodology": {
-    "headline": "Lorem Ipsum Framework",
-    "intro": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.",
+    "headline": "How We Work",
+    "intro": "We follow a proven methodology that moves beyond ideas and prototypes to deliver robust, market-ready products with a clear strategic advantage.",
     "phases": [
       {
         "number": "01",
-        "name": "Lorem",
-        "question": "Ipsum dolor sit amet?",
-        "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "name": "Discovery",
+        "question": "Show us the vision.",
+        "description": "A successful partnership begins with shared understanding. We immerse ourselves in your vision to understand its core potential — what version 1.0 looks like, what gives it market credibility, and why it needs to exist."
       },
       {
         "number": "02",
-        "name": "Consectetur",
-        "question": "Adipiscing elit sed?",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "name": "Differentiation",
+        "question": "What can only this product do.",
+        "description": "We identify what makes your product truly unique — the defensible core that sets it apart. Is it proprietary data, a novel algorithm, or deep domain expertise encoded in software?"
       },
       {
         "number": "03",
-        "name": "Adipiscing",
-        "question": "Eiusmod tempor incididunt?",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        "name": "Foundation",
+        "question": "Turnkey the rest.",
+        "description": "Everything that isn't your core differentiator is infrastructure. Web UIs, authentication, payments, CI/CD — we provide battle-tested solutions at a fraction of the cost of building from scratch."
       },
       {
         "number": "04",
-        "name": "Elit",
-        "question": "Labore et dolore?",
-        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "name": "Execution",
+        "question": "Products, not prototypes.",
+        "description": "We deliver production-ready solutions with exhaustive test coverage, clean architecture, and comprehensive documentation. A complete solution that can be handed to any future team with confidence."
       }
     ]
   },
   "services": [
     {
-      "type": "Lorem Ipsum Dolor Sit Amet",
-      "title": "Consectetur Adipiscing",
-      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+      "type": "Fractional CTO",
+      "title": "Technical Leadership",
+      "description": "Senior engineering leadership for projects that need expert technical judgment without the equity or salary. Executive engineering judgment without the headcount."
     },
     {
-      "type": "Ut Enim Ad Minim Veniam",
-      "title": "Quis Nostrud",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      "type": "Product Development",
+      "title": "Bespoke Solutions",
+      "description": "We don't just advise — we build. Turn-key infrastructure plus custom development of your core IP. You get a product, not a prototype."
     },
     {
-      "type": "Excepteur Sint Occaecat",
-      "title": "Cupidatat Non",
-      "description": "Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error."
+      "type": "Team Building",
+      "title": "Recruitment & Staffing",
+      "description": "When you're ready to hire, we help you find, evaluate, and onboard engineers who fit your culture and codebase. No recruiting agency markup."
     },
     {
-      "type": "Nemo Enim Ipsam Voluptatem",
-      "title": "Quia Voluptas",
-      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit."
+      "type": "Training & Coaching",
+      "title": "Up-Skill Existing Teams",
+      "description": "Paired programming, test-driven development, CI/CD, Agile practices, AI-Driven Development. We transfer our methods so your team can sustain velocity without us."
     }
   ],
   "cta": {
-    "headline": "Lorem ipsum dolor sit amet?",
-    "subtext": "Consectetur adipiscing elit.",
-    "button": "Lorem Ipsum"
+    "headline": "Ready to build it right?",
+    "subtext": "Let's have a conversation about your product vision.",
+    "button": "Start a Conversation"
   }
 }
