@@ -1,0 +1,20 @@
+<section class="methodology" id="methodology">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-label">Our Approach</span>
+      <h2 class="section-title">{{ home.methodology.headline }}</h2>
+      <p class="section-intro">{{ home.methodology.intro }}</p>
+    </header>
+
+    <div class="phases">
+      {% for phase in home.methodology.phases %}
+      <article class="phase">
+        <span class="phase-number">{{ phase.number }}</span>
+        <h3 class="phase-name">{{ phase.name }}</h3>
+        <p class="phase-question">{{ phase.question }}</p>
+        <p class="phase-description">{{ phase.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
