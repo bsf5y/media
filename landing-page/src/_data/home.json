@@ -1,9 +1,9 @@
 {
   "hero": {
     "tagline": "Products, Not Prototypes.",
-    "lead": "We build products, not prototypes. Most dev shops build your first version fast and cheap — then you pay to rebuild it when you scale.",
-    "reframe": "Software that survives success.",
-    "subtext": "<p>We identify the 10% that makes your business unique, capture it in solid architecture, and turnkey the rest.</p><p>When investors ask about your tech, you pass due diligence. When you hire engineers, they can read the code. When you pivot, you don't start over.</p>"
+    "lead": "The startup industry has it backwards. Cutting corners on your MVP isn't saving money—it's borrowing against a rewrite you'll pay for later, with interest.",
+    "reframe": "Go well to go fast.",
+    "subtext": "<p>  For business leaders with a product vision but without senior technical leadership, BSF5Y builds solutions that protect your core business value — so you scale without rewrites.</p><br><p>When investors ask about your tech, you pass due diligence. When you hire engineers, they can read the code. When you pivot, you don't start over.</p>"
   },
   "positioning": "<p>The difference between a product and a prototype isn't polish or features — it's where the value lives. Prototypes trap business logic in the UI. Products capture it in portable software any interface can use.</p>",
   "problem": {
