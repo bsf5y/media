@@ -6,6 +6,16 @@ This document outlines a comprehensive design strategy for The Bootstrap Factory
 
 The site should feel like it was designed by engineers who understand design, not designers who don't understand engineering. Every visual element should serve a purpose.
 
+### Key Design Decisions
+
+| Decision | Choice | Rationale |
+|----------|--------|-----------|
+| **Hero visual** | Terminal/code aesthetic | Reinforces technical credibility; demonstrates rather than claims |
+| **CTA mechanism** | Email (mailto link) | Simple, no dependencies, works everywhere |
+| **Local emphasis** | Moderate (credibility section) | Research Park/university ties as proof points, not primary positioning |
+| **Comparison section** | Yes, two-column table | Makes prototype vs product distinction concrete and scannable |
+| **Color mode** | Dark only (v1) | Audience tolerates dark UIs; simplifies implementation |
+
 ---
 
 ## Part I: Design Philosophy
@@ -85,9 +95,9 @@ Copper works because it:
 - Is distinctive—most consultancies use blue, teal, or purple
 - Ages well conceptually (patina, heritage, lasting value)
 
-**Light Mode Consideration**
+**Light Mode: Deprioritized for V1**
 
-A light mode is optional but not critical. The target audience (technical founders) generally tolerates dark UIs well. If implemented, use a warm paper-white (`#FAF9F7`) rather than pure white.
+Dark mode only for initial launch. The target audience (technical founders) tolerates dark UIs well, and a single mode simplifies implementation. If added later, use a warm paper-white (`#FAF9F7`) rather than pure white.
 
 ### Typography System
 
@@ -251,11 +261,14 @@ The homepage is the critical page. It must accomplish:
 │  "The difference between a product and a prototype          │
 │   isn't polish or features. It's where the value lives."   │
 │                                                             │
-│  Two-column comparison (optional):                          │
-│  PROTOTYPE             vs.        PRODUCT                   │
-│  Rules in the UI                  Rules in the core         │
-│  Breaks when you scale            Handles growth            │
-│  Needs rebuild for API            Any interface works       │
+│  Two-column comparison table:                               │
+│  PROTOTYPE                    PRODUCT                       │
+│  ─────────────────────────────────────────────────────────  │
+│  Rules live in the UI         Rules live in the core        │
+│  Breaks when you scale        Handles growth                │
+│  Rebuild for new platforms    Any interface works           │
+│  Archaeology for new devs     Readable from day one         │
+│  Fails due diligence          Passes investor review        │
 └─────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────┐
@@ -285,11 +298,12 @@ The homepage is the critical page. It must accomplish:
 │                                                             │
 │  Brief proof points (no logos, just facts):                 │
 │  "8-figure programs delivered • 20+ engineers led           │
-│   • Startup exits • University collaborations"              │
+│   • Startup exits • Research Park experience                │
+│   • University collaborations"                              │
 │                                                             │
-│  OR a single strong quote from the messaging:               │
-│  "We've been the founders experiencing [these problems].    │
-│   That's why we build differently."                         │
+│  The local connection (Research Park, University of         │
+│  Illinois ties) appears here as a credibility signal,       │
+│  not as the primary positioning.                            │
 └─────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────┐
@@ -331,14 +345,16 @@ The homepage is the critical page. It must accomplish:
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
-**Hero Visual Options:**
+**Hero Visual: Terminal/Code Aesthetic**
 
-1. **Blueprint schematic** (current direction) — Clean, architectural
-2. **Code snippet** — Actual (anonymized) code showing clean architecture
-3. **Terminal window** — Command output showing a successful build/deploy
-4. **Nothing** — Let the typography be the visual (also valid)
+The hero visual will be a stylized terminal or code window showing clean architecture in action. This reinforces technical credibility and demonstrates (rather than claims) engineering competence.
 
-I lean toward **option 3 or 4**. The blueprint animation is fine but generic. A terminal aesthetic reinforces the technical credibility.
+Options for the terminal content:
+- A successful build/deploy output
+- A clean module structure showing separation of concerns
+- A simplified code snippet showing core/interface separation
+
+The visual should feel authentic—not a generic "hacker movie" terminal, but something a developer would recognize as real. Use JetBrains Mono, proper syntax highlighting with the copper accent for keywords, muted colors for the rest.
 
 ### Methodology Cards
 
@@ -396,10 +412,19 @@ The services section should feel consultative, not like a menu. Each card should
 │                                                            │
 │              Ready to build it right?                      │
 │                                                            │
-│              [Schedule a Discovery Call →]                 │
+│              [Start a Conversation →]                      │
 │                                                            │
 │                                                            │
 └────────────────────────────────────────────────────────────┘
+```
+
+**CTA Destination: Email (mailto link)**
+
+The button opens the user's email client with a pre-filled subject line. This is the simplest, most reliable approach—no external dependencies, no scheduling friction, works on any device.
+
+Suggested mailto structure:
+```
+mailto:hello@bsf5y.com?subject=Discovery%20Conversation
 ```
 
 The radial glow behind the CTA (current implementation) works well. It draws the eye without being garish.
@@ -459,7 +484,7 @@ architecture and how that impacts long-term scalability..."
 
 1. **Credibility specifics** — The messaging mentions "eight-figure programs" and startup exits. The site should surface these more concretely (without naming clients if necessary).
 
-2. **Local connection** — Champaign-Urbana roots are mentioned but not emphasized. Consider a subtle local proof point in the footer or credibility section.
+2. **Local connection** — Champaign-Urbana roots should appear in the credibility section as proof points (Research Park experience, University of Illinois collaborations) rather than as primary positioning. This establishes local credibility without limiting perceived reach.
 
 3. **Case studies** — The three examples in the messaging doc (Due Diligence Save, Pivot That Worked, Successful Handoff) should become real case studies when possible.
 
@@ -520,7 +545,7 @@ Current implementation loads 3 Google Fonts. Optimize with:
 
 ### Refine
 
-1. **Hero visual** — Replace the abstract geometric animation with something more purposeful (or nothing)
+1. **Hero visual** — Replace the abstract geometric animation with a terminal/code aesthetic that demonstrates clean architecture
 
 2. **Methodology cards** — Restructure to match the actual engagement phases (Discovery, Differentiation, Foundation, Execution)
 
@@ -528,14 +553,17 @@ Current implementation loads 3 Google Fonts. Optimize with:
 
 4. **Add a problem section** — Before the solution, name the pain clearly
 
-5. **Credibility proof points** — Add a single line or small section with concrete credentials
+5. **Add comparison section** — Two-column Prototype vs Product table makes the distinction concrete and scannable
 
-6. **CTA copy** — "Lorem Ipsum" placeholder needs real copy; recommend "Schedule a Discovery Call" or "Start a Conversation"
+6. **Credibility proof points** — Add a section with concrete credentials including local ties (Research Park, university collaborations)
+
+7. **CTA** — Use "Start a Conversation" with mailto link to hello@bsf5y.com
 
 ### Remove
 
 - Dev-only accent picker (fine for development, ensure it's truly hidden in production)
-- Blueprint animation complexity (simpler is better here)
+- Light/dark mode toggle (dark only for v1)
+- Alternate accent color options (copper only)
 
 ### Future Additions (Not for V1)
 
