@@ -2,9 +2,7 @@
 
 ## Mission Statement (The "Why")
 
-We share our exstinsive experience and passion for engineering excellence to enable local startups,
-small and medium sized business realize competative advantage through new technology and the workforce
-behind it.
+We help Champaign-Urbana innovators build technology products that survive growth, pivots, and success.
 
 ## Brand Promise ("The Commitment")
 
@@ -28,7 +26,7 @@ software that any interface can use. Prototypes trap value in the UI and break w
 - The difference isn't polish or features — it's where the value lives
 
 ### 2. Core Protection
-*"Your idea is <10% of the code. We protect that 10%."*
+*"Your idea is only 10% of the solution. We protect that 10%."*
 
 Obsessive focus on identifying and defending what makes your business unique. Everything else is
 commodity infrastructure we turnkey with proven solutions.
@@ -66,31 +64,34 @@ Senior engineering judgment without the headcount. Solid Products without the mi
 ## Supporting Messages/Proof Points (The "Why You")
 
 ### Experience & Credentials
-- 40+ years combined engineering experience
 - Full-stack expertise: web/cloud/SaaS, embedded systems, data/ML/AI, enterprise systems
+- Graduate-level training in computer science, AI, and financial engineering
 - Open source contributors — we build in the open and give back
-- Startup exit experience — we've been through the journey ourselves
+- Startup exits and acquisitions — we've been through the journey ourselves
 
 ### Track Record
-- Anonymized case studies available on request
-- Products shipped across multiple industries and technical domains
+- Directed engineering teams of 20+ across multiple organizations
+- Managed diverse portfolios of 15+ concurrent projects annually
+- Secured and delivered on eight-figure technical programs
+- Built and commercialized our own SaaS products — we've done what we're asking you to do
 - Codebases successfully handed off to client teams and acquirers
 
 ### Local Roots
 - Embedded in the Champaign-Urbana startup ecosystem
-- University of Illinois partnerships and research connections
-- Active in EnterpriseWorks, Research Park, and local accelerators
-- Teaching and training at Parkland and community workshops
-- Chamber and economic development involvement
+- Direct experience operating within Research Park
+- University partnerships and funded research collaborations
+- Active in local accelerators and economic development
+- Teaching and training at community colleges and workshops
+
+### Methodology
+- Fractional CTO experience — we've played this exact role before
+- Coached dozens of early-stage teams in code craftsmanship and best practices
+- Established repeatable scaffolding for greenfield projects
+- Track record of building internal capability and handing off successfully
 
 ## Tagline/Slogan
 
 Products, not prototypes.
-
-
-
-
- 
 
 ## Elevator Pitch
 
@@ -102,8 +103,8 @@ fragile, rigid to change and temporary solutions unlikely to scale.  If you want
 provide you references, if you want products we will be a strong technical partner.
 
 We are a highly experience group of software and hardware engineers dedicated to the development
-of the local Champaign-Urbana economy by enabling Startups, Small and Medium-sized businsess
-realize competative advantage through technology.
+of the local Champaign-Urbana economy by enabling Startups, Small and Medium-sized businesss
+realize competitive advantage through technology.
 
 ## Marketting
 
@@ -162,8 +163,18 @@ What happens when things go right? More users, investors want in, you need to hi
 
 **Ask us where the business rules live.**
 
-We can answer this question clearly. If a your dev partner can't, that tells you that they are
-building protoypes.
+We can answer this question clearly. If your dev partner can't, that tells you they're
+building prototypes.
+
+**Your product is not the user interface. It's the data.**
+
+The UI is a window into your product, not the product itself. If your business logic lives in the
+interface, you don't have a product — you have a demo.
+
+**You don't have an MVP. You have a prototype you're brave enough to ship.**
+
+That "minimum viable product" built on spit and duct tape? It's not viable. It's a prototype with
+production traffic. There's a difference.
 
 ## Voice
 
