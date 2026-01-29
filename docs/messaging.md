@@ -1,17 +1,39 @@
 # bsf5y - The Bootstrap Factory
 
+## Tagline/Slogan
+
+Products, not prototypes.
+
+## Elevator Pitch
+
+We build products, not prototypes. Most dev shops build your first version fast and
+cheap — then you pay to rebuild it when you scale.
+
+We identify the 10% that makes your business unique, capture it in solid architecture, and turnkey
+the rest. When investors ask about your tech, you pass due diligence. When you hire engineers, they
+can read the code. When you pivot, you don't start over.
+
+We're based in Champaign-Urbana and work with local business leaders who value building it right
+the first time.
+
 ## Mission Statement (The "Why")
 
-We help Champaign-Urbana innovators build technology products that survive growth, pivots, and success.
+We help Champaign-Urbana business leaders build technology products that survive growth, pivots,
+and success.
 
 ## Brand Promise ("The Commitment")
 
 "We'll tell you what NOT to build" 
 
+## Value Proposition ("The Benefit"): 
+
+Executive engineering judgment without the headcount. Solid products without the misfires.
+
 ## Positioning Statement (The Difference)
 
-For innovators building technology, bsf5y is a steadfast partner that captures your
-differential value to build products that last.
+For business leaders with a product vision but without senior technical leadership, bsf5y builds
+the architecture that protects your core business logic — so you scale without rewrites and pivot
+without starting over.
 
 ## Messaging Pillars (The Core Themes):
 
@@ -57,10 +79,6 @@ Multiple paths forward after delivery.
 - Local presence, embedded in Champaign-Urbana community
 - We succeed when you don't need us anymore
 
-## Value Proposition ("The Benefit"): 
-
-Senior engineering judgment without the headcount. Solid Products without the misfires.
-
 ## Supporting Messages/Proof Points (The "Why You")
 
 ### Experience & Credentials
@@ -89,34 +107,20 @@ Senior engineering judgment without the headcount. Solid Products without the mi
 - Established repeatable scaffolding for greenfield projects
 - Track record of building internal capability and handing off successfully
 
-## Tagline/Slogan
+-----
 
-Products, not prototypes.
-
-## Elevator Pitch
-
-We help both established companies and startups build solid software and electronic products instead
-of makeshift prototypes.  Products require significant infrastructure designed by experts.
-Prototypes only require a weekend of vibe coding, spit, and duct tape.  Products have expert
-architecture, are resilient to change and ready for rapid growth and scaling.  Prototypes are
-fragile, rigid to change and temporary solutions unlikely to scale.  If you want prototypes we can
-provide you references, if you want products we will be a strong technical partner.
-
-We are a highly experience group of software and hardware engineers dedicated to the development
-of the local Champaign-Urbana economy by enabling Startups, Small and Medium-sized businesss
-realize competitive advantage through technology.
-
-## Marketting
+## Marketing
 
 ### Primary Customer Profile
 
-- **Who:** Innovative leaders seeking expert technical partners to help realize step-change
-  advancement in new or existing product concepts.
+- **Who:** Business leaders with a product vision seeking expert technical partners to realize
+  new or existing product concepts.
 - **Value:** Close long-term partnerships over one-off contracts.
 - **Stage:** Pre-build or early build — before significant technical debt accumulates.
-- **Situation:** They have a product or idea with a technology component, but lack an adequately
-  experienced technical partner or senior engineering leadership.
-- **Mindset:** They value doing things right over doing things easy. They're building a product, not chasing a quick prototype.
+- **Situation:** They have a product or idea with a technology component, but lack senior
+  engineering leadership or an experienced technical partner.
+- **Mindset:** They value doing things right over doing things easy. They're building a product,
+  not chasing a quick prototype.
 
 ### Geographic Focus
 
@@ -125,9 +129,11 @@ Community College, business development groups and local startup community.
 
 ### Disqualified Customers
 
-- Leaders who've already built a broken prototype masquarading as a product and want a quick 'fix'.
+- Leaders who've already built a broken prototype masquerading as a product and want a quick fix
 - "Move fast and break things" believers who see engineering discipline as friction
 - Remote-only engagements with no local presence or connection
+
+-----
 
 ## The Point
 
@@ -209,14 +215,15 @@ core value and building it to last. That takes expert engineering.
 
 ## Target Audience
 
-Non-technical leaders, in-experienced technical leaders, and executives shopping for an engineering partner.
+Business leaders with a product vision — non-technical leaders, inexperienced technical leaders,
+and executives shopping for an engineering partner.
 
-Ideally they are starting a greefield project for a new idea.  But if they have a project already
-under way and have built a prototype, they may not have been burned yet, but they can feel it
-coming.  Change is becoming harder
+Ideally they are starting a greenfield project for a new idea. But if they have a project already
+underway and have built a prototype, they may not have been burned yet, but they can feel it
+coming. Change is becoming harder.
 
-They're comparing options, searching for an ideal techpartner. They need to understand why the
-our approach matters before they've experienced the downside alternatives
+They're comparing options, searching for an ideal technical partner. They need to understand why
+our approach matters before they've experienced the downside of alternatives.
 
 ## Success Outcomes
 
