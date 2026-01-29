@@ -59,6 +59,7 @@ commodity infrastructure we turnkey with proven solutions.
 - "We'll tell you what NOT to build"
 - Differentiate first, then turnkey the rest
 - Focus creates leverage; distraction creates debt
+- Most successful products contain zero innovation — the value is in execution, not invention
 
 ### 3. Built to Last
 *"Software that survives success."*
@@ -205,6 +206,17 @@ interface, you don't have a product — you have a demo.
 That "minimum viable product" built on spit and duct tape? There's nothing wrong with shipping it —
 that takes guts. But calling it viable doesn't make it so. Knowing the difference is how you plan
 what comes next.
+
+**Cheap MVPs are expensive.**
+
+The "build it cheap, fix it later" model front-loads savings and back-loads pain. Changes get
+harder as code accumulates. Invest in architecture early — when changes are cheap and leverage is
+high — not after you've painted yourself into a corner.
+
+**Do you have a product?**
+
+If you can't point to where your business rules live, independent of any interface, you have a
+prototype. That's not a judgment — it's a diagnostic. Knowing the answer shapes what comes next.
 
 ## Voice
 
