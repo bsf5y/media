@@ -20,3 +20,10 @@
 
 [How to bootstrap a big software company when everyone else raises money?](https://www.aha.io/blog/the-founders-paradox-how-to-bootstrap-a-big-software-company-when-everyone-else-raises-money)
 
+## Brand Strategy and Hierarchy
+
+[Building a Brand Hierarchy of Effects](https://hbr.org/2004/04/building-a-brand-hierarchy-of-effects)
+
+[The difference between Mission, Vision, and Values](https://www.clearvoice.com/resources/what-is-the-difference-between-mission-vision-and-values/)
+
+[How to write a Brand Positioning Statement](https://www.hubspot.com/marketing/positioning-statement-examples)
