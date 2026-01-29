@@ -6,13 +6,23 @@ module.exports = function(eleventyConfig) {
   // Watch for CSS/JS changes
   eleventyConfig.addWatchTarget("src/assets/");
 
-  // Add date filters for blog
+  // Add date filters
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return new Date(dateObj).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
     });
+  });
+
+  eleventyConfig.addFilter("date", (value, format) => {
+    const date = value === "now" ? new Date() : new Date(value);
+    if (format === "%Y") return date.getFullYear();
+    return date.toISOString();
+  });
+
+  eleventyConfig.addFilter("dateISO", (dateObj) => {
+    return new Date(dateObj).toISOString().split('T')[0];
   });
 
   // Blog collection
