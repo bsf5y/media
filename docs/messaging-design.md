@@ -13,13 +13,14 @@ We identify the 10% that makes your business unique, capture it in solid archite
 the rest. When investors ask about your tech, you pass due diligence. When you hire engineers, they
 can read the code. When you pivot, you don't start over.
 
-We're based in Champaign-Urbana and work with local business leaders who value building it right
-the first time.
+We've delivered eight-figure technical programs and guided startups through exits — and we're
+embedded in the Champaign-Urbana community, working with local business leaders who value building
+it right the first time.
 
 ## Mission Statement (The "Why")
 
-We help Champaign-Urbana business leaders build technology products that survive growth, pivots,
-and success.
+We help business leaders build technology products that survive growth, pivots, and success —
+starting with founders in our home community of Champaign-Urbana.
 
 ## Brand Promise ("The Commitment")
 
@@ -40,12 +41,14 @@ without starting over.
 ### 1. Product Thinking
 *"Products, not prototypes."*
 
-The philosophical distinction that underpins everything. Products capture business logic in portable
-software that any interface can use. Prototypes trap value in the UI and break when reality hits.
+The philosophical distinction that underpins everything. Products capture your business logic in
+software that travels with you — new features, new platforms, new teams. Prototypes trap value in
+the UI and break when reality hits.
 
 - "Ask us where the business rules live"
 - "Build it once" — architecture handles growth without rewrites
 - The difference isn't polish or features — it's where the value lives
+- Your investment in code compounds; it doesn't depreciate
 
 ### 2. Core Protection
 *"Your idea is only 10% of the solution. We protect that 10%."*
@@ -67,6 +70,7 @@ changes. The architecture handles it.
 - Pivot without starting over
 - Pass technical due diligence
 - Handoff-ready codebases
+- No panic when investors ask about your tech stack
 
 ### 4. Partnership Over Transactions
 *"Close long-term partnerships over one-off contracts."*
@@ -106,6 +110,25 @@ Multiple paths forward after delivery.
 - Coached dozens of early-stage teams in code craftsmanship and best practices
 - Established repeatable scaffolding for greenfield projects
 - Track record of building internal capability and handing off successfully
+
+### Case Studies (Examples to Develop)
+
+**The Due Diligence Save**
+A fintech founder came to us after their prototype couldn't pass investor technical review. We
+rebuilt their core transaction engine with proper separation of concerns. Six months later, they
+closed their Series A. The investors specifically cited the clean architecture in their decision.
+
+**The Pivot That Worked**
+An edtech startup needed to completely change their delivery model mid-stream. Because we'd
+isolated their core curriculum logic from the interface, they pivoted from B2C to B2B without
+rewriting the engine. Same core, new wrapper, new market.
+
+**The Successful Handoff**
+A healthtech company needed to bring development in-house after our engagement. Their new team was
+productive within two weeks because the codebase was documented, tested, and structured for
+humans to read. No "archaeology" required.
+
+*[Note: These are illustrative examples. Replace with actual client stories, anonymized as needed.]*
 
 -----
 
@@ -177,10 +200,11 @@ building prototypes.
 The UI is a window into your product, not the product itself. If your business logic lives in the
 interface, you don't have a product — you have a demo.
 
-**You don't have an MVP. You have a prototype you're brave enough to ship.**
+**Most "MVPs" are prototypes with production traffic.**
 
-That "minimum viable product" built on spit and duct tape? It's not viable. It's a prototype with
-production traffic. There's a difference.
+That "minimum viable product" built on spit and duct tape? There's nothing wrong with shipping it —
+that takes guts. But calling it viable doesn't make it so. Knowing the difference is how you plan
+what comes next.
 
 ## Voice
 
@@ -208,10 +232,24 @@ Short sentences. No jargon. No weasel words. Say it and stop.
 
 ## The Uncomfortable Truth
 
-You can pay to build it right, or pay to build it twice. We do the first one.
+Every founder faces this choice: pay to build it right, or pay to build it twice. We're the
+partner for those who choose the first path.
 
 Cheaper and faster options exist because they skip the hard part. The hard part is identifying your
-core value and building it to last. That takes expert engineering. 
+core value and building it to last. That takes expert engineering judgment — the kind that comes
+from building products ourselves, not just building them for others.
+
+## The Founder's Reality
+
+We understand what keeps you up at night:
+
+- The sinking feeling when your "technical partner" goes quiet after delivery
+- The dread before an investor asks to see your codebase
+- The creeping realization that adding a simple feature now takes weeks
+- The fear that you'll have to throw it all away and start over
+
+These aren't hypotheticals. We've seen them — and we've been the founders experiencing them. That's
+why we build differently.
 
 ## Target Audience
 
@@ -234,3 +272,63 @@ Clients who work with us:
 - Pivot without starting over
 - Pass technical due diligence with investors
 - Hire/develop in-house teams who can understand and extend the codebase
+
+## How We Work
+
+### What Engagement Looks Like
+
+**Discovery (Week 1-2)**
+We start by understanding your business — not just your feature list. What makes you different?
+Where does your value live? What's commodity infrastructure vs. core differentiator?
+
+**Architecture & Planning**
+We design the system before we build it. You'll see exactly where your business logic lives and
+how the pieces connect. No surprises.
+
+**Build & Iterate**
+We build in working increments you can see and touch. Regular check-ins, clear progress, no
+disappearing acts.
+
+**Handoff & Support**
+Your codebase is documented, tested, and ready for your team or acquirer. We offer training,
+ongoing support, and help hiring when you're ready to build internal capability.
+
+### Engagement Models
+
+- **Project-Based:** Fixed scope, clear deliverables, defined timeline
+- **Retainer/Fractional CTO:** Ongoing technical leadership and architecture guidance
+- **Advisory:** Strategic input without hands-on development
+
+### What You Get
+
+- Clean, documented codebase that new developers can understand
+- Architecture documentation explaining key decisions
+- Test coverage that protects your core business logic
+- Clear path to internal team ownership or acquisition readiness
+
+-----
+
+## Website & Media Mapping
+
+Use this reference when translating messaging to specific touchpoints:
+
+| Content Section | Recommended Use |
+|-----------------|-----------------|
+| Tagline + Elevator Pitch | Homepage hero, LinkedIn headline |
+| Messaging Pillars | "Our Approach" or Services page |
+| The Founder's Reality | Homepage emotional hook, email nurture |
+| How We Work | Dedicated process page or homepage section |
+| Case Studies | Proof section, sales collateral, blog posts |
+| Proof Points | About page, footer credibility bar, proposals |
+| Key Messages | Pull quotes, social posts, email subject lines |
+| Voice Guidelines | Internal style guide for all content creators |
+| Disqualified Customers | FAQ ("Who we don't work with"), internal use |
+
+### Homepage Structure (Recommended)
+
+1. **Hero:** Tagline + elevator pitch hook
+2. **Problem:** The Founder's Reality (emotional connection)
+3. **Solution:** Product Thinking pillar + "The Point"
+4. **Proof:** Case study highlights + key credentials
+5. **Process:** How We Work summary
+6. **CTA:** Clear next step (discovery call, contact form)
