@@ -4,11 +4,53 @@
  */
 
 /* ============================================
-   Theme System (Dark Mode Only for v1)
+   Theme System
    ============================================ */
 
-// Set dark mode explicitly (v1 is dark-only)
-document.documentElement.setAttribute('data-mode', 'dark')
+/**
+ * Initialize the color mode (light/dark).
+ * Priority: localStorage > system preference > default (dark)
+ */
+function initMode() {
+  const stored = localStorage.getItem('bsf5y-mode')
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+  let mode
+  if (stored) {
+    mode = stored
+  } else {
+    mode = systemPrefersDark ? 'dark' : 'light'
+  }
+
+  document.documentElement.setAttribute('data-mode', mode)
+
+  // Listen for system preference changes (only if no stored preference)
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('bsf5y-mode')) {
+      const newMode = e.matches ? 'dark' : 'light'
+      document.documentElement.setAttribute('data-mode', newMode)
+    }
+  })
+}
+
+/**
+ * Toggle between light and dark mode
+ */
+function toggleMode() {
+  const current = document.documentElement.getAttribute('data-mode')
+  const next = current === 'light' ? 'dark' : 'light'
+  document.documentElement.setAttribute('data-mode', next)
+  localStorage.setItem('bsf5y-mode', next)
+}
+
+// Initialize mode immediately to prevent flash
+initMode()
+
+// Set up mode toggle button
+const modeToggle = document.querySelector('.mode-toggle')
+if (modeToggle) {
+  modeToggle.addEventListener('click', toggleMode)
+}
 
 /* ============================================
    Dev-Only Accent Picker
@@ -157,12 +199,26 @@ const header = document.querySelector('.site-header')
 
 function updateHeaderBackground() {
   const currentScroll = window.pageYOffset
+  const mode = document.documentElement.getAttribute('data-mode')
+  const isLight = mode === 'light'
 
   if (currentScroll > 100) {
-    header.style.background = 'rgba(10, 12, 15, 0.95)'
+    header.style.background = isLight ? 'rgba(255, 255, 255, 0.95)' : 'rgba(10, 12, 15, 0.95)'
   } else {
-    header.style.background = 'linear-gradient(to bottom, rgba(10, 12, 15, 1), transparent)'
+    header.style.background = isLight
+      ? 'linear-gradient(to bottom, rgba(255, 255, 255, 1), transparent)'
+      : 'linear-gradient(to bottom, rgba(10, 12, 15, 1), transparent)'
   }
 }
 
 window.addEventListener('scroll', updateHeaderBackground, { passive: true })
+
+// Also update header background when mode changes
+const modeObserver = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
+    if (mutation.attributeName === 'data-mode') {
+      updateHeaderBackground()
+    }
+  })
+})
+modeObserver.observe(document.documentElement, { attributes: true })

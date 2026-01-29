@@ -700,7 +700,6 @@ button {
 }
 
 .section-intro {
-  max-width: 36rem;
   margin: 0 auto;
   font-size: var(--text-lg);
   color: var(--color-text-muted);
@@ -1423,7 +1422,6 @@ html[data-mode="light"] .mode-toggle .icon-moon {
 
 .post-header {
   padding-bottom: var(--space-2xl);
-  border-bottom: 1px solid var(--color-border);
   margin-bottom: var(--space-2xl);
 }
 
