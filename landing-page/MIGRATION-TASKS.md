@@ -30,28 +30,28 @@ Track progress through each stage. Each stage ends with a commit to ensure incre
 
 ## Stage 3: Homepage Content Migration
 
-- [ ] Create `src/_data/home.json` (extract content from copy.md)
-- [ ] Create `src/_includes/partials/hero.njk`
-- [ ] Create `src/_includes/partials/positioning.njk`
-- [ ] Create `src/_includes/partials/methodology.njk`
-- [ ] Create `src/_includes/partials/services.njk`
-- [ ] Create `src/_includes/partials/cta.njk`
-- [ ] Create `src/index.njk` (homepage using layouts and partials)
-- [ ] Verify homepage renders correctly with `npm run dev`
-- [ ] **Commit:** "feat: Migrate homepage content to 11ty templates"
+- [x] Create `src/_data/home.json` (extract content from copy.md)
+- [x] Create `src/_includes/partials/hero.njk`
+- [x] Create `src/_includes/partials/positioning.njk`
+- [x] Create `src/_includes/partials/methodology.njk`
+- [x] Create `src/_includes/partials/services.njk`
+- [x] Create `src/_includes/partials/cta.njk`
+- [x] Create `src/index.njk` (homepage using layouts and partials)
+- [x] Verify homepage renders correctly with `npm run dev`
+- [x] **Commit:** "feat: Migrate homepage content to 11ty templates"
 
 ---
 
 ## Stage 4: Assets Migration
 
-- [ ] Create `src/assets/css/` directory
-- [ ] Move `src/styles/main.css` to `src/assets/css/main.css`
-- [ ] Create `src/assets/js/` directory
-- [ ] Copy `src/main.js` to `src/assets/js/main.js` (will simplify in next stage)
-- [ ] Update `base.njk` to reference new asset paths
-- [ ] Configure passthrough copy in `.eleventy.js` for assets
-- [ ] Verify styles and scripts load correctly
-- [ ] **Commit:** "refactor: Move assets to 11ty structure"
+- [x] Create `src/assets/css/` directory
+- [x] Move `src/styles/main.css` to `src/assets/css/main.css`
+- [x] Create `src/assets/js/` directory
+- [x] Copy `src/main.js` to `src/assets/js/main.js` (will simplify in next stage)
+- [x] Update `base.njk` to reference new asset paths
+- [x] Configure passthrough copy in `.eleventy.js` for assets
+- [x] Verify styles and scripts load correctly
+- [x] **Commit:** "refactor: Move assets to 11ty structure"
 
 ---
 
