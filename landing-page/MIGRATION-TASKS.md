@@ -72,17 +72,17 @@ Track progress through each stage. Each stage ends with a commit to ensure incre
 
 ## Stage 6: Blog Setup
 
-- [ ] Create `src/blog/` directory
-- [ ] Create `src/blog/blog.json` (collection defaults: layout, tags, permalink)
-- [ ] Create `src/_includes/layouts/post.njk` (blog post layout)
-- [ ] Create `src/blog/index.njk` (blog listing page)
-- [ ] Add blog collection config to `.eleventy.js`
-- [ ] Add `readableDate` filter to `.eleventy.js`
-- [ ] Create example post: `src/blog/hello-world.md`
-- [ ] Add blog link to navigation in `site.json`
-- [ ] Verify blog listing page renders
-- [ ] Verify blog post page renders
-- [ ] **Commit:** "feat: Add blog with Eleventy collections"
+- [x] Create `src/blog/` directory
+- [x] Create `src/blog/blog.json` (collection defaults: layout, tags, permalink)
+- [x] Create `src/_includes/layouts/post.njk` (blog post layout)
+- [x] Create `src/blog/index.njk` (blog listing page)
+- [x] Add blog collection config to `.eleventy.js`
+- [x] Add `readableDate` filter to `.eleventy.js`
+- [x] Create example post: `src/blog/hello-world.md`
+- [x] Add blog link to navigation in `site.json`
+- [x] Verify blog listing page renders
+- [x] Verify blog post page renders
+- [x] **Commit:** "feat: Add blog with Eleventy collections"
 
 ---
 

@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Blog
+permalink: /blog/
+---
+<section class="blog-listing">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-label">Insights</span>
+      <h1 class="section-title">Blog</h1>
+      <p class="section-intro">Thoughts on building products, engineering discipline, and startup technology.</p>
+    </header>
+
+    {% if collections.posts.length %}
+    <ul class="post-list">
+      {% for post in collections.posts %}
+      <li class="post-item">
+        <a href="{{ post.url }}">
+          <time datetime="{{ post.date | dateISO }}">{{ post.date | readableDate }}</time>
+          <h2>{{ post.data.title }}</h2>
+          {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="no-posts">No posts yet. Check back soon.</p>
+    {% endif %}
+  </div>
+</section>
