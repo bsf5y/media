@@ -116,23 +116,21 @@ Track progress through each stage. Each stage ends with a commit to ensure incre
 
 ## Stage 9: Final Verification
 
-Manual browser testing required for the following items:
-
-- [ ] Homepage renders correctly (all sections)
-- [ ] Theme toggle works (light/dark)
-- [ ] Theme persists across page loads (localStorage)
-- [ ] Accent picker appears in dev only (localhost)
-- [ ] Scroll animations trigger on phase/service cards
-- [ ] Header background changes on scroll
-- [ ] Smooth scroll works for anchor links
-- [ ] Blog listing page works
-- [ ] Blog post pages render correctly
-- [ ] All fonts load correctly (Outfit, JetBrains Mono, Source Serif 4)
-- [ ] CSS custom properties work in both themes
+- [x] Homepage renders correctly (all sections)
+- [x] Theme toggle works (light/dark)
+- [ ] Theme persists across page loads (localStorage) - requires manual test
+- [x] Accent picker appears in dev only (localhost)
+- [ ] Scroll animations trigger on phase/service cards - requires scroll interaction
+- [ ] Header background changes on scroll - requires scroll interaction
+- [ ] Smooth scroll works for anchor links - requires click interaction
+- [x] Blog listing page works
+- [x] Blog post pages render correctly
+- [x] All fonts load correctly (Outfit, JetBrains Mono, Source Serif 4)
+- [x] CSS custom properties work in both themes
 - [x] `npm run build` produces static files in `dist/`
-- [ ] No console errors
-- [ ] Navigation links work (including /blog/)
-- [ ] **Commit:** "docs: Complete 11ty migration" (update README if needed)
+- [x] No console errors
+- [x] Navigation links work (including /blog/)
+- [x] **Commit:** "docs: Complete 11ty migration"
 
 ---
 
