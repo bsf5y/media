@@ -1,108 +1,108 @@
-# The Bootstrap Factory
+# Company Name
 
 ## Hero
 
 ### Tagline
-Products, Not Prototypes.
+Lorem Ipsum Dolor.
 
 ### Lead
-The startup industry has it backwards. Cutting corners on your MVP isn't saving money—it's borrowing against a rewrite you'll pay for later, with interest.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ### Reframe
-Go well to go fast.
+Ut enim ad minim.
 
 ### Subtext
 
-Whether you build using a software engineering team or AI-driven development, the foundational principles are the same. We help you get it right the first time.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-The most expensive code you'll ever write is the code you write twice.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ---
 
 ## Positioning
 
-The Bootstrap Factory is a Champaign-Urbana technology consultancy that helps early-stage founders build products, not prototypes. We provide fractional CTO leadership and turn-key infrastructure so you can focus your limited resources on what actually matters—your secret sauce.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 ---
 
 ## Methodology
 
 ### Headline
-The Secret Sauce Framework
+Lorem Ipsum Framework
 
 ### Intro
-Before any code is written, we work with founders to ruthlessly prioritize. Most early-stage products try to do too much. We cut the noise.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
 
-### Phase 1: Clarity
-**What's the one thing that matters?**
+### Phase 1: Lorem
+**Ipsum dolor sit amet?**
 
-What problem are you actually solving? For whom, specifically? What's the minimum feature set that delivers that value?
+Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-### Phase 2: Differentiation
-**What can only you do?**
+### Phase 2: Consectetur
+**Adipiscing elit sed?**
 
-Is it proprietary data? A novel algorithm? Domain expertise encoded in software? What's the 5-10% that competitors can't easily replicate? This is where your investment should concentrate.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-### Phase 3: Foundation
-**Turn-key the rest.**
+### Phase 3: Adipiscing
+**Eiusmod tempor incididunt?**
 
-Everything that isn't secret sauce is scaffolding. Auth, payments, admin dashboards, CI/CD, cloud infrastructure—these are solved problems. We bring production-ready patterns so you don't waste months reinventing commodity tech.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-### Phase 4: Execution
-**Products, not prototypes.**
+### Phase 4: Elit
+**Labore et dolore?**
 
-With clarity, differentiation, and foundation in place, we build. Test-driven development, clean architecture, documentation. Code you can hand to another team without apology.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ---
 
 ## Services
 
 ### Service 1
-#### Technical Leadership Without the Full-Time Cost
-Fractional CTO
+#### Lorem Ipsum Dolor Sit Amet
+Consectetur Adipiscing
 
-Senior engineering leadership for founders who need a technical co-founder's judgment without the equity or salary. Architecture decisions, vendor evaluation, team building, investor-ready technical narratives.
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
 
 ### Service 2
-#### From Secret Sauce to Shipped Product
-Product Development
+#### Ut Enim Ad Minim Veniam
+Quis Nostrud
 
-We don't just advise—we build. Turn-key infrastructure plus custom development of your core IP. You get a product, not a prototype.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 ### Service 3
-#### Build Your First Engineering Team
-Recruitment & Staffing
+#### Excepteur Sint Occaecat
+Cupidatat Non
 
-When you're ready to hire, we help you find, evaluate, and onboard engineers who fit your culture and codebase. No recruiting agency markup.
+Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error.
 
 ### Service 4
-#### Level Up Your Team
-Training & Coaching
+#### Nemo Enim Ipsam Voluptatem
+Quia Voluptas
 
-Paired programming, test-driven development, CI/CD, Agile practices. We transfer our methods so your team can sustain velocity without us.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit.
 
 ---
 
 ## CTA
 
 ### Headline
-Ready to build something that lasts?
+Lorem ipsum dolor sit amet?
 
 ### Subtext
-Let's find your secret sauce.
+Consectetur adipiscing elit.
 
 ### Button
-Start a Conversation
+Lorem Ipsum
 
 ---
 
 ## Footer
 
 ### Location
-Champaign-Urbana, Illinois
+Lorem Ipsum, Dolor Sit
 
 ### Tagline
-Deeply committed to the Central Illinois economy.  With roots in the University of Illinois entrepreneurship programs, and local startup community.
+Amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ### Copyright
-The Bootstrap Factory
+Lorem Ipsum Inc
