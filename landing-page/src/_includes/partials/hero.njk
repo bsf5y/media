@@ -16,9 +16,31 @@
     </div>
 
     <div class="hero-visual" aria-hidden="true">
-      <div class="blueprint-element blueprint-circle"></div>
-      <div class="blueprint-element blueprint-lines"></div>
-      <div class="blueprint-element blueprint-box"></div>
+      <div class="terminal">
+        <div class="terminal-header">
+          <span class="terminal-dot terminal-dot-red"></span>
+          <span class="terminal-dot terminal-dot-yellow"></span>
+          <span class="terminal-dot terminal-dot-green"></span>
+          <span class="terminal-title">architecture.ts</span>
+        </div>
+        <div class="terminal-body">
+          <pre class="terminal-code"><code><span class="code-comment">// Your business logic lives here</span>
+<span class="code-keyword">export class</span> <span class="code-class">ProductCore</span> {
+  <span class="code-keyword">private</span> rules: <span class="code-type">BusinessRules</span>;
+
+  <span class="code-comment">// Independent of any UI</span>
+  <span class="code-keyword">async</span> <span class="code-function">process</span>(input: <span class="code-type">Input</span>) {
+    <span class="code-keyword">return</span> <span class="code-keyword">this</span>.rules.<span class="code-function">apply</span>(input);
+  }
+}
+
+<span class="code-comment">// Any interface can use it</span>
+<span class="code-keyword">const</span> core = <span class="code-keyword">new</span> <span class="code-class">ProductCore</span>();
+webApp.<span class="code-function">use</span>(core);
+mobileApp.<span class="code-function">use</span>(core);
+api.<span class="code-function">use</span>(core);</code></pre>
+        </div>
+      </div>
     </div>
   </div>
 </section>

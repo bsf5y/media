@@ -6,6 +6,48 @@
     "subtext": "<p>We identify the 10% that makes your business unique, capture it in solid architecture, and turnkey the rest.</p><p>When investors ask about your tech, you pass due diligence. When you hire engineers, they can read the code. When you pivot, you don't start over.</p>"
   },
   "positioning": "<p>The difference between a product and a prototype isn't polish or features — it's where the value lives. Prototypes trap business logic in the UI. Products capture it in portable software any interface can use.</p>",
+  "problem": {
+    "label": "The Founder's Reality",
+    "headline": "We understand what keeps you up at night.",
+    "statements": [
+      "The sinking feeling when your technical partner goes quiet after delivery",
+      "The dread before an investor asks to see your codebase",
+      "The creeping realization that adding a simple feature now takes weeks",
+      "The fear that you'll have to throw it all away and start over"
+    ]
+  },
+  "comparison": {
+    "headline": "The difference isn't polish or features. It's where the value lives.",
+    "prototype": {
+      "label": "Prototype",
+      "items": [
+        "Business rules live in the UI",
+        "Breaks when you scale",
+        "Rebuild for new platforms",
+        "Archaeology for new developers",
+        "Fails due diligence"
+      ]
+    },
+    "product": {
+      "label": "Product",
+      "items": [
+        "Business rules live in the core",
+        "Architecture handles growth",
+        "Any interface works",
+        "Readable from day one",
+        "Passes investor review"
+      ]
+    }
+  },
+  "credibility": {
+    "points": [
+      "8-figure programs delivered",
+      "20+ engineers led",
+      "Startup exits",
+      "Research Park experience",
+      "University collaborations"
+    ]
+  },
   "methodology": {
     "headline": "How We Work",
     "intro": "We follow a proven methodology that moves beyond ideas and prototypes to deliver robust, market-ready products with a clear strategic advantage.",

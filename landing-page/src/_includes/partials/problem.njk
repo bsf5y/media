@@ -1,0 +1,13 @@
+<section class="problem">
+  <div class="container">
+    <div class="problem-content">
+      <span class="section-label">{{ home.problem.label }}</span>
+      <h2 class="problem-headline">{{ home.problem.headline }}</h2>
+      <ul class="problem-list">
+        {% for statement in home.problem.statements %}
+          <li class="problem-item">{{ statement }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

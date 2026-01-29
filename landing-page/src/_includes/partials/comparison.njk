@@ -1,0 +1,23 @@
+<section class="comparison">
+  <div class="container">
+    <h2 class="comparison-headline">{{ home.comparison.headline }}</h2>
+    <div class="comparison-grid">
+      <div class="comparison-column comparison-prototype">
+        <h3 class="comparison-label">{{ home.comparison.prototype.label }}</h3>
+        <ul class="comparison-list">
+          {% for item in home.comparison.prototype.items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="comparison-column comparison-product">
+        <h3 class="comparison-label">{{ home.comparison.product.label }}</h3>
+        <ul class="comparison-list">
+          {% for item in home.comparison.product.items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
