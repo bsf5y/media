@@ -116,6 +116,8 @@ Track progress through each stage. Each stage ends with a commit to ensure incre
 
 ## Stage 9: Final Verification
 
+Manual browser testing required for the following items:
+
 - [ ] Homepage renders correctly (all sections)
 - [ ] Theme toggle works (light/dark)
 - [ ] Theme persists across page loads (localStorage)
