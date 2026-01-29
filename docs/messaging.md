@@ -61,6 +61,7 @@ Multiple paths forward after delivery.
 
 ## Value Proposition ("The Benefit"): 
 
+Senior engineering judgment without the headcount. Solid Products without the misfires.
 
 ## Supporting Messages/Proof Points (The "Why You")
 
