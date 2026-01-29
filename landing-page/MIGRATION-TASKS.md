@@ -88,13 +88,13 @@ Track progress through each stage. Each stage ends with a commit to ensure incre
 
 ## Stage 7: Blog Styles
 
-- [ ] Add `.blog-listing` styles to main.css
-- [ ] Add `.post-list` styles to main.css
-- [ ] Add `.blog-post` styles to main.css
-- [ ] Add `.post-header` styles to main.css
-- [ ] Add `.post-content` typography styles (h2-h4, p, code, blockquote)
+- [x] Add `.blog-listing` styles to main.css
+- [x] Add `.post-list` styles to main.css
+- [x] Add `.blog-post` styles to main.css
+- [x] Add `.post-header` styles to main.css
+- [x] Add `.post-content` typography styles (h2-h4, p, code, blockquote)
 - [ ] Verify blog pages match site design
-- [ ] **Commit:** "style: Add blog listing and post styles"
+- [x] **Commit:** "style: Add blog listing and post styles"
 
 ---
 
