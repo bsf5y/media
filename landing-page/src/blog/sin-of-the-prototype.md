@@ -55,9 +55,9 @@ Our approach is to stay narrowly focused on the unique value-add that exists in 
 <svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" style="width: 100%; margin: 4rem auto; display: block;">
   <style>.label { font-family: 'JetBrains Mono', monospace; font-size: 14px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500; } .box-text { font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 500; } .label-cheap { fill: #8b9199; } .label-valuable { fill: #d97706; } .box-cheap { fill: #232830; stroke: rgba(255,255,255,0.12); stroke-width: 1.5; } .box-valuable { fill: #1a1e25; stroke: #d97706; stroke-width: 2.5; } .text-main { fill: #e8e6e3; } .arrow { fill: none; stroke: #d97706; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }</style>
   <defs><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12" result="blur"/><feFlood flood-color="#d97706" flood-opacity="0.4"/><feComposite in2="blur" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-  <text x="100" y="50" text-anchor="middle" class="label label-cheap">Cheap</text>
+  <text x="100" y="60" text-anchor="middle" class="label label-cheap">Cheap</text>
   <text x="350" y="50" text-anchor="middle" class="label label-valuable">Valuable</text>
-  <text x="600" y="50" text-anchor="middle" class="label label-cheap">Cheap</text>
+  <text x="600" y="60" text-anchor="middle" class="label label-cheap">Cheap</text>
   <rect x="20" y="70" width="160" height="100" rx="10" class="box-cheap"/>
   <text x="100" y="128" text-anchor="middle" class="box-text text-main">Web UI</text>
   <path d="M200 120 L248 120 M234 106 L248 120 L234 134" class="arrow"/>
