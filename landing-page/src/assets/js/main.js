@@ -108,13 +108,13 @@ if (isDev) {
           <div class="dev-picker-section">
             <span class="dev-picker-label">Hero Visual</span>
             <div class="hero-visual-options">
-              <button class="hero-visual-option${!storedHeroVisual || storedHeroVisual === 'terminal' ? ' active' : ''}" data-hero-visual="terminal">
-                <span class="hero-visual-icon">&#60;/&#62;</span>
-                <span>Terminal</span>
-              </button>
-              <button class="hero-visual-option${storedHeroVisual === 'blueprint' ? ' active' : ''}" data-hero-visual="blueprint">
+              <button class="hero-visual-option${!storedHeroVisual || storedHeroVisual === 'blueprint' ? ' active' : ''}" data-hero-visual="blueprint">
                 <span class="hero-visual-icon">&#9678;</span>
                 <span>Blueprint</span>
+              </button>
+              <button class="hero-visual-option${storedHeroVisual === 'terminal' ? ' active' : ''}" data-hero-visual="terminal">
+                <span class="hero-visual-icon">&#60;/&#62;</span>
+                <span>Terminal</span>
               </button>
             </div>
           </div>
@@ -172,7 +172,7 @@ if (isDev) {
         option.classList.add('active')
 
         // Apply hero visual
-        if (heroVisual === 'terminal') {
+        if (heroVisual === 'blueprint') {
           document.documentElement.removeAttribute('data-hero-visual')
           localStorage.removeItem('bsf5y-hero-visual')
         } else {

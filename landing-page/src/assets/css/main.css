@@ -461,21 +461,21 @@ button {
   display: none;
 }
 
-/* Default: show terminal variant */
-.hero-visual-terminal {
-  display: block;
-}
-
-/* When blueprint variant is active */
-html[data-hero-visual="blueprint"] .hero-visual-terminal {
-  display: none;
-}
-
-html[data-hero-visual="blueprint"] .hero-visual-blueprint {
+/* Default: show blueprint variant */
+.hero-visual-blueprint {
   display: block;
   position: relative;
   width: 100%;
   height: 400px;
+}
+
+/* When terminal variant is active */
+html[data-hero-visual="terminal"] .hero-visual-blueprint {
+  display: none;
+}
+
+html[data-hero-visual="terminal"] .hero-visual-terminal {
+  display: block;
 }
 
 /* Blueprint visual elements */
