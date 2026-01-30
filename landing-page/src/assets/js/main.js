@@ -232,6 +232,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 })
 
 /* ============================================
+   Mobile Nav Close on Link Click
+   ============================================ */
+
+const navToggleCheckbox = document.getElementById('nav-toggle')
+const navLinks = document.querySelectorAll('.nav a')
+
+if (navToggleCheckbox) {
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navToggleCheckbox.checked = false
+    })
+  })
+}
+
+/* ============================================
    Header Scroll Behavior
    ============================================ */
 
