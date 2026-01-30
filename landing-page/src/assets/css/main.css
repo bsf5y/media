@@ -511,7 +511,6 @@ button {
   font-size: clamp(var(--text-xl), 3vw, var(--text-2xl));
   font-weight: 600;
   text-align: center;
-  max-width: 40rem;
   margin: 0 auto var(--space-3xl);
   color: var(--color-text-muted);
 }
