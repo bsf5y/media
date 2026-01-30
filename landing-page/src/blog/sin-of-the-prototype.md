@@ -52,7 +52,7 @@ The solid core we describe should contain all of the rules that make up the valu
 
 Our approach is to stay narrowly focused on the unique value-add that exists in any given solution and build a solid core of software to support that solution. Once this is established, a wide variety of delivery mechanisms can be built on top of the core without impacting its integrity. The business value has been captured in a way that is easily changeable and scalable, independent of multiple user-facing solutions.
 
-<svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" style="width: 100%; margin: 4rem auto; display: block;">
+<svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" style="width: 100%; margin: 4rem auto; display: block;">
   <style>.label { font-family: 'JetBrains Mono', monospace; font-size: 14px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500; } .box-text { font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 500; } .label-cheap { fill: #8b9199; } .label-valuable { fill: #d97706; } .box-cheap { fill: #232830; stroke: rgba(255,255,255,0.12); stroke-width: 1.5; } .box-valuable { fill: #1a1e25; stroke: #d97706; stroke-width: 2.5; } .text-main { fill: #e8e6e3; } .arrow { fill: none; stroke: #d97706; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }</style>
   <defs><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12" result="blur"/><feFlood flood-color="#d97706" flood-opacity="0.4"/><feComposite in2="blur" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
   <text x="100" y="50" text-anchor="middle" class="label label-cheap">Cheap</text>
@@ -66,4 +66,10 @@ Our approach is to stay narrowly focused on the unique value-add that exists in 
   <path d="M500 120 L452 120 M466 106 L452 120 L466 134" class="arrow"/>
   <rect x="520" y="70" width="160" height="100" rx="10" class="box-cheap"/>
   <text x="600" y="128" text-anchor="middle" class="box-text text-main">Web API</text>
+  <path d="M100 245 L100 190 M86 204 L100 190 L114 204" class="arrow"/>
+  <path d="M350 245 L350 200 M336 214 L350 200 L364 214" class="arrow"/>
+  <path d="M600 245 L600 190 M586 204 L600 190 L614 204" class="arrow"/>
+  <rect x="20" y="245" width="660" height="55" rx="10" class="box-cheap"/>
+  <text x="350" y="280" text-anchor="middle" class="box-text text-main">Infrastructure</text>
+  <text x="350" y="320" text-anchor="middle" class="label label-cheap">Cheap</text>
 </svg>
