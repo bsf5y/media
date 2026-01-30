@@ -4,6 +4,12 @@
       <span class="logo-mark">BSF5Y</span>
       <span class="logo-text">{{ site.title }}</span>
     </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+    <label for="nav-toggle" class="nav-toggle" role="button" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
     <nav class="nav" aria-label="Primary">
       {% for item in site.nav %}
         {% if item.class %}
