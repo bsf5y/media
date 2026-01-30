@@ -94,10 +94,6 @@ if (isDev) {
               <span class="accent-swatch accent-swatch-steel"></span>
               <span>Steel</span>
             </button>
-            <button class="accent-option${stored === 'forest' ? ' active' : ''}" data-accent="forest">
-              <span class="accent-swatch accent-swatch-forest"></span>
-              <span>Forest</span>
-            </button>
           </div>
         </div>
       </div>
