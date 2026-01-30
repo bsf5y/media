@@ -62,18 +62,23 @@ const isDev = window.location.hostname === 'localhost'
 
 if (isDev) {
   /**
-   * Initialize the accent color picker (dev-only)
+   * Initialize the dev picker panel (accent colors + hero visual)
    */
-  function initAccentPicker() {
-    const stored = localStorage.getItem('bsf5y-accent')
-    if (stored) {
-      document.documentElement.setAttribute('data-accent', stored)
+  function initDevPicker() {
+    const storedAccent = localStorage.getItem('bsf5y-accent')
+    const storedHeroVisual = localStorage.getItem('bsf5y-hero-visual')
+
+    if (storedAccent) {
+      document.documentElement.setAttribute('data-accent', storedAccent)
+    }
+    if (storedHeroVisual) {
+      document.documentElement.setAttribute('data-hero-visual', storedHeroVisual)
     }
 
-    // Inject the accent picker widget
+    // Inject the dev picker widget
     const pickerHtml = `
       <div class="accent-picker">
-        <button class="accent-picker-toggle" aria-label="Open accent color picker" title="Accent picker (dev only)">
+        <button class="accent-picker-toggle" aria-label="Open dev picker" title="Dev picker (dev only)">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="10"/>
             <circle cx="12" cy="12" r="6"/>
@@ -82,18 +87,36 @@ if (isDev) {
         </button>
         <div class="accent-picker-panel">
           <div class="accent-picker-header">
-            <span class="accent-picker-title">Accent</span>
+            <span class="accent-picker-title">Dev Tools</span>
             <span class="accent-picker-badge">DEV</span>
           </div>
-          <div class="accent-picker-options">
-            <button class="accent-option${!stored || stored === 'copper' ? ' active' : ''}" data-accent="copper">
-              <span class="accent-swatch accent-swatch-copper"></span>
-              <span>Copper</span>
-            </button>
-            <button class="accent-option${stored === 'steel' ? ' active' : ''}" data-accent="steel">
-              <span class="accent-swatch accent-swatch-steel"></span>
-              <span>Steel</span>
-            </button>
+
+          <div class="dev-picker-section">
+            <span class="dev-picker-label">Accent</span>
+            <div class="accent-picker-options">
+              <button class="accent-option${!storedAccent || storedAccent === 'copper' ? ' active' : ''}" data-accent="copper">
+                <span class="accent-swatch accent-swatch-copper"></span>
+                <span>Copper</span>
+              </button>
+              <button class="accent-option${storedAccent === 'steel' ? ' active' : ''}" data-accent="steel">
+                <span class="accent-swatch accent-swatch-steel"></span>
+                <span>Steel</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="dev-picker-section">
+            <span class="dev-picker-label">Hero Visual</span>
+            <div class="hero-visual-options">
+              <button class="hero-visual-option${!storedHeroVisual || storedHeroVisual === 'terminal' ? ' active' : ''}" data-hero-visual="terminal">
+                <span class="hero-visual-icon">&#60;/&#62;</span>
+                <span>Terminal</span>
+              </button>
+              <button class="hero-visual-option${storedHeroVisual === 'blueprint' ? ' active' : ''}" data-hero-visual="blueprint">
+                <span class="hero-visual-icon">&#9678;</span>
+                <span>Blueprint</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -104,7 +127,8 @@ if (isDev) {
     const picker = document.querySelector('.accent-picker')
     const toggle = picker.querySelector('.accent-picker-toggle')
     const panel = picker.querySelector('.accent-picker-panel')
-    const options = picker.querySelectorAll('.accent-option')
+    const accentOptions = picker.querySelectorAll('.accent-option')
+    const heroVisualOptions = picker.querySelectorAll('.hero-visual-option')
 
     // Toggle panel visibility
     toggle.addEventListener('click', () => {
@@ -119,12 +143,12 @@ if (isDev) {
     })
 
     // Handle accent selection
-    options.forEach((option) => {
+    accentOptions.forEach((option) => {
       option.addEventListener('click', () => {
         const accent = option.dataset.accent
 
         // Update active state
-        options.forEach((o) => o.classList.remove('active'))
+        accentOptions.forEach((o) => o.classList.remove('active'))
         option.classList.add('active')
 
         // Apply accent
@@ -137,9 +161,29 @@ if (isDev) {
         }
       })
     })
+
+    // Handle hero visual selection
+    heroVisualOptions.forEach((option) => {
+      option.addEventListener('click', () => {
+        const heroVisual = option.dataset.heroVisual
+
+        // Update active state
+        heroVisualOptions.forEach((o) => o.classList.remove('active'))
+        option.classList.add('active')
+
+        // Apply hero visual
+        if (heroVisual === 'terminal') {
+          document.documentElement.removeAttribute('data-hero-visual')
+          localStorage.removeItem('bsf5y-hero-visual')
+        } else {
+          document.documentElement.setAttribute('data-hero-visual', heroVisual)
+          localStorage.setItem('bsf5y-hero-visual', heroVisual)
+        }
+      })
+    })
   }
 
-  initAccentPicker()
+  initDevPicker()
 }
 
 /* ============================================
