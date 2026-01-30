@@ -28,11 +28,11 @@
 - [x] Add close-on-click behavior for nav links
 
 ## Stage 6: Testing & Polish
-- [ ] Test hamburger toggle on mobile viewport
-- [ ] Test nav dropdown appears with all 4 links
-- [ ] Test close-on-click for same-page anchors
-- [ ] Test Blog link navigates correctly
-- [ ] Test light mode styling
-- [ ] Test dark mode styling
-- [ ] Test keyboard accessibility (Tab, Enter/Space)
-- [ ] Verify desktop nav unchanged
+- [x] Test hamburger toggle on mobile viewport
+- [x] Test nav dropdown appears with all 4 links
+- [x] Test close-on-click for same-page anchors
+- [x] Test Blog link navigates correctly
+- [x] Test light mode styling
+- [x] Test dark mode styling
+- [x] Test keyboard accessibility (Tab, Enter/Space)
+- [x] Verify desktop nav unchanged
