@@ -15,16 +15,20 @@
       <div>{{ home.hero.subtext | safe }}</div>
     </div>
 
+    {# Hero Visual - supports two variants: "terminal" (default) and "blueprint"
+       Set via data-hero-visual attribute on <html> or toggle with JS #}
     <div class="hero-visual" aria-hidden="true">
-      <div class="terminal">
-        <div class="terminal-header">
-          <span class="terminal-dot terminal-dot-red"></span>
-          <span class="terminal-dot terminal-dot-yellow"></span>
-          <span class="terminal-dot terminal-dot-green"></span>
-          <span class="terminal-title">architecture.ts</span>
-        </div>
-        <div class="terminal-body">
-          <pre class="terminal-code"><code><span class="code-comment">// Your business logic lives here</span>
+      {# Terminal variant - code snippet aesthetic #}
+      <div class="hero-visual-terminal">
+        <div class="terminal">
+          <div class="terminal-header">
+            <span class="terminal-dot terminal-dot-red"></span>
+            <span class="terminal-dot terminal-dot-yellow"></span>
+            <span class="terminal-dot terminal-dot-green"></span>
+            <span class="terminal-title">architecture.ts</span>
+          </div>
+          <div class="terminal-body">
+            <pre class="terminal-code"><code><span class="code-comment">// Your business logic lives here</span>
 <span class="code-keyword">export class</span> <span class="code-class">ProductCore</span> {
   <span class="code-keyword">private</span> rules: <span class="code-type">BusinessRules</span>;
 
@@ -39,7 +43,15 @@
 webApp.<span class="code-function">use</span>(core);
 mobileApp.<span class="code-function">use</span>(core);
 api.<span class="code-function">use</span>(core);</code></pre>
+          </div>
         </div>
+      </div>
+
+      {# Blueprint variant - geometric/architectural aesthetic #}
+      <div class="hero-visual-blueprint">
+        <div class="blueprint-element blueprint-circle"></div>
+        <div class="blueprint-element blueprint-lines"></div>
+        <div class="blueprint-element blueprint-box"></div>
       </div>
     </div>
   </div>
