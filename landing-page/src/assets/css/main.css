@@ -271,6 +271,13 @@ button {
               opacity var(--duration-normal) var(--ease-out);
 }
 
+/* Keyboard focus indicator for hamburger toggle */
+.nav-toggle-checkbox:focus-visible ~ .nav-toggle {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
 /* Mobile nav */
 @media (max-width: 768px) {
   .nav-toggle {
