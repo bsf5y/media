@@ -6,6 +6,46 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 bsf5y-media is the media and web presence repository for **The Bootstrap Factory**, a Champaign-Urbana technology consultancy helping early-stage founders build production-ready products. The repo contains a static landing page and strategic/marketing documentation.
 
+## Workflow
+
+All work efforts start with a GitHub Issue and a corresponding feature branch.
+
+### Steps
+
+1. **Create Branch** - Create the feature branch (named `ISSUE_NUMBER-ISSUE_TITLE`).
+   - Use `gh issue develop #N` to create and link the branch to the issue (without `--checkout`).
+2. **Setup Worktree** - Create a git worktree for isolated development.
+   - Use `git worktree add .worktrees/<branch-name> origin/<branch-name>`
+   - All subsequent work happens in the worktree directory.
+3. **Plan** - Read the issue requirements and brainstorm an implementation plan with the user
+   using interview techniques for clarification. Write the plan to `working_info/plan_<branch-name>.md`.
+4. **Review** - Ask the user for final approval before proceeding.
+   - Commit the plan file before creating the task list.
+5. **Task List** - Create a task list with logical development stages. Write it to
+   `working_info/tasks_<branch-name>.md`.
+   - Commit the task file before executing tasks.
+6. **Implement** - Work on the first incomplete stage.
+   - Keep the tasks file updated as tasks are completed (using the markdown checkboxes)
+7. **Test** - Ensure complete test coverage and all tests pass for the stage.
+8. **Commit & Push** - Commit the stage changes and push to origin.
+   - Each stage must be committed before proceeding to the next.
+9. **Repeat** steps 6-8 until all tasks are complete.
+10. **Integration Test** - Run full project integration tests.
+11. **Pull Request** - If all tests pass, open a PR. Include lessons learned and noteworthy
+    implementation details to help reviewers.
+12. **Code Review** - Launch sub-agent in worktree and ask them to code review
+    the PR.  A possible prompt: `Act as an embedded Rust expert and software
+    architect. Review PR #NN and update PR with review as a comment.`  Note: Github
+    pr can not be marked as approved, only commented on.
+13. **Implement Suggestions fromn the Review** - Read the code review in the PR and implement any issues or suggestions that were identified.
+14. **Repeat** steps 12 and 13 until code review has no more issue.
+12. **Merge** - Use merge commit without squash to preserve stage history:
+    `gh pr merge -m #NN`
+13. **Cleanup** - Remove the worktree, local branch and remote branch:
+    - `git worktree remove .worktrees/<branch-name>`
+    - `git branch -d <branch-name>`
+    - `git push origin :<branch-name>`
+
 ## Repository Structure
 
 - `landing-page/` — Production landing page (Vite + vanilla JS, the main codebase)
