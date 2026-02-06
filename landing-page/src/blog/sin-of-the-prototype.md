@@ -2,6 +2,7 @@
 title: The Sin of the Prototype
 description: The difference between a product and a prototype isn't polish or features. It's where the value lives.
 date: 2025-01-15T12:00:00
+author: Wes Cravens
 ---
 
 When we talk about a "prototype," we aren't referring to a healthy step in the design process. We are referring to a makeshift solution. Possibly one born from a weekend of vibe coding, spit, and duct tape. Possibly one born from tens of thousands of dollars (or more) in development costs. Either way, we are talking about systems that are built without due care and concern for solid engineering and architecture that protects the core value.

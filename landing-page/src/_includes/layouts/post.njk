@@ -5,7 +5,10 @@ layout: layouts/base.njk
   <header class="post-header">
     <div class="container">
       <a href="/blog/" class="post-back">&larr; Back to Blog</a>
-      <time datetime="{{ page.date | dateISO }}">{{ page.date | readableDate }}</time>
+      <div class="post-meta">
+        <time datetime="{{ page.date | dateISO }}">{{ page.date | readableDate }}</time>
+        {% if author %}<span class="post-author">&middot; By {{ author }}</span>{% endif %}
+      </div>
       <h1>{{ title }}</h1>
       {% if description %}<p class="post-description">{{ description }}</p>{% endif %}
     </div>

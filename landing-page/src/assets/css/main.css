@@ -1617,14 +1617,21 @@ html[data-mode="light"] .mode-toggle .icon-moon {
   transform: translateY(-2px);
 }
 
-.post-item time {
-  display: block;
+.post-item .post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   color: var(--color-accent);
   margin-bottom: var(--space-xs);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.post-item .post-author {
+  color: var(--color-text-muted);
 }
 
 .post-item h2 {
@@ -1669,8 +1676,11 @@ html[data-mode="light"] .mode-toggle .icon-moon {
   color: var(--color-accent-light);
 }
 
-.post-header time {
-  display: block;
+.post-header .post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   color: var(--color-text-muted);
