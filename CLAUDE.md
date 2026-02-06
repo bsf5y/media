@@ -113,7 +113,7 @@ Three font families loaded from Google Fonts:
 
 - **Landing page text**: Edit `src/_data/home.json`. The JSON structure maps directly to page sections rendered by the Nunjucks partials.
 - **Site metadata/navigation**: Edit `src/_data/site.json`.
-- **Blog posts**: Add or edit markdown files in `src/blog/`. Each post needs YAML frontmatter with `title`, `date`, `description`, `author`, and optionally `tags`.
+- **Blog posts**: Add or edit markdown files in `src/blog/`. Each post needs YAML frontmatter with `title`, `date`, `description`, and optionally `author` and `tags`.
 
 ## Brand Voice
 

@@ -1619,6 +1619,7 @@ html[data-mode="light"] .mode-toggle .icon-moon {
 
 .post-item .post-meta {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--space-xs);
   font-family: var(--font-mono);
@@ -1677,6 +1678,7 @@ html[data-mode="light"] .mode-toggle .icon-moon {
 
 .post-header .post-meta {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--space-xs);
   font-family: var(--font-mono);
@@ -1685,10 +1687,6 @@ html[data-mode="light"] .mode-toggle .icon-moon {
   margin-bottom: var(--space-sm);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-}
-
-.post-header .post-author {
-  color: var(--color-text-muted);
 }
 
 .post-header h1 {
