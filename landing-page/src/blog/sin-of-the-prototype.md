@@ -1,7 +1,7 @@
 ---
 title: The Sin of the Prototype
 description: The difference between a product and a prototype isn't polish or features. It's where the value lives.
-date: 2025-01-15
+date: 2025-01-15T12:00:00
 ---
 
 When we talk about a "prototype," we aren't referring to a healthy step in the design process. We are referring to a makeshift solution. Possibly one born from a weekend of vibe coding, spit, and duct tape. Possibly one born from tens of thousands of dollars (or more) in development costs. Either way, we are talking about systems that are built without due care and concern for solid engineering and architecture that protects the core value.
@@ -18,13 +18,13 @@ Any experienced software engineer worth their salt will scream in horror when th
 
 The problem is that focus was not placed on the core of the value proposition. Instead, the prototype solution focused on the delivery mechanism and user experience rather than identifying what could really make the product special in the first place.
 
-This is upside down. Focus must be placed on building a portable core of software that can be used by many different user interfaces—be it a web app, phone app, API, terminal, or otherwise. The core should not have to change. The core ***Is Your Value***. It holds all the important rules, constraints, business processes, and data flows that differentiate your solution from all others. The Bootstrap Factory insists on identifying your core value and building solutions that deliver this value independent of any delivery mechanism.
+This is upside down. Focus must be placed on building a portable core of software that can be used by many different user interfaces—be it a web app, phone app, API, terminal, or otherwise. The core should not have to change. The core **Is Your Value**. It holds all the important rules, constraints, business processes, and data flows that differentiate your solution from all others. The Bootstrap Factory insists on identifying your core value and building solutions that deliver this value independent of any delivery mechanism.
 
 It may seem like we're saying that the user experience or design isn't important. We're not. Of course it's important. We're saying that those things are not going to be part of your core. They are going to be 'delivery mechanisms' that should rely on your core.
 
 If you are lucky, your differentiating core idea is going to be 5-10% of the solution required to deliver value to your users. The rest is simply the infrastructure needed to deliver that value.
 
-The Bootstrap Factory insists on helping our clients identify their core differentiating value-add, and then capturing this value into a core software solution that can be used across platforms and maintained separately from the delivery mechanism.
+The Bootstrap Factory enjoys helping our clients identify their core differentiating value-add, and then capturing this value into a core software solution that can be used across platforms and maintained separately from the delivery mechanism.
 
 ## A Classic Horror Story
 
@@ -40,7 +40,8 @@ So what happens is that the rules are duplicated into the new solution as best t
 
 ## A Contemporary Horror Story
 
-With the new capability to use AI to build prototypes, the problem of ingraining business rules into UI-facing technologies is massively compounded. Prototype builders typically instruct an AI to build what they want the user to experience. The AI will happily comply, with no regard for the architectural decisions that a skilled software engineer would consider crucial.
+With the new capability to use AI to build prototypes, the problem of ingraining business rules
+into UI-facing technologies is compounded exponentially. Prototype builders typically instruct an AI to build what they want the user to experience. The AI will happily comply, with no regard for the architectural decisions that a skilled software engineer would consider crucial.
 
 These new generative AI technologies allow extremely sophisticated prototype solutions to be developed very quickly. This rapid development of what appears to be a valid solution hides all of the classic horror stories. The result is that you can create more problems far faster than ever before.
 
