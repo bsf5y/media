@@ -16,7 +16,10 @@ permalink: /blog/
       {% for post in collections.posts %}
       <li class="post-item">
         <a href="{{ post.url }}">
-          <time datetime="{{ post.date | dateISO }}">{{ post.date | readableDate }}</time>
+          <div class="post-meta">
+            <time datetime="{{ post.date | dateISO }}">{{ post.date | readableDate }}</time>
+            {% if post.data.author %}<span class="post-author">&middot; By {{ post.data.author }}</span>{% endif %}
+          </div>
           <h2>{{ post.data.title }}</h2>
           {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
         </a>
