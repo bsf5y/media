@@ -1,19 +1,19 @@
 {
   "hero": {
     "tagline": "Products, Not Prototypes.",
-    "lead": "The startup industry has it backwards. Cutting corners on your product isn't saving money—it's borrowing against the re-work that you'll pay for later, with interest.",
-    "reframe": "<a href=\"https://x.com/unclebobmartin/status/1163789159309434880\">\"The only way to go fast is to go well.\"</a> - Robert Martin",
-    "subtext": "<p>  For business leaders with a product vision but without senior technical leadership, BSF5Y is the partner you need to build products that are ready for viral scaling.</p><br><p>When investors ask about your tech, you pass due diligence. When you hire engineers, they can read the code. When you pivot, you don't start over.</p>"
+    "lead": "The startup industry has it backwards. Cutting corners on your product isn't saving money—it's borrowing against the rework that you'll pay for later, with interest.",
+    "reframe": "<a href=\"https://x.com/unclebobmartin/status/1163789159309434880\">\"The only way to go fast is to go well.\"</a> — Robert Martin",
+    "subtext": "<p>For business leaders with a product vision but without senior technical leadership, BSF5Y is the partner you need to build products that are ready to scale.</p><br><p>When investors ask about your tech, you pass due diligence. When you hire engineers, they can read the code. When you pivot, you don't start over.</p>"
   },
   "positioning": "<p>The difference between a product and a prototype isn't polish or features — it's where the value lives. Prototypes trap business logic in the UI. Products capture it in portable software any interface can use.</p>",
   "problem": {
     "label": "The Founder's Reality",
     "headline": "We understand what keeps you up at night.",
     "statements": [
-      "Development used to move so fast, but now, adding a simple feature takes weeks.",
-      "The big reveal went great, delivery invoices were paid, & tech partner went crickets.",
-      "The investor's tech audits revealed a bunch of spit, ducktape and mud.",
-      "You have to throw it all away and start over.  Your investement has crashed."
+      "Development used to move so fast, but now adding a simple feature takes weeks.",
+      "The big reveal went great, delivery invoices were paid, and your tech partner went dark.",
+      "The investor's tech audits revealed a bunch of spit, duct tape, and mud.",
+      "You have to throw it all away and start over. Your investment has crashed."
     ]
   },
   "comparison": {
@@ -44,30 +44,30 @@
       "8-figure projects delivered",
       "Engineering teams built",
       "Venture capital raised",
-      "Startup exits realised"
+      "Startup exits realized"
     ]
   },
   "methodology": {
     "headline": "How We Work",
-    "intro": "We follow a proven methodology that moves beyond ideas and prototypes to deliver robust, market-ready products with a clear strategic advantage.",
+    "intro": "We follow a proven methodology that is designed to move past ideas and prototypes to deliver robust, market-ready products.",
     "phases": [
       {
         "number": "01",
         "name": "Discovery",
         "question": "Show us the vision.",
-        "description": "A successful partnership begins with shared understanding. We immerse ourselves in your vision to understand its core potential — what does version 1.0 looks like, what gives it market credibility, and why does it need to exist."
+        "description": "A successful partnership begins with shared understanding. We immerse ourselves in your vision to understand its core potential — what does version 1.0 look like, what gives it market credibility, and why does it need to exist."
       },
       {
         "number": "02",
         "name": "Differentiation",
-        "question": "What can only this product do.",
-        "description": "We identify what makes your product truly unique — the defensible core that sets it apart. Is it proprietary data, a novel algorithm, or deep domain expertise encoded in software? This is your product's core, so it's your solutions core too."
+        "question": "What can only this product do?",
+        "description": "We identify what makes your product truly unique — the defensible core that sets it apart. Is it proprietary data, a novel algorithm, or deep domain expertise encoded in software? This is your product's core, so it's your solution's core too."
       },
       {
         "number": "03",
         "name": "Infrastructure",
         "question": "Turn-key the rest.",
-        "description": "Everything that isn't your core differentiator is infrastructure. Web UIs, mobile-apps, signup, authentication, shopping-carts, payments, etc. Infrastructure should be inexpensive — we provide off-the-shelf battle-tested solutions to deliver and support your product without further development costs."
+        "description": "Everything that isn't your core differentiator is infrastructure. Web UIs, mobile apps, signup, authentication, shopping carts, payments, etc. Infrastructure should be inexpensive — we provide off-the-shelf battle-tested solutions to deliver and support your product without further development costs."
       },
       {
         "number": "04",
@@ -79,7 +79,7 @@
         "number": "05",
         "name": "Enduring Partnership",
         "question": "We're invested in your success.",
-        "description": "If we've chosen to partner with you then we are 100% invested in your long term success.  Long after your product has shipped and the last invoice has been paid; we're going to be there for you, no matter what."
+        "description": "If we've chosen to partner with you, then we are 100% invested in your long-term success. Long after your product has shipped and the last invoice has been paid, we're going to be there for you, no matter what."
       }
     ]
   },
@@ -87,7 +87,7 @@
     {
       "type": "Fractional CTO",
       "title": "Technical Leadership",
-      "description": "Senior engineering leadership for projects that need expert technical judgment without the equity or salary. Executive engineering leadership without the headcount."
+      "description": "Senior engineering leadership for projects that need expert technical judgment without the equity, salary, or headcount."
     },
     {
       "type": "Product Development",
@@ -107,12 +107,12 @@
     {
       "type": "Development Culture Shifts",
       "title": "AI-Driven Development",
-      "description": "It can not be stated plainly enough; AI-Driven Development is the most important paradigm shift in modern technology development.  Let us help you ramp up immediately to leverage these new technologies."
+      "description": "It cannot be stated plainly enough: AI-Driven Development is the most important paradigm shift in modern engineering. Let us help you ramp up immediately to capitalize on these new technologies."
     },
     {
       "type": "Enterprise Architecture",
       "title": "Strategic Technology",
-      "description": "Fuse your legacy information domains with contemporary technology to unlock previously unknown or misunderstood patterns. Evaluate and implement new IT solutions to build upon and extract differentiating market advantages."
+      "description": "Connect your existing systems with modern technology to reveal insights and advantages you didn't know you had."
     }
   ],
   "cta": {
