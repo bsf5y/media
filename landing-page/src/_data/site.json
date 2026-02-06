@@ -5,8 +5,8 @@
   "location": "Champaign-Urbana, IL",
   "email": "hello@bsf5y.com",
   "nav": [
-    { "text": "Approach", "url": "/#methodology" },
-    { "text": "Services", "url": "/#services" },
+    { "text": "How we work", "url": "/#methodology" },
+    { "text": "Solutions", "url": "/#services" },
     { "text": "Blog", "url": "/blog/" },
     { "text": "Let's Talk", "url": "/#contact", "class": "nav-cta" }
   ]
