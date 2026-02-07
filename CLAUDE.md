@@ -8,49 +8,22 @@ bsf5y-media is the media and web presence repository for **The Bootstrap Factory
 
 ## Workflow
 
-All work efforts start with a GitHub Issue and a corresponding feature branch.
+Use a GitHub Issue and feature branch for non-trivial work. Quick content edits or small fixes can be committed directly to `dev`.
 
 ### Steps
 
-1. **Create Branch** - Create the feature branch (named `ISSUE_NUMBER-ISSUE_TITLE`).
-   - Use `gh issue develop #N` to create and link the branch to the issue (without `--checkout`).
-2. **Setup Worktree** - Create a git worktree for isolated development.
-   - Use `git worktree add .worktrees/<branch-name> origin/<branch-name>`
-   - All subsequent work happens in the worktree directory.
-3. **Plan** - Read the issue requirements and brainstorm an implementation plan with the user
-   using interview techniques for clarification. Write the plan to `working_info/plan_<branch-name>.md`.
-4. **Review** - Ask the user for final approval before proceeding.
-   - Commit the plan file before creating the task list.
-5. **Task List** - Create a task list with logical development stages. Write it to
-   `working_info/tasks_<branch-name>.md`.
-   - Commit the task file before executing tasks.
-6. **Implement** - Work on the first incomplete stage.
-   - Keep the tasks file updated as tasks are completed (using the markdown checkboxes)
-7. **Test** - Ensure complete test coverage and all tests pass for the stage.
-8. **Commit & Push** - Commit the stage changes and push to origin.
-   - Each stage must be committed before proceeding to the next.
-9. **Repeat** steps 6-8 until all tasks are complete.
-10. **Integration Test** - Run full project integration tests.
-11. **Pull Request** - If all tests pass, open a PR. Include lessons learned and noteworthy
-    implementation details to help reviewers.
-12. **Code Review** - Launch sub-agent in worktree and ask them to code review
-    the PR. A possible prompt: `Act as a senior web developer and software
-    architect. Review PR #NN and update PR with review as a comment.` Note: GitHub
-    PRs can not be marked as approved, only commented on.
-13. **Implement Suggestions from the Review** - Read the code review in the PR and implement any issues or suggestions that were identified.
-14. **Repeat** steps 12 and 13 until code review has no more issues.
-15. **Merge** - Use merge commit without squash to preserve stage history:
-    `gh pr merge -m #NN`
-16. **Cleanup** - Remove the worktree, local branch and remote branch:
-    - `git worktree remove .worktrees/<branch-name>`
-    - `git branch -d <branch-name>`
-    - `git push origin :<branch-name>`
+1. **Branch** — `git checkout -b N-description` from `dev`.
+2. **Discuss** — For non-trivial changes, discuss approach with the user before coding. No written plan files needed.
+3. **Implement & Commit** — Make changes, commit at natural boundaries.
+4. **Verify** — Run `npm run build` to confirm no breakage. Use `npm run dev` to visually check if layout is affected.
+5. **Merge to dev** — `git checkout dev && git merge <branch> && git branch -d <branch>`.
+6. **Push** — **Always confirm with the user before pushing `dev`**, since push triggers production deployment. `git push origin dev`.
+7. **Cleanup** — Delete remote branch if one was pushed: `git push origin :<branch>`.
 
 ## Repository Structure
 
 - `landing-page/` — Production landing page and blog (Eleventy + Nunjucks)
 - `docs/` — Strategic messaging, engagement model, service descriptions, brand materials, article ideas
-- `working_info/` — Workflow plans and task tracking files for active/completed issues
 
 ## Build & Development Commands
 
