@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice #001052 — BSF5Y LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================
+       BSF5Y INVOICE TEMPLATE
+       Aesthetic: Refined Industrial Blueprint
+       ============================================ */
+
+    :root {
+      --color-bg-deep: #0a0c0f;
+      --color-bg: #12151a;
+      --color-bg-elevated: #1a1e25;
+      --color-bg-surface: #232830;
+
+      --color-text: #e8e6e3;
+      --color-text-muted: #a8b0ba;
+      --color-text-subtle: #8b9199;
+
+      --color-accent: #d97706;
+      --color-accent-light: #f59e0b;
+
+      --color-border: rgba(255, 255, 255, 0.08);
+      --color-border-strong: rgba(255, 255, 255, 0.15);
+
+      --font-display: 'Outfit', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+
+      --text-xs: 0.75rem;
+      --text-sm: 0.8125rem;
+      --text-base: 0.9375rem;
+
+      --page-max: 8.5in;
+      --page-padding: 0.6in;
+    }
+
+    @page {
+      size: letter;
+      margin: 0;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-display);
+      font-size: var(--text-base);
+      color: #2a2a2a;
+      background: #e8e6e3;
+      line-height: 1.5;
+    }
+
+    /* ---- Page Container ---- */
+    .invoice {
+      max-width: var(--page-max);
+      min-height: 11in;
+      margin: 0 auto;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---- Branded Header ---- */
+    .invoice-header {
+      background: var(--color-bg-deep);
+      color: var(--color-text);
+      padding: 0.5in var(--page-padding) 0.4in;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .invoice-header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--color-accent);
+    }
+
+    .company-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .company-name {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--color-text);
+      line-height: 1.1;
+    }
+
+    .company-tagline {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      font-weight: 400;
+      color: var(--color-accent);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .company-details {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      line-height: 1.65;
+      margin-top: 0.35rem;
+    }
+
+    .invoice-title-block {
+      text-align: right;
+    }
+
+    .invoice-label {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      font-weight: 500;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .invoice-number {
+      font-family: var(--font-mono);
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--color-text);
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    /* ---- Info Section ---- */
+    .invoice-info {
+      padding: 0.4in var(--page-padding) 0.3in;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #e0ddd8;
+    }
+
+    .bill-to {
+      flex: 1;
+    }
+
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      font-weight: 500;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+
+    .client-name {
+      font-weight: 600;
+      font-size: var(--text-base);
+      color: #1a1a1a;
+      margin-bottom: 0.15rem;
+    }
+
+    .client-address {
+      font-size: var(--text-sm);
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .invoice-meta {
+      text-align: right;
+    }
+
+    .meta-table {
+      border-collapse: collapse;
+      margin-left: auto;
+    }
+
+    .meta-table td {
+      padding: 0.15rem 0;
+      font-size: var(--text-sm);
+      vertical-align: top;
+    }
+
+    .meta-table .meta-label {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding-right: 1rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .meta-table .meta-value {
+      font-family: var(--font-mono);
+      font-size: var(--text-sm);
+      color: #1a1a1a;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    /* ---- Line Items Table ---- */
+    .invoice-body {
+      padding: 0.3in var(--page-padding);
+      flex: 1;
+    }
+
+    .line-items {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .line-items thead th {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      font-weight: 500;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0 0 0.5rem 0;
+      border-bottom: 2px solid var(--color-bg-deep);
+      text-align: left;
+    }
+
+    .line-items thead th.align-right {
+      text-align: right;
+    }
+
+    .line-items thead th.align-center {
+      text-align: center;
+    }
+
+    .line-items tbody td {
+      padding: 0.55rem 0;
+      font-size: var(--text-sm);
+      color: #333;
+      border-bottom: 1px solid #eee;
+      vertical-align: middle;
+    }
+
+    .line-items tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-bg-deep);
+    }
+
+    .line-items .col-date {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: #666;
+      width: 12%;
+    }
+
+    .line-items .col-desc {
+      width: 44%;
+      padding-left: 0.75rem;
+    }
+
+    .line-items .col-qty {
+      font-family: var(--font-mono);
+      text-align: center;
+      width: 12%;
+    }
+
+    .line-items .col-rate {
+      font-family: var(--font-mono);
+      text-align: right;
+      width: 16%;
+    }
+
+    .line-items .col-amount {
+      font-family: var(--font-mono);
+      text-align: right;
+      font-weight: 500;
+      width: 16%;
+    }
+
+    /* ---- Totals ---- */
+    .invoice-totals {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 var(--page-padding);
+    }
+
+    .totals-table {
+      border-collapse: collapse;
+      min-width: 280px;
+    }
+
+    .totals-table td {
+      padding: 0.35rem 0;
+      font-size: var(--text-sm);
+    }
+
+    .totals-table .totals-label {
+      color: #888;
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding-right: 2rem;
+    }
+
+    .totals-table .totals-value {
+      font-family: var(--font-mono);
+      text-align: right;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .totals-table tr.total-due {
+      border-top: 2px solid var(--color-bg-deep);
+    }
+
+    .totals-table tr.total-due td {
+      padding-top: 0.5rem;
+    }
+
+    .totals-table tr.total-due .totals-label {
+      font-family: var(--font-display);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: #1a1a1a;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+
+    .totals-table tr.total-due .totals-value {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* ---- Notes ---- */
+    .invoice-notes {
+      padding: 0.4in var(--page-padding) 0.2in;
+      margin-top: auto;
+    }
+
+    .notes-content {
+      font-size: var(--text-sm);
+      color: #888;
+      line-height: 1.6;
+      border-top: 1px solid #e0ddd8;
+      padding-top: 0.4in;
+    }
+
+    .notes-content strong {
+      font-weight: 600;
+      color: #555;
+    }
+
+    /* ---- Footer ---- */
+    .invoice-footer {
+      background: var(--color-bg-deep);
+      color: var(--color-text-muted);
+      padding: 0.3in var(--page-padding);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .invoice-footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--color-accent);
+    }
+
+    .footer-tagline {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-subtle);
+      letter-spacing: 0.05em;
+    }
+
+    .footer-tagline span {
+      color: var(--color-accent);
+    }
+
+    .footer-contact {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-subtle);
+      text-align: right;
+    }
+
+    /* ---- Print Styles ---- */
+    @media print {
+      body {
+        background: none;
+      }
+
+      .invoice {
+        max-width: none;
+        min-height: auto;
+        box-shadow: none;
+      }
+    }
+
+    /* ---- Screen-only: visual polish ---- */
+    @media screen {
+      body {
+        padding: 2rem 1rem;
+      }
+
+      .invoice {
+        box-shadow:
+          0 1px 3px rgba(0, 0, 0, 0.08),
+          0 8px 30px rgba(0, 0, 0, 0.12);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="invoice">
+
+    <!-- Header -->
+    <header class="invoice-header">
+      <div class="company-brand">
+        <div class="company-name">The Bootstrap Factory</div>
+        <div class="company-tagline">Products, not prototypes.</div>
+        <div class="company-details">
+          BSF5Y LLC<br>
+          PO Box 3102<br>
+          Champaign, IL 61826<br>
+          773-217-8015<br>
+          wcravens@bsf5y.com<br>
+          EIN: 99-4768148
+        </div>
+      </div>
+      <div class="invoice-title-block">
+        <div class="invoice-label">Invoice</div>
+        <div class="invoice-number">#001052</div>
+      </div>
+    </header>
+
+    <!-- Billing Info & Meta -->
+    <section class="invoice-info">
+      <div class="bill-to">
+        <div class="section-label">Bill To</div>
+        <div class="client-name">T/CCI Manufacturing, LLC</div>
+        <div class="client-address">
+          2120 N 22nd St<br>
+          Decatur, IL 62526
+        </div>
+      </div>
+      <div class="invoice-meta">
+        <table class="meta-table">
+          <tr>
+            <td class="meta-label">Date</td>
+            <td class="meta-value">01/05/2026</td>
+          </tr>
+          <tr>
+            <td class="meta-label">Due Date</td>
+            <td class="meta-value">01/05/2026</td>
+          </tr>
+          <tr>
+            <td class="meta-label">Job No.</td>
+            <td class="meta-value">000002</td>
+          </tr>
+          <tr>
+            <td class="meta-label">Job Name</td>
+            <td class="meta-value">Consulting; Wes Cravens</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Line Items -->
+    <section class="invoice-body">
+      <table class="line-items">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th style="padding-left: 0.75rem">Description</th>
+            <th class="align-center">Qty</th>
+            <th class="align-right">Rate</th>
+            <th class="align-right">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-date">01/05/2026</td>
+            <td class="col-desc">Week ending 12/06/2025</td>
+            <td class="col-qty">20.00</td>
+            <td class="col-rate">$100.00</td>
+            <td class="col-amount">$2,000.00</td>
+          </tr>
+          <tr>
+            <td class="col-date">01/05/2026</td>
+            <td class="col-desc">Week ending 12/13/2025</td>
+            <td class="col-qty">25.00</td>
+            <td class="col-rate">$100.00</td>
+            <td class="col-amount">$2,500.00</td>
+          </tr>
+          <tr>
+            <td class="col-date">01/05/2026</td>
+            <td class="col-desc">Week ending 12/20/2025</td>
+            <td class="col-qty">33.75</td>
+            <td class="col-rate">$100.00</td>
+            <td class="col-amount">$3,375.00</td>
+          </tr>
+          <tr>
+            <td class="col-date">01/05/2026</td>
+            <td class="col-desc">Week ending 12/27/2025</td>
+            <td class="col-qty">18.75</td>
+            <td class="col-rate">$100.00</td>
+            <td class="col-amount">$1,875.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Totals -->
+    <section class="invoice-totals">
+      <table class="totals-table">
+        <tr>
+          <td class="totals-label">Subtotal</td>
+          <td class="totals-value">$9,750.00</td>
+        </tr>
+        <tr>
+          <td class="totals-label">Tax</td>
+          <td class="totals-value">$0.00</td>
+        </tr>
+        <tr class="total-due">
+          <td class="totals-label">Amount Due</td>
+          <td class="totals-value">$9,750.00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Notes -->
+    <section class="invoice-notes">
+      <div class="notes-content">
+        <strong>Payment Terms:</strong> Due upon receipt. Please remit payment to BSF5Y LLC.<br>
+        Questions? Contact wcravens@bsf5y.com
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="invoice-footer">
+      <div class="footer-tagline"><span>bsf5y</span> &mdash; The Bootstrap Factory &middot; Champaign-Urbana, IL</div>
+      <div class="footer-contact">bsf5y.com</div>
+    </footer>
+
+  </div>
+</body>
+</html>
