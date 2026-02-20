@@ -191,24 +191,13 @@ button {
 .logo {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
+  flex-shrink: 0;
 }
 
-.logo-mark {
-  font-family: var(--font-mono);
-  font-size: var(--text-sm);
-  font-weight: 500;
-  letter-spacing: var(--tracking-wider);
-  color: var(--color-accent);
-  padding: var(--space-xs) var(--space-sm);
-  border: 1px solid var(--color-accent);
-  border-radius: var(--radius-sm);
-}
-
-.logo-text {
-  font-weight: 600;
-  font-size: var(--text-lg);
-  letter-spacing: var(--tracking-tight);
+.logo-svg {
+  width: 315px;
+  height: auto;
+  display: block;
 }
 
 .nav {
