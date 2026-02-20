@@ -198,6 +198,11 @@ button {
   width: 315px;
   height: auto;
   display: block;
+  --color-text: #ffffff;
+}
+
+html[data-mode="light"] .logo-svg {
+  --color-text: #1a1e25;
 }
 
 .nav {
