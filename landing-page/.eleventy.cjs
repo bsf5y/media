@@ -1,6 +1,22 @@
+const fs = require("fs");
+const path = require("path");
+const crypto = require("crypto");
+
 module.exports = function(eleventyConfig) {
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("src/assets");
+
+  // Cache-busting filter: appends content hash as query parameter
+  eleventyConfig.addFilter("cacheBust", (url) => {
+    const filePath = path.join(__dirname, "src", url);
+    try {
+      const content = fs.readFileSync(filePath);
+      const hash = crypto.createHash("md5").update(content).digest("hex").slice(0, 8);
+      return `${url}?v=${hash}`;
+    } catch {
+      return url;
+    }
+  });
   eleventyConfig.addPassthroughCopy("public");
 
   // Watch for CSS/JS changes

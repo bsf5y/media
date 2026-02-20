@@ -64,8 +64,8 @@
   </style>
 
   <!-- Main stylesheet with preload for faster loading -->
-  <link rel="preload" href="/assets/css/main.css" as="style">
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="preload" href="{{ '/assets/css/main.css' | cacheBust }}" as="style">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | cacheBust }}">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏭</text></svg>">
@@ -85,6 +85,6 @@
 
   {% include "partials/footer.njk" %}
 
-  <script type="module" src="/assets/js/main.js"></script>
+  <script type="module" src="{{ '/assets/js/main.js' | cacheBust }}"></script>
 </body>
 </html>
