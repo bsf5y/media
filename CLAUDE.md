@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 bsf5y-media is the media and web presence repository for **The Bootstrap Factory**, a Champaign-Urbana technology consultancy helping early-stage founders build production-ready products. The repo contains a static landing page with blog and strategic/marketing documentation.
 
-## Workflow
+## Development Workflow
 
 Use a GitHub Issue and feature branch for non-trivial work. Quick content edits or small fixes can be committed directly to `dev`.
 

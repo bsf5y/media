@@ -7,7 +7,7 @@
    Design Tokens
    -------------------------------------------- */
 :root {
-  /* Colors: Dark industrial palette with warm copper accent */
+  /* Colors: Dark industrial palette with dual accent */
   --color-bg-deep: #0a0c0f;
   --color-bg: #12151a;
   --color-bg-elevated: #1a1e25;
@@ -17,9 +17,15 @@
   --color-text-muted: #a8b0ba; /* Improved contrast: 9.2:1 on --color-bg-deep */
   --color-text-subtle: #8b9199; /* Improved contrast: 6.5:1 on --color-bg-deep */
 
+  /* Warm accent: copper — action, engagement, connections */
   --color-accent: #d97706;
   --color-accent-light: #f59e0b;
   --color-accent-glow: rgba(217, 119, 6, 0.15);
+
+  /* Cool accent: steel blue — structure, precision, trust */
+  --color-accent-cool: #3b82f6;
+  --color-accent-cool-light: #60a5fa;
+  --color-accent-cool-glow: rgba(59, 130, 246, 0.15);
 
   --color-border: rgba(255, 255, 255, 0.08);
   --color-border-strong: rgba(255, 255, 255, 0.15);
@@ -100,6 +106,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--space-5xl) + 2rem);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -191,24 +198,18 @@ button {
 .logo {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
+  flex-shrink: 0;
 }
 
-.logo-mark {
-  font-family: var(--font-mono);
-  font-size: var(--text-sm);
-  font-weight: 500;
-  letter-spacing: var(--tracking-wider);
-  color: var(--color-accent);
-  padding: var(--space-xs) var(--space-sm);
-  border: 1px solid var(--color-accent);
-  border-radius: var(--radius-sm);
+.logo-svg {
+  width: 315px;
+  height: auto;
+  display: block;
+  --color-text: #ffffff;
 }
 
-.logo-text {
-  font-weight: 600;
-  font-size: var(--text-lg);
-  letter-spacing: var(--tracking-tight);
+html[data-mode="light"] .logo-svg {
+  --color-text: #1a1e25;
 }
 
 .nav {
@@ -220,12 +221,12 @@ button {
 .nav a {
   font-size: var(--text-sm);
   font-weight: 500;
-  color: var(--color-text-muted);
+  color: var(--color-accent-cool);
   transition: color var(--duration-fast) var(--ease-out);
 }
 
 .nav a:hover {
-  color: var(--color-text);
+  color: var(--color-accent-cool-light);
 }
 
 .nav-cta {
@@ -343,7 +344,7 @@ button {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: var(--space-5xl) 0 var(--space-4xl);
+  padding: calc(var(--space-5xl) + 4rem) 0 var(--space-4xl);
   position: relative;
   overflow: hidden;
 }
@@ -481,7 +482,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 /* Blueprint visual elements */
 .blueprint-element {
   position: absolute;
-  border: 1px solid var(--color-accent);
+  border: 1px solid var(--color-accent-cool);
   opacity: 0.2;
 }
 
@@ -499,7 +500,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 .blueprint-circle::after {
   content: '';
   position: absolute;
-  border: 1px solid var(--color-accent);
+  border: 1px solid var(--color-accent-cool);
   border-radius: 50%;
 }
 
@@ -516,7 +517,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 .blueprint-lines {
   width: 200px;
   height: 1px;
-  background: var(--color-accent);
+  background: var(--color-accent-cool);
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
@@ -528,7 +529,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
   position: absolute;
   width: 1px;
   height: 200px;
-  background: var(--color-accent);
+  background: var(--color-accent-cool);
 }
 
 .blueprint-lines::before {
@@ -623,7 +624,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 }
 
 .code-keyword {
-  color: var(--color-accent);
+  color: var(--color-accent-cool);
 }
 
 .code-class {
@@ -686,7 +687,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
   color: var(--color-text-muted);
   line-height: var(--leading-relaxed);
   padding-left: var(--space-lg);
-  border-left: 2px solid var(--color-border-strong);
+  border-left: 2px solid var(--color-accent-cool);
   text-align: left;
 }
 
@@ -747,7 +748,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 }
 
 .comparison-prototype .comparison-label {
-  color: var(--color-text-subtle);
+  color: var(--color-accent-cool);
 }
 
 .comparison-product .comparison-label {
@@ -776,7 +777,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--color-border-strong);
+  background: var(--color-accent-cool);
 }
 
 .comparison-product .comparison-list li::before {
@@ -931,7 +932,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
   font-family: var(--font-mono);
   font-size: var(--text-4xl);
   font-weight: 500;
-  color: var(--color-accent);
+  color: var(--color-accent-cool);
   opacity: 0.3;
   line-height: 1;
 }
@@ -980,7 +981,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 
 .service:hover {
   transform: translateY(-4px);
-  border-color: var(--color-border-strong);
+  border-color: var(--color-accent);
 }
 
 .service-type {
@@ -1154,7 +1155,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 }
 
 .footer-links a:hover {
-  color: var(--color-accent);
+  color: var(--color-accent-cool-light);
 }
 
 .footer-bottom {
@@ -1352,14 +1353,14 @@ html[data-accent="steel"] {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: var(--radius-sm);
-  color: var(--color-text-muted);
+  color: var(--color-accent-cool);
   transition: color var(--duration-fast) var(--ease-out),
               background var(--duration-fast) var(--ease-out);
 }
 
 .mode-toggle:hover {
-  color: var(--color-text);
-  background: var(--color-border);
+  color: var(--color-accent-cool-light);
+  background: var(--color-accent-cool-glow);
 }
 
 .mode-toggle svg {
@@ -1586,7 +1587,7 @@ html[data-mode="light"] .mode-toggle .icon-moon {
 
 /* Blog Listing Page */
 .blog-listing {
-  padding: var(--space-3xl) 0;
+  padding: calc(var(--space-5xl) + 4rem) 0 var(--space-3xl);
   min-height: 100vh;
 }
 
@@ -1651,7 +1652,7 @@ html[data-mode="light"] .mode-toggle .icon-moon {
 
 /* Blog Post Page */
 .blog-post {
-  padding-top: var(--space-3xl);
+  padding-top: calc(var(--space-5xl) + 4rem);
 }
 
 .post-header {
@@ -1663,14 +1664,14 @@ html[data-mode="light"] .mode-toggle .icon-moon {
   display: inline-block;
   font-family: var(--font-mono);
   font-size: var(--text-sm);
-  color: var(--color-accent);
+  color: var(--color-accent-cool);
   text-decoration: none;
   margin-bottom: var(--space-lg);
   transition: color var(--duration-fast) var(--ease-out);
 }
 
 .post-back:hover {
-  color: var(--color-accent-light);
+  color: var(--color-accent-cool-light);
 }
 
 .post-header .post-meta {

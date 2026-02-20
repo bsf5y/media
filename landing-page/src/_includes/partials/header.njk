@@ -1,8 +1,7 @@
 <header class="site-header">
   <div class="container">
-    <a href="/" class="logo">
-      <span class="logo-mark">BSF5Y</span>
-      <span class="logo-text">{{ site.title }}</span>
+    <a href="/" class="logo" aria-label="{{ site.title }} — Home">
+      {% include "partials/logo-svg.njk" %}
     </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
     <label for="nav-toggle" class="nav-toggle" role="button" aria-label="Toggle navigation">
