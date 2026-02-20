@@ -95,6 +95,39 @@ Copper works because it:
 - Is distinctive—most consultancies use blue, teal, or purple
 - Ages well conceptually (patina, heritage, lasting value)
 
+**Secondary Accent: Steel Blue**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  COOL ACCENT                                                │
+├─────────────────────────────────────────────────────────────┤
+│  Steel Blue       #3B82F6   — Secondary accent              │
+│  Steel Light      #60A5FA   — Hover states                  │
+│  Steel Glow       #3B82F6/15% — Subtle backgrounds          │
+└─────────────────────────────────────────────────────────────┘
+```
+
+Steel blue was introduced alongside the logo to create a two-tone palette. It serves as a cool counterpoint to copper's warmth, evoking precision and structure against copper's craft and engagement.
+
+**Two-Tone Color Rules**
+
+The dual accent system follows a clear semantic division:
+
+| Role | Color | Usage |
+|------|-------|-------|
+| **Navigation & wayfinding** | Steel blue | Nav links, back links, mode toggle — elements that orient the reader |
+| **Structural markers** | Steel blue | Phase numbers, comparison baseline column, problem item borders, blueprint visual — elements that provide structure and framework |
+| **Engagement & action** | Copper | CTA buttons, hover states on cards, section labels, service badges — elements that draw the reader forward |
+| **Content highlights** | Copper | Inline code, blockquote borders, blog post dates, content links — elements within the reading experience |
+
+**The guiding principle:** Blue orients, copper activates. If an element helps the user *find their way*, it's blue. If it's asking the user to *lean in or act*, it's copper. When in doubt, copper — it's the primary accent and the safer default.
+
+**Specific rules:**
+- All card hover borders use copper (hover = engagement, regardless of card type)
+- Section labels and taxonomic badges use copper (they categorize and draw attention)
+- The credibility bar stays neutral gray (trust signals should feel understated, not colored)
+- The header chrome (nav, toggle) uses blue to coordinate with the logo's blue flash
+
 **Light Mode: Deprioritized for V1**
 
 Dark mode only for initial launch. The target audience (technical founders) tolerates dark UIs well, and a single mode simplifies implementation. If added later, use a warm paper-white (`#FAF9F7`) rather than pure white.
