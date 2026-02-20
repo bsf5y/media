@@ -1,0 +1,945 @@
+---
+layout: false
+templateEngineOverride: false
+permalink: /style-guide/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Guide — The Bootstrap Factory</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Fonts: same as main site -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  <!-- Site stylesheet — single source of truth -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <style>
+    /* ---- Style Guide Layout ---- */
+    .sg-page {
+      padding: 6rem 0 4rem;
+      min-height: 100vh;
+    }
+
+    .sg-header {
+      margin-bottom: var(--space-3xl);
+    }
+
+    .sg-title {
+      font-size: var(--text-4xl);
+      font-weight: 800;
+      letter-spacing: var(--tracking-tight);
+      margin-bottom: var(--space-sm);
+    }
+
+    .sg-subtitle {
+      font-size: var(--text-lg);
+      color: var(--color-text-muted);
+    }
+
+    .sg-section {
+      margin-bottom: var(--space-4xl);
+    }
+
+    .sg-section-title {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      font-weight: 500;
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-sm);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .sg-subsection {
+      margin-bottom: var(--space-2xl);
+    }
+
+    .sg-subsection-title {
+      font-size: var(--text-lg);
+      font-weight: 600;
+      margin-bottom: var(--space-md);
+      color: var(--color-text);
+    }
+
+    .sg-label {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-subtle);
+      letter-spacing: var(--tracking-wide);
+    }
+
+    /* ---- Color Swatches ---- */
+    .sg-swatches {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: var(--space-md);
+    }
+
+    .sg-swatch {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+    }
+
+    .sg-swatch-color {
+      height: 80px;
+    }
+
+    .sg-swatch-info {
+      padding: var(--space-sm) var(--space-md);
+      background: var(--color-bg-elevated);
+    }
+
+    .sg-swatch-name {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .sg-swatch-value {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-subtle);
+    }
+
+    /* ---- Type Scale ---- */
+    .sg-type-row {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-lg);
+      padding: var(--space-md) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .sg-type-label {
+      flex-shrink: 0;
+      width: 120px;
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-subtle);
+    }
+
+    .sg-type-sample {
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /* ---- Font Families ---- */
+    .sg-font-card {
+      padding: var(--space-xl);
+      background: var(--color-bg-elevated);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      margin-bottom: var(--space-md);
+    }
+
+    .sg-font-name {
+      font-family: var(--font-mono);
+      font-size: var(--text-sm);
+      color: var(--color-accent);
+      margin-bottom: var(--space-sm);
+    }
+
+    .sg-font-sample {
+      font-size: var(--text-2xl);
+      line-height: var(--leading-snug);
+      margin-bottom: var(--space-sm);
+    }
+
+    .sg-font-alphabet {
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      line-height: var(--leading-relaxed);
+    }
+
+    /* ---- Spacing Scale ---- */
+    .sg-spacing-row {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-sm);
+    }
+
+    .sg-spacing-label {
+      flex-shrink: 0;
+      width: 100px;
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-subtle);
+      text-align: right;
+    }
+
+    .sg-spacing-bar {
+      height: 24px;
+      background: var(--color-accent-glow);
+      border: 1px solid var(--color-accent);
+      border-radius: var(--radius-sm);
+    }
+
+    .sg-spacing-value {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-subtle);
+      flex-shrink: 0;
+    }
+
+    /* ---- Buttons Row ---- */
+    .sg-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-lg);
+    }
+
+    /* ---- Cards Grid ---- */
+    .sg-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: var(--space-lg);
+    }
+
+    /* ---- Effects Grid ---- */
+    .sg-effects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: var(--space-lg);
+    }
+
+    .sg-effect-box {
+      padding: var(--space-xl);
+      background: var(--color-bg-elevated);
+      border: 1px solid var(--color-border);
+      text-align: center;
+    }
+
+    .sg-effect-label {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-subtle);
+      margin-top: var(--space-sm);
+    }
+
+    /* ---- Blog Content Demo ---- */
+    .sg-blog-demo {
+      max-width: var(--container-narrow);
+    }
+
+    /* ---- Inline mode toggle for the guide ---- */
+    .sg-mode-toggle {
+      position: fixed;
+      top: 1.5rem;
+      right: 1.5rem;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: var(--radius-sm);
+      background: var(--color-bg-elevated);
+      border: 1px solid var(--color-border);
+      color: var(--color-accent-cool);
+      cursor: pointer;
+      transition: color var(--duration-fast) var(--ease-out),
+                  background var(--duration-fast) var(--ease-out);
+    }
+
+    .sg-mode-toggle:hover {
+      color: var(--color-accent-cool-light);
+      background: var(--color-accent-cool-glow);
+    }
+
+    .sg-mode-toggle svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    .sg-mode-toggle .icon-sun { display: none; }
+    .sg-mode-toggle .icon-moon { display: none; }
+    html[data-mode="dark"] .sg-mode-toggle .icon-sun,
+    html:not([data-mode]) .sg-mode-toggle .icon-sun { display: block; }
+    html[data-mode="light"] .sg-mode-toggle .icon-moon { display: block; }
+
+    /* ---- Nav (table of contents) ---- */
+    .sg-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm) var(--space-md);
+      margin-bottom: var(--space-3xl);
+    }
+
+    .sg-nav a {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-accent-cool);
+      letter-spacing: var(--tracking-wide);
+      transition: color var(--duration-fast) var(--ease-out);
+    }
+
+    .sg-nav a:hover {
+      color: var(--color-accent-cool-light);
+    }
+
+    /* ---- Accessibility demos ---- */
+    .sg-focus-demo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      align-items: center;
+    }
+
+    .sg-focus-demo > * {
+      padding: var(--space-sm) var(--space-md);
+    }
+  </style>
+</head>
+<body>
+  <!-- Blueprint grid overlay -->
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Theme toggle -->
+  <button class="sg-mode-toggle" aria-label="Toggle light/dark mode">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+
+  <div class="sg-page">
+    <div class="container">
+
+      <!-- Header -->
+      <div class="sg-header">
+        <h1 class="sg-title">Style Guide</h1>
+        <p class="sg-subtitle">Design tokens and UI patterns for The Bootstrap Factory</p>
+      </div>
+
+      <!-- Table of Contents -->
+      <nav class="sg-nav" aria-label="Style guide sections">
+        <a href="#colors">Colors</a>
+        <a href="#typography">Typography</a>
+        <a href="#spacing">Spacing</a>
+        <a href="#buttons">Buttons &amp; Links</a>
+        <a href="#cards">Cards &amp; Surfaces</a>
+        <a href="#blog">Blog Content</a>
+        <a href="#effects">Effects</a>
+        <a href="#accessibility">Accessibility</a>
+      </nav>
+
+      <!-- ============================================
+           1. Color Palette
+           ============================================ -->
+      <section class="sg-section" id="colors">
+        <h2 class="sg-section-title">Color Palette</h2>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Backgrounds</h3>
+          <div class="sg-swatches">
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-bg-deep);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-bg-deep</span>
+                <span class="sg-swatch-value">#0a0c0f</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-bg);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-bg</span>
+                <span class="sg-swatch-value">#12151a</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-bg-elevated);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-bg-elevated</span>
+                <span class="sg-swatch-value">#1a1e25</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-bg-surface);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-bg-surface</span>
+                <span class="sg-swatch-value">#232830</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Text</h3>
+          <div class="sg-swatches">
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-text);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-text</span>
+                <span class="sg-swatch-value">#e8e6e3</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-text-muted);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-text-muted</span>
+                <span class="sg-swatch-value">#a8b0ba</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-text-subtle);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-text-subtle</span>
+                <span class="sg-swatch-value">#8b9199</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Accents — Copper (warm)</h3>
+          <div class="sg-swatches">
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-accent);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-accent</span>
+                <span class="sg-swatch-value">#d97706</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-accent-light);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-accent-light</span>
+                <span class="sg-swatch-value">#f59e0b</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-accent-glow);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-accent-glow</span>
+                <span class="sg-swatch-value">rgba(217,119,6,0.15)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Accents — Steel Blue (cool)</h3>
+          <div class="sg-swatches">
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: #3b82f6;"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-accent-cool</span>
+                <span class="sg-swatch-value">#3b82f6</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: #60a5fa;"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-accent-cool-light</span>
+                <span class="sg-swatch-value">#60a5fa</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: rgba(59, 130, 246, 0.15);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-accent-cool-glow</span>
+                <span class="sg-swatch-value">rgba(59,130,246,0.15)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Borders &amp; Grid</h3>
+          <div class="sg-swatches">
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-border);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-border</span>
+                <span class="sg-swatch-value">rgba(255,255,255,0.08)</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-border-strong);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-border-strong</span>
+                <span class="sg-swatch-value">rgba(255,255,255,0.15)</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-grid);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-grid</span>
+                <span class="sg-swatch-value">rgba(217,119,6,0.03)</span>
+              </div>
+            </div>
+            <div class="sg-swatch">
+              <div class="sg-swatch-color" style="background: var(--color-grid-strong);"></div>
+              <div class="sg-swatch-info">
+                <span class="sg-swatch-name">--color-grid-strong</span>
+                <span class="sg-swatch-value">rgba(217,119,6,0.06)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           2. Typography
+           ============================================ -->
+      <section class="sg-section" id="typography">
+        <h2 class="sg-section-title">Typography</h2>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Font Families</h3>
+
+          <div class="sg-font-card">
+            <div class="sg-font-name">--font-display: Outfit</div>
+            <div class="sg-font-sample" style="font-family: var(--font-display); font-weight: 700;">
+              Products, Not Prototypes
+            </div>
+            <div class="sg-font-alphabet" style="font-family: var(--font-display);">
+              ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+            </div>
+          </div>
+
+          <div class="sg-font-card">
+            <div class="sg-font-name">--font-mono: JetBrains Mono</div>
+            <div class="sg-font-sample" style="font-family: var(--font-mono); font-weight: 500;">
+              const factory = new Bootstrap()
+            </div>
+            <div class="sg-font-alphabet" style="font-family: var(--font-mono);">
+              ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+            </div>
+          </div>
+
+          <div class="sg-font-card">
+            <div class="sg-font-name">--font-serif: Source Serif 4</div>
+            <div class="sg-font-sample" style="font-family: var(--font-serif); font-style: italic;">
+              Go well to go fast — engineering discipline over speed
+            </div>
+            <div class="sg-font-alphabet" style="font-family: var(--font-serif);">
+              ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+            </div>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Type Scale</h3>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--text-6xl<br>4.5rem</span>
+            <span class="sg-type-sample" style="font-size: var(--text-6xl); font-weight: 800; line-height: var(--leading-tight);">Blueprint</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--text-5xl<br>3.5rem</span>
+            <span class="sg-type-sample" style="font-size: var(--text-5xl); font-weight: 800; line-height: var(--leading-tight);">Blueprint</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--text-4xl<br>2.5rem</span>
+            <span class="sg-type-sample" style="font-size: var(--text-4xl); font-weight: 700; line-height: var(--leading-tight);">Products, Not Prototypes</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--text-3xl<br>2rem</span>
+            <span class="sg-type-sample" style="font-size: var(--text-3xl); font-weight: 700; line-height: var(--leading-snug);">Products, Not Prototypes</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--text-2xl<br>1.5rem</span>
+            <span class="sg-type-sample" style="font-size: var(--text-2xl); font-weight: 600;">Section Heading</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--text-xl<br>1.25rem</span>
+            <span class="sg-type-sample" style="font-size: var(--text-xl); font-weight: 600;">Sub-section Heading</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--text-lg<br>1.125rem</span>
+            <span class="sg-type-sample" style="font-size: var(--text-lg);">Lead paragraph text for introductions and emphasis.</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--text-base<br>1rem</span>
+            <span class="sg-type-sample" style="font-size: var(--text-base);">Body text. The default size for readable content across the site.</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--text-sm<br>0.875rem</span>
+            <span class="sg-type-sample" style="font-size: var(--text-sm);">Small text for metadata, captions, and secondary information.</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--text-xs<br>0.75rem</span>
+            <span class="sg-type-sample" style="font-size: var(--text-xs); font-family: var(--font-mono); letter-spacing: var(--tracking-wider); text-transform: uppercase;">Section Label / Mono Detail</span>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Line Heights</h3>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--leading-tight<br>1.1</span>
+            <span class="sg-type-sample" style="font-size: var(--text-xl); line-height: var(--leading-tight);">Tight leading for large display headings that need compact spacing.</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--leading-snug<br>1.25</span>
+            <span class="sg-type-sample" style="font-size: var(--text-xl); line-height: var(--leading-snug);">Snug leading for headings and card titles with moderate spacing.</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--leading-normal<br>1.5</span>
+            <span class="sg-type-sample" style="font-size: var(--text-base); line-height: var(--leading-normal);">Normal leading for body text. This is the default line height used throughout the site for comfortable reading at standard sizes.</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--leading-relaxed<br>1.75</span>
+            <span class="sg-type-sample" style="font-size: var(--text-base); line-height: var(--leading-relaxed);">Relaxed leading for long-form content. Used in blog posts and descriptions where extra breathing room improves readability.</span>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Letter Spacing</h3>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--tracking-tight<br>-0.02em</span>
+            <span class="sg-type-sample" style="font-size: var(--text-2xl); font-weight: 700; letter-spacing: var(--tracking-tight);">Tight Tracking for Headlines</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--tracking-normal<br>0</span>
+            <span class="sg-type-sample" style="font-size: var(--text-base); letter-spacing: var(--tracking-normal);">Normal tracking for body text</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--tracking-wide<br>0.05em</span>
+            <span class="sg-type-sample" style="font-size: var(--text-sm); font-family: var(--font-mono); letter-spacing: var(--tracking-wide);">Wide tracking for mono captions</span>
+          </div>
+          <div class="sg-type-row">
+            <span class="sg-type-label">--tracking-wider<br>0.1em</span>
+            <span class="sg-type-sample" style="font-size: var(--text-xs); font-family: var(--font-mono); letter-spacing: var(--tracking-wider); text-transform: uppercase;">Wider tracking for labels</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           3. Spacing Scale
+           ============================================ -->
+      <section class="sg-section" id="spacing">
+        <h2 class="sg-section-title">Spacing Scale</h2>
+
+        <div class="sg-spacing-row">
+          <span class="sg-spacing-label">--space-xs</span>
+          <div class="sg-spacing-bar" style="width: var(--space-xs);"></div>
+          <span class="sg-spacing-value">0.25rem / 4px</span>
+        </div>
+        <div class="sg-spacing-row">
+          <span class="sg-spacing-label">--space-sm</span>
+          <div class="sg-spacing-bar" style="width: var(--space-sm);"></div>
+          <span class="sg-spacing-value">0.5rem / 8px</span>
+        </div>
+        <div class="sg-spacing-row">
+          <span class="sg-spacing-label">--space-md</span>
+          <div class="sg-spacing-bar" style="width: var(--space-md);"></div>
+          <span class="sg-spacing-value">1rem / 16px</span>
+        </div>
+        <div class="sg-spacing-row">
+          <span class="sg-spacing-label">--space-lg</span>
+          <div class="sg-spacing-bar" style="width: var(--space-lg);"></div>
+          <span class="sg-spacing-value">1.5rem / 24px</span>
+        </div>
+        <div class="sg-spacing-row">
+          <span class="sg-spacing-label">--space-xl</span>
+          <div class="sg-spacing-bar" style="width: var(--space-xl);"></div>
+          <span class="sg-spacing-value">2rem / 32px</span>
+        </div>
+        <div class="sg-spacing-row">
+          <span class="sg-spacing-label">--space-2xl</span>
+          <div class="sg-spacing-bar" style="width: var(--space-2xl);"></div>
+          <span class="sg-spacing-value">3rem / 48px</span>
+        </div>
+        <div class="sg-spacing-row">
+          <span class="sg-spacing-label">--space-3xl</span>
+          <div class="sg-spacing-bar" style="width: var(--space-3xl);"></div>
+          <span class="sg-spacing-value">4rem / 64px</span>
+        </div>
+        <div class="sg-spacing-row">
+          <span class="sg-spacing-label">--space-4xl</span>
+          <div class="sg-spacing-bar" style="width: var(--space-4xl);"></div>
+          <span class="sg-spacing-value">6rem / 96px</span>
+        </div>
+        <div class="sg-spacing-row">
+          <span class="sg-spacing-label">--space-5xl</span>
+          <div class="sg-spacing-bar" style="width: var(--space-5xl);"></div>
+          <span class="sg-spacing-value">8rem / 128px</span>
+        </div>
+      </section>
+
+      <!-- ============================================
+           4. Buttons & Links
+           ============================================ -->
+      <section class="sg-section" id="buttons">
+        <h2 class="sg-section-title">Buttons &amp; Links</h2>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">CTA Button (primary)</h3>
+          <div class="sg-buttons">
+            <a href="#" class="cta-button" onclick="return false">
+              Let's Build
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+          <p class="sg-label" style="margin-top: var(--space-sm);">.cta-button — Large action button with arrow. Copper bg, hover lifts + glows.</p>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Nav CTA (compact)</h3>
+          <div class="sg-buttons">
+            <a href="#" class="nav-cta" onclick="return false">Get Started</a>
+          </div>
+          <p class="sg-label" style="margin-top: var(--space-sm);">.nav-cta — Compact button for header navigation. Copper bg, hover lifts.</p>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Link Styles</h3>
+          <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+            <div>
+              <a href="#" class="nav a" style="font-size: var(--text-sm); font-weight: 500; color: var(--color-accent-cool);" onclick="return false">Navigation Link (steel blue)</a>
+              <span class="sg-label" style="margin-left: var(--space-md);">.nav a</span>
+            </div>
+            <div>
+              <a href="#" class="post-back" onclick="return false">&larr; Back to Blog</a>
+              <span class="sg-label" style="margin-left: var(--space-md);">.post-back</span>
+            </div>
+            <div class="post-content">
+              <a href="#" onclick="return false">Inline content link (copper underline)</a>
+              <span class="sg-label" style="margin-left: var(--space-md);">.post-content a</span>
+            </div>
+            <div>
+              <a href="#" style="color: var(--color-accent); transition: color var(--duration-fast) var(--ease-out);" onclick="return false">info@bsf5y.com</a>
+              <span class="sg-label" style="margin-left: var(--space-md);">.footer-email a</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           5. Cards & Surfaces
+           ============================================ -->
+      <section class="sg-section" id="cards">
+        <h2 class="sg-section-title">Cards &amp; Surfaces</h2>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Service Card</h3>
+          <div class="sg-cards-grid">
+            <div class="service">
+              <span class="service-type">Core</span>
+              <h3 class="service-title">Technical Architecture &amp; Stack Selection</h3>
+              <p class="service-description">We design your technical foundation — choosing the right database, framework, and infrastructure so you don't paint yourself into a corner.</p>
+            </div>
+            <div class="service">
+              <span class="service-type">Build</span>
+              <h3 class="service-title">MVP Development</h3>
+              <p class="service-description">Production-grade first product. Not a throwaway prototype — a real foundation you can ship, iterate on, and scale.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Phase Card</h3>
+          <div style="max-width: 56rem;">
+            <div class="phase" style="opacity: 1; transform: none;">
+              <div class="phase-number">01</div>
+              <div>
+                <h3 class="phase-name">Discover</h3>
+                <p class="phase-question">"What problem are we actually solving?"</p>
+                <p class="phase-description">Before writing a single line of code, we validate your core assumptions and map the real user need. Many startups skip this — and build the wrong thing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Blog Post Item</h3>
+          <ul class="post-list" style="max-width: 56rem;">
+            <li class="post-item">
+              <a href="#" onclick="return false">
+                <div class="post-meta">Feb 20, 2026 <span class="post-author">| W. Cravens</span></div>
+                <h2>Why Your MVP Shouldn't Be a Prototype</h2>
+                <p>The difference between a throwaway demo and a production-grade first product — and why it matters for your fundraise.</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Comparison Columns</h3>
+          <div class="comparison-grid" style="max-width: 56rem;">
+            <div class="comparison-column comparison-prototype">
+              <div class="comparison-label">Typical Agency</div>
+              <ul class="comparison-list">
+                <li>Throwaway code you'll rewrite</li>
+                <li>No architecture documentation</li>
+                <li>"It works on my machine"</li>
+              </ul>
+            </div>
+            <div class="comparison-column comparison-product">
+              <div class="comparison-label">Bootstrap Factory</div>
+              <ul class="comparison-list">
+                <li>Production-grade from day one</li>
+                <li>Architecture decision records</li>
+                <li>CI/CD pipeline included</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           6. Blog Content Styles
+           ============================================ -->
+      <section class="sg-section" id="blog">
+        <h2 class="sg-section-title">Blog Content Styles</h2>
+
+        <div class="sg-blog-demo post-content">
+
+          <h2>Second-Level Heading</h2>
+          <p>This is standard paragraph text rendered inside <code>.post-content</code>. It uses the default font size with relaxed line height for comfortable reading. Here's a <a href="#" onclick="return false">content link</a> showing the copper underline style.</p>
+
+          <h3>Third-Level Heading</h3>
+          <p>Supporting paragraph beneath a third-level heading. The spacing is intentionally tighter to group the heading with its content.</p>
+
+          <h4>Fourth-Level Heading</h4>
+          <p>Fourth level headings are used sparingly, typically for sub-topics within longer articles.</p>
+
+          <blockquote>
+            <p>Go well to go fast. Engineering discipline isn't the opposite of speed — it's how you sustain it.</p>
+          </blockquote>
+
+          <p>Inline code looks like <code>npm run build</code> and is styled with a background and accent color to stand out from surrounding text.</p>
+
+          <pre><code>// Code block example
+function buildProduct(idea) {
+  const validated = discover(idea);
+  const designed = architect(validated);
+  return ship(designed);
+}</code></pre>
+
+          <ul>
+            <li>Unordered list item one</li>
+            <li>Unordered list item two with more detail to show wrapping behavior</li>
+            <li>Unordered list item three</li>
+          </ul>
+
+          <ol>
+            <li>Ordered list: Discover the problem</li>
+            <li>Architect the solution</li>
+            <li>Build and ship</li>
+          </ol>
+
+        </div>
+      </section>
+
+      <!-- ============================================
+           7. Effects
+           ============================================ -->
+      <section class="sg-section" id="effects">
+        <h2 class="sg-section-title">Effects</h2>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Border Radius</h3>
+          <div class="sg-effects-grid">
+            <div class="sg-effect-box" style="border-radius: var(--radius-sm);">
+              <span class="sg-label">--radius-sm</span>
+              <p class="sg-effect-label">0.25rem</p>
+            </div>
+            <div class="sg-effect-box" style="border-radius: var(--radius-md);">
+              <span class="sg-label">--radius-md</span>
+              <p class="sg-effect-label">0.5rem</p>
+            </div>
+            <div class="sg-effect-box" style="border-radius: var(--radius-lg);">
+              <span class="sg-label">--radius-lg</span>
+              <p class="sg-effect-label">1rem</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Shadows</h3>
+          <div class="sg-effects-grid">
+            <div class="sg-effect-box" style="box-shadow: var(--shadow-sm); border: none;">
+              <span class="sg-label">--shadow-sm</span>
+            </div>
+            <div class="sg-effect-box" style="box-shadow: var(--shadow-md); border: none;">
+              <span class="sg-label">--shadow-md</span>
+            </div>
+            <div class="sg-effect-box" style="box-shadow: var(--shadow-lg); border: none;">
+              <span class="sg-label">--shadow-lg</span>
+            </div>
+            <div class="sg-effect-box" style="box-shadow: var(--shadow-glow); border: 1px solid var(--color-accent);">
+              <span class="sg-label">--shadow-glow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Transitions</h3>
+          <div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+            <p><span class="sg-label">--duration-fast:</span> <span style="color: var(--color-text);">150ms</span></p>
+            <p><span class="sg-label">--duration-normal:</span> <span style="color: var(--color-text);">300ms</span></p>
+            <p><span class="sg-label">--duration-slow:</span> <span style="color: var(--color-text);">500ms</span></p>
+            <p><span class="sg-label">--ease-out:</span> <span style="color: var(--color-text);">cubic-bezier(0.22, 1, 0.36, 1)</span></p>
+            <p><span class="sg-label">--ease-in-out:</span> <span style="color: var(--color-text);">cubic-bezier(0.65, 0, 0.35, 1)</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           8. Accessibility
+           ============================================ -->
+      <section class="sg-section" id="accessibility">
+        <h2 class="sg-section-title">Accessibility</h2>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Focus Indicators</h3>
+          <p style="color: var(--color-text-muted); margin-bottom: var(--space-md);">Tab through these elements to see the focus ring styles. All interactive elements use <code style="font-family: var(--font-mono); font-size: var(--text-sm); background: var(--color-bg); padding: 0.125em 0.375em; border-radius: var(--radius-sm); color: var(--color-accent);">:focus-visible</code> for keyboard-only indicators.</p>
+          <div class="sg-focus-demo">
+            <a href="#" onclick="return false" style="color: var(--color-accent-cool);">Focusable Link</a>
+            <button style="color: var(--color-accent-cool); background: none; border: 1px solid var(--color-border); padding: var(--space-sm) var(--space-md); border-radius: var(--radius-sm); cursor: pointer;">Focusable Button</button>
+            <a href="#" class="nav-cta" onclick="return false">Nav CTA Focus</a>
+            <a href="#" class="cta-button" onclick="return false">CTA Button Focus</a>
+          </div>
+        </div>
+
+        <div class="sg-subsection">
+          <h3 class="sg-subsection-title">Skip Link</h3>
+          <p style="color: var(--color-text-muted); margin-bottom: var(--space-md);">The skip link appears at the top of each page when focused via keyboard (Tab). It uses the <code style="font-family: var(--font-mono); font-size: var(--text-sm); background: var(--color-bg); padding: 0.125em 0.375em; border-radius: var(--radius-sm); color: var(--color-accent);">.skip-link</code> class.</p>
+          <div style="position: relative; height: 3rem; background: var(--color-bg); border-radius: var(--radius-md); overflow: hidden;">
+            <a href="#" class="skip-link" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);" onclick="return false">Skip to main content</a>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /.container -->
+  </div><!-- /.sg-page -->
+
+  <script>
+    // Theme toggle — standalone version for the style guide
+    (function() {
+      const stored = localStorage.getItem('bsf5y-mode');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const mode = stored || (systemPrefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-mode', mode);
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('bsf5y-mode')) {
+          document.documentElement.setAttribute('data-mode', e.matches ? 'dark' : 'light');
+        }
+      });
+
+      document.querySelector('.sg-mode-toggle').addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-mode');
+        const next = current === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-mode', next);
+        localStorage.setItem('bsf5y-mode', next);
+      });
+    })();
+  </script>
+</body>
+</html>
