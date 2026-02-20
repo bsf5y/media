@@ -1,12 +1,10 @@
 # One-Day AI Workshop — Design Document
 
-Companion to [one-day-workshop-in-ai.md](one-day-workshop-in-ai.md) (original sketch).
-
 ---
 
 ## 1. Event Identity & Positioning
 
-**Working Title:** "Bootstrap Your In-House AI Tooling" *(final title deferred to marketing team)*
+**Working Title:** "Bootstrap Your In-House AI Tooling"
 
 **Host:** The Bootstrap Factory (BSF5Y)
 
@@ -14,10 +12,10 @@ Companion to [one-day-workshop-in-ai.md](one-day-workshop-in-ai.md) (original sk
 
 **Positioning Statement** *(for marketing team use):*
 
-> A one-day workshop for Champaign-Urbana business leaders and builders who want to
-> understand what AI tools actually do, where they fall short, and how to adopt them
-> without getting burned. No hype. No hand-waving. Live demos of real tools solving
-> real problems.
+A one-day workshop for Champaign-Urbana business leaders and builders who want to
+understand what AI tools actually do, where they fall short, and how to adopt them
+without getting burned. No hype. No hand-waving. Live demos of real tools solving
+real problems.
 
 **Audience:**
 
@@ -26,23 +24,23 @@ Companion to [one-day-workshop-in-ai.md](one-day-workshop-in-ai.md) (original sk
 - Tertiary: Established engineers leveling up on AI tooling
 
 **Format:** One day, single registration. Morning is for everyone. Afternoon is an
-optional deep dive for those who want to go further ("Two Acts, One Story").
+optional deep dive for those who want to go further into the engineering and technology ("Two Acts, One Story").
 
 **Size:** 15–25 attendees
 
-**Pricing:** Free to attendees, sponsored/subsidized. Sponsor gets visibility in
+**Pricing:** Free to attendees, sponsored/subsidized(?). Sponsor gets visibility in
 materials, intro, and signage.
 
 **Venue:** TBD — needs capacity for ~25, AV for live demos, lunch-friendly.
 
-**Timeline:** ~5 weeks from now.
+**Timeline:** Late March to Early April 2026 
 
 ---
 
 ## 2. Day Schedule & Content
 
-**Overall Arc:** "What AI can do for you" (morning) → "How AI fits into serious
-engineering" (afternoon)
+**Overall Arc:** "What AI can do for your business" (morning) → "How to build solutions with
+AI-Driven Engineering" (afternoon)
 
 ### Morning Session — "AI for Your Business" (9:00 AM – 12:30 PM)
 
@@ -50,17 +48,19 @@ engineering" (afternoon)
 
 - Who BSF5Y is (brief, not a pitch)
 - What this day is about: honest look at AI tools — what works, what doesn't, where the line is
-- Set expectations: demos are real, not cherry-picked; you'll see failures too
+- Set expectations: demos are real, not cherry-picked; live-demo failures are a possiblity 
 
 #### 9:15 – 10:15 | The AI Tool Landscape
 
 Broad survey with named tools. Live demos across categories, ~10–12 minutes each:
 
-- **Writing & Editorial:** Grammar, tone adjustment, reading-level targeting, drafting business copy (e.g., Claude, ChatGPT)
+- **Writing & Editorial:** Grammar, tone adjustment, reading-level targeting, drafting business copy (e.g. Claude Chat )
 - **Imagery & Branding:** Logo concepts, social media graphics, color palette generation (e.g., Midjourney, DALL-E)
 - **Document Creation:** Slide decks, proposals, reports, white papers (e.g., Claude with artifacts, Gamma, Google Gemini)
 - **Website Construction:** HTML/CSS/JS generation, accessibility, rapid prototyping (e.g., Claude Code, Bolt, v0)
 - **Business Intelligence:** Insight mining from existing data, structuring data capture for the future (e.g., Claude with CSV/spreadsheet analysis)
+- **Desktop Tooling:** ( e.g. Claude Cowork, Claude Browser Extension, Google AI Studio ) 
+- **Claude Desktop & Cowork**
 
 #### 10:15 – 10:30 | Break
 
@@ -111,7 +111,7 @@ Broad survey with named tools. Live demos across categories, ~10–12 minutes ea
 - Walk through a realistic development task using AI tools end-to-end
 - Show the full loop: prompt → generate → review → test → refine
 - Highlight where human judgment is irreplaceable
-- Tools shown: Claude Code, GitHub Copilot, or similar
+- Tools shown: Claude Code
 
 #### 2:45 – 3:00 | Break
 
@@ -151,14 +151,17 @@ Broad survey with named tools. Live demos across categories, ~10–12 minutes ea
 
 - Establish thought leadership in the local tech/business community
 - Build a warm contact list (community signups) for future engagement
+- Identify local need for consultancy/training programs, for both BSF5Y and Parkland
+  - Business side consultancy/education
+  - Engineering side consultancy/education
 - Identify potential consulting/training clients through post-event conversations and consultation requests
 - Gather structured data on local demand for AI-related services and education (survey)
 - Collect a ranked list of follow-up/deep-dive topics to inform future events
 
 ### Success Metrics
 
-- 15+ attendees registered, 12+ show up
-- 50%+ stay for the afternoon session
+- 20+ attendees registered, 15+ show up
+- 75%+ stay for the afternoon session
 - 80%+ complete the post-event survey
 - 5+ actionable topic suggestions for future events
 - 2–3 consultation requests within 2 weeks of the event
