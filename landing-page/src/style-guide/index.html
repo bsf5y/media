@@ -105,6 +105,30 @@ permalink: /style-guide/
       color: #868e96;
     }
 
+    /* ---- Logo Download Buttons ---- */
+    .sg-logo-downloads {
+      display: flex;
+      gap: var(--space-sm);
+      margin-top: var(--space-sm);
+    }
+
+    .sg-logo-downloads a {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-wide);
+      text-decoration: none;
+      padding: var(--space-xs) var(--space-md);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      color: var(--color-text-muted);
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .sg-logo-downloads a:hover {
+      color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+
     /* ---- Color Swatches ---- */
     .sg-swatches {
       display: grid;
@@ -398,6 +422,10 @@ permalink: /style-guide/
               <circle cx="656" cy="481.5" r="25" fill="#d97706"/>
             </svg>
             <span class="sg-label">Dark mode — light text on dark background</span>
+            <div class="sg-logo-downloads">
+              <a href="/assets/logo/dark-logo.svg" download="bsf5y-logo-dark.svg">SVG</a>
+              <a href="/assets/logo/dark-logo.png" download="bsf5y-logo-dark.png">PNG</a>
+            </div>
           </div>
         </div>
 
@@ -426,6 +454,10 @@ permalink: /style-guide/
               <circle cx="656" cy="481.5" r="25" fill="#d97706"/>
             </svg>
             <span class="sg-label">Light mode — dark text on light background</span>
+            <div class="sg-logo-downloads">
+              <a href="/assets/logo/light-logo.svg" download="bsf5y-logo-light.svg">SVG</a>
+              <a href="/assets/logo/light-logo.png" download="bsf5y-logo-light.png">PNG</a>
+            </div>
           </div>
         </div>
 
