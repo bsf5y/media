@@ -37,6 +37,32 @@ For Central Illinois SMBs that need to build new software, modernize what they a
 integrate AI into their business — and don't have an in-house engineering bench — bsf5y delivers
 enterprise-class systems at prices the AI shift has finally made accessible.
 
+## Brand Philosophy
+
+**Precision over polish, substance over style, architecture over decoration.**
+
+This triad captures the operating principle behind every decision — what we build, how we
+communicate, how we present ourselves.
+
+### The Core Brand Tension
+
+BSF5Y occupies a deliberate contradiction: we offer *premium* services — senior engineering
+judgment, architecture that lasts — while rejecting the *premium aesthetic* that typically
+signals it. No agency portfolios. No stock photography. No vague promises of "innovation."
+
+The resolution is credibility through restraint. We communicate expertise the same way
+well-written code does: by being clean, purposeful, and free of unnecessary dependencies.
+Everything earns its place or it doesn't appear.
+
+### The Site as Proof
+
+The website is not marketing collateral about the methodology — it is a demonstration of it.
+Identify the core value. Protect it with solid structure. Turnkey the rest with proven solutions.
+The same discipline we sell, applied to our own presence.
+
+This principle extends to all brand materials: every touchpoint should *show* the thinking,
+not just describe it.
+
 ## Messaging Pillars (The Core Themes):
 
 ### 1. Product Thinking
@@ -79,6 +105,10 @@ changes. The architecture handles it.
 
 Teacher mindset, not vendor mindset. Transfer methods so teams sustain velocity independently.
 Multiple paths forward after delivery.
+
+There is warmth in this work. The satisfaction of a well-made thing — code that a new developer
+can read on day one, architecture that holds under pressure, a handoff that actually works — is
+its own reward. We're not cold or purely transactional. We care that it lasts.
 
 - Training and coaching to build internal capability
 - Recruitment support when ready to hire
@@ -193,6 +223,16 @@ Parkland Community College, business development groups, and local startup commu
 across the broader Central Illinois region with SMBs that benefit from a local, in-person
 engineering partner.
 
+### Qualifying and Disqualifying
+
+Every piece of copy — especially on the homepage — should do two jobs simultaneously: attract the
+right clients and actively repel the wrong ones. This is not a bug; it is a feature. Founders who
+value doing it right should feel immediately recognized. Founders chasing cheap and fast should
+self-select out before they contact us.
+
+Write copy that makes product-minded founders nod. If it would also appeal to someone hunting for
+the lowest bid, rewrite it.
+
 ### Disqualified Customers
 
 - Leaders who've already built a broken prototype masquerading as a product and want a quick fix
@@ -276,6 +316,29 @@ Short sentences. No jargon. No weasel words. Say it and stop.
 
 **Forward thinking**
 "Product thinking" Not "Prototype thinking".
+
+**Engineered, not decorated.**
+The brand should feel like it was made by engineers who understand design — not designers who
+don't understand engineering. Restraint is the aesthetic. Every element earns its place.
+
+### Headline Rules
+
+- **Declarative, not interrogative.** State things. Don't ask questions in primary headlines.
+- **3–6 words.** Compress ruthlessly.
+- **No hedging.** No "we believe," "potentially," or "in many cases."
+
+```
+Good:  "Products, Not Prototypes"
+Good:  "Software That Survives Success"
+Avoid: "Are You Building Products or Prototypes?"
+Avoid: "What If Your Software Could Survive Success?"
+```
+
+### Services Copy Rule
+
+Services copy should answer *"what do I get?"* not *"what do you do?"* The section should feel
+consultative — a conversation about outcomes — not a menu of capabilities. Lead with the result
+the client walks away with; let the method follow.
 
 ## What We Don't Sound Like
 
