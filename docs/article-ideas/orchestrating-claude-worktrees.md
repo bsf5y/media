@@ -1,16 +1,21 @@
 # Orchestrating Claude with Worktrees — and Other Lessons in Listening to Your Tools
 
-When a tool fights your workflow, you have two choices. Force it, or understand it.
+We built a skill that would take an issue number, create a branch, spin up a worktree, and launch a Claude subagent to do the work. Type one command, walk away. It was elegant on paper.
 
-Forcing it produces elaborate automation that breaks at the seams. Understanding it produces simple patterns that compound. We hit this exact wall trying to orchestrate Claude Code across git worktrees. What we learned applies far beyond AI tooling.
+Then we ran it. Claude couldn't see the worktree. The subagent couldn't either. We shelled out,
+hit permission walls, added more automation to fix the automation. Two hours later we had an
+elaborate harness that did what five manual terminal commands would have done in two minutes.  And
+it still had a darkside that would still slip into permission request storms from time to time.
+
+The architecture was resisting. We just weren't listening.
 
 **The architecture resists. That's the signal.**
 
 ## The Promise
 
-If you're using Claude Code for real development work, the appeal of worktree-based workflows is obvious. Git worktrees let you check out multiple branches simultaneously in separate directories. Combine that with Claude Code's ability to work autonomously on a task, and the picture gets exciting fast.
+Git worktrees let you check out multiple branches simultaneously in separate directories. Combine that with Claude Code's ability to work autonomously on a task, and the picture gets exciting fast.
 
-Imagine: you have three open issues. You type something like `make work-on ISSUE=42` and a Claude session spins up in an isolated worktree, working that issue while you move on to the next one. Three issues, three worktrees, three Claude sessions, all running in parallel. Clean git history. No context switching. No branch juggling.
+Three open issues. Three worktrees. Three Claude sessions, all running in parallel. Clean git history. No context switching. No branch juggling.
 
 That's the dream. We chased it.
 
@@ -24,7 +29,7 @@ The first problem was immediate. Claude Code's working directory is fixed at ses
 
 Fine. We'll use subagents. Subagents can work in isolation, right? They can — but they inherit the same working directory constraint. The subagent spawns, and it's looking at the same directory as the parent. The worktree is still invisible.
 
-So we shelled out. `bash` commands targeting the worktree path directly. This worked, technically, but permission prompts started multiplying. Every command in an unfamiliar directory needs approval. Click approve. Click approve. Click approve. The workflow that was supposed to save time now demanded more babysitting than doing the work manually.
+So we shelled out. `bash` commands targeting the worktree path directly. Things like `git -C` became standard practice and part of our AI context's 'ruleset' sprinkled throughout context files and skills. This worked, technically, but permission prompts started multiplying. Every command in an unfamiliar directory needs approval. Approve... Approve... Approve... Approve... The workflow that was supposed to save time now demanded more babysitting than when we orchestrated things manually.
 
 We doubled down. More automation to handle the permissions. Environment flags. Wrapper scripts called from within Claude calling other scripts. Two hours in, we were debugging our automation instead of doing any actual work. We had built an elaborate Rube Goldberg machine that accomplished what five manual terminal commands would have done in two minutes.
 
@@ -57,30 +62,27 @@ gh issue develop 42
 # 2. Create a worktree
 git worktree add ../issue-42 42-fix-the-thing
 
-# 3. Launch Claude in the worktree
-cd ../issue-42 && claude
-
-# 4. Give Claude the task — paste the issue context, point it at the code
-# 5. When done: review changes, merge, clean up
-git worktree remove ../issue-42
+# 3. Launch Claude in the worktree and start work
+cd ../issue-42 && claude "Work on issue 42"
 ```
-
-Five commands. No framework. No skill definition. No permission headaches. Claude starts in the worktree directory, sees only that branch's files, and does the work. You open another terminal tab and do it again for the next issue.
+Three commands. No framework. No skill definition. No permission headaches. Claude starts in the worktree directory, sees only that branch's files, and does the work. You open another terminal tab and do it again for the next issue.
 
 This pattern works today. It worked six months ago. It will work six months from now.
 
 ### Shell Script Wrapper
 
-Once the manual pattern is second nature, wrap steps 1-3:
+Once the manual pattern is second nature, wrap steps 1-3. Something like this — your mileage will vary depending on your `gh` version and shell environment, so treat it as a starting point, not a copy-paste solution:
 
 ```bash
 #!/usr/bin/env bash
 # work-on: create a worktree for an issue and launch Claude in it
+# NOTE: The gh output parsing below is illustrative.
+# Adjust the grep/cut pattern to match your version of gh.
 
 ISSUE=$1
 [ -z "$ISSUE" ] && echo "Usage: work-on <issue-number>" && exit 1
 
-BRANCH=$(gh issue develop "$ISSUE" 2>&1 | grep -oP '(?<=branch )\S+')
+BRANCH=$(gh issue develop "$ISSUE" 2>&1 | grep -oE 'branch [^ ]+' | cut -d' ' -f2)
 WORKTREE="../issue-${ISSUE}"
 
 git worktree add "$WORKTREE" "$BRANCH"
@@ -95,15 +97,9 @@ The simplest parallel pattern. Open three terminal tabs. Run `work-on 42` in one
 
 This sounds unsophisticated. It is. That's the point. Sophistication that doesn't serve the work is overhead.
 
-### Claude's Built-in EnterWorktree
-
-Anthropic has started addressing this directly. Claude Code now has an `EnterWorktree` tool that creates an isolated worktree and launches a subagent inside it. It handles the directory scoping that we couldn't achieve manually from within a session.
-
-This is worth watching. It solves the core constraint — getting a Claude session rooted in a worktree directory — without leaving the current session. But it's still early. The orchestration boundary is shifting, and the right answer will keep evolving.
-
 ### Makefile / Justfile Recipes
 
-For teams that want a shared vocabulary:
+For teams that want a project scoped vocabulary/call method:
 
 ```makefile
 work-on:
@@ -111,6 +107,13 @@ work-on:
 ```
 
 `make work-on ISSUE=42`. Everyone on the team uses the same entry point. The implementation stays in one script you can update without retraining anyone.
+
+### Claude's Built-in EnterWorktree
+
+Anthropic now ships an `EnterWorktree` tool that creates an isolated worktree and launches a subagent inside it. It solves the core constraint — getting a Claude session rooted in a worktree directory — without leaving the current session.
+
+But this is still mixing orchestration into the agent. It's Anthropic's version of the same architectural mistake we made. The boundary is cleaner when you own it.
+
 
 ## The Orchestration Boundary
 
@@ -140,12 +143,6 @@ The boundary is clean. Everything above it is workflow. Everything below it is w
 
 ## What We Learned
 
-We spent hours building an elaborate system to make Claude orchestrate itself. It didn't work — not because the tool is broken, but because we were asking it to do something it wasn't designed to do. The architecture told us. We didn't listen.
-
-When we finally listened, the solution was five commands in a terminal. No framework. No custom skills. No fighting.
-
-This is the same lesson we teach our clients about product architecture. Understand what the tool is before you decide what it should do. Respect the boundaries the design imposes. Build simple patterns that work with the grain, not against it.
-
-Go well to go fast. It applies to your products. It applies to your tools. It applies to how you work with AI.
+When a tool resists, understand the boundary before you automate across it. That's the same discipline that separates products from prototypes — applied to how we use our own tools.
 
 Don't make the AI own the workflow harness. Let it own the work.

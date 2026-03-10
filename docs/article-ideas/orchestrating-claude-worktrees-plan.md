@@ -13,7 +13,7 @@ to it reveals whether you're building a product workflow or a prototype workflow
 Developers using Claude Code who want parallel, issue-driven workflows.
 
 This is a technical-audience piece. It builds credibility with engineers and technical evaluators
-who are assessing our depth. It demonstrates the "go well to go fast" philosophy applied to our own
+who are assessing our depth. It demonstrates our engineering philosophy applied to our own
 tooling — we practice what we preach.
 
 ## Through-line
@@ -22,8 +22,7 @@ tooling — we practice what we preach.
 
 When a tool fights your workflow, you have two choices: force it, or understand it. Forcing it
 produces elaborate automation that breaks at the seams. Understanding it produces simple patterns
-that compound. This is "go well to go fast" applied to dev tooling — the same principle we apply
-to product architecture.
+that compound. The same discipline that separates products from prototypes, applied to dev tooling.
 
 ## Structure
 
@@ -86,8 +85,7 @@ Close with something concrete the reader walks away with:
   shell vs. what lives inside Claude's session
 - The principle stated plainly: **Don't make the AI own the workflow harness. Let it own the work.**
 - The broader lesson: when a tool resists, understand the boundary before you automate across it.
-  This is "go well to go fast" — the same discipline that separates products from prototypes,
-  applied to how we use our own tools.
+  The same discipline that separates products from prototypes, applied to how we use our own tools.
 
 ## Tone
 
