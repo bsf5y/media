@@ -41,9 +41,11 @@ module.exports = function(eleventyConfig) {
     return new Date(dateObj).toISOString().split('T')[0];
   });
 
-  // Blog collection
+  // Blog collection — posts with `draft: true` only appear on local dev server
+  const isDevServer = process.env.ELEVENTY_RUN_MODE === "serve";
   eleventyConfig.addCollection("posts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/blog/**/*.md").reverse();
+    const posts = collectionApi.getFilteredByGlob("src/blog/**/*.md");
+    return (isDevServer ? posts : posts.filter(p => !p.data.draft)).reverse();
   });
 
   // Markdown configuration
