@@ -3,7 +3,7 @@ title: Orchestrating Claude with Worktrees — and Other Lessons in Listening to
 description: When we tried to automate Claude Code's workflow, the tool pushed back. The fix was embarrassingly simple.
 date: 2026-03-10T12:00:00
 author: Wes Cravens
-draft: true
+draft: false 
 ---
 
 We built a one-command workflow that would take an issue, spin up a worktree, and hand it to Claude. Elegant on paper. Then we ran it, and spent two hours fighting the tool instead of using it.
@@ -27,11 +27,18 @@ Then we ran it.
 
 The first problem was immediate. Claude Code's working directory is fixed at session start. You can't `cd` into a worktree. The worktree exists on disk, but Claude can't see it. Every file read, every edit, every grep — all scoped to the original directory. The worktree is a ghost.
 
+*Many get around this by creating the worktree somewhere local.  E.g. Anthropic official plugins
+will stash them in .claude.  This is not acceptible to us.  We wanted to leverage Claude's
+environment scoping rules.*
+
 Fine. We'll use subagents. Subagents can work in isolation, right? They can — but they inherit the same working directory constraint. The subagent spawns, and it's looking at the same directory as the parent. The worktree is still invisible.
 
 So we shelled out. `bash` commands targeting the worktree path directly. Things like `git -C` became standard practice and part of our AI context's 'ruleset' sprinkled throughout context files and skills. This worked, technically, but permission prompts started multiplying. Every command in an unfamiliar directory needed approval. Approve... Approve... Approve... Approve... The workflow that was supposed to save time now demanded more babysitting than when we orchestrated things manually.
 
-We doubled down. More automation to handle the permissions. Environment flags. Wrapper scripts called from within Claude calling other scripts. Two hours in, we were debugging our automation instead of doing any actual work. We had built an elaborate Rube Goldberg machine that accomplished what five manual terminal commands would have done in two minutes.
+We doubled down. More automation to handle the permissions. Environment flags. Wrapper scripts
+called from within Claude calling other scripts. Two hours in, we were debugging our automation
+instead of doing any actual work. We had built an elaborate Rube Goldberg machine that
+accomplished what five manual terminal commands would have done in 15 seconds.
 
 The architecture was resisting. We just weren't listening.
 
