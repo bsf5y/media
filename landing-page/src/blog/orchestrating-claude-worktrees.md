@@ -6,7 +6,8 @@ author: Wes Cravens
 draft: false 
 ---
 
-We built a one-command workflow that would take an issue, spin up a worktree, and hand it to Claude. Elegant on paper. Then we ran it, and spent two hours fighting the tool instead of using it.
+We built a Claude skills workflow that would take an issue, spin up a worktree, and send Claude
+code off to work. Elegant on paper. Then we ran it, and spent two hours fighting the tool instead of using it.
 
 The agent was resisting. We just weren't listening.
 
