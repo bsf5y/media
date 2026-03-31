@@ -136,13 +136,11 @@ The boundary is clean. Everything above it is workflow. Everything below it is w
 <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" style="width: 100%; margin: 3rem auto; display: block;">
   <style>.wt-label { font-family: 'JetBrains Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500; } .wt-box-text { font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 500; } .wt-sub { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #8b9199; } .wt-shell { fill: #232830; stroke: rgba(255,255,255,0.12); stroke-width: 1.5; } .wt-claude { fill: #1a1e25; stroke: #d97706; stroke-width: 2; } .wt-text { fill: #e8e6e3; } .wt-accent { fill: #d97706; } .wt-muted { fill: #8b9199; }</style>
   <defs><filter id="wt-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8" result="blur"/><feFlood flood-color="#d97706" flood-opacity="0.3"/><feComposite in2="blur" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-
   <!-- Shell / orchestration layer -->
   <text x="350" y="24" text-anchor="middle" class="wt-label wt-muted">Workflow</text>
   <rect x="40" y="36" width="620" height="80" rx="10" class="wt-shell"/>
   <text x="350" y="72" text-anchor="middle" class="wt-box-text wt-text">Your Terminal</text>
   <text x="350" y="100" text-anchor="middle" class="wt-sub">branches · worktrees · tabs · review · merge · cleanup</text>
-
   <!-- Divider arrows -->
   <line x1="160" y1="116" x2="160" y2="148" stroke="#d97706" stroke-width="2" stroke-linecap="round"/>
   <polygon points="152,144 160,156 168,144" class="wt-accent"/>
@@ -150,28 +148,24 @@ The boundary is clean. Everything above it is workflow. Everything below it is w
   <polygon points="342,144 350,156 358,144" class="wt-accent"/>
   <line x1="540" y1="116" x2="540" y2="148" stroke="#d97706" stroke-width="2" stroke-linecap="round"/>
   <polygon points="532,144 540,156 548,144" class="wt-accent"/>
-
   <!-- Claude worktree 1 -->
   <rect x="60" y="160" width="200" height="140" rx="10" class="wt-claude" filter="url(#wt-glow)"/>
   <text x="160" y="196" text-anchor="middle" class="wt-box-text wt-text">Claude</text>
   <text x="160" y="216" text-anchor="middle" class="wt-sub">(wt-1)</text>
   <text x="160" y="248" text-anchor="middle" class="wt-sub">reads · edits</text>
   <text x="160" y="268" text-anchor="middle" class="wt-sub">builds · tests</text>
-
   <!-- Claude worktree 2 -->
   <rect x="280" y="160" width="200" height="140" rx="10" class="wt-claude" filter="url(#wt-glow)"/>
   <text x="380" y="196" text-anchor="middle" class="wt-box-text wt-text">Claude</text>
   <text x="380" y="216" text-anchor="middle" class="wt-sub">(wt-2)</text>
   <text x="380" y="248" text-anchor="middle" class="wt-sub">reads · edits</text>
   <text x="380" y="268" text-anchor="middle" class="wt-sub">builds · tests</text>
-
   <!-- Claude worktree 3 -->
   <rect x="500" y="160" width="200" height="140" rx="10" class="wt-claude" filter="url(#wt-glow)"/>
   <text x="600" y="196" text-anchor="middle" class="wt-box-text wt-text">Claude</text>
   <text x="600" y="216" text-anchor="middle" class="wt-sub">(wt-3)</text>
   <text x="600" y="248" text-anchor="middle" class="wt-sub">reads · edits</text>
   <text x="600" y="268" text-anchor="middle" class="wt-sub">builds · tests</text>
-
   <!-- Bottom label -->
   <text x="350" y="316" text-anchor="middle" class="wt-label wt-accent">Work</text>
 </svg>
