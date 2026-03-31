@@ -26,10 +26,11 @@ creates a branch using `gh issue develop <NNN>`, sets up a worktree, and spawns 
 
 Then we ran it.
 
-The first problem was immediate. Claude Code's working directory is fixed at session start. You can't `cd` into a worktree. The worktree exists on disk, but Claude can't see it. Every file read, every edit, every grep — all scoped to the original directory. The worktree is a ghost.
+The first problem was immediate. Claude Code's working directory is fixed at session start. You
+can't *really* `cd` into a worktree. The worktree exists on disk, but Claude can't see it. Every file read, every edit, every grep — all scoped to the original directory. The worktree is a ghost.
 
 *Many get around this by creating the worktree somewhere local.  E.g. Anthropic official plugins
-will stash them in .claude.  This is not acceptible to us.  We wanted to leverage Claude's
+will stash them in `/.claude`.  This is not acceptible to us.  We wanted to leverage Claude's
 environment scoping rules.*
 
 Fine. We'll use subagents. Subagents can work in isolation, right? They can — but they inherit the same working directory constraint. The subagent spawns, and it's looking at the same directory as the parent. The worktree is still invisible.
