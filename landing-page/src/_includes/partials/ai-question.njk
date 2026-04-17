@@ -1,0 +1,30 @@
+<section class="ai-question" id="ai-question">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-label">{{ home.aiQuestion.label }}</span>
+      <h2 class="section-title">{{ home.aiQuestion.headline }}</h2>
+      <p class="section-intro">{{ home.aiQuestion.intro }}</p>
+    </header>
+
+    <div class="comparison-grid">
+      <div class="comparison-column comparison-prototype">
+        <h3 class="comparison-label">{{ home.aiQuestion.boltOn.label }}</h3>
+        <ul class="comparison-list">
+          {% for item in home.aiQuestion.boltOn.items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="comparison-column comparison-product">
+        <h3 class="comparison-label">{{ home.aiQuestion.integrated.label }}</h3>
+        <ul class="comparison-list">
+          {% for item in home.aiQuestion.integrated.items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <p class="ai-question-closer">{{ home.aiQuestion.closer }}</p>
+  </div>
+</section>

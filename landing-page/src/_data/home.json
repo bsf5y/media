@@ -1,11 +1,11 @@
 {
   "hero": {
     "tagline": "Products, Not Prototypes.",
-    "lead": "The startup industry has it backwards. Cutting corners on your product isn't saving money—it's borrowing against the rework that you'll pay for later, with interest.",
+    "lead": "The software industry has it backwards. Cutting corners on your product isn't saving money—it's borrowing against the rework that you'll pay for later, with interest.",
     "reframe": "<a href=\"https://x.com/unclebobmartin/status/1163789159309434880\">\"The only way to go fast is to go well.\"</a> — Robert Martin",
-    "subtext": "<p>For business leaders with a product vision but without senior technical leadership, BSF5Y is the partner you need to build products that are ready to scale.</p><br><p>When investors ask about your tech, you pass due diligence. When you hire engineers, they can read the code. When you pivot, you don't start over.</p>"
+    "subtext": "<p>For founders building a new product — and for businesses wanting to integrate AI technology — BSF5Y is the engineering partner that builds it to last.</p><br><p>When investors audit your tech, it holds up. When your AI pilot meets real customers, it doesn't collapse. When you pivot, you don't start over.</p>"
   },
-  "positioning": "<p>The difference between a product and a prototype isn't polish or features — it's where the value lives. Prototypes trap business logic in the UI. Products capture it in portable software any interface can use.</p>",
+  "positioning": "<p>The difference between a product and a prototype isn't polish or features — it's where the value lives. Prototypes trap business logic in the UI. Products capture it in portable software any interface can use.</p><p>The same difference shows up in AI. Bolt-ons trap value in prompts and demos. Integrations capture it in systems that outlast any single vendor, model, or demo.</p>",
   "problem": {
     "label": "The Founder's Reality",
     "headline": "We understand what keeps you up at night.",
@@ -39,6 +39,32 @@
       ]
     }
   },
+  "aiQuestion": {
+    "label": "The AI Question",
+    "headline": "AI pilots fail for the same reason prototypes do.",
+    "intro": "Models change monthly. Vendors ship demos. What doesn't change is the work between a demo that impresses and a system that survives production. That work is engineering.",
+    "boltOn": {
+      "label": "Bolt-on AI",
+      "items": [
+        "Value lives in the prompt",
+        "Breaks when the model changes",
+        "Every new vendor is a new rebuild",
+        "Nobody on the team knows why it works",
+        "Your data is the vendor's data"
+      ]
+    },
+    "integrated": {
+      "label": "Integrated AI",
+      "items": [
+        "Value lives in your system",
+        "Swap models without rewriting",
+        "Portable across vendors",
+        "Documented, tested, auditable",
+        "Your data stays yours"
+      ]
+    },
+    "closer": "Whether you're building with AI or adopting it, the discipline is the same."
+  },
   "credibility": {
     "points": [
       "8-figure projects delivered",
@@ -61,19 +87,19 @@
         "number": "02",
         "name": "Differentiation",
         "question": "What can only this product do?",
-        "description": "We identify what makes your product truly unique — the defensible core that sets it apart. Is it proprietary data, a novel algorithm, or deep domain expertise encoded in software? This is your product's core, so it's your solution's core too."
+        "description": "We identify what makes your product truly unique — the defensible core that sets it apart. Is it proprietary data, a novel algorithm, or deep domain expertise encoded in software? This is your core — whether you're building a product or integrating AI into one you already run. Everything else is infrastructure."
       },
       {
         "number": "03",
         "name": "Infrastructure",
         "question": "Turn-key the rest.",
-        "description": "Everything that isn't your core differentiator is infrastructure. Web UIs, mobile apps, signup, authentication, shopping carts, payments, etc. Infrastructure should be inexpensive — we provide off-the-shelf battle-tested solutions to deliver and support your product without further development costs."
+        "description": "Everything that isn't your core differentiator is infrastructure. Web UIs, mobile apps, signup, authentication, payments, model hosting, vector search, etc. Infrastructure should be inexpensive — we provide off-the-shelf battle-tested solutions to deliver and support your product without further development costs."
       },
       {
         "number": "04",
         "name": "Execution",
         "question": "Products, not prototypes.",
-        "description": "We deliver production-ready engineering solutions with exhaustive test coverage, clean architecture, and comprehensive documentation. A complete solution that can be handed to any future team with confidence."
+        "description": "We deliver production-ready engineering solutions with exhaustive test coverage, clean architecture, and comprehensive documentation. Where AI is involved, that includes the evaluations and guardrails that separate a demo from a production system. A complete solution that can be handed to any future team with confidence."
       },
       {
         "number": "05",
@@ -95,6 +121,16 @@
       "description": "We don't just advise — we build. Turn-key infrastructure plus custom development of your core IP. You get a product, not a prototype."
     },
     {
+      "type": "AI Integration",
+      "title": "Production AI Systems",
+      "description": "We integrate AI into your product — or the business you already run — with the engineering discipline that separates a demo from a production system. Evaluations, guardrails, and vendor-portable architecture, so your AI survives the next model, the next vendor, and the next compliance review."
+    },
+    {
+      "type": "Enterprise Architecture",
+      "title": "Strategic Technology",
+      "description": "Connect your existing systems — data, workflows, and modern AI capabilities — to reveal advantages already sitting in your business."
+    },
+    {
       "type": "Team Building",
       "title": "Recruitment & Staffing",
       "description": "When you're ready to hire, we help you find, evaluate, and onboard engineers who fit your culture and codebase. No recruiting agency markup. Just part of our last-mile delivery service to you."
@@ -103,16 +139,6 @@
       "type": "Training & Coaching",
       "title": "Up-Skill Existing Teams",
       "description": "Paired programming, test-driven development, CI/CD, Agile practices, AI-Driven Development. We transfer our best practices so your team can sustain velocity without us."
-    },
-    {
-      "type": "Development Culture Shifts",
-      "title": "AI-Driven Development",
-      "description": "It cannot be stated plainly enough: AI-Driven Development is the most important paradigm shift in modern engineering. Let us help you ramp up immediately to capitalize on these new technologies."
-    },
-    {
-      "type": "Enterprise Architecture",
-      "title": "Strategic Technology",
-      "description": "Connect your existing systems with modern technology to reveal insights and advantages you didn't know you had."
     }
   ],
   "cta": {

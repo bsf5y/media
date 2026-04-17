@@ -800,6 +800,27 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 }
 
 /* --------------------------------------------
+   AI Question Section
+   -------------------------------------------- */
+.ai-question {
+  padding: var(--space-4xl) 0;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ai-question-closer {
+  max-width: var(--container-narrow);
+  margin: var(--space-3xl) auto 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  text-align: center;
+  color: var(--color-text-subtle);
+  letter-spacing: var(--tracking-wide);
+}
+
+/* --------------------------------------------
    Credibility Section
    -------------------------------------------- */
 .credibility {
