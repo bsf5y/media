@@ -6,16 +6,17 @@ Products, not prototypes.
 
 ## Elevator Pitch
 
-We build products, not prototypes. Most dev shops build your first version fast and
-cheap — then you pay to rebuild it when you scale.
+We're an enterprise-class engineering shop for Central Illinois small and medium-sized businesses.
+We build custom software, integrate AI into the products and operations you already run, and do it
+with the discipline that survives growth and scrutiny.
 
-We identify the 10% that makes your business unique, capture it in solid architecture, and turnkey
-the rest. When investors ask about your tech, you pass due diligence. When you hire engineers, they
-can read the code. When you pivot, you don't start over.
+AI has rewritten the economics of custom software. Systems that used to require a million-dollar
+budget are now within reach of any serious regional business. We bring eight-figure engineering
+discipline — paired with AI-driven development — so SMBs can capitalize on the shift before
+competitors do.
 
-We've delivered eight-figure technical programs and guided startups through exits — and we're
-embedded in the Champaign-Urbana community, working with local business leaders who value building
-it right the first time.
+When investors audit your tech, it holds up. When your AI pilot meets real customers, it doesn't
+collapse. When you pivot, you don't start over.
 
 ## Mission Statement (The "Why")
 
@@ -32,9 +33,9 @@ Executive engineering judgment without the headcount. Solid products without the
 
 ## Positioning Statement (The Difference)
 
-For business leaders with a product vision but without senior technical leadership, bsf5y builds
-the architecture that protects your core business logic — so you scale without rewrites and pivot
-without starting over.
+For Central Illinois SMBs that need to build new software, modernize what they already run, or
+integrate AI into their business — and don't have an in-house engineering bench — bsf5y delivers
+enterprise-class systems at prices the AI shift has finally made accessible.
 
 ## Messaging Pillars (The Core Themes):
 
@@ -83,6 +84,30 @@ Multiple paths forward after delivery.
 - Recruitment support when ready to hire
 - Local presence, embedded in Champaign-Urbana community
 - We succeed when you don't need us anymore
+
+### 5. AI-Amplified Delivery
+*"Enterprise-class engineering at SMB-accessible prices."*
+
+AI changed the economics of custom software. The work that used to cost a million dollars now
+costs a fraction of that — but only if the people building it know what they're doing. We use
+AI-driven development to accelerate delivery without compromising the engineering discipline.
+
+- The savings are in the build, not the architecture
+- We pass the new economics to our clients, not pocket them
+- SMBs can now afford the kind of bespoke systems that used to be reserved for enterprises
+- AI accelerates engineering judgment — it doesn't replace it
+
+### 6. Integrated AI, Not Bolt-On AI
+*"AI pilots fail for the same reason prototypes do."*
+
+Models change monthly. Vendors ship demos. What doesn't change is the work between a demo that
+impresses and a system that survives production. That work is engineering.
+
+- Value lives in your system, not the prompt
+- Swap models without rewriting
+- Documented, tested, auditable
+- Your data stays yours
+- Whether you're building with AI or adopting it, the discipline is the same
 
 ## Supporting Messages/Proof Points (The "Why You")
 
@@ -137,6 +162,21 @@ humans to read. No "archaeology" required.
 
 ### Primary Customer Profile
 
+**Primary: Central Illinois SMBs adopting AI**
+
+- **Who:** Owners and operators of established small/medium businesses who see AI reshaping
+  their industry and don't want to be the case study for moving too late.
+- **Value:** Engineering judgment that integrates AI into a working business without putting
+  revenue, operations, or data at risk.
+- **Stage:** Have an existing business with revenue and operations. May be greenfield on the
+  AI side, or replacing a failed pilot.
+- **Situation:** No in-house engineering bench capable of distinguishing a vendor demo from a
+  production system.
+- **Mindset:** Sees AI as competitive necessity, not novelty. Wants a local partner who will
+  still be around when the model changes.
+
+**Secondary: Founders building new products**
+
 - **Who:** Business leaders with a product vision seeking expert technical partners to realize
   new or existing product concepts.
 - **Value:** Close long-term partnerships over one-off contracts.
@@ -148,8 +188,10 @@ humans to read. No "archaeology" required.
 
 ### Geographic Focus
 
-Champaign-Urbana and Central Illinois. Deeply embedded in the University of Illinois, Parkland
-Community College, business development groups and local startup community.
+**Central Illinois.** Champaign-Urbana is home — deeply embedded in the University of Illinois,
+Parkland Community College, business development groups, and local startup community. We work
+across the broader Central Illinois region with SMBs that benefit from a local, in-person
+engineering partner.
 
 ### Disqualified Customers
 
@@ -265,15 +307,18 @@ why we build differently.
 
 ## Target Audience
 
-Business leaders with a product vision — non-technical leaders, inexperienced technical leaders,
-and executives shopping for an engineering partner.
+**Primary: SMB owners and operators in Central Illinois adopting AI.** Established businesses
+with revenue and operations, watching AI reshape their industry. They've seen a vendor demo or
+two, may have run a pilot that didn't survive contact with reality, and want a local engineering
+partner who can integrate AI into the business without breaking what already works.
 
-Ideally they are starting a greenfield project for a new idea. But if they have a project already
-underway and have built a prototype, they may not have been burned yet, but they can feel it
-coming. Change is becoming harder.
+**Secondary: Business leaders with a product vision** — non-technical leaders, inexperienced
+technical leaders, and executives shopping for an engineering partner. Ideally starting a
+greenfield project for a new idea, but sometimes already underway with a prototype that's
+becoming harder to change.
 
-They're comparing options, searching for an ideal technical partner. They need to understand why
-our approach matters before they've experienced the downside of alternatives.
+Both audiences are comparing options, searching for an ideal technical partner. They need to
+understand why our approach matters before they've experienced the downside of alternatives.
 
 ## Success Outcomes
 
@@ -336,11 +381,16 @@ Use this reference when translating messaging to specific touchpoints:
 | Voice Guidelines | Internal style guide for all content creators |
 | Disqualified Customers | FAQ ("Who we don't work with"), internal use |
 
-### Homepage Structure (Recommended)
+### Homepage Structure (Current)
 
-1. **Hero:** Tagline + elevator pitch hook
-2. **Problem:** The Founder's Reality (emotional connection)
-3. **Solution:** Product Thinking pillar + "The Point"
-4. **Proof:** Case study highlights + key credentials
-5. **Process:** How We Work summary
-6. **CTA:** Clear next step (discovery call, contact form)
+1. **Hero:** Tagline + direct offer (enterprise-class software, systems, and AI for Central IL SMBs)
+2. **What We Do:** Tight 10-second statement of the offer for visitors who don't scroll
+3. **Services:** Six engagement types (Fractional CTO, Bespoke Solutions, AI Integration,
+   Enterprise Architecture, Recruitment, Training) under "We Value Partnerships over Projects"
+4. **Positioning:** Product vs. prototype thesis, extended to integrated vs. bolt-on AI
+5. **Problem:** The Founder's Reality (emotional connection — secondary audience)
+6. **Comparison:** Prototype vs. Product side-by-side
+7. **AI Question:** Bolt-on AI vs. Integrated AI side-by-side, mirroring the Comparison section
+8. **Methodology:** How We Work — the five-phase engagement
+9. **Credibility:** Track-record proof points
+10. **CTA:** Clear next step (discovery call, contact form)
