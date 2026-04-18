@@ -85,14 +85,14 @@ wrong might not surface until week two, by which point significant work has been
 built on a flawed foundation. Small scope is how you find out about problems while
 they're still cheap to fix.
 
-<svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" style="width: 100%; margin: 4rem auto; display: block;">
+<svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 600px; margin: 3rem auto; display: block;">
   <style>.label { font-family: 'JetBrains Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500; } .axis { font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 500; fill: #8b9199; } .callout { font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 500; } .label-cheap { fill: #8b9199; } .label-valuable { fill: #d97706; } .text-main { fill: #e8e6e3; } .bar-short { fill: #1a1e25; stroke: #d97706; stroke-width: 2; } .bar-long { fill: #2a1d15; stroke: rgba(217,119,6,0.35); stroke-width: 1.5; } .bar-planned { fill: none; stroke: rgba(255,255,255,0.15); stroke-width: 1.5; stroke-dasharray: 4 4; } .marker { fill: #d97706; } .axis-line { stroke: rgba(255,255,255,0.2); stroke-width: 1; }</style>
   <text x="350" y="35" text-anchor="middle" class="label label-valuable">Time From Flaw To Detection</text>
-  <text x="30" y="100" class="label text-main">2-day task</text>
+  <text x="30" y="100" class="label label-valuable">2-day task</text>
   <rect x="150" y="80" width="47" height="30" rx="4" class="bar-short"/>
   <circle cx="197" cy="95" r="6" class="marker"/>
   <text x="212" y="100" class="callout label-valuable">Detected — cheap to fix</text>
-  <text x="30" y="180" class="label text-main">3-week task</text>
+  <text x="30" y="180" class="label label-cheap">3-week task</text>
   <rect x="150" y="160" width="326" height="30" rx="4" class="bar-long"/>
   <rect x="476" y="160" width="164" height="30" rx="4" class="bar-planned"/>
   <circle cx="476" cy="175" r="6" class="marker"/>
@@ -103,7 +103,6 @@ they're still cheap to fix.
   <line x1="197" y1="245" x2="197" y2="255" class="axis-line"/>
   <line x1="476" y1="245" x2="476" y2="255" class="axis-line"/>
   <line x1="640" y1="245" x2="640" y2="255" class="axis-line"/>
-  <text x="150" y="272" text-anchor="middle" class="axis">Start</text>
   <text x="197" y="272" text-anchor="middle" class="axis">Day 2</text>
   <text x="476" y="272" text-anchor="middle" class="axis">Week 2</text>
   <text x="640" y="272" text-anchor="middle" class="axis">Week 3</text>
@@ -161,7 +160,7 @@ they are captured in a durable, indexable record. This principle protects your
 investment when people leave, memories fade, or teams disagree about what was
 agreed.
 
-<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" style="width: 100%; margin: 4rem auto; display: block;">
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 600px; margin: 3rem auto; display: block;">
   <style>.label { font-family: 'JetBrains Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500; } .box-text { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; } .big-text { font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 500; letter-spacing: 0.1em; } .label-cheap { fill: #8b9199; } .label-valuable { fill: #d97706; } .box-cheap { fill: #232830; stroke: rgba(255,255,255,0.12); stroke-width: 1.5; } .box-valuable { fill: #1a1e25; stroke: #d97706; stroke-width: 2.5; } .text-main { fill: #e8e6e3; } .arrow { fill: none; stroke: #d97706; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }</style>
   <defs><filter id="artifact-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12" result="blur"/><feFlood flood-color="#d97706" flood-opacity="0.4"/><feComposite in2="blur" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
   <text x="350" y="35" text-anchor="middle" class="label label-cheap">Not real until captured</text>
@@ -249,7 +248,7 @@ the brief. The brief references the requirement or ADR. The review captures the
 discussion. The paper trail is not a separate artifact someone must produce. It is a
 byproduct of the workflow itself.
 
-<svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" style="width: 100%; margin: 4rem auto; display: block;">
+<svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 600px; margin: 3rem auto; display: block;">
   <style>.label { font-family: 'JetBrains Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500; } .box-text { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; } .label-cheap { fill: #8b9199; } .label-valuable { fill: #d97706; } .box { fill: #1a1e25; stroke: #d97706; stroke-width: 2; } .text-main { fill: #e8e6e3; } .arrow { fill: none; stroke: #d97706; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }</style>
   <text x="350" y="35" text-anchor="middle" class="label label-valuable">Any node answers: Why?</text>
   <rect x="20" y="85" width="140" height="80" rx="8" class="box"/>
@@ -300,7 +299,7 @@ being in place. These higher-order practices do not guarantee good outcomes, but
 absence of the Three T's guarantees that they will be unreliable at best and
 theatrical at worst.
 
-<svg viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg" style="width: 100%; margin: 4rem auto; display: block;">
+<svg viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 600px; margin: 3rem auto; display: block;">
   <style>.label { font-family: 'JetBrains Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500; } .big-label { font-family: 'JetBrains Mono', monospace; font-size: 15px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; } .arrow-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 500; } .label-cheap { fill: #8b9199; } .label-valuable { fill: #d97706; } .box-valuable { fill: #1a1e25; stroke: #d97706; stroke-width: 2.5; } .text-main { fill: #e8e6e3; } .arrow { fill: none; stroke: #d97706; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }</style>
   <defs><filter id="system-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10" result="blur"/><feFlood flood-color="#d97706" flood-opacity="0.35"/><feComposite in2="blur" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
   <rect x="260" y="40" width="180" height="80" rx="10" class="box-valuable" filter="url(#system-glow)"/>
@@ -315,11 +314,11 @@ theatrical at worst.
   <path d="M 442 372 L 454 380 L 442 388" class="arrow"/>
   <path d="M 540 340 Q 520 210 410 120" class="arrow"/>
   <path d="M 420 136 L 410 120 L 428 126" class="arrow"/>
-  <text x="175" y="220" text-anchor="middle" class="arrow-label label-valuable">Meaningful</text>
-  <text x="175" y="238" text-anchor="middle" class="arrow-label label-valuable">signals</text>
-  <text x="347" y="370" text-anchor="middle" class="arrow-label label-valuable">Durable artifacts</text>
-  <text x="525" y="220" text-anchor="middle" class="arrow-label label-valuable">Honest scope</text>
-  <text x="525" y="238" text-anchor="middle" class="arrow-label label-valuable">history</text>
+  <text x="130" y="220" text-anchor="middle" class="arrow-label label-valuable">Meaningful</text>
+  <text x="130" y="238" text-anchor="middle" class="arrow-label label-valuable">signals</text>
+  <text x="350" y="370" text-anchor="middle" class="arrow-label label-valuable">Durable artifacts</text>
+  <text x="570" y="220" text-anchor="middle" class="arrow-label label-valuable">Honest scope</text>
+  <text x="570" y="238" text-anchor="middle" class="arrow-label label-valuable">history</text>
   <text x="350" y="470" text-anchor="middle" class="label label-cheap">Remove any pillar — the others degrade</text>
 </svg>
 
