@@ -656,6 +656,39 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 }
 
 /* --------------------------------------------
+   What We Do Section
+   -------------------------------------------- */
+.what-we-do {
+  padding: var(--space-3xl) 0;
+  background: var(--color-bg-deep);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.what-we-do .section-label {
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
+}
+
+.what-we-do-headline {
+  font-size: clamp(var(--text-xl), 3vw, var(--text-2xl));
+  font-weight: 600;
+  letter-spacing: var(--tracking-tight);
+  max-width: var(--container-narrow);
+  margin: 0 auto var(--space-md);
+  line-height: var(--leading-snug);
+}
+
+.what-we-do-subtext {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-style: italic;
+  color: var(--color-text-muted);
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/* --------------------------------------------
    Problem Section
    -------------------------------------------- */
 .problem {

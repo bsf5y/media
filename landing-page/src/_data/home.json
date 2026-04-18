@@ -1,9 +1,13 @@
 {
   "hero": {
     "tagline": "Products, Not Prototypes.",
-    "lead": "The software industry has it backwards. Cutting corners on your product isn't saving money—it's borrowing against the rework that you'll pay for later, with interest.",
-    "reframe": "<a href=\"https://x.com/unclebobmartin/status/1163789159309434880\">\"The only way to go fast is to go well.\"</a> — Robert Martin",
-    "subtext": "<p>For business leaders building a new product — and for those wanting to integrate AI technology — BSF5Y is the engineering partner that builds it to last.</p><br><p>When investors audit your tech, it holds up. When your AI pilot meets real customers, it doesn't collapse. When you pivot, you don't start over.</p>"
+    "lead": "Enterprise-class software, systems, and AI development for Central Illinois' small and medium-sized businesses. We'll build your next technology solution right the first time.",
+    "subtext": "<p>AI has rewritten the economics of custom software. Systems that used to require a million-dollar budget are now within reach of any serious regional business. We bring eight-figure engineering discipline — paired with AI-driven development — to SMBs that need to capitalize on this shift before their competitors do.</p><br><p>And we still build it right: code your future team can read, architecture that survives your next pivot, infrastructure that doesn't quietly rot.</p>"
+  },
+  "whatWeDo": {
+    "label": "What We Do",
+    "headline": "Custom software development. Systems integration. AI strategy and implementation.",
+    "subtext": "For business leaders who want to move now — not after their competitors do."
   },
   "positioning": "<p>The difference between a product and a prototype isn't polish or features — it's where the value lives. Prototypes trap business logic in the UI. Products capture it in portable software any interface can use.</p><p>The same difference shows up in AI. Bolt-ons trap value in prompts and demos. Integrations capture it in systems that outlast any single vendor, model, or demo.</p>",
   "problem": {
