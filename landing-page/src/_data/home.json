@@ -1,7 +1,7 @@
 {
   "hero": {
     "tagline": "Products, Not Prototypes.",
-    "lead": "Enterprise-class software, systems, and AI development for Central Illinois' small and medium-sized businesses. We'll build your next technology solution right the first time.",
+    "lead": "Enterprise-class software, systems, and AI development for Central Illinois' small and medium-sized businesses. We'll get it right the first time.",
     "subtext": "<p>AI has rewritten the economics of custom software. Systems that used to require a million-dollar budget are now within reach of any serious regional business. We bring eight-figure engineering discipline — paired with AI-driven development — to SMBs that need to capitalize on this shift before their competitors do.</p><br><p>And we still build it right: code your future team can read, architecture that survives your next pivot, infrastructure that doesn't quietly rot.</p>"
   },
   "whatWeDo": {
@@ -12,7 +12,7 @@
   "positioning": "<p>The difference between a product and a prototype isn't polish or features — it's where the value lives. Prototypes trap business logic in the UI. Products capture it in portable software any interface can use.</p><p>The same difference shows up in AI. Bolt-ons trap value in prompts and demos. Integrations capture it in systems that outlast any single vendor, model, or demo.</p>",
   "problem": {
     "label": "The Founder's Reality",
-    "headline": "We understand what keeps you up at night.",
+    "headline": "You've probably lived at least one of these.",
     "statements": [
       "Development used to move so fast, but now adding a simple feature takes weeks.",
       "The big reveal went great, delivery invoices were paid, and your tech partner went dark.",
@@ -127,7 +127,7 @@
     {
       "type": "AI Integration",
       "title": "Production AI Systems",
-      "description": "We integrate AI into your product — or the business you already run — with the engineering discipline that separates a demo from a production system. Evaluations, guardrails, and vendor-portable architecture, so your AI survives the next model, the next vendor, and the next compliance review."
+      "description": "We integrate AI into your product — or the business you already run. Strict performance evaluations, data/secuirty guardrails, and vendor-portable architecture."
     },
     {
       "type": "Enterprise Architecture",
