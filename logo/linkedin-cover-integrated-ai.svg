@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-  LinkedIn Company Cover · Proposal 1 of 3 — "Integrated AI"
-  ──────────────────────────────────────────────────────────
+  LinkedIn Company Cover · "Integrated AI" (light)
+  ────────────────────────────────────────────────
   Concept: A three-layer system schematic that visualises the "integrated,
   not bolt-on" thesis. Interfaces sit above; the protected core holds your
   data, rules, and AI orchestration; the model layer below is explicitly
@@ -10,33 +10,38 @@
   prompt instead of captured in the system.
 
   Canvas: 1128 × 191  (LinkedIn company page banner, 5.91:1)
-  Avatar safe-zone: x=0–160, y=120–191 — kept clear of critical content.
+  Avatar safe-zone: x=0–320, y=40–191 — LinkedIn's company avatar overlay
+  covers the lower-left of the cover; the tagline block starts at x=336.
+
+  Palette: light (pure #ffffff field, dark ink, brand copper/steel accents)
+  — matches LinkedIn's UI chrome so the cover blends seamlessly with the
+  surrounding company-page layout (no visible seam at the cover edge).
 -->
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 1128 191"
      width="1128" height="191"
      role="img"
      aria-label="The Bootstrap Factory — Integrated AI. Not Bolt-On.">
-  <title>BSF5Y — Integrated AI. Not Bolt-On. (LinkedIn cover)</title>
+  <title>BSF5Y — Integrated AI. Not Bolt-On. (LinkedIn cover · Light)</title>
   <defs>
     <pattern id="ai-grid-fine" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#d97706" stroke-opacity="0.05" stroke-width="0.5"/>
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#d97706" stroke-opacity="0.06" stroke-width="0.5"/>
     </pattern>
     <pattern id="ai-grid-coarse" width="100" height="100" patternUnits="userSpaceOnUse">
-      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#d97706" stroke-opacity="0.10" stroke-width="0.5"/>
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#d97706" stroke-opacity="0.12" stroke-width="0.5"/>
     </pattern>
     <style>
-      .ai-bg          { fill: #0a0c0f; }
-      .ai-display     { font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 700; fill: #e8e6e3; letter-spacing: -0.02em; }
-      .ai-body        { font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 400; fill: #a8b0ba; letter-spacing: -0.005em; }
-      .ai-mono        { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 500; fill: #8b9199; letter-spacing: 0.12em; }
-      .ai-mono-accent { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 600; fill: #d97706; letter-spacing: 0.12em; }
-      .ai-mono-cool   { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 500; fill: #60a5fa; letter-spacing: 0.10em; }
+      .ai-bg          { fill: #ffffff; }
+      .ai-display     { font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 700; fill: #1a1e25; letter-spacing: -0.02em; }
+      .ai-body        { font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 400; fill: #4a5160; letter-spacing: -0.005em; }
+      .ai-mono        { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 500; fill: #555a63; letter-spacing: 0.12em; }
+      .ai-mono-accent { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 700; fill: #b35d00; letter-spacing: 0.12em; }
+      .ai-mono-cool   { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; font-weight: 600; fill: #2563eb; letter-spacing: 0.10em; }
       .ai-accent      { fill: #d97706; }
-      .ai-layer-box   { fill: none; stroke: #3b82f6; stroke-opacity: 0.55; stroke-width: 0.75; }
-      .ai-core-box    { fill: rgba(217, 119, 6, 0.10); stroke: #d97706; stroke-width: 1.2; }
-      .ai-dim         { stroke: #3b82f6; stroke-opacity: 0.55; stroke-width: 0.5; }
-      .ai-dim-accent  { stroke: #d97706; stroke-width: 0.6; }
+      .ai-layer-box   { fill: none; stroke: #3b82f6; stroke-opacity: 0.6; stroke-width: 0.9; }
+      .ai-core-box    { fill: rgba(217, 119, 6, 0.08); stroke: #d97706; stroke-width: 1.4; }
+      .ai-dim         { stroke: #3b82f6; stroke-opacity: 0.65; stroke-width: 0.6; }
+      .ai-dim-accent  { stroke: #d97706; stroke-width: 0.8; }
     </style>
   </defs>
 
@@ -45,7 +50,7 @@
   <rect width="1128" height="191" fill="url(#ai-grid-fine)"/>
   <rect width="1128" height="191" fill="url(#ai-grid-coarse)"/>
 
-  <!-- top register -->
+  <!-- top register (sits above the avatar overlay) -->
   <g transform="translate(40, 24)">
     <rect class="ai-accent" x="0" y="-4" width="22" height="2"/>
     <text x="34" y="0" class="ai-mono" font-size="10">BSF5Y · THE BOOTSTRAP FACTORY · CHAMPAIGN-URBANA, IL</text>
@@ -53,23 +58,24 @@
   <text x="1088" y="24" text-anchor="end" class="ai-mono" font-size="10">AI INTEGRATION · ARCHITECTURE</text>
 
   <!-- divider -->
-  <line x1="40" y1="38" x2="1088" y2="38" stroke="#ffffff" stroke-opacity="0.06" stroke-width="0.5"/>
+  <line x1="40" y1="38" x2="1088" y2="38" stroke="#1a1e25" stroke-opacity="0.10" stroke-width="0.5"/>
 
-  <!-- left: tagline -->
-  <g transform="translate(200, 0)">
-    <rect class="ai-accent" x="-12" y="68" width="3" height="44"/>
-    <text x="0" y="94"  class="ai-display" font-size="34">Integrated AI. Not Bolt-On.</text>
-    <text x="0" y="120" class="ai-body"    font-size="14">AI pilots fail for the same reason prototypes do.</text>
-    <text x="0" y="156" class="ai-mono-accent" font-size="9">// VALUE LIVES IN THE SYSTEM — NOT THE PROMPT</text>
+  <!-- left: tagline (shifted right of avatar safe-zone) -->
+  <g transform="translate(336, 0)">
+    <rect class="ai-accent" x="-14" y="58" width="4" height="92"/>
+    <text x="0" y="84"  class="ai-display" font-size="28">Integrated AI.</text>
+    <text x="0" y="116" class="ai-display" font-size="28">Not Bolt-On.</text>
+    <text x="0" y="140" class="ai-body"    font-size="12">AI pilots fail for the same reason prototypes do.</text>
+    <text x="0" y="166" class="ai-mono-accent" font-size="9">// VALUE LIVES IN THE SYSTEM — NOT THE PROMPT</text>
   </g>
 
   <!-- right: layered AI architecture with dimensional callouts -->
   <g transform="translate(728, 52)">
     <!-- drafting corner ticks -->
-    <path d="M -6 -6 L 0 -6 M -6 -6 L -6 0"     stroke="#3b82f6" stroke-opacity="0.6" stroke-width="0.6" fill="none"/>
-    <path d="M 286 -6 L 280 -6 M 286 -6 L 286 0" stroke="#3b82f6" stroke-opacity="0.6" stroke-width="0.6" fill="none"/>
-    <path d="M -6 104 L 0 104 M -6 104 L -6 98"  stroke="#3b82f6" stroke-opacity="0.6" stroke-width="0.6" fill="none"/>
-    <path d="M 286 104 L 280 104 M 286 104 L 286 98" stroke="#3b82f6" stroke-opacity="0.6" stroke-width="0.6" fill="none"/>
+    <path d="M -6 -6 L 0 -6 M -6 -6 L -6 0"     stroke="#3b82f6" stroke-opacity="0.7" stroke-width="0.7" fill="none"/>
+    <path d="M 286 -6 L 280 -6 M 286 -6 L 286 0" stroke="#3b82f6" stroke-opacity="0.7" stroke-width="0.7" fill="none"/>
+    <path d="M -6 104 L 0 104 M -6 104 L -6 98"  stroke="#3b82f6" stroke-opacity="0.7" stroke-width="0.7" fill="none"/>
+    <path d="M 286 104 L 280 104 M 286 104 L 286 98" stroke="#3b82f6" stroke-opacity="0.7" stroke-width="0.7" fill="none"/>
 
     <!-- Interfaces layer -->
     <rect class="ai-layer-box" x="0" y="0"  width="280" height="26" rx="2"/>
