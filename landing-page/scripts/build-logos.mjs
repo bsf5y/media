@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// Builds downstream logo media from the two source SVGs in src/assets/logo/.
+// Builds downstream logo media from the two source SVGs in the repo-root logo/.
 //
 // Generated outputs (all gitignored):
-//   - src/assets/logo/{light,dark}-logo.png    (rasterized via rsvg-convert)
+//   - <repo>/logo/{light,dark}-logo.png        (rasterized via rsvg-convert)
 //   - src/_includes/partials/logo-svg.njk      (inline SVG using CSS variables
 //                                               so the header logo follows the
 //                                               active light/dark theme)
@@ -20,9 +20,10 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const SOURCE_DIR = join(ROOT, "src/assets/logo");
-const PARTIAL_PATH = join(ROOT, "src/_includes/partials/logo-svg.njk");
+const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const REPO_ROOT = resolve(PROJECT_ROOT, "..");
+const SOURCE_DIR = join(REPO_ROOT, "logo");
+const PARTIAL_PATH = join(PROJECT_ROOT, "src/_includes/partials/logo-svg.njk");
 
 const CLASS_TO_INLINE = {
   "logo-text": 'fill="var(--color-text)"',
@@ -32,7 +33,7 @@ const CLASS_TO_INLINE = {
   "logo-stroke-border": 'stroke="var(--color-border)" fill="none"',
 };
 
-const rel = (p) => relative(ROOT, p);
+const rel = (p) => relative(REPO_ROOT, p);
 
 function rasterize(variant) {
   const src = join(SOURCE_DIR, `${variant}-logo.svg`);

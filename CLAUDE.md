@@ -23,6 +23,7 @@ Use a GitHub Issue and feature branch for non-trivial work. Quick content edits 
 ## Repository Structure
 
 - `landing-page/` — Production landing page and blog (Eleventy + Nunjucks)
+- `logo/` — Source-of-truth SVGs for the brand mark (consumed by the landing-page logo build)
 - `docs/` — Strategic messaging, engagement model, service descriptions, brand materials, article ideas
 
 ## Build & Development Commands
@@ -93,19 +94,21 @@ Three font families loaded from Google Fonts:
 
 ### Logo Pipeline
 
-The two SVGs in `landing-page/src/assets/logo/` are the **single source of truth** for the brand mark:
+The two SVGs in the repo-root `logo/` directory are the **single source of truth** for the brand mark:
 
-- `light-logo.svg` — for use on light backgrounds (baked light-mode colors)
-- `dark-logo.svg` — for use on dark backgrounds (baked dark-mode colors)
+- `logo/light-logo.svg` — for use on light backgrounds (baked light-mode colors)
+- `logo/dark-logo.svg` — for use on dark backgrounds (baked dark-mode colors)
 
-`scripts/build-logos.mjs` generates all downstream media from these sources (run automatically via `prebuild`/`predev`):
+`landing-page/scripts/build-logos.mjs` generates all downstream media from these sources (run automatically via `prebuild`/`predev`):
 
-- `src/assets/logo/{light,dark}-logo.png` — rasterized via `rsvg-convert` for non-SVG consumers (downloads, social cards)
-- `src/_includes/partials/logo-svg.njk` — inline header SVG with `class="logo-*"` rewritten to `fill="var(--color-*)"`, so the header logo follows the active theme at runtime
+- `logo/{light,dark}-logo.png` — rasterized via `rsvg-convert` for non-SVG consumers (downloads, social cards)
+- `landing-page/src/_includes/partials/logo-svg.njk` — inline header SVG with `class="logo-*"` rewritten to `fill="var(--color-*)"`, so the header logo follows the active theme at runtime
 
-Generated outputs are gitignored. **Never hand-edit** the generated files; edit the source SVGs and re-run `npm run build:logos`. The style guide page (`src/style-guide/`) references the source SVGs directly via `<img src="/assets/logo/...">` to avoid duplication.
+Eleventy passes the repo-root `logo/` directory through to `/assets/logo/` in the built site, so SVGs and PNGs are served at `/assets/logo/{light,dark}-logo.{svg,png}` (the style guide references those URLs).
 
-Class → CSS-variable mapping (defined in `scripts/build-logos.mjs`):
+Generated outputs are gitignored. **Never hand-edit** the generated files; edit the source SVGs and re-run `npm run build:logos`.
+
+Class → CSS-variable mapping (defined in `landing-page/scripts/build-logos.mjs`):
 
 | SVG class | Inline attribute |
 | --- | --- |
