@@ -1,11 +1,19 @@
 # Generates social/profile images from the source brand-mark SVGs in this
 # directory.
 #
-# `make linkedin` (default) produces 300x300 PNGs of the graphic mark only
+# `make linkedin` produces 300x300 PNGs of the graphic mark only
 # (no wordmark), centered with 20px of transparent padding on every edge
 # (260x260 inner content):
 #   light-logo-linkedin.png   for use on light backgrounds
 #   dark-logo-linkedin.png    for use on dark backgrounds
+#
+# `make linkedin-cover` rasterizes the three LinkedIn company-page cover
+# proposals (1128x191 PNG, ~5.91:1) from their source SVGs:
+#   linkedin-cover-blueprint.png
+#   linkedin-cover-terminal.png
+#   linkedin-cover-core.png
+#
+# `make all` (default) produces both groups.
 #
 # Requires `xmlstarlet`, `rsvg-convert` (librsvg), and `magick` (ImageMagick)
 # on PATH:
@@ -23,7 +31,7 @@ LINKEDIN := $(SOURCES:.svg=-linkedin.png)
 #   <g id="wordmark">  - the "BSF5Y" text (stripped for the LinkedIn image)
 WORDMARK_GROUP := wordmark
 
-# 300x300 canvas with 20px transparent padding on all edges -> 260x260 inner.
+# Profile-image: 300x300 canvas with 20px transparent padding -> 260x260 inner.
 CANVAS := 300
 INNER  := 260
 
@@ -32,11 +40,22 @@ INNER  := 260
 # than hand-measuring the SVG coordinate space).
 RENDER_W := 2000
 
-.PHONY: all linkedin clean check-tools
+# LinkedIn company page cover: 1128 x 191 (~5.91:1).
+# Source SVGs already include their own internal padding from the canvas
+# edge; no extra padding pass is needed — rasterize at the target size.
+COVER_W := 1128
+COVER_H := 191
 
-all: linkedin
+COVER_SOURCES := $(wildcard linkedin-cover-*.svg)
+COVERS        := $(COVER_SOURCES:.svg=.png)
+
+.PHONY: all linkedin linkedin-cover clean check-tools
+
+all: linkedin linkedin-cover
 
 linkedin: $(LINKEDIN)
+
+linkedin-cover: $(COVERS)
 
 check-tools:
 	@for tool in xmlstarlet rsvg-convert magick; do \
@@ -56,5 +75,9 @@ check-tools:
 	      $@
 	@echo "  ✓ $@"
 
+linkedin-cover-%.png: linkedin-cover-%.svg Makefile | check-tools
+	@rsvg-convert -w $(COVER_W) -h $(COVER_H) $< -o $@
+	@echo "  ✓ $@"
+
 clean:
-	rm -f $(LINKEDIN)
+	rm -f $(LINKEDIN) $(COVERS)
