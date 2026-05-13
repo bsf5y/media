@@ -202,7 +202,7 @@ button {
 }
 
 .logo-svg {
-  width: 315px;
+  width: 195px;
   height: auto;
   display: block;
   --color-text: #ffffff;
@@ -212,7 +212,9 @@ html[data-mode="light"] .logo-svg {
   --color-text: #1a1e25;
 }
 
-.logo-text {
+.header-text {
+  margin-left: var(--space-xl);
+  margin-right: var(--space-xl);
   font-family: var(--font-display);
   font-size: 1.125rem;
   font-weight: 600;
