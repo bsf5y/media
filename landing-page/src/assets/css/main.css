@@ -326,6 +326,13 @@ html[data-mode="light"] .logo-svg {
     z-index: 99;
   }
 
+  /* Suppress the slide/fade when the breakpoint is crossed via resize,
+     so the mobile-hidden state is applied instantly instead of
+     animating the now-stacked items off-screen. */
+  html.is-resizing .nav {
+    transition: none;
+  }
+
   .nav-toggle-checkbox:checked ~ .nav {
     transform: translateY(0);
     opacity: 1;

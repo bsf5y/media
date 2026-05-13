@@ -247,6 +247,24 @@ if (navToggleCheckbox) {
 }
 
 /* ============================================
+   Suppress nav transitions during resize
+   ============================================ */
+
+// When the viewport crosses the mobile breakpoint, the .nav element's
+// hidden state (transform + opacity) is applied with its transition active,
+// which produces a brief flash of vertically-stacked items sliding off-screen.
+// Flagging the document during resize lets the CSS skip the transition for
+// that layout shift while preserving the hamburger open/close animation.
+let resizeTransitionTimer
+window.addEventListener('resize', () => {
+  document.documentElement.classList.add('is-resizing')
+  clearTimeout(resizeTransitionTimer)
+  resizeTransitionTimer = setTimeout(() => {
+    document.documentElement.classList.remove('is-resizing')
+  }, 150)
+}, { passive: true })
+
+/* ============================================
    Header Scroll Behavior
    ============================================ */
 
