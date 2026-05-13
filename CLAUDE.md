@@ -99,6 +99,13 @@ The two SVGs in the repo-root `logo/` directory are the **single source of truth
 - `logo/light-logo.svg` — for use on light backgrounds (baked light-mode colors)
 - `logo/dark-logo.svg` — for use on dark backgrounds (baked dark-mode colors)
 
+Both files share an identical structure: child elements are organized into two named groups so derivatives can address them semantically rather than by individual element IDs.
+
+- `<g id="graphic">` — the brand-mark glyph (everything except the text)
+- `<g id="wordmark">` — the "BSF5Y" letterforms
+
+**Preserve this grouping when editing the sources.** If Inkscape (or any other editor) ungroups them or renames the IDs, the LinkedIn build will fail to find the `wordmark` group and produce the full logo instead of the graphic-only image.
+
 `landing-page/scripts/build-logos.mjs` generates all downstream media from these sources (run automatically via `prebuild`/`predev`):
 
 - `logo/{light,dark}-logo.png` — rasterized via `rsvg-convert` for non-SVG consumers (downloads, social cards)
@@ -106,7 +113,9 @@ The two SVGs in the repo-root `logo/` directory are the **single source of truth
 
 Eleventy passes the repo-root `logo/` directory through to `/assets/logo/` in the built site, so SVGs and PNGs are served at `/assets/logo/{light,dark}-logo.{svg,png}` (the style guide references those URLs).
 
-Generated outputs are gitignored. **Never hand-edit** the generated files; edit the source SVGs and re-run `npm run build:logos`.
+A standalone `logo/Makefile` produces social/profile derivatives from the same source SVGs. `make linkedin` writes `logo/{light,dark}-logo-linkedin.png` — 300×300 PNGs of the graphic mark only (the `<g id="wordmark">` group is stripped via `xmlstarlet`) with 20px of transparent padding on every edge. Requires `xmlstarlet`, `rsvg-convert`, and `magick` (`brew install xmlstarlet librsvg imagemagick`).
+
+Generated outputs are gitignored. **Never hand-edit** the generated files; edit the source SVGs and re-run `npm run build:logos` (or `make` in `logo/`).
 
 Class → CSS-variable mapping (defined in `landing-page/scripts/build-logos.mjs`):
 
