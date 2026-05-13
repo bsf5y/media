@@ -223,6 +223,12 @@ html[data-mode="light"] .logo-svg {
   white-space: nowrap;
 }
 
+@media (max-width: 950px) {
+  .header-text {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .logo-text {
     display: none;
@@ -239,6 +245,7 @@ html[data-mode="light"] .logo-svg {
   font-size: var(--text-sm);
   font-weight: 500;
   color: var(--color-accent-cool);
+  white-space: nowrap;
   transition: color var(--duration-fast) var(--ease-out);
 }
 
