@@ -130,6 +130,15 @@ Update the email in `index.html`:
 <a href="mailto:hello@bootstrapfactory.io" class="cta-button">
 ```
 
+## Logo Assets
+
+The two SVGs in `src/assets/logo/` (`light-logo.svg`, `dark-logo.svg`) are the **single source of truth** for the brand mark. All other logo media is generated from them by `scripts/build-logos.mjs`:
+
+- `src/assets/logo/{light,dark}-logo.png` — rasterized via `rsvg-convert` (install with `brew install librsvg`)
+- `src/_includes/partials/logo-svg.njk` — inline header SVG with theme-aware `var(--color-*)` references
+
+These outputs are gitignored. They regenerate automatically before `npm run dev` and `npm run build`; run `npm run build:logos` to refresh them manually. Never hand-edit the generated files — edit the source SVGs and rebuild.
+
 ## Browser Support
 
 Modern browsers with CSS Grid and custom properties support:

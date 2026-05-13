@@ -34,8 +34,11 @@ cd landing-page
 npm install          # Install dependencies
 npm run dev          # Start Eleventy dev server with live reload
 npm run build        # Production build (output to dist/)
+npm run build:logos  # Regenerate logo PNGs + inline header partial
 npm run clean        # Remove dist/ directory
 ```
+
+`build:logos` runs automatically before `dev` and `build` (via `predev`/`prebuild` hooks). It requires `rsvg-convert` on PATH (`brew install librsvg`).
 
 No test runner or linter is configured.
 
@@ -87,6 +90,32 @@ Three font families loaded from Google Fonts:
 - **Landing page text**: Edit `src/_data/home.json`. The JSON structure maps directly to page sections rendered by the Nunjucks partials.
 - **Site metadata/navigation**: Edit `src/_data/site.json`.
 - **Blog posts**: Add or edit markdown files in `src/blog/`. Each post needs YAML frontmatter with `title`, `date`, `description`, and optionally `author` and `tags`.
+
+### Logo Pipeline
+
+The two SVGs in `landing-page/src/assets/logo/` are the **single source of truth** for the brand mark:
+
+- `light-logo.svg` — for use on light backgrounds (baked light-mode colors)
+- `dark-logo.svg` — for use on dark backgrounds (baked dark-mode colors)
+
+`scripts/build-logos.mjs` generates all downstream media from these sources (run automatically via `prebuild`/`predev`):
+
+- `src/assets/logo/{light,dark}-logo.png` — rasterized via `rsvg-convert` for non-SVG consumers (downloads, social cards)
+- `src/_includes/partials/logo-svg.njk` — inline header SVG with `class="logo-*"` rewritten to `fill="var(--color-*)"`, so the header logo follows the active theme at runtime
+
+Generated outputs are gitignored. **Never hand-edit** the generated files; edit the source SVGs and re-run `npm run build:logos`. The style guide page (`src/style-guide/`) references the source SVGs directly via `<img src="/assets/logo/...">` to avoid duplication.
+
+Class → CSS-variable mapping (defined in `scripts/build-logos.mjs`):
+
+| SVG class | Inline attribute |
+| --- | --- |
+| `logo-text` | `fill="var(--color-text)"` |
+| `logo-accent` | `fill="var(--color-accent)"` |
+| `logo-accent-cool` | `fill="var(--color-accent-cool)"` |
+| `logo-stroke-text` | `stroke="var(--color-text)" fill="none"` |
+| `logo-stroke-border` | `stroke="var(--color-border)" fill="none"` |
+
+The unrelated `docs/logo/` directory holds archival brand exports (raster art, plain `logo.svg`) and is not part of the build pipeline.
 
 ## Brand Voice
 

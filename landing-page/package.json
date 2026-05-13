@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "build:logos": "node scripts/build-logos.mjs",
+    "predev": "npm run build:logos",
+    "prebuild": "npm run build:logos",
     "dev": "eleventy --serve --config=.eleventy.cjs",
     "build": "eleventy --config=.eleventy.cjs",
     "clean": "rm -rf dist"
