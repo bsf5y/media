@@ -2,10 +2,10 @@
 # directory.
 #
 # `make linkedin` produces 300x300 PNGs of the graphic mark only
-# (no wordmark), centered with 20px of transparent padding on every edge
+# (no wordmark), centered with 20px of padding on every edge
 # (260x260 inner content):
-#   light-logo-linkedin.png   for use on light backgrounds
-#   dark-logo-linkedin.png    for use on dark backgrounds
+#   light-logo-linkedin.png   for use on light backgrounds (white background)
+#   dark-logo-linkedin.png    for use on dark backgrounds (transparent background)
 #
 # `make linkedin-cover` rasterizes the three LinkedIn company-page cover
 # proposals (1128x191 PNG, ~5.91:1) from their source SVGs:
@@ -31,7 +31,8 @@ LINKEDIN := $(SOURCES:.svg=-linkedin.png)
 #   <g id="wordmark">  - the "BSF5Y" text (stripped for the LinkedIn image)
 WORDMARK_GROUP := wordmark
 
-# Profile-image: 300x300 canvas with 20px transparent padding -> 260x260 inner.
+# Profile-image: 300x300 canvas with 20px padding -> 260x260 inner.
+# Background is per-target (white for light, transparent for dark).
 CANVAS := 300
 INNER  := 260
 
@@ -65,13 +66,16 @@ check-tools:
 	  }; \
 	done
 
+light-logo-linkedin.png: BACKGROUND := white
+dark-logo-linkedin.png:  BACKGROUND := none
+
 %-logo-linkedin.png: %-logo.svg Makefile | check-tools
 	@xmlstarlet ed -N s=http://www.w3.org/2000/svg \
 	    -d "//s:g[@id='$(WORDMARK_GROUP)']" $< \
 	  | rsvg-convert -w $(RENDER_W) \
 	  | magick - -trim +repage \
 	      -resize $(INNER)x$(INNER) \
-	      -background none -gravity center -extent $(CANVAS)x$(CANVAS) \
+	      -background $(BACKGROUND) -gravity center -extent $(CANVAS)x$(CANVAS) \
 	      $@
 	@echo "  ✓ $@"
 
