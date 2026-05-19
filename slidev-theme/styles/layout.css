@@ -1,24 +1,375 @@
+/* ============================================
+   slidev-theme-bsf5y — Refined Industrial Blueprint
+   Ported from The Bootstrap Factory design system
+   (see ../landing-page/src/assets/css/main.css)
+   ============================================ */
+
+/* --------------------------------------------
+   Design Tokens
+   Light = default (color schema "both"), dark = html.dark
+   The website is dark-first; we mirror that under html.dark.
+   -------------------------------------------- */
 :root {
-  /* default theme color */
-  /* can be overrided by uses `themeConfig` option */
-  --slidev-theme-primary: #5d8392;
+  /* Light surfaces */
+  --bsf-bg-deep:     #ffffff;
+  --bsf-bg:          #f8f9fa;
+  --bsf-bg-elevated: #ffffff;
+  --bsf-bg-surface:  #f1f3f5;
+
+  --bsf-text:        #1a1e25;
+  --bsf-text-muted:  #495057;
+  --bsf-text-subtle: #868e96;
+
+  --bsf-border:        rgba(0, 0, 0, 0.08);
+  --bsf-border-strong: rgba(0, 0, 0, 0.15);
+
+  /* Accents (consistent across modes) */
+  --bsf-accent:           #d97706;
+  --bsf-accent-light:     #f59e0b;
+  --bsf-accent-glow:      rgba(217, 119, 6, 0.15);
+  --bsf-accent-cool:      #3b82f6;
+  --bsf-accent-cool-light:#60a5fa;
+  --bsf-accent-cool-glow: rgba(59, 130, 246, 0.15);
+
+  /* Blueprint grid (subtle, copper-tinted) */
+  --bsf-grid:        rgba(217, 119, 6, 0.04);
+  --bsf-grid-strong: rgba(217, 119, 6, 0.08);
+
+  /* Typography */
+  --bsf-font-display: 'Outfit', system-ui, sans-serif;
+  --bsf-font-mono:    'JetBrains Mono', 'SF Mono', monospace;
+  --bsf-font-serif:   'Source Serif 4', Georgia, serif;
+
+  /* Map into Slidev theme vars */
+  --slidev-theme-primary: var(--bsf-accent);
+  --slidev-theme-accent-cool: var(--bsf-accent-cool);
+
+  --slidev-code-background: var(--bsf-bg-surface);
+  --slidev-code-foreground: var(--bsf-text);
+  --slidev-code-font-family: var(--bsf-font-mono);
+  --slidev-code-radius: 0.5rem;
+  --slidev-code-padding: 1rem;
 }
 
+html.dark {
+  --bsf-bg-deep:     #0a0c0f;
+  --bsf-bg:          #12151a;
+  --bsf-bg-elevated: #1a1e25;
+  --bsf-bg-surface:  #232830;
+
+  --bsf-text:        #e8e6e3;
+  --bsf-text-muted:  #a8b0ba;
+  --bsf-text-subtle: #8b9199;
+
+  --bsf-border:        rgba(255, 255, 255, 0.08);
+  --bsf-border-strong: rgba(255, 255, 255, 0.15);
+
+  --bsf-grid:        rgba(217, 119, 6, 0.03);
+  --bsf-grid-strong: rgba(217, 119, 6, 0.06);
+}
+
+/* --------------------------------------------
+   Page Surface
+   Slidev paints slides over --slidev-slide-container-background;
+   the slide itself takes its background from .slidev-layout.
+   -------------------------------------------- */
+.slidev-layout {
+  font-family: var(--bsf-font-display);
+  background: var(--bsf-bg-deep);
+  color: var(--bsf-text);
+  letter-spacing: -0.01em;
+
+  /* Blueprint grid overlay — 20px minor / 100px major */
+  background-image:
+    linear-gradient(var(--bsf-grid-strong) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bsf-grid-strong) 1px, transparent 1px),
+    linear-gradient(var(--bsf-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bsf-grid) 1px, transparent 1px);
+  background-size:
+    100px 100px,
+    100px 100px,
+    20px 20px,
+    20px 20px;
+  background-position: -1px -1px;
+}
+
+/* --------------------------------------------
+   Headings
+   -------------------------------------------- */
+.slidev-layout {
+  h1, h2, h3, h4, h5 {
+    font-family: var(--bsf-font-display);
+    color: var(--bsf-text);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  h1 {
+    @apply font-800;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    @apply font-700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    @apply font-600;
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    @apply font-600;
+    font-size: 1.25rem;
+  }
+
+  /* Eyebrow / over-line — mono uppercase in copper, per the bsf5y system */
+  h6 {
+    font-family: var(--bsf-font-mono);
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bsf-accent);
+    opacity: 1;
+  }
+}
+
+/* --------------------------------------------
+   Body Copy, Lists, Links
+   -------------------------------------------- */
+.slidev-layout {
+  p {
+    color: var(--bsf-text);
+    line-height: 1.6;
+  }
+
+  /* Muted lead paragraph immediately under h1 */
+  h1 + p {
+    color: var(--bsf-text-muted);
+    font-size: 1.125rem;
+    opacity: 1;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  ul li {
+    position: relative;
+    padding-left: 1.25rem;
+    line-height: 1.6;
+  }
+
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: var(--bsf-accent);
+    transform: rotate(45deg);
+  }
+
+  ol {
+    padding-left: 1.5rem;
+  }
+
+  ol li {
+    line-height: 1.6;
+  }
+
+  a {
+    color: var(--bsf-accent);
+    border-bottom: 1px dashed currentColor;
+    text-decoration: none;
+    transition: color 150ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  a:hover {
+    color: var(--bsf-accent-light);
+    border-bottom-style: solid;
+  }
+
+  strong, b {
+    color: var(--bsf-text);
+    font-weight: 700;
+  }
+
+  em {
+    font-family: var(--bsf-font-serif);
+    font-style: italic;
+    color: var(--bsf-text-muted);
+  }
+}
+
+/* --------------------------------------------
+   Blockquote — serif italic with copper rule (matches .hero-lead)
+   -------------------------------------------- */
+.slidev-layout blockquote {
+  font-family: var(--bsf-font-serif);
+  font-style: italic;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--bsf-text-muted);
+  background: transparent;
+  border: none;
+  border-left: 3px solid var(--bsf-accent);
+  border-radius: 0;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.slidev-layout blockquote > * {
+  color: inherit;
+}
+
+/* --------------------------------------------
+   Code (inline + fenced)
+   -------------------------------------------- */
+.slidev-layout code {
+  font-family: var(--bsf-font-mono);
+}
+
+.slidev-layout :not(pre) > code {
+  background: var(--bsf-bg-surface);
+  color: var(--bsf-accent);
+  padding: 0.125em 0.375em;
+  border-radius: 0.25rem;
+  border: 1px solid var(--bsf-border);
+  font-size: 0.9em;
+}
+
+.slidev-layout pre {
+  background: var(--bsf-bg) !important;
+  border: 1px solid var(--bsf-border);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* --------------------------------------------
+   Tables
+   -------------------------------------------- */
+.slidev-layout table {
+  border-collapse: collapse;
+}
+
+.slidev-layout tr {
+  border-bottom: 1px solid var(--bsf-border);
+}
+
+.slidev-layout th {
+  font-family: var(--bsf-font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bsf-text-subtle);
+}
+
+.slidev-layout kbd {
+  font-family: var(--bsf-font-mono);
+  font-size: 0.75rem;
+  background: var(--bsf-bg-surface);
+  border: 1px solid var(--bsf-border-strong);
+  border-bottom-width: 2px;
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.4rem;
+  color: var(--bsf-text);
+}
+
+/* --------------------------------------------
+   Cover & Intro Layouts
+   -------------------------------------------- */
 .slidev-layout.cover,
 .slidev-layout.intro {
   @apply h-full grid;
+  position: relative;
 
-  h1 {
-    @apply text-6xl leading-20;
+  /* Thicker copper rule across the top — blueprint signature */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      var(--bsf-accent) 0%,
+      var(--bsf-accent) 30%,
+      var(--bsf-accent-cool) 100%
+    );
+    opacity: 0.85;
   }
 
+  h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Tagline under cover h1 — serif italic accent */
   h1 + p {
-    @apply -mt-2 opacity-50 mb-4;
+    font-family: var(--bsf-font-serif);
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--bsf-text-muted);
+    margin-top: -0.25rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.25rem;
+    border-left: 2px solid var(--bsf-accent);
+    opacity: 1;
   }
 
   p + h2,
   ul + h2,
   table + h2 {
-    @apply mt-10;
+    margin-top: 2.5rem;
   }
+}
+
+.slidev-layout.cover h1 {
+  color: var(--bsf-text);
+}
+
+/* The first word/line of a cover headline can be color-coded with
+   <span class="accent"> in markdown for emphasis */
+.slidev-layout .accent {
+  color: var(--bsf-accent);
+}
+
+.slidev-layout .accent-cool {
+  color: var(--bsf-accent-cool);
+}
+
+/* --------------------------------------------
+   Center Layout (built-in) — keep grid but center content
+   -------------------------------------------- */
+.slidev-layout.center {
+  text-align: center;
+}
+
+.slidev-layout.center h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+/* --------------------------------------------
+   Slide Container Background
+   The chrome around slides — darker than the slide itself in dark
+   mode so 16:9 slides float on a deeper backdrop.
+   -------------------------------------------- */
+:root {
+  --slidev-slide-container-background: #e9ecef;
+}
+
+html.dark {
+  --slidev-slide-container-background: #050608;
 }

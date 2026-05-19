@@ -1,81 +1,108 @@
 ---
 theme: ./
-background: https://cover.sli.dev
+title: slidev-theme-bsf5y
+info: |
+  Refined Industrial Blueprint — a Slidev theme port of
+  The Bootstrap Factory's design system.
+class: cover
+layout: cover
+eyebrow: The Bootstrap Factory
+footnote: bsf5y.com · Champaign–Urbana
 ---
 
-# Slidev Theme Starter
+# Products, <span class="accent">Not Prototypes</span>
 
-Presentation slides for developers
+Engineering discipline for early-stage founders.
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" flex="~ justify-center items-center gap-2" hover="bg-white bg-opacity-10">
-    Press Space for next page <div class="i-carbon:arrow-right inline-block"/>
+<div class="pt-8">
+  <span @click="$slidev.nav.next" class="px-3 py-2 rounded cursor-pointer inline-flex items-center gap-2" style="font-family: var(--bsf-font-mono); font-size: 0.875rem; color: var(--bsf-accent-cool); border: 1px dashed currentColor;">
+    Press <kbd>space</kbd> to advance <div class="i-carbon:arrow-right inline-block"/>
   </span>
 </div>
 
 ---
+layout: intro
+eyebrow: 01 — Premise
+---
 
-# What is Slidev?
+# Go well to go fast.
 
-Slidev is a slide maker and presentation tool designed for developers. It includes the following features:
-
-- 📝 **Text-based** - focus on your content with Markdown, then style it later
-- 🎨 **Themable** - themes can be shared and reused as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+Velocity is the *output* of engineering discipline — not the input. Founders who skip the foundations pay back the loan with interest, usually right when traction arrives.
 
 ---
 
-# Navigation
+###### What this theme is
 
-Hover on the bottom-left corner to see the navigation's controls panel
+# Refined Industrial Blueprint
 
-## Keyboard Shortcuts
+A dark-first design system with warm copper accents, technical mono labels, and editorial serif quotes. Built for technical talks where the content needs to look as deliberate as it sounds.
 
-|     |     |
+- **Outfit** — geometric display for headlines
+- **JetBrains Mono** — technical labels, code, eyebrows
+- **Source Serif 4** — editorial quotes and emphasis
+- **Copper + steel** — warm action, cool structure
+
+---
+layout: section
+number: 2
+eyebrow: Foundations
+---
+
+# What you get out of the box
+
+---
+
+###### Component coverage
+
+# Layouts
+
+| Layout | Purpose |
 | --- | --- |
-| <kbd>space</kbd> / <kbd>tab</kbd> / <kbd>right</kbd> | next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+| `cover` | Title slide with optional `eyebrow` and `footnote` props |
+| `intro` | Section-opening slide with `eyebrow` |
+| `section` | Numbered transition slide |
+| `quote` | Serif testimonial with `author` / `role` props |
+| `default` | Body content — headings, lists, code, tables |
+| `center` | Centered single-message slide |
+
+Every layout reads correctly in both light and dark mode — toggle from the nav bar.
 
 ---
-layout: image-right
-image: https://cover.sli.dev
----
 
-# Code
+###### Code
 
-Use code snippets and get the highlighting directly!
+# Highlighted with Shiki
 
 ```ts
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
+interface Engagement {
+  founder: string
+  stage: 'discovery' | 'build' | 'handoff'
+  product: Product
 }
 
-function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
+function ship(engagement: Engagement): Product {
+  // The work is the product, not the prototype.
+  return engagement.product
 }
 ```
 
+Inline code looks like `--slidev-theme-primary` — copper on a surface tint, mono in copper because *type carries meaning*.
+
+---
+layout: quote
+author: The Bootstrap Factory
+role: Engagement Doctrine
+---
+
+The first commit is a contract with future-you. Write it like you mean it.
+
 ---
 layout: center
-class: "text-center"
+class: text-center
 ---
 
-# Learn More
+###### Learn more
 
-[Documentation](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+# `bsf5y.com`
+
+[Style guide](https://bsf5y.com/style-guide/) · [GitHub](https://github.com/wcravens/bsf5y-media)

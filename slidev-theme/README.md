@@ -1,50 +1,61 @@
-# slidev-theme-slidev-theme
+# slidev-theme-bsf5y
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-slidev-theme?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-slidev-theme)
-
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
-
-<!--
-  Learn more about how to write a theme:
-  https://sli.dev/guide/write-theme.html
---->
-
-<!--
-  run `npm run dev` to check out the slides for more details of how to start writing a theme
--->
-
-<!--
-  Put some screenshots here to demonstrate your theme
-
-  Live demo: [...]
--->
+A [Slidev](https://sli.dev) theme port of **The Bootstrap Factory**'s design system — Refined Industrial Blueprint. Dark-first, warm copper accents, technical mono labels, editorial serif quotes.
 
 ## Install
 
-Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
+```yaml
+---
+theme: bsf5y
+---
+```
 
-<pre><code>---
-theme: <b>slidev-theme</b>
----</code></pre>
+Slidev will prompt to install the theme on first run. Until this is published to npm, use the path form (`theme: ./` when inside this directory, or `theme: ../slidev-theme` from a sibling deck).
 
-Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
+See [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
+
+## Design
+
+- **Outfit** for display headlines (geometric sans)
+- **JetBrains Mono** for code, eyebrows, technical labels
+- **Source Serif 4** for blockquotes and editorial emphasis
+- **Copper** (`#d97706`) for action and accent; **steel blue** (`#3b82f6`) for structure
+- Blueprint grid overlay (20px minor / 100px major)
+- Light + dark mode (Slidev `colorSchema: both`); the website is dark-first
+
+Source of truth for tokens: `../landing-page/src/assets/css/main.css` and the live style guide at `/style-guide/` (run `npm run dev` in `../landing-page/`).
 
 ## Layouts
 
-This theme provides the following layouts:
+| Layout | Frontmatter props | Use |
+| --- | --- | --- |
+| `cover` | `eyebrow`, `footnote`, `background` | Title slide — copper-to-steel rule across the top |
+| `intro` | `eyebrow`, `background` | Section opener — eyebrow + display headline |
+| `section` | `number`, `eyebrow`, `background` | Numbered transition slide (big translucent number) |
+| `quote` | `author`, `role`, `background` | Serif italic testimonial with attribution |
+| `default` | — | Body content (headings, lists, tables, code) |
+| `center` | — | Centered single-message slide |
 
-> TODO:
+### Markdown helpers
+
+- Wrap text in `<span class="accent">…</span>` for copper highlight inside a heading.
+- Use `<span class="accent-cool">…</span>` for steel-blue highlight.
+- `######` (h6) becomes a mono-uppercase copper eyebrow above a heading.
 
 ## Components
 
-This theme provides the following components:
-
-> TODO:
+> No bespoke components yet. Slidev's built-in components (`<Tweet>`, `<Youtube>`, `<Toc>`, etc.) work as expected.
 
 ## Contributing
 
-- `npm install`
-- `npm run dev` to start theme preview of `example.md`
-- Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
+This package uses **pnpm**.
+
+```bash
+pnpm install
+pnpm dev          # live preview of example.md
+pnpm build        # build static deck → dist/
+pnpm export       # PDF export
+pnpm screenshot   # PNG export per slide
+```
+
+Every theme change should land with a demo slide in `example.md` that exercises it — that file is the test bed. Verify both light and dark mode (toggle in the Slidev nav bar) before committing.
