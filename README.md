@@ -28,6 +28,7 @@ Non-technical or semi-technical founders in Central Illinois launching technolog
 ## Repository Contents
 
 - **landing-page/** — Production landing page (Vite, static hosting ready). See [landing-page/README.md](landing-page/README.md) for details.
+- **landing-page/src/style-guide/** - Visual style guide.
 - **thought-bites/** — Concepts and ideas shaping The Bootstrap Factory
 - **docs/plans/** — Strategic planning documents
 - **resumes/** — Founder background ([Wes Cravens](resumes/wcravens.md))
