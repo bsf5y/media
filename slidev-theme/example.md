@@ -8,6 +8,7 @@ class: cover
 layout: cover
 eyebrow: The Bootstrap Factory
 footnote: bsf5y.com · Champaign–Urbana
+include-logo: true
 ---
 
 # Products, <span class="accent">Not Prototypes</span>
