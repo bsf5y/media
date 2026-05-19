@@ -13,7 +13,7 @@ When adding theme styles, map Slidev's `--slidev-theme-*` variables to the equiv
 
 ## Status
 
-Scaffolded via `pnpm create slidev-theme`. Most of the current contents are starter boilerplate — the package name (`slidev-theme-slidev-theme`), README, and scaffold fonts (`Nunito Sans` / `Fira Code` in `package.json`) should be replaced with bsf5y equivalents (`Outfit`, `JetBrains Mono`, `Source Serif 4`) as the port progresses.
+Initial port complete: `package.json` is `slidev-theme-bsf5y` with bsf5y fonts (`Outfit` / `Source Serif 4` / `JetBrains Mono`), and `styles/layout.css` carries the design tokens. Layouts ported so far: `cover`, `intro`, `section`, `quote`. README still needs a real rewrite.
 
 ## Package Manager
 
@@ -33,8 +33,9 @@ pnpm screenshot     # PNG export per slide
 slidev-theme/
 ├── package.json         # name, slidev.colorSchema, default fonts
 ├── example.md           # demo deck — the test bed for every theme change
+├── global-bottom.vue    # bottom-right bsf5y footer mark (auto-injected on every slide)
 ├── layouts/             # *.vue — Slidev layout components (cover, intro, ...)
-├── components/          # *.vue — reusable components exposed to slides
+├── components/          # *.vue — reusable components exposed to slides (incl. Logo.vue used by the footer)
 ├── styles/
 │   ├── index.ts         # entry — imports base layouts + layout.css
 │   └── layout.css       # theme CSS, uses UnoCSS @apply
@@ -51,6 +52,7 @@ Slidev auto-discovers files in `layouts/` and `components/` by filename — no r
 - **CSS framework**: Slidev ships [UnoCSS](https://unocss.dev/) — prefer `@apply` and utility classes in `.vue` templates over hand-rolled CSS.
 - **Layout helper**: backgrounds go through `handleBackground` from `@slidev/client/layoutHelper.ts` (see `layouts/cover.vue`). Don't bypass it — it handles URL/color/gradient inputs uniformly.
 - **Code highlighting**: edit `setup/shiki.ts` to swap themes. Match light/dark Shiki themes to the bsf5y palette where possible.
+- **Footer mark**: `global-bottom.vue` renders the bsf5y mark on every slide; it's auto-suppressed on `cover` and `intro` layouts. Override per-slide with `include-logo: true|false` in the slide's frontmatter. Note `$frontmatter` is empty in global layers — read from `currentSlideRoute.value?.meta?.slide?.frontmatter` instead.
 
 ## Workflow
 

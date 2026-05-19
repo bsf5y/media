@@ -24,6 +24,7 @@ Use a GitHub Issue and feature branch for non-trivial work. Quick content edits 
 
 - `landing-page/` — Production landing page and blog (Eleventy + Nunjucks)
 - `logo/` — Source-of-truth SVGs for the brand mark (consumed by the landing-page logo build)
+- `slidev-theme/` — Slidev theme porting the bsf5y design system to slides (pnpm, self-contained — has its own `CLAUDE.md`)
 - `docs/` — Strategic messaging, engagement model, service descriptions, brand materials, article ideas
 
 ## Build & Development Commands
