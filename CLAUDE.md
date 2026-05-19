@@ -86,6 +86,8 @@ Three font families loaded from Google Fonts:
 - **JetBrains Mono** — Technical labels
 - **Source Serif 4** — Editorial quotes
 
+A live style guide rendered from the production stylesheet lives at `landing-page/src/style-guide/index.html` (served at `/style-guide/`, `noindex`). Use it as the visual reference for colors, type, spacing, and component tokens when adding or editing UI.
+
 ### Editing Content
 
 - **Landing page text**: Edit `src/_data/home.json`. The JSON structure maps directly to page sections rendered by the Nunjucks partials.
