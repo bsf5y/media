@@ -17,6 +17,27 @@ include-logo: true
 <span style="font-size: 1.0em;">Wes Cravens (2026)</span>
 
 ---
+layout: intro
+eyebrow: Why me?
+include-logo: true
+---
+
+- 1984 - Started Programming Computers
+- 1992 - BEng. Mech. & Elecronic Eng. - 2 Years then left
+- 2 Years in ISP NOC
+- 10 Years Contract & Consulting - <span class="accent-cool">The Internet Days</span>
+  - Systems Integration, Secure B2B & B2C transactions, Web Application Dev.
+  - Dot.com crash put an end to that!
+- 2005 BSc. Comp. Sci w/AI
+  - Bioinspired Computing, Neural Networks, Computer Vision
+- 2022 MSc. Financial Eng.
+  - Timeseries, Inference Models, ML & Deep Learning
+- 2025 Early Claude Code Beta Tester
+- AI Working Group - Parkland College
+- Curriculum Development: ML & AI Development Associates Degree Program - Parkland College
+- Helping regional SMBs leverage AI
+
+---
 layout: intro 
 eyebrow: Why?
 include-logo: true
