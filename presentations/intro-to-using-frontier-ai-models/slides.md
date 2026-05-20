@@ -73,6 +73,15 @@ eyebrow: "TOC"
 - Messages & Inference  
 
 ---
+layout: section
+---
+
+# History of AI
+
+Despite the contemporary explosion in general purpose AI tools, the imagination and persuit of AI
+is as old as computing itself.  
+
+---
 class: dense
 eyebrow: History of AI
 ---
@@ -405,7 +414,71 @@ layout: center
 layout: section
 ---
 
+# Elements of using a Frontier Model API
 
+- Tokens
+- Messages
+- Multi-Modal Use (images, pdfs, code)
+- Conversational Turns
+- Context Windows
+- Tool Usage
+- System Prompts
+- Memory
+- Skills
+- Model Context Protocol
+
+---
+
+# Tokens
+
+---
+
+# Messages
+
+---
+
+# Multi-Modal Use
+
+## Images
+
+## PDFs
+
+## Code Execution
+
+---
+
+# Conversational Turns
+
+---
+
+
+# Context Windows
+
+---
+
+# Tool Usage
+
+## Server Side Tools
+
+## Local Tools
+
+---
+
+# Memory
+
+---
+
+# System Prompt
+
+---
+
+# Skills
+
+---
+
+# Model Context Protocol
+
+---
 
 ---
 eyebrow: Code example
