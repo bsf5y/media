@@ -17,27 +17,40 @@ A gently technical overview of AI tooling.
 ---
 layout: intro 
 eyebrow: Why?
+include-logo: true
 ---
 
-# With great power... comes...
+# With great power... 
 
-Generative AI tools act as an on-demand collaborator that amplifies output.  It's important to
-understand the fundamentals of how these tools work so that patterns and practices can be
-centralized for the greater good of the Enterprise.
+<span class="accent-cool">Generative AI tools</span> act as an on-demand collaborator that <span class="accent">amplifies
+output</span>.
+
+<v-click><em>It's important to understand the fundamentals of how these tools work so that patterns
+and practices can be centralized for the greater good of the Enterprise.</em></v-click>
 
 ---
 layout: intro 
 eyebrow: Who?
+include-logo: true
 ---
 
-# Democratization and<br>Early Adoption
+# ...comes Great Responsibility
 
-Thanks to all for participating in the Claude trial.  Now comes the responsibility.<br><br>
-Enterprise AI adoption typically begins with a small group of early adopters—often technical teams or curious individuals—experimenting with tools to solve specific problems, which then sparks broader interest across the organization. As successes become visible and tools become more accessible, usage democratizes outward to non-technical employees, transforming AI from a specialized capability into a shared resource available to anyone who can benefit from it.
+<p class="quote">Enterprise AI adoption typically begins with a <span class="accent">small group
+of early adopters</span>, often technical teams or curious individuals, <span
+class="accent">experimenting with tools</span> to solve <span class="accent">specific
+problems</span>.</p>
+
+<v-click><p class="quote">As <span class="accent">successes</span> become visible and tools
+become more accessible, usage democratizes outward to non-technical employees, transforming AI
+from a <span class="accent">specialized capability</span> into a <span
+class="accent-cool"><br>shared resource available to anyone who can benefit from
+it</span>.</p></v-click>
 
 ---
 layout: intro 
 eyebrow: What?
+include-logo: true
 ---
 
 # How do these tools work? 
@@ -47,8 +60,12 @@ how these systems are built so that you can function as good advisors and custom
 will be building enterprise wide tooling.
 
 ---
+layout: intro
+include-logo: true
+eyebrow: "TOC"
+---
 
-# Topics 
+# Topics for Today 
 
 - History of AI
 - Generative AI Tools
@@ -57,9 +74,8 @@ will be building enterprise wide tooling.
 
 ---
 class: dense
+eyebrow: History of AI
 ---
-
-# History of AI
 
 <table>
 <tbody>
@@ -87,9 +103,8 @@ class: dense
 
 ---
 class: dense
+eyebrow: Modern AI
 ---
-
-# Modern AI
 
 <table>
 <tbody>
@@ -115,33 +130,142 @@ class: dense
 </tbody>
 </table>
 
+
 ---
-eyebrow: Everyday User Tools
+eyebrow: General Purpose AI Models 
 ---
 
-## Generative AI Tools - w/ Claude 
+# Quick history of<br>Large Language Models
+
+<p class="quote">Language models in AI have evolved from 1960s rule-based systems like ELIZA to modern, generative
+transformers. Key stages include statistical (N)-grams in the 1980s, neural networks for word
+embeddings (2000s), and the 2017 transformer architecture breakthrough. The 2020s marked the era
+of large-scale, human-aligned generative AI.</p>
+
+---
+eyebrow: General Purpose AI Models 
+---
+
+## Quick history of Large Language Models
+
+<br>
+
+- 2017: [Attention is all you Need; Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser,
+Polosukhin](https://arxiv.org/pdf/1706.03762v7); from Google Deepmind Research
+
+At 14 pages, it's tied with [A Peer-to-Peer Electronic Cash System; Nakamoto](https://bitcoin.org/bitcoin.pdf) 
+(9 pages) for <span class="accent-cool">most impact per page</span> by any publication.
+<br><br>
+
+<p class="quote">Introduced the <span class="accent">Transformer Model</span>.  A language model
+that removes the need for recurrent or convolutional layers in the network.  This facilitates
+faster training, and broader context for inference.  <span class="accent-cool">The model can
+build relationships between context that is further apart</span>.</p>
+
+---
+eyebrow: General Purpose AI Models
+---
+
+## Quick history of Large Language Models
+
+<br>
+
+- 2019: [Generative Pre-trained Transformer 2 (GPT-2)](https://en.wikipedia.org/wiki/GPT-2)
+
+In 2019 OpenAI released GPT-2, demonstrating the ability for LLMs to generate complex human like
+prose.
+
+- 2022: [ChaptGPT](https://en.wikipedia.org/wiki/ChatGPT)
+
+A website for driving interactive chat converstations backed by OpenAI GPT models starting with
+GPT-3.5.
+
+<p class="quote">The birth of <span class="accent-cool">Generative AI Models for general
+purpose</span> use.</p>
+
+Note: A striking example of an enterprise failing to capitalize on its own innovation; *Google's
+inability to extend transformer models beyond their original translation use case*.
+
+---
+eyebrow: General Purpose AI Models
+---
+
+## Quick history of Large Language Models
+
+<br>
+
+- 2021: Anthropic was founded by former members of OpenAI, in an effort to prioritize LLM/AI
+safty and governance.
+
+Anthropic finished the training of Claude in summer of 2022 but delay release, citing a need for further
+internal safety testing.
+
+- 2023: Anthropic releases [Claude.ai](https://claude.ai/new)
+
+- 2025: Anthropic releases [Claude Code](https://claude.com/product/claude-code)
+
+Claude Code is an AI-powered, terminal-native ***agentic*** coding assistant from Anthropic designed to
+accelerate development by acting directly on local files, executing commands, and managing Git
+workflows.
+
+- 2026: Anthropic releases native apps for CoWork, Chat & Code, Claude Console, Managed Agents,
+  etc...
+
+---
+eyebrow: General Purpose AI Models
+---
+
+## "<span class="accent">Foundation</span>" Models
+
+A foundation model is a large-scale AI model trained on vast amounts of broad, diverse data (typically using
+self-supervised learning) that can be adapted to a wide range of downstream tasks. Rather than being built for one
+specific purpose, it serves as a general-purpose "foundation" that can be fine-tuned, prompted, or otherwise
+specialized for applications like text generation, translation, summarization, code generation, or image
+understanding. Examples include large language models like Claude and GPT, as well as multimodal models that handle
+text, images, and audio.
+
+## "<span class="accent-cool">Frontier</span>" Models
+
+A frontier model is a foundation model that represents the cutting edge of AI capabilities — the most advanced,
+large-scale, and capable models available at a given point in time. These models typically push the boundaries on
+parameters, training data, compute, and emergent capabilities, often demonstrating performance approaching or
+exceeding human expertise on complex tasks like reasoning, coding, and scientific analysis. Because of their power and
+ potential risks, frontier models are also a focal point for AI safety research and policy discussions (e.g., the
+Frontier Model Forum). E.g. Claude Opus/Mythos, Gemini Ultra, & ChatGPT-5. 
+
+---
+eyebrow: General Purpose AI Models
+---
+
+## Everyday User Tools w/ Claude 
+
+<br>
 
 - Chat (web) [https://claude.ai](https://claude.ai/new)
-- Code CLI
-- Desktop
+- Code (cli)
+- Console (web) [https://platform.claude.com/dashboard](https://platform.claude.com/dashboard)
+- Desktop & Mobile (app)
   - Chat
   - CoWork
   - Code
-- Design [https://claude.ai/design](https://claude.ai/design)
+- Design (web) [https://claude.ai/design](https://claude.ai/design)
 <br><br><br>
-<v-click><em>We'll go behind the scenes to understand the frontier model functionality that drives
+<v-click><em class="quote">We'll go behind the scenes to understand the frontier model functionality that drives
 these tools.</em></v-click>
 
 ---
-layout: section 
+layout: section
+eyebrow: No Fear!
 ---
 
 # Some Technical Background
 
-<em>Don't worry if this is foreign and unfamiliar to you.  You're not alone we promise you.  It's
-not important that you grasp all of the details.  What's important is that you get the 'gist' of
-what's being demonstrated.  The general takeaway is that this stuff is pretty simple behind the
-scenes and there is no magick!</em>
+<p class="quote">Don't worry if this is foreign and unfamiliar to you.  <span
+class="accent">You're not alone we promise you</span>.  It's
+not important that you grasp all of the details.  What's important is that you <span
+class="accent">get the 'gist' of
+what's being demonstrated</span>.  The general takeaway is that this stuff is pretty simple behind the
+scenes and <span class="accent-cool">there is no magick</span>!</p>
 
 ---
 eyebrow: HTTP and Web APIs 
@@ -160,7 +284,7 @@ The Hyper-Text Transfer Protocol (HTTP/S)
 - Payload:
 
 ```json
-// JSON
+// JSON - JavaScript Object Notation
     {
       "model": "claude-opus-4-7",
       "max_tokens": 1024,
@@ -170,21 +294,46 @@ The Hyper-Text Transfer Protocol (HTTP/S)
 ```
 
 ---
-eyebrow: HTTP and WEB APIs
+eyebrow: HTTP and Web APIs
 ---
 
-`curl` stands for Client URL (often written as "Client for URLs"). It's a command-line tool and library for transferring data with URLs, supporting protocols like HTTP, HTTPS, FTP, SFTP, and many others.
+### A Simple web server using JavaScript.
 
-Both `libcurl`, and a CLI tool.
+<em>Again, focus on the gist, not the details.</em>
 
+```ts
+// simple-http-server.ts
+import { createServer } from 'http';
 
-```sh
-$ curl -v http://localhost:3000
+const server = createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello, World!\n');
+});
+
+const PORT = 3000;
+server.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}/`);
+});
 ```
 
 ```sh
+% npx tsx simple-http-server.ts 
+Server running at http://localhost:3000/
+```
+
+---
+eyebrow: HTTP and Web APIs
+---
+
+### A Command Line Tool for simple HTTP experiments 
+
+`curl` stands for 'Client URL'.  It's a command-line tool and library for transferring data with
+URLs, supporting protocols like HTTP, HTTPS, and many others.
+
+```sh
+$ curl -v0 http://localhost:3000            # -v verbose, -0 use HTTP/1.0
 * Connected to localhost (::1) port 3000
-> GET / HTTP/1.1
+> GET / HTTP/1.0
 > Host: localhost:3000
 > User-Agent: curl/8.7.1
 > Accept: */*
@@ -192,16 +341,71 @@ $ curl -v http://localhost:3000
 * Request completely sent off
 < HTTP/1.1 200 OK
 < Content-Type: text/plain
-< Date: Wed, 20 May 2026 05:20:50 GMT
-< Connection: keep-alive
-< Keep-Alive: timeout=5
-< Transfer-Encoding: chunked
+< Date: Wed, 20 May 2026 06:29:20 GMT
+< Connection: close
 <
 Hello, World!
 ```
 
+---
+eyebrow: HTTP and Web APIs
+---
+
+### BSD netcat 
+
+`nc` (netcat) is a command-line utility for reading from and writing to network connections.
+
+A much lower level tool that `curl` but allows us to see just how simple the HTTP protocol can be.
+
+```sh
+% nc -c localhost 3000
+```
+
+```sh
+GET / HTTP/1.0
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Date: Wed, 20 May 2026 06:31:43 GMT
+Connection: close
+
+Hello, World!
+```
 
 ---
+eyebrow: HTTP and Web APIs
+---
+
+<em>And just to show that we're not making this stuff up...</em>
+
+```sh
+% nc -c google.com 80 | head
+GET / HTTP/1.0
+
+HTTP/1.0 200 OK
+Content-Type: text/html; charset=ISO-8859-1
+Date: Wed, 20 May 2026 06:38:39 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-wTRaAOyPbrgxMWYKRs_CYA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Server: gws
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+...
+```
+
+---
+layout: center
+---
+
+# `HTTP Demo Time!`
+
+---
+layout: section
+---
+
+
 
 ---
 eyebrow: Code example
