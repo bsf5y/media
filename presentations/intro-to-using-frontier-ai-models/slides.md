@@ -453,27 +453,33 @@ A page of dense prose is roughly 500 tokens.  A novel is roughly 100,000.</p>
 
 ---
 eyebrow: Elements / Tokens
+class: dense
 ---
 
 ## Tokens are the unit of <span class="accent">cost</span>
-
-<br>
 
 Every byte you send to the model is tokenized.  Every byte the model returns is tokenized.  You
 pay per million tokens — and you pay <span class="accent-cool">separately for input and
 output</span>.
 
+<hr>
+
 | Model             | Input ($ / MTok) | Output ($ / MTok) |
 | ----------------- | ---------------- | ----------------- |
 | Claude Haiku 4.5  | $1               | $5                |
 | Claude Sonnet 4.6 | $3               | $15               |
+| <span class="accent">Claude Opus 4.1</span> | <span class="accent">$15</span> | <span class="accent">$75</span> |
 | Claude Opus 4.6   | $15              | $75               |
+| Claude Opus 4.7   | $5               | $25               |
 
+<hr>
 <br>
 
 - Output tokens are <span class="accent">~5× more expensive</span> than input tokens
 - A long system prompt is sent on <em>every</em> request — costs compound fast
 - Prompt caching, batch APIs, and choosing the right model are the three biggest cost levers
+
+<br>
 
 <p class="quote">If you don't have an intuition for tokens, <span class="accent-cool">you don't
 have an intuition for cost</span>.</p>
@@ -565,7 +571,8 @@ Send a PNG, JPEG, GIF, or WebP as a `base64` blob or a URL.  The model can:
 
 <br>
 
-<em>Image tokens are computed from the resolution.</em>  A 1024×1024 image costs roughly 1,600
+<em>Image tokens are computed from the resolution <span class="accent-cool">tokens ≈ (width ×
+height) / 750</span>.</em>  A 1024×1024 image costs roughly 1,400
 input tokens.  Large screenshots add up fast — <span class="accent">resize before
 sending</span>.
 
@@ -586,6 +593,7 @@ figures, page structure, even handwritten annotations.
 - Pages with charts, equations, or scanned content benefit most from PDF mode (vs. raw text
   extraction)
 
+<br>
 <p class="quote">This is the unlock for <span class="accent-cool">contracts, research papers,
 financial filings, and engineering drawings</span> — anything where the layout itself carries
 meaning.</p>
@@ -609,6 +617,8 @@ When the model decides it needs to compute something — parse a CSV, plot a cha
 regression — it writes the code, executes it server-side, sees the result, and folds the output
 back into its response.
 
+<br>
+
 <p class="quote">This is how you go from <span class="accent">"the model talked about the
 data"</span> to <span class="accent-cool">"the model actually analyzed the data"</span>.</p>
 
@@ -620,11 +630,9 @@ eyebrow: Elements / Conversational Turns
 
 A "turn" is one user message and the assistant message that follows it.
 
-<br>
-
 The API is <span class="accent">stateless</span>.  The model has no memory of yesterday, no
 memory of an hour ago, <span class="accent-cool">no memory of the previous turn</span>.  Every
-request sends the entire conversation history.
+request sends the entire conversation history and any other supporting content.
 
 ```json
 "messages": [
@@ -634,9 +642,7 @@ request sends the entire conversation history.
 ]
 ```
 
-<br>
-
-<em>If you forget to include turn N-1, the model genuinely doesn't know what it just said.</em>
+If you forget to include turn N-1, the model genuinely doesn't know what it just said.
 
 <p class="quote">Every chat UI you've ever used is keeping the transcript on its end and
 re-sending it on every request.  <span class="accent">The "conversation" lives in your app, not
