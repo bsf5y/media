@@ -51,7 +51,6 @@ layout: default
 eyebrow: Placeholder eyebrow
 ---
 
-
 ## Body slide heading
 
 A default body slide. Fill in the actual content here.
@@ -61,8 +60,8 @@ A default body slide. Fill in the actual content here.
 - Bullet three
 
 ---
-
-###### Code example
+eyebrow: Code example
+---
 
 # Highlighted with Shiki
 
@@ -92,9 +91,8 @@ A serif pull-quote slide. Replace with a real testimonial, finding, or memorable
 ---
 layout: center
 class: text-center
+eyebrow: Next steps
 ---
-
-###### Next steps
 
 # `bsf5y.com`
 
