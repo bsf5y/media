@@ -31,8 +31,8 @@ eyebrow: 01 — Premise
 Velocity is the *output* of engineering discipline — not the input. Founders who skip the foundations pay back the loan with interest, usually right when traction arrives.
 
 ---
-
-###### What this theme is
+eyebrow: What this theme is
+---
 
 # Refined Industrial Blueprint
 
@@ -52,8 +52,8 @@ eyebrow: Foundations
 # What you get out of the box
 
 ---
-
-###### Component coverage
+eyebrow: Component coverage
+---
 
 # Layouts
 
@@ -69,8 +69,8 @@ eyebrow: Foundations
 Every layout reads correctly in both light and dark mode — toggle from the nav bar.
 
 ---
-
-###### Code
+eyebrow: Code
+---
 
 # Highlighted with Shiki
 
@@ -100,9 +100,8 @@ The first commit is a contract with future-you. Write it like you mean it.
 ---
 layout: center
 class: text-center
+eyebrow: Learn more
 ---
-
-###### Learn more
 
 # `bsf5y.com`
 
