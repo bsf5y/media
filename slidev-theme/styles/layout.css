@@ -296,6 +296,10 @@ html.dark {
   font-size: 0.7rem;
 }
 
+.slidev-layout.dense tr {
+  border-bottom: none;
+}
+
 .slidev-layout.dense td,
 .slidev-layout.dense th {
   padding: 0.25rem 0.5rem;
