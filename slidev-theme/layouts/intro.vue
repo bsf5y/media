@@ -18,7 +18,7 @@ const style = computed(() => handleBackground(props.background))
 
 <template>
   <div class="slidev-layout intro" :style="style">
-    <div class="my-auto">
+    <div class="intro-content">
       <h6 v-if="eyebrow" class="intro-eyebrow">{{ eyebrow }}</h6>
       <slot />
     </div>
@@ -26,6 +26,11 @@ const style = computed(() => handleBackground(props.background))
 </template>
 
 <style scoped>
+.intro-content {
+  align-self: start;
+  padding-top: 4rem;
+}
+
 .intro-eyebrow {
   margin-bottom: 1.25rem;
 }
