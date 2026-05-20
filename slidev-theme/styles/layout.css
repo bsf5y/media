@@ -107,7 +107,7 @@ html.dark {
   h1 {
     @apply font-800;
     font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 
   h2 {
@@ -126,14 +126,14 @@ html.dark {
     font-size: 1.25rem;
   }
 
-  /* Eyebrow / over-line — mono uppercase in copper, per the bsf5y system */
+  /* Eyebrow / over-line — mono uppercase in cool accent (steel), per the bsf5y system */
   h6 {
     font-family: var(--bsf-font-mono);
     font-weight: 500;
     font-size: 0.75rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--bsf-accent);
+    color: var(--bsf-accent-cool);
     opacity: 1;
   }
 }
@@ -227,6 +227,20 @@ html.dark {
 
 .slidev-layout blockquote > * {
   color: inherit;
+}
+
+/* Quote utility — apply to any paragraph for the serif/italic tagline
+   treatment used on cover/intro. Usage: <p class="quote">…</p> */
+.slidev-layout .quote {
+  font-family: var(--bsf-font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--bsf-text-muted);
+  margin-top: -0.25rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--bsf-accent);
+  opacity: 1;
 }
 
 /* --------------------------------------------
@@ -349,7 +363,7 @@ html.dark {
     font-weight: 800;
     letter-spacing: 0.01em;
     line-height: 1.05;
-    margin-bottom: 1.25rem;
+    margin-bottom: 4rem;
   }
 
   /* Tagline under cover h1 — serif italic accent */
