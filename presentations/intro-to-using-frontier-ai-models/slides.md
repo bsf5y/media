@@ -12,7 +12,9 @@ include-logo: true
 
 # Intro to Using <br><span class="accent">Frontier AI Models</span>
 
-A gently technical overview of AI tooling.
+<span class="accent-cool">A gently technical overview of AI tooling</span>
+
+<span style="font-size: 1.0em;">Wes Cravens (2026)</span>
 
 ---
 layout: intro 
@@ -62,15 +64,35 @@ will be building enterprise wide tooling.
 ---
 layout: intro
 include-logo: true
-eyebrow: "TOC"
+eyebrow: "TOC-1"
 ---
 
-# Topics for Today 
+# Introductory Topics
 
 - History of AI
+- Quick History of Large Language Models
+- General Purpose AI Models
 - Generative AI Tools
-- Quick background on HTTP APIs
-- Messages & Inference  
+- Some Technical Background
+- HTTP and WEB APIs 
+- A Quick Intro to Markdown
+
+---
+layout: intro 
+eyebrow: "TOC-2"
+include-logo: true
+---
+
+# Elements of a Model API
+
+- Tokens
+- Messages & Multi-Modal Use (images, pdfs, code)
+- Conversational Turns, Context Windows, & Context Window Compaction
+- Tool Usage
+- System Prompts
+- Memory
+- Skills
+- Model Context Protocol
 
 ---
 layout: section
@@ -112,7 +134,7 @@ eyebrow: History of AI
 
 ---
 class: dense
-eyebrow: Modern AI
+eyebrow: History of AI 
 ---
 
 <table>
@@ -988,7 +1010,7 @@ eyebrow: Finally!
 - Context Engineering?
 - MCP Servers and Embeddings?
 - Automating Agents?
-- ...? 
+- ...?
 
 ---
 layout: center
@@ -996,4 +1018,4 @@ layout: center
 
 # `Many Thanks for Taking Part!`
 
-Wes Cravens - 2026
+Wes Cravens (2026)
