@@ -405,6 +405,38 @@ X-Frame-Options: SAMEORIGIN
 ```
 
 ---
+eyebrow: A Quick intro to Markdown
+class: dense
+include-logo: false 
+---
+
+# Markdown
+
+A <span class="accent">plain-text format</span> with simple conventions for structure.  Readable
+as-is, renders to formatted output everywhere from READMEs to chat UIs.
+
+```markdown
+# Heading 1
+## Heading 2
+
+**bold**, *italic*, `inline code`
+
+- a bullet
+- another bullet
+
+[link text](https://example.com)
+
+> a blockquote
+```
+
+Plus fenced code blocks, tables, images, footnotes &mdash; and more. <span class="accent">The whole
+spec fits on a postcard</span>.
+
+<p class="quote">Markdown is the <span class="accent-cool">lingua franca of frontier
+AI tools</span>.  Models produce it natively, system prompts and Skills (<code>SKILL.md</code>)
+are written in it, and it's the goto baseline for project documentation.</p>
+
+---
 layout: center
 ---
 
@@ -442,11 +474,15 @@ A token is a sub-word fragment.  Common words map to a single token; longer or r
 into two or three.  Whitespace and punctuation are tokens too.
 
 ```text
-"The Bootstrap Factory builds production-ready products."
+"Shopping for strawberries requires unbelievable patience."
    ↓ tokenize
-["The", " Bootstrap", " Factory", " builds", " production",
- "-ready", " products", "."]
+["Sh", "opping", " for", " straw", "berries", " requires",
+ " un", "bel", "iev", "able", " patience", "."]
 ```
+
+Six everyday words; twelve tokens.  Common words like <code>for</code> and <code>requires</code>
+ride as a single piece, while <code>strawberries</code>, <code>Shopping</code>, and
+<code>unbelievable</code> shatter into sub-word fragments.
 
 <br>
 
@@ -880,6 +916,35 @@ my-skill/
 and <code>xlsx</code>.  You can write your own for anything repeatable; onboarding flows,
 report templates, internal playbooks.</p>
 
+
+---
+eyebrow: Elements / Skills
+class: dense
+---
+
+# Example Skill file
+
+`SKILL.md` starts with YAML frontmatter fenced with `---`.  The YAML should have a `name` and a
+`descrition`.  These are loaded into context but the rest of the Skill file and any supporting
+tools that are bundled with it, are not loaded until the agent decides that it needs the skill.
+
+Since it is the name and description that determine if/when a skill is loaded and used, they must
+be defined carefully.
+
+```markdown
+---
+name: greet-user
+description: Use when the user asks to be greeted by name or wants a personalized hello. Triggers
+on phrases like "say hi to me" or "greet me".
+---
+
+# Greet User
+
+When invoked, respond with a warm, personalized greeting using the user's name from context. Keep
+it to one sentence, friendly but not over-the-top. If no name is available, ask for one before
+greeting.
+```
+
 ---
 eyebrow: Elements / Model Context Protocol
 class: dense
@@ -913,6 +978,17 @@ eyebrow: Finally!
 ---
 
 # `Q&A Time`
+
+---
+
+# What do you want next?
+
+- Claude Code; Tools, tips, tricks, and best practices (<span class="accent">obviously</span>)
+- Writing Programmatic Agents?
+- Context Engineering?
+- MCP Servers and Embeddings?
+- Automating Agents?
+- ...? 
 
 ---
 layout: center
