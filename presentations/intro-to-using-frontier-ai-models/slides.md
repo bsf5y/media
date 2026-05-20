@@ -235,7 +235,7 @@ text, images, and audio.
 
 ## "<span class="accent-cool">Frontier</span>" Models
 
-A frontier model is a foundation model that represents the cutting edge of AI capabilities — the most advanced,
+A frontier model is a foundation model that represents the cutting edge of AI capabilities; the most advanced,
 large-scale, and capable models available at a given point in time. These models typically push the boundaries on
 parameters, training data, compute, and emergent capabilities, often demonstrating performance approaching or
 exceeding human expertise on complex tasks like reasoning, coding, and scientific analysis. Because of their power and
@@ -421,6 +421,7 @@ layout: section
 - Multi-Modal Use (images, pdfs, code)
 - Conversational Turns
 - Context Windows
+- Context Window Compaction
 - Tool Usage
 - System Prompts
 - Memory
@@ -429,11 +430,12 @@ layout: section
 
 ---
 eyebrow: Elements / Tokens
+class: dense
 ---
 
 # Tokens
 
-Frontier models don't read characters and they don't read words — they read <span
+Frontier models don't read characters and they don't read words. They read <span
 class="accent">tokens</span>.
 
 A token is a sub-word fragment.  Common words map to a single token; longer or rarer words split
@@ -456,10 +458,10 @@ eyebrow: Elements / Tokens
 class: dense
 ---
 
-## Tokens are the unit of <span class="accent">cost</span>
+# Tokens are the unit of <span class="accent">cost</span>
 
 Every byte you send to the model is tokenized.  Every byte the model returns is tokenized.  You
-pay per million tokens — and you pay <span class="accent-cool">separately for input and
+pay per million tokens, and you pay <span class="accent-cool">separately for input and
 output</span>.
 
 <hr>
@@ -476,7 +478,7 @@ output</span>.
 <br>
 
 - Output tokens are <span class="accent">~5× more expensive</span> than input tokens
-- A long system prompt is sent on <em>every</em> request — costs compound fast
+- A long system prompt is sent on <em>every</em> request. Costs compound fast
 - Prompt caching, batch APIs, and choosing the right model are the three biggest cost levers
 
 <br>
@@ -486,6 +488,7 @@ have an intuition for cost</span>.</p>
 
 ---
 eyebrow: Elements / Messages
+class: dense
 ---
 
 # Messages
@@ -495,24 +498,23 @@ A conversation with a frontier model is just an <span class="accent">array of me
 Each message has a <span class="accent">role</span> and some <span class="accent">content</span>.
 There are two roles:
 
-- `user` — what you (or your app) sent
-- `assistant` — what the model said back
+- `user`: what you (or your app) sent
+- `assistant`: what the model said back
 
 <br>
 
 The model's job is simple: given the array, <span class="accent-cool">produce the next
 assistant message</span>.  That's it.  That's inference.
 
-<p class="quote">Every tool, every chat UI, every agent you'll see — Claude.ai, Claude Code,
-CoWork — is built on top of this one primitive.</p>
+<p class="quote">Every tool, every chat UI, every agent you'll see, Claude.ai, Claude Code,
+CoWork, is built on top of this one primitive.</p>
 
 ---
 eyebrow: Elements / Messages
+class: dense
 ---
 
-## The shape of a request
-
-<br>
+# The shape of a request
 
 ```json
 POST https://api.anthropic.com/v1/messages
@@ -530,17 +532,18 @@ POST https://api.anthropic.com/v1/messages
 
 <br>
 
-<em>That's the whole API.</em>  Everything else — system prompts, tools, images, PDFs, skills,
-MCP — is <span class="accent">additional fields layered onto this same envelope</span>.
+<em>That's the whole API.</em>  Everything else, system prompts, tools, images, PDFs, skills,
+MCP, is <span class="accent">additional fields layered onto this same envelope</span>.
 
 ---
 eyebrow: Elements / Multi-Modal Use
+class: dense
 ---
 
 # Multi-Modal Use
 
 The `content` of a message doesn't have to be a string.  It can be an <span class="accent">array
-of content blocks</span> — text, images, documents, and more, mixed together in a single
+of content blocks</span>, text, images, documents, and more, mixed together in a single
 message.
 
 ```json
@@ -556,15 +559,14 @@ class="accent-cool">same kind of input</span>.  It's all just tokens under the h
 
 ---
 eyebrow: Elements / Multi-Modal Use
+class: dense
 ---
 
-## Images
-
-<br>
+# Images
 
 Send a PNG, JPEG, GIF, or WebP as a `base64` blob or a URL.  The model can:
 
-- Read text in the image — signs, screenshots, whiteboards, handwriting
+- Read text in the image, signs, screenshots, whiteboards, handwriting
 - Describe scenes, count objects, identify diagrams
 - Answer questions about charts, spreadsheets, and UI mockups
 - Carry the image across multiple turns of a conversation
@@ -573,18 +575,17 @@ Send a PNG, JPEG, GIF, or WebP as a `base64` blob or a URL.  The model can:
 
 <em>Image tokens are computed from the resolution <span class="accent-cool">tokens ≈ (width ×
 height) / 750</span>.</em>  A 1024×1024 image costs roughly 1,400
-input tokens.  Large screenshots add up fast — <span class="accent">resize before
+input tokens.  Large screenshots add up fast. <span class="accent">Resize before
 sending</span>.
 
 ---
 eyebrow: Elements / Multi-Modal Use
+class: dense
 ---
 
-## PDFs
+# PDFs
 
-<br>
-
-Send a PDF directly — no extraction step required.  Claude reads both the <span
+Send a PDF directly, no extraction step required.  Claude reads both the <span
 class="accent">text layer</span> and the <span class="accent">visual layout</span>: tables,
 figures, page structure, even handwritten annotations.
 
@@ -595,26 +596,25 @@ figures, page structure, even handwritten annotations.
 
 <br>
 <p class="quote">This is the unlock for <span class="accent-cool">contracts, research papers,
-financial filings, and engineering drawings</span> — anything where the layout itself carries
+financial filings, and engineering drawings</span>.  Anything where the layout itself carries
 meaning.</p>
 
 ---
 eyebrow: Elements / Multi-Modal Use
+class: dense
 ---
 
-## Code Execution
-
-<br>
+# Code Execution
 
 Some Anthropic-hosted tools let the model <span class="accent">run code</span> as part of
-producing its answer — typically Python in a sandboxed container.
+producing its answer; typically Python in a sandboxed container.
 
 ```json
 "tools": [{ "type": "code_execution_20250522", "name": "code_execution" }]
 ```
 
-When the model decides it needs to compute something — parse a CSV, plot a chart, run a
-regression — it writes the code, executes it server-side, sees the result, and folds the output
+When the model decides it needs to compute something (parse a CSV, plot a chart, run a
+regression) it writes the code, executes it server-side, sees the result, and folds the output
 back into its response.
 
 <br>
@@ -624,6 +624,7 @@ data"</span> to <span class="accent-cool">"the model actually analyzed the data"
 
 ---
 eyebrow: Elements / Conversational Turns
+class: dense
 ---
 
 # Conversational Turns
@@ -656,41 +657,68 @@ layout: center
 
 ---
 eyebrow: Elements / Context Windows
+class: dense
 ---
 
 # Context Windows
 
 The <span class="accent">context window</span> is the maximum number of tokens the model can see
-in a single request — system prompt, full message history, tool definitions, attachments, and
+in a single request; system prompt, full message history, tool definitions, attachments, and
 the response, all combined.
 
+Remember: every turn <span class="accent">continuously appends to the `messages` array</span>.
+Nothing leaves.  Your `user` message, the model's `assistant` reply, the next `user`, the next
+`assistant`.  Each turn is two new entries, each carries its full <span
+class="accent">`content`</span>, and the <span class="accent-cool">entire array is re-sent on
+every request</span>.
+
+- A few plain-text turns is nothing.  But <span class="accent">tool results, PDFs, screenshots,
+  and long agent loops</span> add up fast. A single "innocent" turn can drop tens of thousands
+  of tokens into `content`
+- The window fills <em>monotonically</em>; every turn is bigger than the last
+- Models get measurably worse near their limits
+
 <br>
-
-| Model             | Context window           |
-| ----------------- | ------------------------ |
-| Claude Sonnet 4.6 | 200K tokens (1M in beta) |
-| Claude Opus 4.6   | 200K tokens              |
-| Claude Haiku 4.5  | 200K tokens              |
-
-<br>
-
-- 200K tokens ≈ ~500 pages of dense prose
-- Long context is <span class="accent">technically supported</span> but <span
-class="accent-cool">economically expensive</span> — you pay for every token, every turn
-- Models get measurably worse near their limits — keep context lean
 
 <p class="quote">The context window is the model's <span class="accent">working memory</span>.
-Stuffing it isn't the same as using it well.</p>
+Every turn fills it a little more; <span class="accent-cool">stuffing it isn't the same as
+using it well</span>.</p>
+
+---
+eyebrow: Elements / Context Window Compaction
+class: dense
+---
+
+# Context Window Compaction
+
+As your session approaches the model's context window limit, the product steps in and runs <span
+class="accent">compaction</span> automatically on the server-side.
+
+Compaction reads the conversation so far, replaces older turns with a <span class="accent">concise
+summary</span>, and keeps the most recent turns verbatim.  The summary becomes the new "head" of
+the conversation; the original turns drop out of what gets sent to the model on the next turn.
+
+```text
+[turn 1, turn 2, turn 3, ..., turn 47]
+           ↓ compact
+[summary of turns 1–40, turn 41, ..., turn 47]
+```
+
+- Triggered <span class="accent">automatically</span> as the conversation approaches the
+  model's limit. You don't have to ask.
+- Information <em>is</em> lost. Compaction is a deliberate trade against running out of room
+
+<p class="quote">After compaction, the model <span class="accent-cool">knows the gist of
+  what came before, not every detail</span>.</p>
 
 ---
 eyebrow: Elements / Tool Usage
+class: dense
 ---
 
 # Tool Usage
 
 By default, the model can only do one thing: produce text.
-
-<br>
 
 <span class="accent">Tools</span> let it do more.  You declare a set of functions the model is
 allowed to call; the model decides when to call them and with what arguments.
@@ -709,25 +737,26 @@ allowed to call; the model decides when to call them and with what arguments.
 ]
 ```
 
+<br>
+
 <p class="quote">This is the single feature that turns a chatbot into an <span
 class="accent-cool">agent</span>.</p>
 
 ---
 eyebrow: Elements / Tool Usage
+class: dense
 ---
 
-## Server-Side Tools
+# Server-Side Tools
 
-<br>
-
-Anthropic hosts a growing set of tools the model can call directly — <span class="accent">you
+Anthropic hosts a growing set of tools the model can call directly. <span class="accent">You
 don't run anything</span>.  The model invokes them, Anthropic's infrastructure executes them,
 and the result flows back into the response.
 
-- `web_search` — live web access
-- `code_execution` — sandboxed Python
-- `computer_use` — GUI control (mouse, keyboard, screenshots)
-- `text_editor` — file read/write within a managed workspace
+- `web_search`: live web access
+- `code_execution`: sandboxed Python
+- `computer_use`: GUI control (mouse, keyboard, screenshots)
+- `text_editor`: file read/write within a managed workspace
 
 Enabled by adding a single entry to the `tools` array.  No webhook, no callback, no servers of
 your own to operate.
@@ -737,16 +766,13 @@ Cheapest way to get from "demo" to "actually useful".</p>
 
 ---
 eyebrow: Elements / Tool Usage
+class: dense
 ---
 
-## Local (Client-Side) Tools
+# Local (Client-Side) Tools
 
-<br>
-
-For anything specific to <em>your</em> system — your database, your CRM, your internal API —
+For anything specific to <em>your</em> system, your database, your CRM, your internal API,
 you declare the tool's name and schema, but <span class="accent">your code executes it</span>.
-
-The dance is always the same:
 
 1. You send messages + tool definitions
 2. Model returns a `tool_use` block with arguments
@@ -754,16 +780,15 @@ The dance is always the same:
 4. You send back a `tool_result` message
 5. Model continues the conversation, with the result now in context
 
-<br>
-
 ```json
 { "role": "user", "content": [
     { "type": "tool_result", "tool_use_id": "...", "content": "72°F, sunny" }
 ]}
 ```
+<br>
 
-<p class="quote">Every "AI agent" you've ever seen is some variation of this loop, running until
-the model decides it's done.</p>
+<p class="quote">Every "AI agent" you've ever seen is some variation of this <span
+class="accent-cool">loop</span>, running until the model decides it's done.</p>
 
 ---
 layout: center
@@ -773,29 +798,31 @@ layout: center
 
 ---
 eyebrow: Elements / Memory
+class: dense
 ---
 
 # Memory
 
-The API is stateless — but the <span class="accent">products built on top of it don't have to
+The API is stateless, but the <span class="accent">products built on top of it don't have to
 be</span>.
-
-<br>
 
 "Memory" is anything that survives between conversations.  It's not a feature of the model; it's
 a pattern your application implements:
 
-- **Conversation history** — store transcripts, replay relevant chunks
-- **Summarized memory** — periodically condense old turns into a short brief
-- **Long-term facts** — extract things like <em>"user prefers metric units"</em> into a side
+- **Conversation history**: store transcripts, replay relevant chunks
+- **Summarized memory**: periodically condense old turns into a short brief
+- **Long-term facts**: extract things like <em>"user prefers metric units"</em> into a side
   store, and inject them as a system prompt
-- **Memory tools** — give Claude read/write access to a memory file as a tool
+- **Memory tools**: give Claude read/write access to a memory file as a tool
+
+<br>
 
 <p class="quote"><span class="accent-cool">The model doesn't remember you.  Your application
 does</span>, and feeds the model what it needs to know at the start of each conversation.</p>
 
 ---
 eyebrow: Elements / System Prompt
+class: dense
 ---
 
 # System Prompt
@@ -811,36 +838,35 @@ constraints, and ground rules</span>.
 }
 ```
 
-<br>
-
-- Sent on <span class="accent">every</span> request — it's not "remembered" across calls
-- Applied <em>before</em> any user message — sets the frame for the whole conversation
+- Sent on <span class="accent">every</span> request, it's not "remembered" across calls
+- Applied <em>before</em> any user message. Sets the frame for the whole conversation
 - This is where you put <span class="accent-cool">persona, format requirements, refusal
   policies, and domain context</span>
 - Watch the length: a 5,000-token system prompt costs 5,000 input tokens per turn
+
+<br>
 
 <p class="quote">If the model is misbehaving, the system prompt is almost always the first place
 to look.</p>
 
 ---
 eyebrow: Elements / Skills
+class: dense
 ---
 
 # Skills
 
-A <span class="accent">Skill</span> is a packaged capability — a folder containing a `SKILL.md`,
-optional scripts, and reference material — that the model loads <em>only when needed</em>.
+A <span class="accent">Skill</span> is a packaged capability.  A folder containing a `SKILL.md`,
+optional scripts, and reference material, that the model loads <em>only when needed</em>.
 
 ```text
 my-skill/
-  SKILL.md          ← description + instructions
+  SKILL.md          # description + instructions
   scripts/
     do_thing.py
   reference/
     spec.pdf
 ```
-
-<br>
 
 - The model sees only the skill's <span class="accent">name and short description</span> by
   default
@@ -848,26 +874,26 @@ my-skill/
 - This is <span class="accent-cool">progressive disclosure</span>: keep the context window
   lean, expand on demand
 
+<br>
+
 <p class="quote">Anthropic ships skills for things like <code>docx</code>, <code>pdf</code>,
-and <code>xlsx</code>.  You can write your own for anything repeatable — onboarding flows,
+and <code>xlsx</code>.  You can write your own for anything repeatable; onboarding flows,
 report templates, internal playbooks.</p>
 
 ---
 eyebrow: Elements / Model Context Protocol
+class: dense
 ---
 
 # Model Context Protocol
 
-An <span class="accent">open protocol</span> for connecting frontier models to tools and data —
-think <em>"USB-C for AI"</em>.
+An <span class="accent">open protocol</span> for connecting frontier models to tools and data.
 
-<br>
-
-- **MCP Servers** — wrap a system (Slack, GitHub, your database, a filesystem) and expose its
+- **MCP Servers**: wrap a system (Slack, GitHub, your database, a filesystem) and expose its
   capabilities as tools, resources, and prompts
-- **MCP Clients** — the model's host (Claude Desktop, CoWork, Claude Code) speaks the protocol
+- **MCP Clients**: the model's host (Claude Desktop, CoWork, Claude Code) speaks the protocol
   and surfaces the server's tools to the model
-- **Transport** — `stdio` for local servers, `http` for remote
+- **Transport**: `stdio` for local servers, `http` for remote
 
 <br>
 
@@ -875,47 +901,23 @@ think <em>"USB-C for AI"</em>.
 "tools": [ ...mcp_server.list_tools() ]
 ```
 
+<br>
+
 <p class="quote">Before MCP, every integration was bespoke.  After MCP, <span
 class="accent-cool">any model can talk to any system</span> that ships a server.  This is the
 ecosystem layer.</p>
 
 ---
-
----
-eyebrow: Code example
----
-
-# Highlighted with Shiki
-
-```ts
-// Replace with a real example.
-interface Prompt {
-  system: string
-  user: string
-}
-
-function call(model: string, prompt: Prompt): Promise<string> {
-  return fetch(`/v1/${model}`, { method: 'POST', body: JSON.stringify(prompt) })
-    .then((r) => r.text())
-}
-```
-
-Inline code looks like `--slidev-theme-primary`.
-
----
-layout: quote
-author: Placeholder Attribution
-role: Title / Source
+layout: center
+eyebrow: Finally!
 ---
 
-A serif pull-quote slide. Replace with a real testimonial, finding, or memorable line.
+# `Q&A Time`
 
 ---
 layout: center
-class: text-center
-eyebrow: Next steps
 ---
 
-# `bsf5y.com`
+# `Many Thanks for Taking Part!`
 
-Replace this closing slide with a real call-to-action.
+Wes Cravens - 2026

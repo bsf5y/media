@@ -147,11 +147,10 @@ html.dark {
     line-height: 1.6;
   }
 
-  /* Muted lead paragraph immediately under h1 */
+  /* Lead paragraph immediately under h1 — slightly larger, full-strength text.
+     The cover/intro layouts override this with the serif-italic muted tagline. */
   h1 + p {
-    color: var(--bsf-text-muted);
     font-size: 1.125rem;
-    opacity: 1;
   }
 
   ul {
