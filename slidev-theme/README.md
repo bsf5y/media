@@ -40,7 +40,7 @@ Source of truth for tokens: `../landing-page/src/assets/css/main.css` and the li
 
 - Wrap text in `<span class="accent">…</span>` for copper highlight inside a heading.
 - Use `<span class="accent-cool">…</span>` for steel-blue highlight.
-- `######` (h6) becomes a mono-uppercase copper eyebrow above a heading.
+- `######` (h6) becomes a mono-uppercase steel-blue eyebrow above a heading.
 
 ## Components
 
