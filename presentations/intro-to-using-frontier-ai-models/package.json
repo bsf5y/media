@@ -14,5 +14,10 @@
   "devDependencies": {
     "@slidev/cli": "^52.15.2",
     "@bsf5y/slidev-theme": "link:../../slidev-theme"
+  },
+  "pnpm": {
+    "overrides": {
+      "dompurify": ">=3.4.5"
+    }
   }
 }

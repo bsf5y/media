@@ -48,6 +48,11 @@
   "devDependencies": {
     "@slidev/cli": "^52.15.2"
   },
+  "pnpm": {
+    "overrides": {
+      "dompurify": ">=3.4.5"
+    }
+  },
   "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
     "colorSchema": "both",
