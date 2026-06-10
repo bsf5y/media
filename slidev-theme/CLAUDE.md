@@ -58,7 +58,7 @@ Slidev auto-discovers files in `layouts/` and `components/` by filename — no r
 
 1. Edit `example.md` to exercise the layout/component you're changing — every new layout needs a demo slide in `example.md`.
 2. `pnpm dev` and verify in browser (both light and dark mode — toggle in the Slidev nav bar).
-3. Commit. The theme is published as an npm package eventually; keep the README and `package.json` accurate.
+3. Commit. The theme publishes to **GitHub Packages** as `@bsf5y/slidev-theme` via the `publish-slidev-theme` workflow (tag `slidev-theme-v*` or manual dispatch). Keep the README and `package.json` accurate; bump the version before tagging a release.
 
 ## Don't
 

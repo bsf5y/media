@@ -8,12 +8,12 @@ importers:
 
   .:
     devDependencies:
+      '@bsf5y/slidev-theme':
+        specifier: link:../../slidev-theme
+        version: link:../../slidev-theme
       '@slidev/cli':
         specifier: ^52.15.2
         version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.6)(@types/markdown-it@14.1.2)(@types/node@22.19.19)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(postcss@8.5.15)
-      '@slidev/theme-bsf5y':
-        specifier: link:../../slidev-theme
-        version: link:../../slidev-theme
 
 packages:
 

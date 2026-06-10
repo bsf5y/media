@@ -4,15 +4,61 @@ A [Slidev](https://sli.dev) theme port of **The Bootstrap Factory**'s design sys
 
 ## Install
 
+The theme is published to **GitHub Packages** as `@bsf5y/slidev-theme`.
+
+### From outside this repository
+
+GitHub Packages requires authentication even to install. In your deck's project,
+add an `.npmrc` that points the `@bsf5y` scope at the registry and supplies a
+token with `read:packages` scope:
+
+```ini
+# .npmrc
+@bsf5y:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+```
+
+Then install and reference the theme by its full scoped name:
+
+```bash
+npm install -D @bsf5y/slidev-theme
+```
+
 ```yaml
 ---
-theme: bsf5y
+theme: '@bsf5y/slidev-theme'
 ---
 ```
 
-Slidev will prompt to install the theme on first run. Until this is published to npm, use the path form (`theme: ./` when inside this directory, or `theme: ../slidev-theme` from a sibling deck).
+> The bare `theme: bsf5y` shorthand only auto-expands to the unscoped
+> `slidev-theme-bsf5y` / `@slidev/theme-bsf5y` forms, so a scoped package must be
+> referenced by its full name.
+
+### From inside this repository
+
+The in-repo demo deck under `../presentations/` consumes the theme directly from
+source — no registry needed. Use the path form in frontmatter
+(`theme: ../../slidev-theme`) backed by a `link:../../slidev-theme` dependency.
 
 See [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
+
+## Publishing
+
+A new version is published to GitHub Packages by the
+[`publish-slidev-theme`](../.github/workflows/publish-slidev-theme.yml) workflow.
+Bump the version, tag, and push:
+
+```bash
+# from slidev-theme/
+npm version patch        # bump version in package.json
+git push origin dev
+git tag slidev-theme-v$(node -p "require('./package.json').version")
+git push origin --tags   # tag push triggers the publish workflow
+```
+
+The workflow can also be run manually from the Actions tab (`workflow_dispatch`).
+It authenticates with the built-in `GITHUB_TOKEN`; no PAT or repo secret is
+required to publish.
 
 ## Design
 

@@ -13,6 +13,6 @@
   },
   "devDependencies": {
     "@slidev/cli": "^52.15.2",
-    "@slidev/theme-bsf5y": "link:../../slidev-theme"
+    "@bsf5y/slidev-theme": "link:../../slidev-theme"
   }
 }
