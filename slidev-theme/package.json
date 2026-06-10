@@ -1,15 +1,26 @@
 {
-  "name": "slidev-theme-bsf5y",
+  "name": "@bsf5y/slidev-theme",
   "version": "0.0.1",
   "description": "Refined Industrial Blueprint theme for Slidev — port of The Bootstrap Factory's design system.",
   "author": "The Bootstrap Factory",
   "license": "MIT",
-  "homepage": "https://github.com/wcravens/bsf5y-media/tree/dev/slidev-theme",
+  "homepage": "https://github.com/bsf5y/media/tree/dev/slidev-theme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wcravens/bsf5y-media.git",
+    "url": "https://github.com/bsf5y/media.git",
     "directory": "slidev-theme"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "layouts",
+    "components",
+    "styles",
+    "setup",
+    "global-bottom.vue",
+    "README.md"
+  ],
   "type": "module",
   "keywords": [
     "slidev-theme",
@@ -22,8 +33,12 @@
     "node": ">=20.12.0"
   },
   "scripts": {
-    "build": "slidev build example.md",
+    "build:logo": "node scripts/build-logo.mjs",
+    "predev": "pnpm run build:logo",
     "dev": "slidev example.md --open",
+    "prebuild": "pnpm run build:logo",
+    "build": "slidev build example.md",
+    "prepack": "pnpm run build:logo",
     "export": "slidev export example.md",
     "screenshot": "slidev export example.md --format png"
   },

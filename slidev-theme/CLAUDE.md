@@ -35,7 +35,10 @@ slidev-theme/
 ├── example.md           # demo deck — the test bed for every theme change
 ├── global-bottom.vue    # bottom-right bsf5y footer mark (auto-injected on every slide)
 ├── layouts/             # *.vue — Slidev layout components (cover, intro, ...)
-├── components/          # *.vue — reusable components exposed to slides (incl. Logo.vue used by the footer)
+├── components/          # *.vue — reusable components exposed to slides
+│   └── Logo.vue         # GENERATED from /logo by scripts/build-logo.mjs — do not hand-edit
+├── scripts/
+│   └── build-logo.mjs   # regenerates components/Logo.vue from the source SVGs
 ├── styles/
 │   ├── index.ts         # entry — imports base layouts + layout.css
 │   └── layout.css       # theme CSS, uses UnoCSS @apply
@@ -53,15 +56,17 @@ Slidev auto-discovers files in `layouts/` and `components/` by filename — no r
 - **Layout helper**: backgrounds go through `handleBackground` from `@slidev/client/layoutHelper.ts` (see `layouts/cover.vue`). Don't bypass it — it handles URL/color/gradient inputs uniformly.
 - **Code highlighting**: edit `setup/shiki.ts` to swap themes. Match light/dark Shiki themes to the bsf5y palette where possible.
 - **Footer mark**: `global-bottom.vue` renders the bsf5y mark on every slide; it's auto-suppressed on `cover` and `intro` layouts. Override per-slide with `include-logo: true|false` in the slide's frontmatter. Note `$frontmatter` is empty in global layers — read from `currentSlideRoute.value?.meta?.slide?.frontmatter` instead.
+- **Logo mark**: `components/Logo.vue` is **generated** from the repo-root `/logo/*.svg` by `scripts/build-logo.mjs` (the graphic group only — wordmark stripped — with `class="logo-*"` mapped to theme tokens). It runs automatically on `predev` / `prebuild` / `prepack`, so editing the source SVGs and running `pnpm dev` (or publishing) re-syncs it. When `/logo` changes, never hand-edit `Logo.vue`. The publish workflow drift-checks it and fails the release if it's stale.
 
 ## Workflow
 
 1. Edit `example.md` to exercise the layout/component you're changing — every new layout needs a demo slide in `example.md`.
 2. `pnpm dev` and verify in browser (both light and dark mode — toggle in the Slidev nav bar).
-3. Commit. The theme is published as an npm package eventually; keep the README and `package.json` accurate.
+3. Commit. The theme publishes to **GitHub Packages** as `@bsf5y/slidev-theme` via the `publish-slidev-theme` workflow (tag `slidev-theme-v*` or manual dispatch). Keep the README and `package.json` accurate; bump the version before tagging a release.
 
 ## Don't
 
 - Don't hand-edit `components.d.ts` or `dist/` — both are generated and gitignored.
+- Don't hand-edit `components/Logo.vue` — it's generated from `/logo` by `scripts/build-logo.mjs`. Edit the source SVGs instead.
 - Don't import from `landing-page/` — copy the relevant tokens/snippets into `styles/` instead. The two builds are independent.
 - Don't add Eleventy, Nunjucks, or any landing-page tooling here. This is a self-contained Slidev theme.

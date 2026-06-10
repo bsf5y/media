@@ -1,11 +1,12 @@
 <!--
-  Inlined brand-mark graphic from /logo/{light,dark}-logo.svg.
-  Only the <g id="graphic"> contents are included — the wordmark is
-  omitted so this can be paired with separate "bsf5y" text.
-  Class fills/strokes resolve against the theme tokens in styles/layout.css,
-  so the mark adapts to light/dark mode automatically.
+  GENERATED FILE — do not edit by hand.
+  Regenerated from ../logo/light-logo.svg by scripts/build-logo.mjs
+  (runs automatically via the theme's predev / prebuild / prepack hooks).
 
-  When the source SVGs in /logo change, re-sync the paths here.
+  Only the <g id="graphic"> contents are inlined — the wordmark is omitted so
+  this can be paired with separate "bsf5y" text. Class fills/strokes resolve
+  against the theme tokens in styles/layout.css, so the mark adapts to
+  light/dark mode automatically.
 -->
 <template>
   <svg

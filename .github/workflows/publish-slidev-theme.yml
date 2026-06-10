@@ -1,0 +1,50 @@
+name: Publish slidev-theme
+
+# Publishes @bsf5y/slidev-theme to GitHub Packages.
+#
+# Triggered manually, or by pushing a tag of the form `slidev-theme-v*`
+# (e.g. `slidev-theme-v0.1.0`). It is deliberately NOT triggered on every
+# push to slidev-theme/** — that would try to republish the same version
+# and fail. Bump the version in slidev-theme/package.json, tag, and push.
+on:
+  push:
+    tags:
+      - 'slidev-theme-v*'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    defaults:
+      run:
+        working-directory: slidev-theme
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://npm.pkg.github.com
+          scope: '@bsf5y'
+          cache: pnpm
+          cache-dependency-path: slidev-theme/pnpm-lock.yaml
+
+      - run: pnpm install --frozen-lockfile
+
+      # Fail the release if the committed Logo.vue has drifted from the source
+      # SVGs in /logo. Regenerate it and bail if anything changed.
+      - name: Verify Logo.vue is in sync with /logo
+        run: |
+          pnpm run build:logo
+          git diff --exit-code -- components/Logo.vue
+
+      - run: pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
