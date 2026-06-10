@@ -38,6 +38,13 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      # Fail the release if the committed Logo.vue has drifted from the source
+      # SVGs in /logo. Regenerate it and bail if anything changed.
+      - name: Verify Logo.vue is in sync with /logo
+        run: |
+          pnpm run build:logo
+          git diff --exit-code -- components/Logo.vue
+
       - run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -35,7 +35,10 @@ slidev-theme/
 ├── example.md           # demo deck — the test bed for every theme change
 ├── global-bottom.vue    # bottom-right bsf5y footer mark (auto-injected on every slide)
 ├── layouts/             # *.vue — Slidev layout components (cover, intro, ...)
-├── components/          # *.vue — reusable components exposed to slides (incl. Logo.vue used by the footer)
+├── components/          # *.vue — reusable components exposed to slides
+│   └── Logo.vue         # GENERATED from /logo by scripts/build-logo.mjs — do not hand-edit
+├── scripts/
+│   └── build-logo.mjs   # regenerates components/Logo.vue from the source SVGs
 ├── styles/
 │   ├── index.ts         # entry — imports base layouts + layout.css
 │   └── layout.css       # theme CSS, uses UnoCSS @apply
@@ -53,6 +56,7 @@ Slidev auto-discovers files in `layouts/` and `components/` by filename — no r
 - **Layout helper**: backgrounds go through `handleBackground` from `@slidev/client/layoutHelper.ts` (see `layouts/cover.vue`). Don't bypass it — it handles URL/color/gradient inputs uniformly.
 - **Code highlighting**: edit `setup/shiki.ts` to swap themes. Match light/dark Shiki themes to the bsf5y palette where possible.
 - **Footer mark**: `global-bottom.vue` renders the bsf5y mark on every slide; it's auto-suppressed on `cover` and `intro` layouts. Override per-slide with `include-logo: true|false` in the slide's frontmatter. Note `$frontmatter` is empty in global layers — read from `currentSlideRoute.value?.meta?.slide?.frontmatter` instead.
+- **Logo mark**: `components/Logo.vue` is **generated** from the repo-root `/logo/*.svg` by `scripts/build-logo.mjs` (the graphic group only — wordmark stripped — with `class="logo-*"` mapped to theme tokens). It runs automatically on `predev` / `prebuild` / `prepack`, so editing the source SVGs and running `pnpm dev` (or publishing) re-syncs it. When `/logo` changes, never hand-edit `Logo.vue`. The publish workflow drift-checks it and fails the release if it's stale.
 
 ## Workflow
 
@@ -63,5 +67,6 @@ Slidev auto-discovers files in `layouts/` and `components/` by filename — no r
 ## Don't
 
 - Don't hand-edit `components.d.ts` or `dist/` — both are generated and gitignored.
+- Don't hand-edit `components/Logo.vue` — it's generated from `/logo` by `scripts/build-logo.mjs`. Edit the source SVGs instead.
 - Don't import from `landing-page/` — copy the relevant tokens/snippets into `styles/` instead. The two builds are independent.
 - Don't add Eleventy, Nunjucks, or any landing-page tooling here. This is a self-contained Slidev theme.
