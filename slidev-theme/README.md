@@ -34,11 +34,12 @@ theme: '@bsf5y/slidev-theme'
 > `slidev-theme-bsf5y` / `@slidev/theme-bsf5y` forms, so a scoped package must be
 > referenced by its full name.
 
-### From inside this repository
+### Developing the theme itself
 
-The in-repo demo deck under `../presentations/` consumes the theme directly from
-source — no registry needed. Use the path form in frontmatter
-(`theme: ../../slidev-theme`) backed by a `link:../../slidev-theme` dependency.
+The theme's own `example.md` is the in-repo test bed — `pnpm dev` previews it
+against the live source, no registry needed. Decks live in their own repositories
+and install the published package as above (see
+[`ai-training`](https://github.com/bsf5y/ai-training)).
 
 See [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
 
