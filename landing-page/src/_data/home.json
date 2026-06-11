@@ -43,6 +43,11 @@
       ]
     }
   },
+  "howWeBuild": {
+    "label": "How We Build",
+    "headline": "We build with AI. We hold it to the same standard we hold everything.",
+    "body": "<p>AI-driven development is how a small senior team ships eight-figure engineering at SMB budgets. It's also where most shops get sloppy — shipping code nobody reviewed, nobody understands, and nobody can maintain.</p><p>We point AI at the work that's mechanical, and put human judgment, tests, and review on every line that reaches production. Faster where speed is free; deliberate where it isn't.</p><p>That's the whole philosophy: <em>go well to go fast</em> — not the other way around.</p>"
+  },
   "aiQuestion": {
     "label": "The AI Question",
     "headline": "AI pilots fail for the same reason prototypes do.",
