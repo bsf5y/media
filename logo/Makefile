@@ -13,13 +13,19 @@
 #   linkedin-cover-terminal.png
 #   linkedin-cover-core.png
 #
-# `make all` (default) produces both groups.
+# `make email` produces a PNG of the full logo on a white card with rounded
+# corners (transparent outside the corners), suited to email signatures
+# (uses the light-mode source):
+#   email-signature-logo.png
 #
-# Requires `xmlstarlet`, `rsvg-convert` (librsvg), and `magick` (ImageMagick)
-# on PATH:
+# `make all` (default) produces every group.
+#
+# The `linkedin`/`linkedin-cover` targets require `xmlstarlet`,
+# `rsvg-convert` (librsvg), and `magick` (ImageMagick) on PATH:
 #   brew install xmlstarlet librsvg imagemagick
+# The `email` target needs only `rsvg-convert` (librsvg).
 #
-# Generated PNGs are gitignored — edit the source SVGs and re-run `make`.
+# Generated outputs are gitignored — edit the source SVGs and re-run `make`.
 
 SHELL := /bin/bash
 
@@ -50,13 +56,30 @@ COVER_H := 191
 COVER_SOURCES := $(wildcard linkedin-cover-*.svg)
 COVERS        := $(COVER_SOURCES:.svg=.png)
 
-.PHONY: all linkedin linkedin-cover clean check-tools
+# Email-signature card: the full logo on a white, rounded-corner background.
+# Derived from the light-mode source (baked light colors read well on white).
+# The source content occupies viewBox "301 210 1654 546"; we nest it inside a
+# padded outer canvas without altering the source geometry, then rasterize.
+EMAIL_OUTPUT  := email-signature-logo.png
+EMAIL_SOURCE  := light-logo.svg
+EMAIL_CONTENT_W := 1654
+EMAIL_CONTENT_H := 546
+EMAIL_PAD       := 120
+EMAIL_RADIUS    := 72
+EMAIL_W := $(shell echo $$(($(EMAIL_CONTENT_W) + 2 * $(EMAIL_PAD))))
+EMAIL_H := $(shell echo $$(($(EMAIL_CONTENT_H) + 2 * $(EMAIL_PAD))))
+# Output raster width (height scales to preserve aspect).
+EMAIL_PNG_W := $(EMAIL_W)
 
-all: linkedin linkedin-cover
+.PHONY: all linkedin linkedin-cover email clean check-tools
+
+all: linkedin linkedin-cover email
 
 linkedin: $(LINKEDIN)
 
 linkedin-cover: $(COVERS)
+
+email: $(EMAIL_OUTPUT)
 
 check-tools:
 	@for tool in xmlstarlet rsvg-convert magick; do \
@@ -83,5 +106,21 @@ linkedin-cover-%.png: linkedin-cover-%.svg Makefile | check-tools
 	@rsvg-convert -w $(COVER_W) -h $(COVER_H) $< -o $@
 	@echo "  ✓ $@"
 
+# Wrap the unmodified source SVG (nested as a child <svg> at the padded
+# offset) in a white rounded-rect card, then rasterize to PNG. `tail -n +2`
+# drops the source's XML declaration so it nests cleanly mid-document.
+# Area outside the rounded corners stays transparent.
+$(EMAIL_OUTPUT): $(EMAIL_SOURCE) Makefile
+	@{ \
+	  echo '<?xml version="1.0" encoding="UTF-8"?>'; \
+	  echo '<svg xmlns="http://www.w3.org/2000/svg" width="$(EMAIL_W)" height="$(EMAIL_H)" viewBox="0 0 $(EMAIL_W) $(EMAIL_H)">'; \
+	  echo '  <rect x="0" y="0" width="$(EMAIL_W)" height="$(EMAIL_H)" rx="$(EMAIL_RADIUS)" ry="$(EMAIL_RADIUS)" fill="#ffffff"/>'; \
+	  echo '  <g transform="translate($(EMAIL_PAD),$(EMAIL_PAD))">'; \
+	  tail -n +2 $<; \
+	  echo '  </g>'; \
+	  echo '</svg>'; \
+	} | rsvg-convert -w $(EMAIL_PNG_W) -o $@
+	@echo "  ✓ $@"
+
 clean:
-	rm -f $(LINKEDIN) $(COVERS)
+	rm -f $(LINKEDIN) $(COVERS) $(EMAIL_OUTPUT)
