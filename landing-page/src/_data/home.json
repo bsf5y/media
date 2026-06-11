@@ -2,12 +2,12 @@
   "hero": {
     "tagline": "Products, Not Prototypes.",
     "lead": "Enterprise-class software, systems, and AI development for Central Illinois' small and medium-sized businesses. We'll get it right the first time.",
-    "subtext": "<p>AI has rewritten the economics of custom software. Systems that used to require a million-dollar budget are now within reach of any serious regional business. We bring eight-figure engineering discipline — paired with AI-driven development — to SMBs that need to capitalize on this shift before their competitors do.</p><br><p>And we still build it right: code your future team can read, architecture that survives your next pivot, infrastructure that doesn't quietly rot.</p>"
+    "subtext": "<p>AI has rewritten the economics of custom software. Systems that used to require a million-dollar budget are now within reach of any serious regional business. We bring eight-figure engineering discipline — paired with AI-driven development — to SMBs that need to capitalize on this shift before their competitors do.</p><br>"
   },
   "whatWeDo": {
     "label": "What We Do",
-    "headline": "Custom software development. Systems integration. AI strategy and implementation.",
-    "subtext": "For business leaders who want to move now — not after their competitors do."
+    "headline": "Custom software development. Systems integration.<br>AI strategy and implementation.",
+    "subtext": "For business leaders who want to move first."
   },
   "positioning": "<p>The difference between a product and a prototype isn't polish or features — it's where the value lives. Prototypes trap business logic in the UI. Products capture it in portable software any interface can use.</p><p>The same difference shows up in AI. Bolt-ons trap value in prompts and demos. Integrations capture it in systems that outlast any single vendor, model, or demo.</p>",
   "problem": {
