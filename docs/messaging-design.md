@@ -2,40 +2,46 @@
 
 ## Tagline/Slogan
 
-Products, not prototypes.
+**Production AI, not just pilots.**
+
+Heritage line (still valid, now secondary): *Products, not prototypes.* Same idea, different
+decade — the value is in what survives production, not what impresses in a demo.
 
 ## Elevator Pitch
 
-We're an enterprise-class engineering shop for Central Illinois small and medium-sized businesses.
-We build custom software, integrate AI into the products and operations you already run, and do it
-with the discipline that survives growth and scrutiny.
+We take Central Illinois organizations from AI curiosity to AI-driven operations. We train your
+people, get your data ready for agents, move your engineering team to an AI-driven development
+process, and build the agentic systems that do real work — then help you hire the person who keeps
+it running.
 
-AI has rewritten the economics of custom software. Systems that used to require a million-dollar
-budget are now within reach of any serious regional business. We bring eight-figure engineering
-discipline — paired with AI-driven development — so SMBs can capitalize on the shift before
-competitors do.
-
-When investors audit your tech, it holds up. When your AI pilot meets real customers, it doesn't
-collapse. When you pivot, you don't start over.
+Everyone has a chatbot login. Very few have anything in production. The gap isn't the model. It's
+training, data, and engineering discipline. That's the work we do.
 
 ## Mission Statement (The "Why")
 
-We help business leaders build technology products that survive growth, pivots, and success —
-starting with founders in our home community of Champaign-Urbana.
+We help organizations make AI part of how they actually work — not a pilot, not a demo, not a
+slide — starting with businesses in our home community of Champaign-Urbana.
 
 ## Brand Promise ("The Commitment")
 
-"We'll tell you what NOT to build" 
+"We'll tell you what NOT to automate."
 
-## Value Proposition ("The Benefit"): 
+(Evolved from "We'll tell you what NOT to build." Same promise: judgment before spending.)
 
-Executive engineering judgment without the headcount. Solid products without the misfires.
+## Value Proposition ("The Benefit")
+
+Senior AI and engineering judgment without the headcount. Production results without the pilot
+graveyard.
 
 ## Positioning Statement (The Difference)
 
-For Central Illinois SMBs that need to build new software, modernize what they already run, or
-integrate AI into their business — and don't have an in-house engineering bench — bsf5y delivers
-enterprise-class systems at prices the AI shift has finally made accessible.
+For Central Illinois organizations that know AI matters but can't yet point to results, bsf5y
+takes teams from first trial to AI-driven operations — training, data readiness, AI-driven software
+delivery, and agentic systems built to production standards.
+
+Unlike tool vendors, who sell licenses, and workshop trainers, who leave after lunch, we stay
+through the hard part — the data, the pipelines, the guardrails, the hiring — until you can run it
+without us.
 
 ## Brand Philosophy
 
@@ -47,103 +53,122 @@ communicate, how we present ourselves.
 ### The Core Brand Tension
 
 BSF5Y occupies a deliberate contradiction: we offer *premium* services — senior engineering
-judgment, architecture that lasts — while rejecting the *premium aesthetic* that typically
-signals it. No agency portfolios. No stock photography. No vague promises of "innovation."
+judgment, systems that last — while rejecting the *premium aesthetic* that typically signals it.
+No agency portfolios. No stock photography. No glowing-brain AI imagery. No vague promises of
+"transformation."
 
 The resolution is credibility through restraint. We communicate expertise the same way
 well-written code does: by being clean, purposeful, and free of unnecessary dependencies.
 Everything earns its place or it doesn't appear.
 
+This matters more in AI than anywhere else. The market is saturated with hype. Restraint reads as
+competence.
+
 ### The Site as Proof
 
-The website is not marketing collateral about the methodology — it is a demonstration of it.
-Identify the core value. Protect it with solid structure. Turnkey the rest with proven solutions.
-The same discipline we sell, applied to our own presence.
+The website is not marketing collateral about the methodology — it is a demonstration of it. We
+build our own presence with the same AI-driven development process we teach. Every touchpoint
+should *show* the thinking, not just describe it.
 
-This principle extends to all brand materials: every touchpoint should *show* the thinking,
-not just describe it.
+## Messaging Pillars (The Core Themes)
 
-## Messaging Pillars (The Core Themes):
-
-### 1. Product Thinking
-*"Products, not prototypes."*
-
-The philosophical distinction that underpins everything. Products capture your business logic in
-software that travels with you — new features, new platforms, new teams. Prototypes trap value in
-the UI and break when reality hits.
-
-- "Ask us where the business rules live"
-- "Build it once" — architecture handles growth without rewrites
-- The difference isn't polish or features — it's where the value lives
-- Your investment in code compounds; it doesn't depreciate
-
-### 2. Core Protection
-*"Your idea is only 10% of the solution. We protect that 10%."*
-
-Obsessive focus on identifying and defending what makes your business unique. Everything else is
-commodity infrastructure we turnkey with proven solutions.
-
-- "We'll tell you what NOT to build"
-- Differentiate first, then turnkey the rest
-- Focus creates leverage; distraction creates debt
-- Most successful products contain zero innovation — the value is in execution, not invention
-
-### 3. Built to Last
-*"Software that survives success."*
-
-Engineering for what happens when things go right — more users, funding rounds, pivots, team
-changes. The architecture handles it.
-
-- Scale without rewrites
-- Pivot without starting over
-- Pass technical due diligence
-- Handoff-ready codebases
-- No panic when investors ask about your tech stack
-
-### 4. Partnership Over Transactions
-*"Close long-term partnerships over one-off contracts."*
-
-Teacher mindset, not vendor mindset. Transfer methods so teams sustain velocity independently.
-Multiple paths forward after delivery.
-
-There is warmth in this work. The satisfaction of a well-made thing — code that a new developer
-can read on day one, architecture that holds under pressure, a handoff that actually works — is
-its own reward. We're not cold or purely transactional. We care that it lasts.
-
-- Training and coaching to build internal capability
-- Recruitment support when ready to hire
-- Local presence, embedded in Champaign-Urbana community
-- We succeed when you don't need us anymore
-
-### 5. AI-Amplified Delivery
-*"Enterprise-class engineering at SMB-accessible prices."*
-
-AI changed the economics of custom software. The work that used to cost a million dollars now
-costs a fraction of that — but only if the people building it know what they're doing. We use
-AI-driven development to accelerate delivery without compromising the engineering discipline.
-
-- The savings are in the build, not the architecture
-- We pass the new economics to our clients, not pocket them
-- SMBs can now afford the kind of bespoke systems that used to be reserved for enterprises
-- AI accelerates engineering judgment — it doesn't replace it
-
-### 6. Integrated AI, Not Bolt-On AI
+### 1. Production AI, Not Just Pilots
 *"AI pilots fail for the same reason prototypes do."*
 
 Models change monthly. Vendors ship demos. What doesn't change is the work between a demo that
 impresses and a system that survives production. That work is engineering.
 
-- Value lives in your system, not the prompt
+- Value lives in your systems and your data, not in the prompt
 - Swap models without rewriting
-- Documented, tested, auditable
+- Documented, tested, evaluated, auditable
 - Your data stays yours
-- Whether you're building with AI or adopting it, the discipline is the same
+- The model is the commodity. Your data and your process are the moat.
+
+### 2. AI-Driven Development
+*"Agents are only as fast as your pipeline is trustworthy."*
+
+The engineering track. Coding agents are the biggest shift in software delivery in a generation —
+and most teams are stuck at "we tried Copilot, results were mixed." We take engineering teams from
+measured trials, to AI-assisted work, to a fully AI-driven development process.
+
+The bottleneck is rarely the agent. It's everything around it: thin test coverage, flaky CI,
+manual deploys, review processes built for human-speed output. We harden the pipeline so agents
+can move fast without breaking production.
+
+- AI-assisted is a tool. AI-driven is a process.
+- Trials measured against your codebase, not a vendor's demo repo
+- Tests, CI/CD, and review gates are what make agent speed safe
+- AI amplifies your practices — good ones and bad ones
+- *Go well to go fast.* Discipline is what unlocks the speed.
+- We run this process ourselves, every day
+
+### 3. AI-Ready Data
+*"Agents are only as good as what they can find."*
+
+The business track. Most organizations' knowledge lives in scattered drives, inboxes, wikis, and
+people's heads. No agent can use that — and no one should point an agent at it until they know
+what's in it.
+
+We make your information fit for AI consumption: classify it, curate it, structure it, and expose
+it through the right mechanism — data lakes, knowledge graphs, vector search (RAG), or plain
+well-organized documents when that's enough.
+
+- Know what's sensitive before your agent does
+- Data classification first. Everything else depends on it.
+- The right retrieval method for the job — not the trendiest one
+- Garbage in, confident garbage out
+
+### 4. Teach, Then Build
+*"Training isn't an event. The tools change monthly."*
+
+Teacher mindset, not vendor mindset. Adoption fails when people don't know how to use the tools
+well — or when they learned once and the tools moved on. We provide hands-on, recurring training
+for engineers and non-engineers alike, grounded in your actual work.
+
+Then we work with your team to identify, scope, and build the automations and agentic systems
+that pay off — starting with the ones that matter, skipping the ones that don't.
+
+- Live, hands-on sessions on your real workflows
+- Prompting, verification, and knowing when not to trust the output
+- Find the bottleneck before you automate it
+- We'll tell you what NOT to automate
+
+### 5. Partnership Through Handoff
+*"We succeed when you don't need us anymore."*
+
+AI adoption is a capability, not a project. Our engagements end with your organization owning it —
+often by helping you find, evaluate, and hire the technologist who carries the effort forward.
+
+There is warmth in this work. The satisfaction of a well-made thing — a pipeline the team trusts,
+a system a new hire can understand on day one, a handoff that actually works — is its own reward.
+We care that it lasts.
+
+- Help hiring the engineer or AI lead who keeps it going — no recruiting agency markup
+- Documented systems and processes, ready for that hire
+- Local presence, embedded in the Champaign-Urbana community
+- Still here when the model changes
+
+### 6. Product Thinking (Heritage)
+*"Products, not prototypes."*
+
+The original bsf5y thesis, and still how we build custom software and AI systems. Products capture
+business logic in portable software any interface — or agent — can use. Prototypes trap value in
+the UI and break when reality hits.
+
+- Ask us where the business rules live
+- Your idea is <10% of the code. We protect that 10%; turnkey the rest.
+- Software that survives success
+- AI-driven development has rewritten the economics: enterprise-class systems at SMB budgets
 
 ## Supporting Messages/Proof Points (The "Why You")
 
+*[TODO: Add AI-specific proof — client outcomes from trials, training, data, and agentic work.
+Anonymized metrics (cycle time, hours saved, adoption rates) would be strongest.]*
+
 ### Experience & Credentials
-- Full-stack expertise: web/cloud/SaaS, embedded systems, data/ML/AI, enterprise systems
+- Full-stack expertise: data/ML/AI, web/cloud/SaaS, embedded systems, enterprise systems
 - Graduate-level training in computer science, AI, and financial engineering
+- Daily practitioners of AI-driven development — we run the process we teach
 - Open source contributors — we build in the open and give back
 - Startup exits and acquisitions — we've been through the journey ourselves
 
@@ -151,38 +176,37 @@ impresses and a system that survives production. That work is engineering.
 - Directed engineering teams of 20+ across multiple organizations
 - Managed diverse portfolios of 15+ concurrent projects annually
 - Secured and delivered on eight-figure technical programs
-- Built and commercialized our own SaaS products — we've done what we're asking you to do
-- Codebases successfully handed off to client teams and acquirers
+- Built and commercialized our own SaaS products
+- Codebases and systems successfully handed off to client teams and acquirers
+
+### Teaching & Training
+- Workshops on AI tooling for business leaders and engineers
+- Teaching and training at community colleges and workshops
+- Coached dozens of teams in code craftsmanship, CI/CD, and engineering practice
 
 ### Local Roots
-- Embedded in the Champaign-Urbana startup ecosystem
+- Embedded in the Champaign-Urbana business and startup ecosystem
 - Direct experience operating within Research Park
 - University partnerships and funded research collaborations
 - Active in local accelerators and economic development
-- Teaching and training at community colleges and workshops
-
-### Methodology
-- Fractional CTO experience — we've played this exact role before
-- Coached dozens of early-stage teams in code craftsmanship and best practices
-- Established repeatable scaffolding for greenfield projects
-- Track record of building internal capability and handing off successfully
 
 ### Case Studies (Examples to Develop)
 
-**The Due Diligence Save**
+*[TODO: Replace the product-era examples below with AI engagements. Candidate shapes:
+"The Trial That Changed the Team" (coding-agent trial → AI-driven SDLC),
+"The Shared Drive Nobody Could Search" (data classification + RAG),
+"The Automation That Paid for Itself" (scoped agentic system with measured ROI),
+"The Hire" (handoff to an in-house AI lead).]*
+
+**The Due Diligence Save** *(product track)*
 A fintech founder came to us after their prototype couldn't pass investor technical review. We
 rebuilt their core transaction engine with proper separation of concerns. Six months later, they
-closed their Series A. The investors specifically cited the clean architecture in their decision.
+closed their Series A.
 
-**The Pivot That Worked**
-An edtech startup needed to completely change their delivery model mid-stream. Because we'd
-isolated their core curriculum logic from the interface, they pivoted from B2C to B2B without
-rewriting the engine. Same core, new wrapper, new market.
-
-**The Successful Handoff**
+**The Successful Handoff** *(product track)*
 A healthtech company needed to bring development in-house after our engagement. Their new team was
 productive within two weeks because the codebase was documented, tested, and structured for
-humans to read. No "archaeology" required.
+humans to read.
 
 *[Note: These are illustrative examples. Replace with actual client stories, anonymized as needed.]*
 
@@ -192,50 +216,56 @@ humans to read. No "archaeology" required.
 
 ### Primary Customer Profile
 
-**Primary: Central Illinois SMBs adopting AI**
+**Primary: Central Illinois organizations adopting AI**
 
-- **Who:** Owners and operators of established small/medium businesses who see AI reshaping
-  their industry and don't want to be the case study for moving too late.
-- **Value:** Engineering judgment that integrates AI into a working business without putting
-  revenue, operations, or data at risk.
-- **Stage:** Have an existing business with revenue and operations. May be greenfield on the
-  AI side, or replacing a failed pilot.
-- **Situation:** No in-house engineering bench capable of distinguishing a vendor demo from a
-  production system.
-- **Mindset:** Sees AI as competitive necessity, not novelty. Wants a local partner who will
-  still be around when the model changes.
+Established small and mid-sized organizations with revenue, staff, and systems. They see AI
+reshaping their industry and don't want to be the case study for moving too late. Two buyers
+inside the same organization:
 
-**Secondary: Founders building new products**
+- **The engineering leader** (CTO, VP Engineering, dev manager)
+  - **Situation:** Has a development team. Has tried coding assistants informally. Can't say
+    whether it's working, and suspects the team's tests and pipelines aren't ready for agent-speed
+    output.
+  - **Wants:** A measured path from trial to AI-driven development that doesn't trade quality for
+    speed.
+- **The operator** (owner, COO, department head)
+  - **Situation:** Staff use ChatGPT ad hoc. Knowledge is scattered across drives and inboxes.
+    Unsure what data is safe to use. May have a failed pilot behind them.
+  - **Wants:** AI that saves real hours across the business, without putting data, customers, or
+    operations at risk.
+- **Mindset (both):** Sees AI as competitive necessity, not novelty. Wants a local partner who
+  will still be around when the model changes.
 
-- **Who:** Business leaders with a product vision seeking expert technical partners to realize
-  new or existing product concepts.
-- **Value:** Close long-term partnerships over one-off contracts.
-- **Stage:** Pre-build or early build — before significant technical debt accumulates.
-- **Situation:** They have a product or idea with a technology component, but lack senior
-  engineering leadership or an experienced technical partner.
-- **Mindset:** They value doing things right over doing things easy. They're building a product,
-  not chasing a quick prototype.
+**Secondary: Leaders building new products**
+
+- **Who:** Business leaders with a product vision seeking an expert technical partner.
+- **Situation:** Have a product or idea with a technology component but lack senior engineering
+  leadership.
+- **Offer:** Fractional CTO and bespoke product development — built AI-driven, to production
+  standards.
 
 ### Geographic Focus
 
 **Central Illinois.** Champaign-Urbana is home — deeply embedded in the University of Illinois,
-Parkland Community College, business development groups, and local startup community. We work
-across the broader Central Illinois region with SMBs that benefit from a local, in-person
-engineering partner.
+Parkland Community College, business development groups, and the local startup community. We work
+across the broader Central Illinois region with organizations that benefit from a local, in-person
+partner. In-person training is a differentiator; lean into it.
 
 ### Qualifying and Disqualifying
 
 Every piece of copy — especially on the homepage — should do two jobs simultaneously: attract the
-right clients and actively repel the wrong ones. This is not a bug; it is a feature. Founders who
-value doing it right should feel immediately recognized. Founders chasing cheap and fast should
+right clients and actively repel the wrong ones. Leaders who want AI to produce real, durable
+results should feel immediately recognized. AI tourists chasing a demo for the board deck should
 self-select out before they contact us.
 
-Write copy that makes product-minded founders nod. If it would also appeal to someone hunting for
-the lowest bid, rewrite it.
+Write copy that makes serious operators nod. If it would also appeal to someone hunting for a
+quick AI press release, rewrite it.
 
 ### Disqualified Customers
 
-- Leaders who've already built a broken prototype masquerading as a product and want a quick fix
+- "Just buy us licenses and leave" — tool procurement without adoption
+- Leaders who want AI to replace judgment, review, and accountability rather than amplify them
+- Pointing agents at sensitive data before anyone is willing to classify it
 - "Move fast and break things" believers who see engineering discipline as friction
 - Remote-only engagements with no local presence or connection
 
@@ -243,67 +273,93 @@ the lowest bid, rewrite it.
 
 ## The Point
 
-The difference between a product and a prototype isn't polish or features - it's where the value lives.
+The difference between a pilot and production AI isn't the model. It's everything around it.
 
-Prototypes trap business logic inside the user interface. When you need to add an API, support a new
-platform, or hand the codebase to a new team, you discover the mess. The rules are scattered. The
-architecture fights you. You rebuild.
+Pilots trap value in a prompt, a demo, a single person's laptop. When the model changes, the vendor
+pivots, or the champion leaves, it's gone. Nobody knows what data it touched. Nobody measured
+whether it helped.
 
-Products capture your core business logic in portable software that any interface can use. The core
-doesn't change when you add a mobile app or an API. It doesn't break when you scale. It doesn't
-confuse new developers.
+Production AI lives in your systems: trained people, classified and well-structured data, tested
+pipelines, evaluated agents, and someone on staff who owns it. It survives model changes. It
+survives vendor changes. It survives turnover.
 
-We capture your core in portable software that survives scaling, pivots, funding rounds, and team
-changes.
+We build the second kind.
+
+## The Path
+
+Our engagements follow a progression. Clients enter wherever they are — many start at the first
+step, some arrive with a stalled pilot or a team already using agents. Engineering and business
+tracks often run in parallel.
+
+| Stage | Engineering track | Business track |
+| --- | --- | --- |
+| **01 Start** | Coding-agent trial on your real codebase, measured | AI Starter Package: workflow audit, tool selection, hands-on training |
+| **02 Train** | Recurring hands-on training in agentic tools | Recurring hands-on training in agentic tools |
+| **03 Harden** | CI/CD, test coverage, review gates, automation — ready for agent-speed output | Data classification and governance — know what's sensitive |
+| **04 Integrate** | Move from AI-assisted to fully AI-driven development | Curate and structure knowledge: data lakes, knowledge graphs, vector search (RAG) |
+| **05 Automate** | Agentic tooling in the delivery pipeline | Identify, scope, and build automations and agentic systems with measured value |
+| **06 Hand Off** | Help hire and onboard the engineer who owns it | Help hire and onboard the technologist who owns it |
 
 ## Key Messages
 
-**Build it once.**
+**Production AI, not just pilots.**
 
-Products should not need to be 'rebuilt' when the business demands new features or changes in scale.
-The architecture handles growth, pivots, and new delivery channels without starting over.
+The demo is the easy part. We do the work between a demo that impresses and a system that survives.
 
-**Your idea is <10% of the code. We protect that 10%.**
+**A chatbot login is not an AI strategy.**
 
-Your unique differentiator - the thing that makes your business special - is a small fraction of the
-total system. Everything else is commodity infrastructure. We focus obsessively on capturing and
-protecting that 10%.
+Ad hoc usage is a start, not a plan. Strategy means trained people, ready data, and systems that
+deliver measurable value.
 
-**Software that survives success.**
+**AI-assisted is a tool. AI-driven is a process.**
 
-What happens when things go right? More users, investors want in, you need to hire, you need to pivot. Prototypes break under success. Products don't.
+Giving engineers a coding assistant is step one. Rebuilding the development process around agents
+is where the leverage is.
 
-**Ask us where the business rules live.**
+**Agents are only as fast as your pipeline is trustworthy.**
 
-We can answer this question clearly. If your dev partner can't, that tells you they're
-building prototypes.
+Thin tests and flaky CI turn agent speed into production incidents. Harden the pipeline first,
+then let the agents run.
 
-**Your product is not the user interface. It's the data.**
+**Agents are only as good as what they can find.**
 
-The UI is a window into your product, not the product itself. If your business logic lives in the
-interface, you don't have a product — you have a demo.
+If your knowledge is scattered across drives and inboxes, no model will fix it. Organize the
+information, then point the agents at it.
 
-**Most "MVPs" are prototypes with production traffic.**
+**Know what's sensitive before your agent does.**
 
-That "minimum viable product" built on spit and duct tape? There's nothing wrong with shipping it —
-that takes guts. But calling it viable doesn't make it so. Knowing the difference is how you plan
-what comes next.
+Data classification is the unglamorous prerequisite to every safe AI deployment.
 
-**Cheap MVPs are expensive.**
+**We'll tell you what NOT to automate.**
 
-The "build it cheap, fix it later" model front-loads savings and back-loads pain. Changes get
-harder as code accumulates. Invest in architecture early — when changes are cheap and leverage is
-high — not after you've painted yourself into a corner.
+Not every workflow deserves an agent. Find the bottleneck, measure it, then decide.
 
-**Do you have a product?**
+**The model is the commodity. Your data and your process are the moat.**
 
-If you can't point to where your business rules live, independent of any interface, you have a
-prototype. That's not a judgment — it's a diagnostic. Knowing the answer shapes what comes next.
+Models are interchangeable and getting cheaper. What your competitors can't copy is how your
+organization's knowledge and workflows are wired into AI.
+
+**Training isn't an event.**
+
+The tools change monthly. One workshop won't keep your team current. Recurring, hands-on training
+will.
+
+**AI amplifies your practices — good ones and bad ones.**
+
+Put AI on top of a sloppy process and you get sloppiness at scale. Go well to go fast.
+
+### Heritage Messages (product track)
+
+- **Products, not prototypes.** The difference isn't polish or features — it's where the value lives.
+- **Ask us where the business rules live.** If your dev partner can't answer, they're building prototypes.
+- **Your idea is <10% of the code. We protect that 10%.**
+- **Software that survives success.**
+- **Cheap MVPs are expensive.**
 
 ## Voice
 
 **Blunt, not aggressive.**
-"That's a prototype. It won't scale." Not "Your developers are idiots."
+"That's a pilot. It won't survive production." Not "Your AI strategy is a joke."
 
 **Confident, not salesy.**
 We don't need to convince anyone. We state how things work.
@@ -314,8 +370,9 @@ We explain the mechanics. We don't moralize about "doing things right."
 **Sparse.**
 Short sentences. No jargon. No weasel words. Say it and stop.
 
-**Forward thinking**
-"Product thinking" Not "Prototype thinking".
+**Grounded, not hyped.**
+AI is powerful and overhyped at the same time. We say both. Name specific tools and techniques;
+never "harness the power of AI."
 
 **Engineered, not decorated.**
 The brand should feel like it was made by engineers who understand design — not designers who
@@ -328,10 +385,10 @@ don't understand engineering. Restraint is the aesthetic. Every element earns it
 - **No hedging.** No "we believe," "potentially," or "in many cases."
 
 ```
-Good:  "Products, Not Prototypes"
-Good:  "Software That Survives Success"
-Avoid: "Are You Building Products or Prototypes?"
-Avoid: "What If Your Software Could Survive Success?"
+Good:  "Production AI, Not Just Pilots"
+Good:  "Agents Need Trustworthy Pipelines"
+Avoid: "Is Your Business Ready for AI?"
+Avoid: "Unlock the Power of AI"
 ```
 
 ### Services Copy Rule
@@ -342,89 +399,71 @@ the client walks away with; let the method follow.
 
 ## What We Don't Sound Like
 
-- Agency-speak: "We deliver innovative solutions that drive business value."
-- Humble-brag: "Our world-class team of experts..."
-- Hedge-everything: "We believe that in many cases, potentially..."
-- Startup hype: "Revolutionary. Disruptive. Game-changing."
+- Agency-speak: "We deliver innovative AI solutions that drive business value."
+- AI hype: "Harness the transformative power of AI." "Revolutionize your workflow."
+- Humble-brag: "Our world-class team of AI experts..."
+- Hedge-everything: "We believe that in many cases, AI can potentially..."
+- Doom-selling: "Adopt AI now or your business will die."
 
 ## The Uncomfortable Truth
 
-Every founder faces this choice: pay to build it right, or pay to build it twice. We're the
-partner for those who choose the first path.
+Every organization faces this choice: invest in the unglamorous foundation — training, data,
+pipelines — or keep funding pilots that never reach production. We're the partner for those who
+choose the first path.
 
-Cheaper and faster options exist because they skip the hard part. The hard part is identifying your
-core value and building it to last. That takes expert engineering judgment — the kind that comes
-from building products ourselves, not just building them for others.
+Cheaper and faster options exist because they skip the hard part. Buying licenses is easy. Running
+a workshop is easy. Getting an organization to actually work differently — safely, measurably,
+durably — takes engineering judgment and persistence.
 
-## The Founder's Reality
+## The AI Reality
 
-We understand what keeps you up at night:
+What we hear from leaders before they call us:
 
-- The sinking feeling when your "technical partner" goes quiet after delivery
-- The dread before an investor asks to see your codebase
-- The creeping realization that adding a simple feature now takes weeks
-- The fear that you'll have to throw it all away and start over
+- Everyone has a ChatGPT login. Nobody can point to the ROI.
+- Engineering trialed a coding agent. The results were "mixed." Nobody measured.
+- The pilot demoed beautifully — and then nobody could say what data it was allowed to touch.
+- Our knowledge lives in forty shared folders and somebody's inbox. No agent can find it.
+- A vendor wants to sell us a platform. We don't know what we actually need.
 
-These aren't hypotheticals. We've seen them — and we've been the founders experiencing them. That's
-why we build differently.
+These aren't hypotheticals. We've seen every one of them.
 
-## Target Audience
-
-**Primary: SMB owners and operators in Central Illinois adopting AI.** Established businesses
-with revenue and operations, watching AI reshape their industry. They've seen a vendor demo or
-two, may have run a pilot that didn't survive contact with reality, and want a local engineering
-partner who can integrate AI into the business without breaking what already works.
-
-**Secondary: Business leaders with a product vision** — non-technical leaders, inexperienced
-technical leaders, and executives shopping for an engineering partner. Ideally starting a
-greenfield project for a new idea, but sometimes already underway with a prototype that's
-becoming harder to change.
-
-Both audiences are comparing options, searching for an ideal technical partner. They need to
-understand why our approach matters before they've experienced the downside of alternatives.
+*Secondary (product track) — The Founder's Reality: the tech partner who went dark after delivery;
+the investor audit that found duct tape; the simple feature that now takes weeks; the rewrite that
+erased the investment.*
 
 ## Success Outcomes
 
 Clients who work with us:
-- Build it right the first time
-- Go to market with more confidence, and often faster
-- Scale without rewrites
-- Pivot without starting over
-- Pass technical due diligence with investors
-- Hire/develop in-house teams who can understand and extend the codebase
+- Can point to where AI saves time and money — with numbers
+- Have staff who use agentic tools confidently and verify the output
+- Ship software faster with an AI-driven process their pipeline can trust
+- Know what data they have, what's sensitive, and what agents can use
+- Run automations and agentic systems that survive model and vendor changes
+- Have an in-house owner who can keep the effort going without us
 
 ## How We Work
 
-### What Engagement Looks Like
-
-**Discovery (Week 1-2)**
-We start by understanding your business — not just your feature list. What makes you different?
-Where does your value live? What's commodity infrastructure vs. core differentiator?
-
-**Architecture & Planning**
-We design the system before we build it. You'll see exactly where your business logic lives and
-how the pieces connect. No surprises.
-
-**Build & Iterate**
-We build in working increments you can see and touch. Regular check-ins, clear progress, no
-disappearing acts.
-
-**Handoff & Support**
-Your codebase is documented, tested, and ready for your team or acquirer. We offer training,
-ongoing support, and help hiring when you're ready to build internal capability.
-
 ### Engagement Models
 
-- **Project-Based:** Fixed scope, clear deliverables, defined timeline
-- **Retainer/Fractional CTO:** Ongoing technical leadership and architecture guidance
-- **Advisory:** Strategic input without hands-on development
+- **AI Starter Package:** 10 hours, $1,500. Workflow audit, tool selection and sandbox setup,
+  hands-on team training. The low-risk front door for the business track. (See
+  `ai-starter-package.md`.)
+- **Coding-Agent Trial:** *[TODO: define scope/price]* Structured, measured trial of coding agents
+  on the client's real codebase. The front door for the engineering track.
+- **Training Retainer:** Recurring hands-on training sessions as tools and practices evolve.
+- **Project-Based:** Fixed scope for pipeline hardening, data readiness, and agentic system builds.
+- **Fractional CTO / AI Lead:** Ongoing technical leadership while the organization builds its own
+  capability.
+- **Workshops:** Public and private sessions (see `thought-bites/one-day-workshop-in-ai-design.md`).
 
 ### What You Get
 
-- Clean, documented codebase that new developers can understand
-- Architecture documentation explaining key decisions
-- Test coverage that protects your core business logic
-- Clear path to internal team ownership or acquisition readiness
+- Trained staff and engineers, with materials they can return to
+- A hardened delivery pipeline ready for agent-speed output
+- Classified, curated data and the retrieval layer agents need
+- Production agentic systems with evaluations and guardrails
+- Documentation and a clear path to in-house ownership
+- Help hiring the person who owns it next
 
 -----
 
@@ -435,25 +474,31 @@ Use this reference when translating messaging to specific touchpoints:
 | Content Section | Recommended Use |
 |-----------------|-----------------|
 | Tagline + Elevator Pitch | Homepage hero, LinkedIn headline |
-| Messaging Pillars | "Our Approach" or Services page |
-| The Founder's Reality | Homepage emotional hook, email nurture |
-| How We Work | Dedicated process page or homepage section |
+| Messaging Pillars | Track sections, services, "Our Approach" |
+| The AI Reality | Homepage emotional hook, email nurture |
+| The Path | Homepage methodology section, proposals |
+| Engagement Models | Services section, CTA (Starter Package as entry offer) |
 | Case Studies | Proof section, sales collateral, blog posts |
 | Proof Points | About page, footer credibility bar, proposals |
 | Key Messages | Pull quotes, social posts, email subject lines |
 | Voice Guidelines | Internal style guide for all content creators |
 | Disqualified Customers | FAQ ("Who we don't work with"), internal use |
 
-### Homepage Structure (Current)
+### Homepage Structure (Proposed — not yet applied)
 
-1. **Hero:** Tagline + direct offer (enterprise-class software, systems, and AI for Central IL SMBs)
-2. **What We Do:** Tight 10-second statement of the offer for visitors who don't scroll
-3. **Services:** Six engagement types (Fractional CTO, Bespoke Solutions, AI Integration,
-   Enterprise Architecture, Recruitment, Training) under "We Value Partnerships over Projects"
-4. **Positioning:** Product vs. prototype thesis, extended to integrated vs. bolt-on AI
-5. **Problem:** The Founder's Reality (emotional connection — secondary audience)
-6. **Comparison:** Prototype vs. Product side-by-side
-7. **AI Question:** Bolt-on AI vs. Integrated AI side-by-side, mirroring the Comparison section
-8. **Methodology:** How We Work — the five-phase engagement
-9. **Credibility:** Track-record proof points
-10. **CTA:** Clear next step (discovery call, contact form)
+1. **Hero:** "Production AI, Not Just Pilots." + elevator pitch for Central IL organizations
+2. **What We Do:** 10-second statement — training, data readiness, AI-driven development,
+   agentic systems
+3. **The AI Reality:** Pain points for the operator and the engineering leader
+4. **The Path:** Six stages, each tagged Engineering / Business
+5. **Two Tracks:** "For your engineering team" / "For the rest of your business" — outcome-led
+   offering cards
+6. **The AI Question:** Bolt-on vs. integrated AI (existing section, lightly revised)
+7. **We Practice What We Teach:** Our own AI-driven development process as proof (replaces
+   "How We Build")
+8. **Also:** Secondary services — Fractional CTO, bespoke product development
+9. **Credibility:** Proof points (AI-specific TBD)
+10. **CTA:** Concrete first step — "Start with the AI Starter Package" / "Book a coding-agent trial"
+
+Sections retired from the homepage: Positioning (prototype thesis), The Founder's Reality,
+Prototype vs. Product comparison. Their ideas survive in the heritage pillar and blog.
