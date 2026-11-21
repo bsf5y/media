@@ -112,8 +112,10 @@ The business track. Most organizations' knowledge lives in scattered drives, inb
 people's heads. No agent can use that — and no one should point an agent at it until they know
 what's in it.
 
-We make your information fit for AI consumption: classify it, curate it, structure it, and expose
-it through the right mechanism — data lakes, knowledge graphs, vector search (RAG), or plain
+We help you make your information fit for AI consumption. First, we map your information sources
+and guide your team in developing and implementing a classification policy — you own the
+classification, because only you know what's sensitive. Then we help curate and structure that
+information and expose it through the right mechanism — data lakes, knowledge graphs, vector search (RAG), or plain
 well-organized documents when that's enough.
 
 - Know what's sensitive before your agent does
@@ -294,7 +296,7 @@ tracks often run in parallel.
 | --- | --- | --- |
 | **01 Start** | Coding-agent trial on your real codebase, measured | AI Starter Package: workflow audit, tool selection, hands-on training |
 | **02 Train** | Recurring hands-on training in agentic tools | Recurring hands-on training in agentic tools |
-| **03 Harden** | CI/CD, test coverage, review gates, automation — ready for agent-speed output | Data classification and governance — know what's sensitive |
+| **03 Harden** | CI/CD, test coverage, review gates, automation — ready for agent-speed output | Map information sources; guide your team's classification policy and rollout |
 | **04 Integrate** | Move from AI-assisted to fully AI-driven development | Curate and structure knowledge: data lakes, knowledge graphs, vector search (RAG) |
 | **05 Automate** | Agentic tooling in the delivery pipeline | Identify, scope, and build automations and agentic systems with measured value |
 | **06 Hand Off** | Help hire and onboard the engineer who owns it | Help hire and onboard the technologist who owns it |
@@ -460,7 +462,7 @@ Clients who work with us:
 
 - Trained staff and engineers, with materials they can return to
 - A hardened delivery pipeline ready for agent-speed output
-- Classified, curated data and the retrieval layer agents need
+- A classification policy your team owns, and the retrieval layer agents need
 - Production agentic systems with evaluations and guardrails
 - Documentation and a clear path to in-house ownership
 - Help hiring the person who owns it next

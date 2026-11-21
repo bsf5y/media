@@ -52,9 +52,11 @@ sustain velocity without us.
 ### AI Readiness & Data Classification
 *Know what you have before an agent does*
 
-We inventory and classify your documents and data — what exists, where it lives, what's sensitive,
-who should see it. You get a clear map of what's safe for AI to use and the governance to keep it
-that way. This is usually the work that turns "not yet" into "yes."
+We help you identify your information sources — what exists and where it lives — then guide your
+team in developing a data classification policy and putting it into practice. Your people do the
+classifying; they know what's sensitive and who should see it. We bring the framework, the process,
+and the tooling. You get a policy your organization owns, a clear picture of what's safe for AI to
+use, and the habits to keep it that way. This is usually the work that turns "not yet" into "yes."
 
 ### Knowledge Systems for Agents
 *Data lakes, knowledge graphs, vector search (RAG)*
