@@ -54,7 +54,7 @@ sustain velocity without us.
 
 We inventory and classify your documents and data — what exists, where it lives, what's sensitive,
 who should see it. You get a clear map of what's safe for AI to use and the governance to keep it
-that way.
+that way. This is usually the work that turns "not yet" into "yes."
 
 ### Knowledge Systems for Agents
 *Data lakes, knowledge graphs, vector search (RAG)*
@@ -75,7 +75,8 @@ result. You get a workforce that keeps getting better with AI instead of falling
 
 We work with your team to find the workflows worth automating, measure the bottleneck, scope the
 solution, and build it to production standards — with evaluations, guardrails, and vendor-portable
-architecture. We'll also tell you what NOT to automate. You get systems that deliver measurable
+architecture. If the honest answer is "not yet," we'll say so and show you what has to be ready
+first. You get systems that deliver measurable
 value and survive model changes.
 
 -----

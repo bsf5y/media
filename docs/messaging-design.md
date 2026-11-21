@@ -24,9 +24,12 @@ slide.
 
 ## Brand Promise ("The Commitment")
 
-"We'll tell you what NOT to automate."
+"Straight answers about AI, including 'not yet.'"
 
-(Evolved from "We'll tell you what NOT to build." Same promise: judgment before spending.)
+'Not yet' is rarely 'no.' It usually means the foundation isn't there: data nobody has
+classified, knowledge nobody can find, a pipeline that can't absorb agent-speed output. A straight
+'not yet' comes with the work that turns it into 'yes' — which is exactly what the readiness
+stages of The Path are for.
 
 ## Value Proposition ("The Benefit")
 
@@ -117,6 +120,7 @@ well-organized documents when that's enough.
 - Data classification first. Everything else depends on it.
 - The right retrieval method for the job — not the trendiest one
 - Garbage in, confident garbage out
+- "Not yet" usually means "get the data ready first"
 
 ### 4. Teach, Then Build
 *"Training isn't an event. The tools change monthly."*
@@ -131,7 +135,7 @@ that pay off — starting with the ones that matter, skipping the ones that don'
 - Live, hands-on sessions on your real workflows
 - Prompting, verification, and knowing when not to trust the output
 - Find the bottleneck before you automate it
-- We'll tell you what NOT to automate
+- Not every workflow deserves an agent
 
 ### 5. Partnership Through Handoff
 *"We succeed when you don't need us anymore."*
@@ -325,9 +329,10 @@ information, then point the agents at it.
 
 Data classification is the unglamorous prerequisite to every safe AI deployment.
 
-**We'll tell you what NOT to automate.**
+**Straight answers about AI, including "not yet."**
 
-Not every workflow deserves an agent. Find the bottleneck, measure it, then decide.
+Not every workflow is ready for an agent, and not every one deserves one. When the answer is
+"not yet," we say so — and show you what has to be ready first.
 
 **The model is the commodity. Your data and your process are the moat.**
 
