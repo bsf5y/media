@@ -9,7 +9,7 @@ decade — the value is in what survives production, not what impresses in a dem
 
 ## Elevator Pitch
 
-We take Central Illinois organizations from AI curiosity to AI-driven operations. We train your
+We take organizations from AI curiosity to AI-driven operations. We train your
 people, get your data ready for agents, move your engineering team to an AI-driven development
 process, and build the agentic systems that do real work — then help you hire the person who keeps
 it running.
@@ -20,7 +20,7 @@ training, data, and engineering discipline. That's the work we do.
 ## Mission Statement (The "Why")
 
 We help organizations make AI part of how they actually work — not a pilot, not a demo, not a
-slide — starting with businesses in our home community of Champaign-Urbana.
+slide.
 
 ## Brand Promise ("The Commitment")
 
@@ -35,7 +35,7 @@ graveyard.
 
 ## Positioning Statement (The Difference)
 
-For Central Illinois organizations that know AI matters but can't yet point to results, bsf5y
+For organizations that know AI matters but can't yet point to results, bsf5y
 takes teams from first trial to AI-driven operations — training, data readiness, AI-driven software
 delivery, and agentic systems built to production standards.
 
@@ -145,7 +145,6 @@ We care that it lasts.
 
 - Help hiring the engineer or AI lead who keeps it going — no recruiting agency markup
 - Documented systems and processes, ready for that hire
-- Local presence, embedded in the Champaign-Urbana community
 - Still here when the model changes
 
 ### 6. Product Thinking (Heritage)
@@ -184,11 +183,10 @@ Anonymized metrics (cycle time, hours saved, adoption rates) would be strongest.
 - Teaching and training at community colleges and workshops
 - Coached dozens of teams in code craftsmanship, CI/CD, and engineering practice
 
-### Local Roots
-- Embedded in the Champaign-Urbana business and startup ecosystem
-- Direct experience operating within Research Park
+### Research & Ecosystem
 - University partnerships and funded research collaborations
-- Active in local accelerators and economic development
+- Experience operating within a university research park
+- Active in startup accelerators and economic development
 
 ### Case Studies (Examples to Develop)
 
@@ -216,7 +214,7 @@ humans to read.
 
 ### Primary Customer Profile
 
-**Primary: Central Illinois organizations adopting AI**
+**Primary: Organizations adopting AI**
 
 Established small and mid-sized organizations with revenue, staff, and systems. They see AI
 reshaping their industry and don't want to be the case study for moving too late. Two buyers
@@ -233,8 +231,8 @@ inside the same organization:
     Unsure what data is safe to use. May have a failed pilot behind them.
   - **Wants:** AI that saves real hours across the business, without putting data, customers, or
     operations at risk.
-- **Mindset (both):** Sees AI as competitive necessity, not novelty. Wants a local partner who
-  will still be around when the model changes.
+- **Mindset (both):** Sees AI as competitive necessity, not novelty. Wants a partner who will
+  still be around when the model changes.
 
 **Secondary: Leaders building new products**
 
@@ -246,10 +244,8 @@ inside the same organization:
 
 ### Geographic Focus
 
-**Central Illinois.** Champaign-Urbana is home — deeply embedded in the University of Illinois,
-Parkland Community College, business development groups, and the local startup community. We work
-across the broader Central Illinois region with organizations that benefit from a local, in-person
-partner. In-person training is a differentiator; lean into it.
+**None.** We work with organizations wherever they are. Remote by default; on-site for training
+and kickoffs when it adds value. Copy should not lead with geography.
 
 ### Qualifying and Disqualifying
 
@@ -267,7 +263,6 @@ quick AI press release, rewrite it.
 - Leaders who want AI to replace judgment, review, and accountability rather than amplify them
 - Pointing agents at sensitive data before anyone is willing to classify it
 - "Move fast and break things" believers who see engineering discipline as friction
-- Remote-only engagements with no local presence or connection
 
 -----
 
@@ -486,7 +481,7 @@ Use this reference when translating messaging to specific touchpoints:
 
 ### Homepage Structure (Proposed — not yet applied)
 
-1. **Hero:** "Production AI, Not Just Pilots." + elevator pitch for Central IL organizations
+1. **Hero:** "Production AI, Not Just Pilots." + elevator pitch
 2. **What We Do:** 10-second statement — training, data readiness, AI-driven development,
    agentic systems
 3. **The AI Reality:** Pain points for the operator and the engineering leader
