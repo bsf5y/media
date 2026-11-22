@@ -431,6 +431,8 @@ What we hear from leaders before they call us:
 - Half our staff uses AI every day. Nobody can point to the ROI.
 - Engineering trialed a coding agent. The results were "mixed." Now the team is divided.
 - The pilot demoed beautifully — then started leaking customer data two weeks after launch.
+- We pointed AI at the shared drive. It found three versions of every policy — and picked the wrong
+  one.
 - A vendor wants to sell us a platform. We don't know what we actually need.
 
 These aren't hypotheticals. We've seen every one of them.
