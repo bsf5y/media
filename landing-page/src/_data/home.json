@@ -100,7 +100,7 @@
   },
   "tracks": {
     "label": "Solutions",
-    "headline": "Your engineers. Everyone else.",
+    "headline": "Your engineers and everyone else.",
     "engineering": {
       "label": "For Your Engineering Team",
       "offerings": [
@@ -200,7 +200,7 @@
   },
   "cta": {
     "headline": "Straight answers about AI.",
-    "subtext": "Including \"not yet.\" Tell us where you are, and we'll tell you what it takes to get where you want to be.",
+    "subtext": "Tell us where you are, and we'll tell you what it takes to get where you want to be.",
     "button": "Start a Conversation"
   }
 }
