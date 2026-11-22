@@ -17,7 +17,7 @@ purpose. See `ai-starter-package.md`.
 *6 weeks · $1,500 per cohort of up to 8 engineers*
 
 A guided trial of coding agents on your team's real work — not a vendor's demo repo. Week one gets
-everyone kitted up and productive from day one. Each week after that is an hour of instruction and
+everyone kitted up and productive right away. Each week after that is an hour of instruction and
 Q&A, then an hour of show and tell where every participant shares what worked and what didn't. You
 walk away with a team that's been using agents for six weeks, an honest read on where they help,
 and a clear picture of what your process and pipeline need next. See `coding-agent-trial.md`.
