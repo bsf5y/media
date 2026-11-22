@@ -54,7 +54,7 @@ The site is built with **Eleventy (11ty) v3** using Nunjucks templates. All cont
 
 Landing page content is managed through structured JSON data files in `src/_data/`:
 
-- `home.json` — All landing page section content (hero, positioning, problem, comparison, methodology, services, credibility, cta, footer)
+- `home.json` — All landing page section content (hero, whatWeDo, problem, entryOffers, path, tracks, aiQuestion, howWeBuild, also, credibility, cta)
 - `site.json` — Site metadata (title, tagline, description, email, navigation)
 
 Blog posts live in `src/blog/` as markdown files with YAML frontmatter. The Eleventy config creates a `posts` collection from `src/blog/**/*.md`.
@@ -64,7 +64,7 @@ Blog posts live in `src/blog/` as markdown files with YAML frontmatter. The Elev
 Nunjucks templates in `src/_includes/`:
 
 - **Layouts** (`layouts/`): `base.njk` (HTML shell), `page.njk` (generic page), `post.njk` (blog post)
-- **Partials** (`partials/`): `header.njk`, `hero.njk`, `positioning.njk`, `problem.njk`, `comparison.njk`, `methodology.njk`, `services.njk`, `credibility.njk`, `cta.njk`, `footer.njk`
+- **Partials** (`partials/`): `header.njk`, `hero.njk`, `what-we-do.njk`, `problem.njk`, `entry-offers.njk`, `path.njk`, `tracks.njk`, `ai-question.njk`, `how-we-build.njk`, `also.njk`, `credibility.njk`, `cta.njk`, `footer.njk`
 
 The homepage (`src/index.njk`) composes all partials. Blog listing is at `src/blog/index.njk`.
 

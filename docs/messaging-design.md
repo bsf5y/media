@@ -487,7 +487,7 @@ Use this reference when translating messaging to specific touchpoints:
 | Voice Guidelines | Internal style guide for all content creators |
 | Disqualified Customers | FAQ ("Who we don't work with"), internal use |
 
-### Homepage Structure (Proposed — not yet applied)
+### Homepage Structure
 
 1. **Hero:** "Production AI, Not Just Pilots." + elevator pitch
 2. **What We Do:** 10-second statement — training, data readiness, AI-driven development,

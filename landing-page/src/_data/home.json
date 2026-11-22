@@ -135,7 +135,7 @@
           "description": "Agents are only as good as what they can find. Data lakes, knowledge graphs, vector search (RAG) — the right retrieval method for the job, not the trendiest one."
         },
         {
-          "type": "Agentic Tools Training",
+          "type": "Training",
           "title": "Training for Everyone",
           "description": "Regular live sessions for staff across the business: effective prompting, verifying output, building personal workflows, and knowing when not to trust the result."
         },
@@ -181,7 +181,7 @@
   "howWeBuild": {
     "label": "We Practice What We Teach",
     "headline": "We run the process we teach.",
-    "body": "<p>Everything we build — this site included — ships through an AI-driven development process: agents on the mechanical work, with tests, CI, and human review on every change that reaches production.</p><p>That's why our training isn't theory. When we tell your team what works, we've used it this week. When we tell you what doesn't, we've already paid for the lesson.</p><p><em>Go well to go fast.</em> Discipline is what makes the speed safe.</p>"
+    "body": "<p>Everything we build ships through an AI-driven development process: agents on the mechanical work, with tests, CI, and human review on every change that reaches production.</p><p>That's why our training isn't theory. When we tell your team what works, we've used it this week. When we tell you what doesn't, we've already paid for the lesson.</p><p><em>Go well to go fast.</em> Discipline is what makes the speed safe.</p>"
   },
   "also": {
     "label": "Also",

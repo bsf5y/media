@@ -1,0 +1,20 @@
+<section class="entry-offers" id="start">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-label">{{ home.entryOffers.label }}</span>
+      <h2 class="section-title">{{ home.entryOffers.headline }}</h2>
+    </header>
+
+    <div class="offers-grid">
+      {% for offer in home.entryOffers.offers %}
+      <article class="service offer">
+        <span class="service-type">{{ offer.track }}</span>
+        <h3 class="service-title">{{ offer.name }}</h3>
+        <p class="offer-terms">{{ offer.terms }}</p>
+        <p class="service-description">{{ offer.description }}</p>
+        <p class="offer-outcome">{{ offer.outcome }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

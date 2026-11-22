@@ -1,0 +1,29 @@
+<section class="methodology path" id="path">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-label">{{ home.path.label }}</span>
+      <h2 class="section-title">{{ home.path.headline }}</h2>
+      <p class="section-intro">{{ home.path.intro }}</p>
+    </header>
+
+    <div class="phases">
+      {% for stage in home.path.stages %}
+      <article class="phase">
+        <span class="phase-number">{{ stage.number }}</span>
+        <div>
+          <h3 class="phase-name">{{ stage.name }}</h3>
+          <p class="phase-question">{{ stage.question }}</p>
+          <ul class="phase-items">
+            {% for item in stage.items %}
+            <li>
+              <span class="track-tag track-{{ item.track | lower }}">{{ item.track }}</span>
+              <span class="phase-item-text">{{ item.text }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

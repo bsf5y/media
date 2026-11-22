@@ -754,21 +754,8 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 }
 
 /* --------------------------------------------
-   Comparison Section
+   Comparison Grid (used by AI Question)
    -------------------------------------------- */
-.comparison {
-  padding: var(--space-4xl) 0;
-  background: var(--color-bg-deep);
-}
-
-.comparison-headline {
-  font-size: clamp(var(--text-xl), 3vw, var(--text-2xl));
-  font-weight: 600;
-  text-align: center;
-  margin: 0 auto var(--space-3xl);
-  color: var(--color-text-muted);
-}
-
 .comparison-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -907,52 +894,11 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 }
 
 /* --------------------------------------------
-   Positioning Section
-   -------------------------------------------- */
-.positioning {
-  padding: var(--space-4xl) 0;
-  background: var(--color-bg);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.positioning-text {
-  max-width: var(--container-narrow);
-  margin: 0 auto;
-  font-size: var(--text-xl);
-  line-height: var(--leading-relaxed);
-  text-align: center;
-  color: var(--color-text-muted);
-}
-
-.positioning-text strong {
-  color: var(--color-text);
-  font-weight: 600;
-}
-
-.positioning-text em {
-  color: var(--color-accent);
-  font-style: normal;
-  font-weight: 500;
-}
-
-.positioning-subtext {
-  max-width: var(--container-narrow);
-  margin: var(--space-xl) auto 0;
-  font-family: var(--font-mono);
-  font-size: var(--text-base);
-  line-height: var(--leading-relaxed);
-  text-align: center;
-  color: var(--color-text-subtle);
-  letter-spacing: var(--tracking-wide);
-}
-
-/* --------------------------------------------
    How We Build Section
    -------------------------------------------- */
 .how-we-build {
   padding: var(--space-4xl) 0;
-  background: var(--color-bg);
+  background: var(--color-bg-deep);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -1078,7 +1024,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
    -------------------------------------------- */
 .services {
   padding: var(--space-5xl) 0;
-  background: var(--color-bg);
+  background: var(--color-bg-deep);
 }
 
 .services-grid {
@@ -1126,6 +1072,133 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
   line-height: var(--leading-relaxed);
+}
+
+/* --------------------------------------------
+   Entry Offers Section
+   -------------------------------------------- */
+.entry-offers {
+  padding: var(--space-5xl) 0;
+  background: var(--color-bg-deep);
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+}
+
+.offer .service-type {
+  align-self: flex-start;
+}
+
+.offer-terms {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-accent-cool);
+  margin-bottom: var(--space-md);
+}
+
+.offer .service-description {
+  margin-bottom: var(--space-lg);
+}
+
+.offer-outcome {
+  margin-top: auto;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: var(--leading-relaxed);
+}
+
+/* --------------------------------------------
+   Path Section (extends Methodology)
+   -------------------------------------------- */
+.path {
+  background: var(--color-bg);
+}
+
+.path .phase {
+  background: var(--color-bg-elevated);
+}
+
+.phase-items {
+  list-style: none;
+  display: grid;
+  gap: var(--space-md);
+}
+
+.phase-items li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: var(--space-md);
+  align-items: baseline;
+}
+
+@media (max-width: 768px) {
+  .phase-items li {
+    grid-template-columns: 1fr;
+    gap: var(--space-xs);
+  }
+}
+
+.phase-item-text {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+.track-tag {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+}
+
+.track-engineering { color: var(--color-accent-cool); }
+.track-business { color: var(--color-accent); }
+.track-everyone { color: var(--color-text); }
+
+/* --------------------------------------------
+   Tracks (extends Services)
+   -------------------------------------------- */
+.tracks .services-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.track-group + .track-group {
+  margin-top: var(--space-3xl);
+}
+
+.track-group-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* --------------------------------------------
+   Also Section (secondary services)
+   -------------------------------------------- */
+.also {
+  padding: var(--space-4xl) 0;
+  background: var(--color-bg);
 }
 
 /* --------------------------------------------
