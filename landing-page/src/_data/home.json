@@ -155,7 +155,7 @@
   "aiQuestion": {
     "label": "The AI Question",
     "headline": "The demo is the easy part.",
-    "intro": "Models change monthly. Vendors ship demos. What doesn't change is the work between a demo that impresses and a system that survives production. That work is engineering.",
+    "intro": "There is a big difference between a demo that impresses and an AI system that survives production.",
     "boltOn": {
       "label": "Demo AI",
       "items": [
