@@ -432,7 +432,6 @@ What we hear from leaders before they call us:
 - Engineering trialed a coding agent. The results were "mixed." Now the team is divided.
 - The pilot demoed beautifully — then started leaking customer data across accounts two weeks
   after launch.
-- Our knowledge lives in forty shared folders and somebody's inbox. No agent can find it.
 - A vendor wants to sell us a platform. We don't know what we actually need.
 
 These aren't hypotheticals. We've seen every one of them.
