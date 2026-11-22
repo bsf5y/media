@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-bsf5y-media is the media and web presence repository for **The Bootstrap Factory**, a Champaign-Urbana technology consultancy helping early-stage founders build production-ready products. The repo contains a static landing page with blog and strategic/marketing documentation.
+bsf5y-media is the media and web presence repository for **The Bootstrap Factory**, an AI adoption consultancy that takes organizations from AI curiosity to AI-driven operations — coding-agent trials and AI-driven development for engineering teams; data readiness, agentic tools training, and agentic systems for the rest of the business. Fractional CTO and bespoke product development remain as secondary offerings. The repo contains a static landing page with blog and strategic/marketing documentation.
 
 ## Development Workflow
 
@@ -54,7 +54,7 @@ The site is built with **Eleventy (11ty) v3** using Nunjucks templates. All cont
 
 Landing page content is managed through structured JSON data files in `src/_data/`:
 
-- `home.json` — All landing page section content (hero, positioning, problem, comparison, methodology, services, credibility, cta, footer)
+- `home.json` — All landing page section content (hero, whatWeDo, problem, entryOffers, path, tracks, aiQuestion, also, credibility, cta)
 - `site.json` — Site metadata (title, tagline, description, email, navigation)
 
 Blog posts live in `src/blog/` as markdown files with YAML frontmatter. The Eleventy config creates a `posts` collection from `src/blog/**/*.md`.
@@ -64,7 +64,7 @@ Blog posts live in `src/blog/` as markdown files with YAML frontmatter. The Elev
 Nunjucks templates in `src/_includes/`:
 
 - **Layouts** (`layouts/`): `base.njk` (HTML shell), `page.njk` (generic page), `post.njk` (blog post)
-- **Partials** (`partials/`): `header.njk`, `hero.njk`, `positioning.njk`, `problem.njk`, `comparison.njk`, `methodology.njk`, `services.njk`, `credibility.njk`, `cta.njk`, `footer.njk`
+- **Partials** (`partials/`): `header.njk`, `hero.njk`, `what-we-do.njk`, `problem.njk`, `entry-offers.njk`, `path.njk`, `tracks.njk`, `ai-question.njk`, `also.njk`, `credibility.njk`, `cta.njk`, `footer.njk`
 
 The homepage (`src/index.njk`) composes all partials. Blog listing is at `src/blog/index.njk`.
 
@@ -135,8 +135,12 @@ The unrelated `docs/logo/` directory holds archival brand exports (raster art, p
 ## Brand Voice
 
 When writing or editing copy for this project:
-- Blunt, confident, technical — not salesy or corporate
-- Core message: "Products, Not Prototypes"
+- Blunt, confident, technical — not salesy or corporate; grounded, not hyped
+- Tagline: "Put AI to Work." Supporting line: "Production AI, Not Just Demos." Heritage line: "Products, Not Prototypes."
+- Brand promise: "Straight answers about AI, including 'not yet.'"
 - Philosophy: "Go well to go fast" — engineering discipline over speed
 - Teacher-focused approach; explain the "why"
-- Audience: non-technical/semi-technical early-stage founders
+- Audience: leaders of established organizations adopting AI — engineering leaders and business operators. Founders building products are secondary.
+- No local/geographic framing in copy
+
+`docs/messaging-design.md` is the source of truth for positioning, pillars, key messages, and voice; `docs/solutions.md` for offering copy.

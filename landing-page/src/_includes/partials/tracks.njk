@@ -1,0 +1,24 @@
+{% macro offeringCard(o) %}
+<article class="service">
+  <span class="service-type">{{ o.type }}</span>
+  <h3 class="service-title">{{ o.title }}</h3>
+  <p class="service-description">{{ o.description }}</p>
+</article>
+{% endmacro %}
+<section class="services tracks" id="services">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-label">{{ home.tracks.label }}</span>
+      <h2 class="section-title">{{ home.tracks.headline }}</h2>
+    </header>
+
+    {% for group in [home.tracks.engineering, home.tracks.business] %}
+    <div class="track-group">
+      <h3 class="track-group-label">{{ group.label }}</h3>
+      <div class="services-grid">
+        {% for o in group.offerings %}{{ offeringCard(o) }}{% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

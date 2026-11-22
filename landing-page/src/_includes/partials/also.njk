@@ -1,12 +1,13 @@
-<section class="services" id="services">
+<section class="also" id="also">
   <div class="container">
     <header class="section-header">
-      <span class="section-label">Engagement</span>
-      <h2 class="section-title">We Value Partnerships over Projects.</h2>
+      <span class="section-label">{{ home.also.label }}</span>
+      <h2 class="section-title">{{ home.also.headline }}</h2>
+      <p class="section-intro">{{ home.also.intro }}</p>
     </header>
 
-    <div class="services-grid">
-      {% for service in home.services %}
+    <div class="offers-grid">
+      {% for service in home.also.services %}
       <article class="service">
         <span class="service-type">{{ service.type }}</span>
         <h3 class="service-title">{{ service.title }}</h3>

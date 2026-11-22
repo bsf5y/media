@@ -1,5 +1,9 @@
 # The bsf5y Engagement Model: A Partnership for Product Success
 
+> **Scope:** This document covers the **product development** engagement (secondary track —
+> Fractional CTO and bespoke solutions). The primary AI-adoption engagement is described in
+> `messaging-design.md` under "The Path" and in `solutions.md`.
+
 This document outlines a collaborative approach to building exceptional products. It serves as both a guide for clients, setting clear expectations for the engagement, and as a playbook for internal teams to ensure delivery with consistency and excellence. This process is designed to move beyond ideas and prototypes to deliver robust, market-ready products with a clear strategic advantage.
 
 ## Phase 0: Discovery and Clarity
