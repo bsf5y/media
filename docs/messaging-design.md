@@ -92,14 +92,14 @@ impresses and a system that survives production. That work is engineering.
 
 The engineering track. Coding agents are the biggest shift in software delivery in a generation —
 and most teams are stuck at "we tried Copilot, results were mixed." We take engineering teams from
-measured trials, to AI-assisted work, to a fully AI-driven development process.
+guided trials, to AI-assisted work, to a fully AI-driven development process.
 
 The bottleneck is rarely the agent. It's everything around it: thin test coverage, flaky CI,
 manual deploys, review processes built for human-speed output. We harden the pipeline so agents
 can move fast without breaking production.
 
 - AI-assisted is a tool. AI-driven is a process.
-- Trials measured against your codebase, not a vendor's demo repo
+- Trials run on your team's real work, not a vendor's demo repo
 - Tests, CI/CD, and review gates are what make agent speed safe
 - AI amplifies your practices — good ones and bad ones
 - *Go well to go fast.* Discipline is what unlocks the speed.
@@ -294,7 +294,7 @@ tracks often run in parallel.
 
 | Stage | Engineering track | Business track |
 | --- | --- | --- |
-| **01 Start** | Coding-agent trial on your real codebase, measured | AI Starter Package: workflow audit, tool selection, hands-on training |
+| **01 Start** | Coding-Agent Trial: 6 weekly sessions of training plus team show and tell | AI Starter Package: workflow audit, tool selection, hands-on training |
 | **02 Train** | Recurring hands-on training in agentic tools | Recurring hands-on training in agentic tools |
 | **03 Harden** | CI/CD, test coverage, review gates, automation — ready for agent-speed output | Map information sources; guide your team's classification policy and rollout |
 | **04 Integrate** | Move from AI-assisted to fully AI-driven development | Curate and structure knowledge: data lakes, knowledge graphs, vector search (RAG) |
@@ -450,8 +450,9 @@ Clients who work with us:
 - **AI Starter Package:** 10 hours, $1,500. Workflow audit, tool selection and sandbox setup,
   hands-on team training. The low-risk front door for the business track. (See
   `ai-starter-package.md`.)
-- **Coding-Agent Trial:** *[TODO: define scope/price]* Structured, measured trial of coding agents
-  on the client's real codebase. The front door for the engineering track.
+- **Coding-Agent Trial:** 6 weeks, $1,500. One 2-hour session per week: week one is kit-up and
+  training; weeks 2–6 are an hour of instruction and Q&A plus an hour of participant show and
+  tell. The low-risk front door for the engineering track. (See `coding-agent-trial.md`.)
 - **Training Retainer:** Recurring hands-on training sessions as tools and practices evolve.
 - **Project-Based:** Fixed scope for pipeline hardening, data readiness, and agentic system builds.
 - **Fractional CTO / AI Lead:** Ongoing technical leadership while the organization builds its own

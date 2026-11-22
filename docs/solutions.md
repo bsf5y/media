@@ -14,11 +14,13 @@ using their actual work. You walk away with a team that's using AI productively,
 purpose. See `ai-starter-package.md`.
 
 ### Coding-Agent Trial
-*[TODO: scope and price]*
+*6 weeks · $1,500*
 
-A structured trial of coding agents on your real codebase — not a vendor's demo repo. We set up the
-tools, pair with your engineers, and measure the results. You walk away knowing what works for your
-team, what doesn't, and what your pipeline needs before agents can go faster.
+A guided trial of coding agents on your team's real work — not a vendor's demo repo. Week one gets
+everyone kitted up and productive from day one. Each week after that is an hour of instruction and
+Q&A, then an hour of show and tell where every participant shares what worked and what didn't. You
+walk away with a team that's been using agents for six weeks, an honest read on where they help,
+and a clear picture of what your process and pipeline need next. See `coding-agent-trial.md`.
 
 -----
 
