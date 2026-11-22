@@ -14,7 +14,7 @@
     "headline": "You've probably lived at least one of these.",
     "statements": [
       "Half your staff uses AI every day. Nobody can point to the ROI.",
-      "Engineering trialed a coding agent. The results were \"mixed.\" Now the team is divided.",
+      "Engineering trialed a coding agent. The results were “mixed.” Now the team is divided.",
       "The pilot demoed beautifully — then started leaking customer data two weeks after launch.",
       "You pointed AI at the shared drive. It found three versions of every policy — and picked the wrong one.",
       "A vendor wants to sell you a platform. You don't know what you actually need."
@@ -145,11 +145,6 @@
           "description": "We find the workflows worth automating, scope them, and build them to production standards — evaluated, guarded, and portable across model vendors."
         }
       ]
-    },
-    "handoff": {
-      "type": "Hiring",
-      "title": "Find the Person Who Owns It Next",
-      "description": "Most engagements end with your organization owning the capability. We help you define the role, then find, evaluate, and onboard the engineer or technologist who carries it forward."
     }
   },
   "aiQuestion": {
