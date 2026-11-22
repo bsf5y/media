@@ -177,7 +177,6 @@ the UI and break when reality hits.
 - Agent-driven engineering since 2024
 - Dozens of engineers trained
 - Automated agents doing real work
-- Businesses empowered by AI
 
 *[TODO: Add client outcomes from trials, training, data, and agentic work. Anonymized metrics
 (cycle time, hours saved, adoption rates) would be strongest.]*
@@ -516,7 +515,7 @@ Use this reference when translating messaging to specific touchpoints:
    offering cards
 7. **The AI Question:** "The demo is the easy part." — Demo AI vs. Production AI
 8. **Also:** Secondary services — Fractional CTO, bespoke product development
-9. **Credibility:** Four AI-focused proof points (see Credibility Bar above)
+9. **Credibility:** Three AI-focused proof points (see Credibility Bar above)
 10. **CTA:** "Straight answers about AI." — start a conversation
 
 Sections retired from the homepage: Positioning (prototype thesis), The Founder's Reality,
