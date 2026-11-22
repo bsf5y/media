@@ -722,7 +722,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
 }
 
 .problem-content {
-  max-width: var(--container-narrow);
+  max-width: 54rem; /* wide enough to keep each statement on one line at desktop widths */
   margin: 0 auto;
   text-align: center;
 }
