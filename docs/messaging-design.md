@@ -504,15 +504,14 @@ Use this reference when translating messaging to specific touchpoints:
 2. **What We Do:** 10-second statement — training, data readiness, AI-driven development,
    agentic systems
 3. **The AI Reality:** Pain points for the operator and the engineering leader
-4. **The Path:** Six stages, each tagged Engineering / Business
-5. **Two Tracks:** "For your engineering team" / "For the rest of your business" — outcome-led
+4. **Where to Start:** The two $1,500 entry offers — AI Starter Package and Coding-Agent Trial
+5. **The Path:** Six stages, each tagged Engineering / Business / Everyone
+6. **Solutions:** "For your engineering team" / "For the rest of your business" — outcome-led
    offering cards
-6. **The AI Question:** Bolt-on vs. integrated AI (existing section, lightly revised)
-7. **We Practice What We Teach:** Our own AI-driven development process as proof (replaces
-   "How We Build")
+7. **The AI Question:** "The demo is the easy part." — Demo AI vs. Production AI
 8. **Also:** Secondary services — Fractional CTO, bespoke product development
 9. **Credibility:** Proof points (AI-specific TBD)
-10. **CTA:** Concrete first step — "Start with the AI Starter Package" / "Book a coding-agent trial"
+10. **CTA:** "Straight answers about AI." — start a conversation
 
 Sections retired from the homepage: Positioning (prototype thesis), The Founder's Reality,
-Prototype vs. Product comparison. Their ideas survive in the heritage pillar and blog.
+Prototype vs. Product comparison, How We Build / We Practice What We Teach. Their ideas survive in the heritage pillar and blog.

@@ -173,11 +173,6 @@
     },
     "closer": "Whether you're training a team, readying your data, or building agents, the discipline is the same."
   },
-  "howWeBuild": {
-    "label": "We Practice What We Teach",
-    "headline": "We run the process we teach.",
-    "body": "<p>Everything we build ships through an AI-driven development process: agents on the mechanical work, with tests, CI, and human review on every change that reaches production.</p><p>That's why our training isn't theory. When we tell your team what works, we've used it this week. When we tell you what doesn't, we've already paid for the lesson.</p><p><em>Go well to go fast.</em> Discipline is what makes the speed safe.</p>"
-  },
   "also": {
     "label": "Also",
     "headline": "We still build.",
