@@ -429,7 +429,7 @@ durably — takes engineering judgment and persistence.
 What we hear from leaders before they call us:
 
 - Half our staff uses AI every day. Nobody can point to the ROI.
-- Engineering trialed a coding agent. The results were "mixed." Now we're divided.
+- Engineering trialed a coding agent. The results were "mixed." Now the team is divided.
 - The pilot demoed beautifully — then started leaking customer data across accounts two weeks
   after launch.
 - Our knowledge lives in forty shared folders and somebody's inbox. No agent can find it.
