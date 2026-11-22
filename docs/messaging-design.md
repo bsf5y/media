@@ -428,13 +428,17 @@ durably — takes engineering judgment and persistence.
 
 What we hear from leaders before they call us:
 
-- Everyone has a ChatGPT login. Nobody can point to the ROI.
-- Engineering trialed a coding agent. The results were "mixed." Nobody measured.
-- The pilot demoed beautifully — and then nobody could say what data it was allowed to touch.
+- Half our staff uses AI every day. Nobody can point to the ROI.
+- Engineering trialed a coding agent. The results were "mixed." Now we're divided.
+- The pilot demoed beautifully — then started leaking customer data across accounts two weeks
+  after launch.
 - Our knowledge lives in forty shared folders and somebody's inbox. No agent can find it.
 - A vendor wants to sell us a platform. We don't know what we actually need.
 
 These aren't hypotheticals. We've seen every one of them.
+
+*On the homepage these are written to the reader ("your staff," "you don't know") under the
+headline "You've probably lived at least one of these."*
 
 *Secondary (product track) — The Founder's Reality: the tech partner who went dark after delivery;
 the investor audit that found duct tape; the simple feature that now takes weeks; the rewrite that

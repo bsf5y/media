@@ -2,7 +2,7 @@
   "hero": {
     "tagline": "Put AI to Work.",
     "lead": "We take organizations from AI curiosity to AI-driven operations.",
-    "subtext": "<p>We train your people, get your data ready for agents, move your engineering team to an AI-driven development process, and build the agentic systems that do real work — then help you hire the person who keeps it running.</p><p>Everyone has a chatbot login. Very few have anything in production. The gap isn't the model. It's training, data, and engineering discipline.</p>"
+    "subtext": "<p>We train your people, get your data ready for agents, move your engineering team to an AI-driven development process, and build the agentic systems that do real work.</p><p>Everyone has a chatbot login. Very few have anything in production. The gap isn't the model. It's training, data, and engineering discipline.</p>"
   },
   "whatWeDo": {
     "label": "What We Do",
@@ -13,9 +13,9 @@
     "label": "The AI Reality",
     "headline": "You've probably lived at least one of these.",
     "statements": [
-      "Everyone has a ChatGPT login. Nobody can point to the ROI.",
-      "Engineering trialed a coding agent. The results were \"mixed.\" Nobody measured.",
-      "The pilot demoed beautifully — then nobody could say what data it was allowed to touch.",
+      "Half your staff uses AI every day. Nobody can point to the ROI.",
+      "Engineering trialed a coding agent. The results were \"mixed.\" Now we're divided.",
+      "The pilot demoed beautifully — then started leaking customer data across accounts two weeks after launch.",
       "Your knowledge lives in forty shared folders and somebody's inbox. No agent can find it.",
       "A vendor wants to sell you a platform. You don't know what you actually need."
     ]

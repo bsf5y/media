@@ -445,6 +445,16 @@ html[data-mode="light"] .logo-svg {
   margin-bottom: var(--space-xl);
 }
 
+.hero-body {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-muted);
+}
+
+.hero-body p + p {
+  margin-top: var(--space-md);
+}
+
 .reframe-label {
   display: inline-block;
   font-family: var(--font-mono);
@@ -1374,6 +1384,7 @@ html[data-hero-visual="terminal"] .hero-visual-terminal {
   .hero-lead { animation-delay: 0.2s; }
   .hero-reframe { animation-delay: 0.3s; }
   .hero-subtext { animation-delay: 0.4s; }
+  .hero-body { animation-delay: 0.4s; }
 
   @keyframes fadeInUp {
     to {
