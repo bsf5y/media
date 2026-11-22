@@ -7,7 +7,7 @@
 Plain, active, outcome-first. It promises results, not technology — and it covers both tracks:
 putting AI to work in your engineering process and across the rest of the business.
 
-Supporting line: *Production AI, not just pilots.* (Pillar 1; used in body copy and the AI
+Supporting line: *Production AI, not just demos.* (Pillar 1; used in body copy and the AI
 Question section.)
 
 Heritage line: *Products, not prototypes.* Same idea, different decade — the value is in what
@@ -81,7 +81,7 @@ should *show* the thinking, not just describe it.
 
 ## Messaging Pillars (The Core Themes)
 
-### 1. Production AI, Not Just Pilots
+### 1. Production AI, Not Just Demos
 *"AI pilots fail for the same reason prototypes do."*
 
 Models change monthly. Vendors ship demos. What doesn't change is the work between a demo that
@@ -309,7 +309,7 @@ tracks often run in parallel.
 
 ## Key Messages
 
-**Production AI, not just pilots.**
+**Production AI, not just demos.**
 
 The demo is the easy part. We do the work between a demo that impresses and a system that survives.
 
@@ -394,7 +394,7 @@ don't understand engineering. Restraint is the aesthetic. Every element earns it
 
 ```
 Good:  "Put AI to Work"
-Good:  "Production AI, Not Just Pilots"
+Good:  "Production AI, Not Just Demos"
 Good:  "Agents Need Trustworthy Pipelines"
 Avoid: "Is Your Business Ready for AI?"
 Avoid: "Unlock the Power of AI"

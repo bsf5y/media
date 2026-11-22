@@ -136,7 +136,7 @@ The unrelated `docs/logo/` directory holds archival brand exports (raster art, p
 
 When writing or editing copy for this project:
 - Blunt, confident, technical — not salesy or corporate; grounded, not hyped
-- Tagline: "Put AI to Work." Supporting line: "Production AI, Not Just Pilots." Heritage line: "Products, Not Prototypes."
+- Tagline: "Put AI to Work." Supporting line: "Production AI, Not Just Demos." Heritage line: "Products, Not Prototypes."
 - Brand promise: "Straight answers about AI, including 'not yet.'"
 - Philosophy: "Go well to go fast" — engineering discipline over speed
 - Teacher-focused approach; explain the "why"
