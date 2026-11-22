@@ -450,7 +450,7 @@ Clients who work with us:
 - **AI Starter Package:** 10 hours, $1,500. Workflow audit, tool selection and sandbox setup,
   hands-on team training. The low-risk front door for the business track. (See
   `ai-starter-package.md`.)
-- **Coding-Agent Trial:** 6 weeks, $1,500. One 2-hour session per week: week one is kit-up and
+- **Coding-Agent Trial:** 6 weeks, $1,500 per cohort (up to 8 engineers). One 2-hour session per week: week one is kit-up and
   training; weeks 2–6 are an hour of instruction and Q&A plus an hour of participant show and
   tell. The low-risk front door for the engineering track. (See `coding-agent-trial.md`.)
 - **Training Retainer:** Recurring hands-on training sessions as tools and practices evolve.
