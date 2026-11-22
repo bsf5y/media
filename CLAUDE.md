@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-bsf5y-media is the media and web presence repository for **The Bootstrap Factory**, a Champaign-Urbana technology consultancy helping early-stage founders build production-ready products. The repo contains a static landing page with blog and strategic/marketing documentation.
+bsf5y-media is the media and web presence repository for **The Bootstrap Factory**, an AI adoption consultancy that takes organizations from AI curiosity to AI-driven operations — coding-agent trials and AI-driven development for engineering teams; data readiness, agentic tools training, and agentic systems for the rest of the business. Fractional CTO and bespoke product development remain as secondary offerings. The repo contains a static landing page with blog and strategic/marketing documentation.
 
 ## Development Workflow
 
@@ -135,8 +135,12 @@ The unrelated `docs/logo/` directory holds archival brand exports (raster art, p
 ## Brand Voice
 
 When writing or editing copy for this project:
-- Blunt, confident, technical — not salesy or corporate
-- Core message: "Products, Not Prototypes"
+- Blunt, confident, technical — not salesy or corporate; grounded, not hyped
+- Core message: "Production AI, Not Just Pilots" (heritage line: "Products, Not Prototypes")
+- Brand promise: "Straight answers about AI, including 'not yet.'"
 - Philosophy: "Go well to go fast" — engineering discipline over speed
 - Teacher-focused approach; explain the "why"
-- Audience: non-technical/semi-technical early-stage founders
+- Audience: leaders of established organizations adopting AI — engineering leaders and business operators. Founders building products are secondary.
+- No local/geographic framing in copy
+
+`docs/messaging-design.md` is the source of truth for positioning, pillars, key messages, and voice; `docs/solutions.md` for offering copy.
