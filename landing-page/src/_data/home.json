@@ -1,78 +1,204 @@
 {
   "hero": {
-    "tagline": "Products, Not Prototypes.",
-    "lead": "Enterprise-class software, systems, and AI development for Central Illinois' small and medium-sized businesses. We'll get it right the first time.",
-    "subtext": "<p>AI has rewritten the economics of custom software. Systems that used to require a million-dollar budget are now within reach of any serious regional business. We bring eight-figure engineering discipline — paired with AI-driven development — to SMBs that need to capitalize on this shift before their competitors do.</p><br>"
+    "tagline": "Production AI, Not Just Pilots.",
+    "lead": "We take organizations from AI curiosity to AI-driven operations.",
+    "subtext": "<p>We train your people, get your data ready for agents, move your engineering team to an AI-driven development process, and build the agentic systems that do real work — then help you hire the person who keeps it running.</p><p>Everyone has a chatbot login. Very few have anything in production. The gap isn't the model. It's training, data, and engineering discipline.</p>"
   },
   "whatWeDo": {
     "label": "What We Do",
-    "headline": "Custom software development. Systems integration. AI strategy and implementation.",
-    "subtext": "For business leaders who want to move first."
+    "headline": "AI training. Data readiness. AI-driven development. Agentic systems.",
+    "subtext": "For leaders who want results they can point to."
   },
-  "positioning": "<p>The difference between a product and a prototype isn't polish or features — it's where the value lives. Prototypes trap business logic in the UI. Products capture it in portable software any interface can use.</p><p>The same difference shows up in AI. Bolt-ons trap value in prompts and demos. Integrations capture it in systems that outlast any single vendor, model, or demo.</p>",
   "problem": {
-    "label": "The Founder's Reality",
+    "label": "The AI Reality",
     "headline": "You've probably lived at least one of these.",
     "statements": [
-      "Development used to move so fast, but now adding a simple feature takes weeks.",
-      "The big reveal went great, delivery invoices were paid, and your tech partner went dark.",
-      "The investor's tech audits revealed a bunch of spit, duct tape, and mud.",
-      "You have to throw it all away and start over. Your investment has crashed."
+      "Everyone has a ChatGPT login. Nobody can point to the ROI.",
+      "Engineering trialed a coding agent. The results were \"mixed.\" Nobody measured.",
+      "The pilot demoed beautifully — then nobody could say what data it was allowed to touch.",
+      "Your knowledge lives in forty shared folders and somebody's inbox. No agent can find it.",
+      "A vendor wants to sell you a platform. You don't know what you actually need."
     ]
   },
-  "comparison": {
-    "headline": "The difference isn't polish or features. It's where the value lives.",
-    "prototype": {
-      "label": "Prototype",
-      "items": [
-        "Business rules sprinkled everywhere",
-        "Breaks when you scale",
-        "Rebuild for every new platform",
-        "Archaeology for new developers",
-        "Fails due diligence"
+  "entryOffers": {
+    "label": "Where to Start",
+    "headline": "Two ways in. Both low risk.",
+    "offers": [
+      {
+        "track": "For your business",
+        "name": "AI Starter Package",
+        "terms": "10 hours · $1,500",
+        "description": "We audit your workflows for repetitive bottlenecks, match tools to your budget and privacy needs, set up starter projects, and train your staff hands-on using their actual work.",
+        "outcome": "A team using AI productively, safely, and on purpose."
+      },
+      {
+        "track": "For your engineers",
+        "name": "Coding-Agent Trial",
+        "terms": "6 weeks · $1,500 per cohort of up to 8 engineers",
+        "description": "Week one gets everyone kitted up and productive from day one. Each week after: an hour of instruction and Q&A, then an hour of show and tell where every participant shares what worked and what didn't.",
+        "outcome": "Six weeks of real use on your codebase, and an honest read on what comes next."
+      }
+    ]
+  },
+  "path": {
+    "label": "The Path",
+    "headline": "From first trial to AI-driven operations.",
+    "intro": "Start wherever you are. Engineering and business tracks often run side by side.",
+    "stages": [
+      {
+        "number": "01",
+        "name": "Start",
+        "question": "Low risk. Real work.",
+        "items": [
+          { "track": "Engineering", "text": "Coding-Agent Trial: six weeks of training and team show and tell on your real codebase." },
+          { "track": "Business", "text": "AI Starter Package: workflow audit, tool setup, and hands-on training for your staff." }
+        ]
+      },
+      {
+        "number": "02",
+        "name": "Train",
+        "question": "The tools change monthly.",
+        "items": [
+          { "track": "Everyone", "text": "Recurring hands-on training in agentic tools, grounded in your actual work — prompting, verifying output, and knowing when not to trust it." }
+        ]
+      },
+      {
+        "number": "03",
+        "name": "Harden",
+        "question": "Foundations before speed.",
+        "items": [
+          { "track": "Engineering", "text": "Test coverage, CI/CD, and review gates ready for agent-speed output." },
+          { "track": "Business", "text": "Map your information sources. We guide your team in building and rolling out a data classification policy." }
+        ]
+      },
+      {
+        "number": "04",
+        "name": "Integrate",
+        "question": "Wire AI into how you work.",
+        "items": [
+          { "track": "Engineering", "text": "Move from AI-assisted to a fully AI-driven development process." },
+          { "track": "Business", "text": "Curate and structure your knowledge — data lakes, knowledge graphs, vector search — so agents answer with your information, not guesses." }
+        ]
+      },
+      {
+        "number": "05",
+        "name": "Automate",
+        "question": "Build what pays off.",
+        "items": [
+          { "track": "Everyone", "text": "Identify, scope, and build automations and agentic systems with evaluations, guardrails, and measurable value. If the honest answer is \"not yet,\" we'll say so." }
+        ]
+      },
+      {
+        "number": "06",
+        "name": "Hand Off",
+        "question": "You own it.",
+        "items": [
+          { "track": "Everyone", "text": "We help you hire and onboard the engineer or technologist who keeps it going. No recruiting agency markup." }
+        ]
+      }
+    ]
+  },
+  "tracks": {
+    "label": "Solutions",
+    "headline": "Your engineers. Everyone else.",
+    "engineering": {
+      "label": "For Your Engineering Team",
+      "offerings": [
+        {
+          "type": "AI-Driven Development",
+          "title": "From Assisted to Driven",
+          "description": "A coding assistant is step one. We help your team rebuild its process around agents — planning, implementation, review, delivery — so the leverage compounds instead of plateauing."
+        },
+        {
+          "type": "Pipeline Hardening",
+          "title": "CI/CD, Testing & Automation",
+          "description": "Agents are only as fast as your pipeline is trustworthy. We shore up tests, CI/CD, review gates, and deployment so agent-speed output reaches production safely."
+        },
+        {
+          "type": "Training & Coaching",
+          "title": "Up-Skill Your Team",
+          "description": "Recurring training in agentic tools, plus the practices that make them work: TDD, CI/CD, code review, pairing. Your team sustains the velocity without us."
+        }
       ]
     },
-    "product": {
-      "label": "Product",
-      "items": [
-        "Business rules live in the core",
-        "Architecture handles growth",
-        "Any interface works",
-        "Readable from day one",
-        "Passes investor review"
+    "business": {
+      "label": "For the Rest of Your Business",
+      "offerings": [
+        {
+          "type": "AI Readiness",
+          "title": "Data Classification",
+          "description": "We help you identify your information sources and guide your team in developing and rolling out a classification policy. Your people classify; you own the policy."
+        },
+        {
+          "type": "Knowledge Systems",
+          "title": "Data for Agents",
+          "description": "Agents are only as good as what they can find. Data lakes, knowledge graphs, vector search (RAG) — the right retrieval method for the job, not the trendiest one."
+        },
+        {
+          "type": "Agentic Tools Training",
+          "title": "Training for Everyone",
+          "description": "Regular live sessions for staff across the business: effective prompting, verifying output, building personal workflows, and knowing when not to trust the result."
+        },
+        {
+          "type": "Automation",
+          "title": "Agentic Systems",
+          "description": "We find the workflows worth automating, scope them, and build them to production standards — evaluated, guarded, and portable across model vendors."
+        }
       ]
+    },
+    "handoff": {
+      "type": "Hiring",
+      "title": "Find the Person Who Owns It Next",
+      "description": "Most engagements end with your organization owning the capability. We help you define the role, then find, evaluate, and onboard the engineer or technologist who carries it forward."
     }
-  },
-  "howWeBuild": {
-    "label": "How We Build",
-    "headline": "We build with AI. We hold it to the same standard we hold everything.",
-    "body": "<p>AI-driven development is how a small senior team ships eight-figure engineering at SMB budgets. It's also where most shops get sloppy — shipping code nobody reviewed, nobody understands, and nobody can maintain.</p><p>We point AI at the work that's mechanical, and put human judgment, tests, and review on every line that reaches production. Faster where speed is free; deliberate where it isn't.</p><p>That's the whole philosophy: <em>go well to go fast</em> — not the other way around.</p>"
   },
   "aiQuestion": {
     "label": "The AI Question",
     "headline": "AI pilots fail for the same reason prototypes do.",
     "intro": "Models change monthly. Vendors ship demos. What doesn't change is the work between a demo that impresses and a system that survives production. That work is engineering.",
     "boltOn": {
-      "label": "Bolt-on AI",
+      "label": "Pilot AI",
       "items": [
         "Value lives in the prompt",
         "Breaks when the model changes",
         "Every new vendor is a new rebuild",
-        "Nobody on the team knows why it works",
-        "Your data is the vendor's data"
+        "Nobody knows what data it touches",
+        "Nobody on staff owns it"
       ]
     },
     "integrated": {
-      "label": "Integrated AI",
+      "label": "Production AI",
       "items": [
-        "Value lives in your system",
+        "Value lives in your systems and data",
         "Swap models without rewriting",
         "Portable across vendors",
-        "Documented, tested, auditable",
-        "Your data stays yours"
+        "Classified data, documented guardrails",
+        "Someone on your team owns it"
       ]
     },
-    "closer": "Whether you're building with AI or adopting it, the discipline is the same."
+    "closer": "Whether you're training a team, readying your data, or building agents, the discipline is the same."
+  },
+  "howWeBuild": {
+    "label": "We Practice What We Teach",
+    "headline": "We run the process we teach.",
+    "body": "<p>Everything we build — this site included — ships through an AI-driven development process: agents on the mechanical work, with tests, CI, and human review on every change that reaches production.</p><p>That's why our training isn't theory. When we tell your team what works, we've used it this week. When we tell you what doesn't, we've already paid for the lesson.</p><p><em>Go well to go fast.</em> Discipline is what makes the speed safe.</p>"
+  },
+  "also": {
+    "label": "Also",
+    "headline": "We still build.",
+    "intro": "The original bsf5y practice, now built with the same AI-driven process we teach.",
+    "services": [
+      {
+        "type": "Fractional CTO / AI Lead",
+        "title": "Technical Leadership",
+        "description": "Senior engineering and AI leadership without the equity, salary, or headcount."
+      },
+      {
+        "type": "Product Development",
+        "title": "Bespoke Solutions",
+        "description": "We don't just advise — we build. Turn-key infrastructure plus custom development of your core IP. You get a product, not a prototype."
+      }
+    ]
   },
   "credibility": {
     "points": [
@@ -82,77 +208,9 @@
       "Startup exits realized"
     ]
   },
-  "methodology": {
-    "headline": "How We Work",
-    "intro": "We follow a proven methodology that is designed to move past ideas and prototypes to deliver robust, market-ready products.",
-    "phases": [
-      {
-        "number": "01",
-        "name": "Discovery",
-        "question": "Show us the vision.",
-        "description": "A successful partnership begins with shared understanding. We immerse ourselves in your vision to understand its core potential — what does version 1.0 look like, what gives it market credibility, and why does it need to exist."
-      },
-      {
-        "number": "02",
-        "name": "Differentiation",
-        "question": "What can only this product do?",
-        "description": "We identify what makes your product truly unique — the defensible core that sets it apart. Is it proprietary data, a novel algorithm, or deep domain expertise encoded in software? This is your core — whether you're building a product or integrating AI into one you already run. Everything else is infrastructure."
-      },
-      {
-        "number": "03",
-        "name": "Infrastructure",
-        "question": "Turn-key the rest.",
-        "description": "Everything that isn't your core differentiator is infrastructure. Web UIs, mobile apps, signup, authentication, payments, model hosting, vector search, etc. Infrastructure should be inexpensive — we provide off-the-shelf battle-tested solutions to deliver and support your product without further development costs."
-      },
-      {
-        "number": "04",
-        "name": "Execution",
-        "question": "Products, not prototypes.",
-        "description": "We deliver production-ready engineering solutions with exhaustive test coverage, clean architecture, and comprehensive documentation. Where AI is involved, that includes the evaluations and guardrails that separate a demo from a production system. A complete solution that can be handed to any future team with confidence."
-      },
-      {
-        "number": "05",
-        "name": "Enduring Partnership",
-        "question": "We're invested in your success.",
-        "description": "If we've chosen to partner with you, then we are 100% invested in your long-term success. Long after your product has shipped and the last invoice has been paid, we're going to be there for you, no matter what."
-      }
-    ]
-  },
-  "services": [
-    {
-      "type": "Fractional CTO",
-      "title": "Technical Leadership",
-      "description": "Senior engineering leadership for projects that need expert technical judgment without the equity, salary, or headcount."
-    },
-    {
-      "type": "Product Development",
-      "title": "Bespoke Solutions",
-      "description": "We don't just advise — we build. Turn-key infrastructure plus custom development of your core IP. You get a product, not a prototype."
-    },
-    {
-      "type": "AI Integration",
-      "title": "Production AI Systems",
-      "description": "We integrate AI into your product — or the business you already run. Strict performance evaluations, data/security guardrails, and vendor-portable architecture."
-    },
-    {
-      "type": "Enterprise Architecture",
-      "title": "Strategic Technology",
-      "description": "Connect your existing systems — data, workflows, and modern AI capabilities — to reveal advantages already sitting in your business."
-    },
-    {
-      "type": "Team Building",
-      "title": "Recruitment & Staffing",
-      "description": "When you're ready to hire, we help you find, evaluate, and onboard engineers who fit your culture and codebase. No recruiting agency markup. Just part of our last-mile delivery service to you."
-    },
-    {
-      "type": "Training & Coaching",
-      "title": "Up-Skill Existing Teams",
-      "description": "Paired programming, test-driven development, CI/CD, Agile practices, AI-Driven Development. We transfer our best practices so your team can sustain velocity without us."
-    }
-  ],
   "cta": {
-    "headline": "Ready to build it right?",
-    "subtext": "Let's have a conversation about your product vision.",
+    "headline": "Straight answers about AI.",
+    "subtext": "Including \"not yet.\" Tell us where you are, and we'll tell you what it takes to get where you want to be.",
     "button": "Start a Conversation"
   }
 }
