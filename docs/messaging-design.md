@@ -2,10 +2,16 @@
 
 ## Tagline/Slogan
 
-**Production AI, not just pilots.**
+**Put AI to work.**
 
-Heritage line (still valid, now secondary): *Products, not prototypes.* Same idea, different
-decade — the value is in what survives production, not what impresses in a demo.
+Plain, active, outcome-first. It promises results, not technology — and it covers both tracks:
+putting AI to work in your engineering process and across the rest of the business.
+
+Supporting line: *Production AI, not just pilots.* (Pillar 1; used in body copy and the AI
+Question section.)
+
+Heritage line: *Products, not prototypes.* Same idea, different decade — the value is in what
+survives production, not what impresses in a demo.
 
 ## Elevator Pitch
 
@@ -387,6 +393,7 @@ don't understand engineering. Restraint is the aesthetic. Every element earns it
 - **No hedging.** No "we believe," "potentially," or "in many cases."
 
 ```
+Good:  "Put AI to Work"
 Good:  "Production AI, Not Just Pilots"
 Good:  "Agents Need Trustworthy Pipelines"
 Avoid: "Is Your Business Ready for AI?"
@@ -489,7 +496,7 @@ Use this reference when translating messaging to specific touchpoints:
 
 ### Homepage Structure
 
-1. **Hero:** "Production AI, Not Just Pilots." + elevator pitch
+1. **Hero:** "Put AI to Work." + elevator pitch
 2. **What We Do:** 10-second statement — training, data readiness, AI-driven development,
    agentic systems
 3. **The AI Reality:** Pain points for the operator and the engineering leader
