@@ -82,7 +82,7 @@ should *show* the thinking, not just describe it.
 ## Messaging Pillars (The Core Themes)
 
 ### 1. Production AI, Not Just Demos
-*"AI pilots fail for the same reason prototypes do."*
+*"The demo is the easy part."*
 
 Models change monthly. Vendors ship demos. What doesn't change is the work between a demo that
 impresses and a system that survives production. That work is engineering.

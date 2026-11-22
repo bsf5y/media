@@ -154,10 +154,10 @@
   },
   "aiQuestion": {
     "label": "The AI Question",
-    "headline": "AI pilots fail for the same reason prototypes do.",
+    "headline": "The demo is the easy part.",
     "intro": "Models change monthly. Vendors ship demos. What doesn't change is the work between a demo that impresses and a system that survives production. That work is engineering.",
     "boltOn": {
-      "label": "Pilot AI",
+      "label": "Demo AI",
       "items": [
         "Value lives in the prompt",
         "Breaks when the model changes",
